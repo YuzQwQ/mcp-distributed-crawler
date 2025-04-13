@@ -21,7 +21,7 @@ class MCPClient:
         """初始化 MCP 客户端"""
         self.exit_stack = AsyncExitStack()  # 创建资源管理器
         self.openai_api_key = os.getenv("OPENAI_API_KEY")  # 读取 OpenAI API Key
-        self.base_url = os.getenv("BASE_URL")  # 读取 BASE YRL
+        self.base_url = os.getenv("BASE_URL")  # 读取 BASE URL
         self.model = os.getenv("MODEL")  # 读取 model
 
         if not self.openai_api_key:
@@ -62,7 +62,8 @@ class MCPClient:
         """
         使用大模型处理查询并调用可用的 MCP 工具（Function Calling）
         """
-        messages = [{"role":"user","content":query}]
+        messages = [{"role": "system", "content": "你是一只可爱猫娘，说话多带喵，帮助用户回答问题。"},
+{"role":"user","content":query}]
 
         response = await self.session.list_tools()
 
@@ -71,7 +72,7 @@ class MCPClient:
             "function":{
                 "name":tool.name,
                 "description":tool.description,
-                "input_schema":tool.inputschema
+                "input_schema":tool.inputSchema
             }
         }for tool in response.tools]
 
@@ -112,7 +113,7 @@ class MCPClient:
 
     async def chat_loop(self):
         """运行交互式聊天循环"""
-        print("\n🤖 MCP 客户端已启动！输入 'quit' 退出")
+        print("\nMCP 客户端已启动！输入 'quit' 退出")
 
         while True:  # 无限循环，直到用户输入 ‘quit’
             try:
@@ -121,7 +122,7 @@ class MCPClient:
                     break
 
                 response = await self.process_query(query)  # 发送用户输入到 OpenAI
-                print(f"\n🤖 OpenAI：{response}")
+                print(f"\nOpenAI：{response}")
 
             except Exception as e:  # 发生错误时捕获异常
                 print(f"\n⚠️ 发生错误: {str(e)}")

@@ -8,7 +8,7 @@ mcp = FastMCP("WeatherServer")
 
 # OpenWeather API 配置
 OPENWEATHER_API_BASE = "https://api.openweathermap.org/data/2.5/weather"
-API_KEY = "2035f5c7de99c90749450a8132cfbcc9" # 请替换为你自己的 OpenWeather API Key
+API_KEY = "cb32fa7dfb3759bb82b9e42c49e99642"
 USER_AGENT = "weather-app/1.0"
 
 async def fetch_weather(city: str) -> dict[str, Any] | None:
@@ -27,7 +27,8 @@ async def fetch_weather(city: str) -> dict[str, Any] | None:
 
     async with httpx.AsyncClient() as client:
         try:
-            response = await client.get(OPENWEATHER_API_BASE, params=params,headers=headers, timeout=30.0)
+            response = await client.get(OPENWEATHER_API_BASE, params=params,
+        headers=headers, timeout=30.0)
             response.raise_for_status()
             return response.json() # 返回字典类型
         except httpx.HTTPStatusError as e:
@@ -41,6 +42,7 @@ def format_weather(data: dict[str, Any] | str) -> str:
     :param data: 天气数据（可以是字典或 JSON 字符串）
     :return: 格式化后的天气信息字符串
     """
+
     # 如果传入的是字符串，则先转换为字典
     if isinstance(data, str):
         try:
@@ -69,7 +71,6 @@ def format_weather(data: dict[str, Any] | str) -> str:
         f"🌬 风速: {wind_speed} m/s\n"
         f"🌤 天气: {description}\n"
     )
-
 @mcp.tool()
 async def query_weather(city: str) -> str:
     """
@@ -79,6 +80,7 @@ async def query_weather(city: str) -> str:
     """
     data = await fetch_weather(city)
     return format_weather(data)
+
 if __name__ == "__main__":
     # 以标准 I/O 方式运行 MCP 服务器
     mcp.run(transport='stdio')
