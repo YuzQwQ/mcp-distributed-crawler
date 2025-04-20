@@ -105,13 +105,18 @@ class MCPClient:
     async def chat_loop(self):
         print("\nMCP 客户端已启动！输入 'quit' 退出")
         print("你可以问我任何城市的天气情况，比如：'上海今天天气怎么样？'")
-
+        self._is_processing = False  # 新增状态标志
         while True:
             try:
                 query = input("\n你: ").strip()
                 if query.lower() == 'quit':
                     break
 
+                if self._is_processing:
+                    print("🤯 脑子不够用了，等我先处理完这个...")
+                    continue
+
+                self._is_processing = True
                 response = await self.process_query(query)
                 print(f"\n小波: {response}")
 
