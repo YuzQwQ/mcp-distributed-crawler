@@ -5,11 +5,14 @@ from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("WeatherServer")
 
+# 高德地图API配置
+AMAP_API_KEY = "6957159626716e643224bd238731246c"
+
 # 和风天气配置
 API_KEY = "2a17cc0f463848bbab953524e5e7d1e8"
 API_HOST = "nx3aanmqqp.re.qweatherapi.com"
-
 USER_AGENT = "weather-app/1.0"
+
 
 
 async def fetch_geo_location(city: str) -> dict[str, Any] | None:
@@ -128,6 +131,34 @@ async def fetch_weather(location_id: str) -> dict[str, Any] | None:
         except Exception as e:
             return {"error": f"请求失败: {str(e)}"}
 
+async def fetch_attractions(city_name: str) -> dict[str, Any] | None:
+    """查询城市的旅游景点"""
+    url = f"https://restapi.amap.com/v3/place/text"
+    params = {
+        "keywords": "旅游景点",  # 关键词为旅游景点
+        "city": city_name,  # 城市名称
+        "key": AMAP_API_KEY,
+        "types": "旅游景点"  # 类型为旅游景点
+    }
+
+    async with httpx.AsyncClient() as client:
+        try:
+            response = await client.get(url, params=params, timeout=10.0)
+            response.raise_for_status()
+            data = response.json()
+
+            if data.get("status") != "1":
+                return {"error": f"获取景点失败: {data.get('info', '未知错误')}"}
+
+            attractions = data.get("pois", [])
+            if not attractions:
+                return {"error": "未找到景点信息"}
+
+            return attractions
+        except httpx.HTTPStatusError as e:
+            return {"error": f"HTTP错误({e.response.status_code}): {e.response.text}"}
+        except Exception as e:
+            return {"error": f"请求失败: {str(e)}"}
 
 def format_weather(data: dict[str, Any]) -> str:
     """新版响应格式处理"""
@@ -146,7 +177,6 @@ def format_weather(data: dict[str, Any]) -> str:
         f"🌤 天气状况: {now.get('text', '未知')}\n"
         f"🕒 观测时间: {now.get('obsTime', '未知')}\n"
     )
-
 
 def format_air_quality(data: dict[str, Any]) -> str:
     """空气质量响应格式处理"""
@@ -190,15 +220,14 @@ def format_air_quality(data: dict[str, Any]) -> str:
 
 
 
-
-
 @mcp.tool()
 async def query_weather_by_city(city: str) -> str:
     """
-    输入指定城市的英文名称，返回今日天气查询结果。
+    输入指定城市的英文名称，返回当前空气质量查询结果。
     :param city: 城市名称（需使用英文）
-    :return: 格式化后的天气信息
+    :return: 格式化后的空气质量信息
     """
+
     # 获取地理编码
     geo_data = await fetch_geo_location(city)
     if "error" in geo_data:
@@ -213,14 +242,15 @@ async def query_weather_by_city(city: str) -> str:
     weather_data = await fetch_weather(location_id)
     return format_weather(weather_data)
 
-
 @mcp.tool()
 async def query_air_quality(city: str) -> str:
     """
-    输入指定城市的英文名称，返回当前空气质量查询结果。
+    输入指定城市的英文名称，返回今日天气查询结果。
     :param city: 城市名称（需使用英文）
-    :return: 格式化后的空气质量信息
+    :return: 格式化后的天气信息
     """
+
+
     # 1. 获取地理编码
     geo_data = await fetch_geo_location(city)
     if "error" in geo_data:
@@ -229,6 +259,22 @@ async def query_air_quality(city: str) -> str:
     # 2. 获取空气质量数据（需要实现fetch_air_quality函数）
     air_data = await fetch_airQuality(geo_data["id"])
     return format_air_quality(air_data)
+
+@mcp.tool()
+async def query_attractions(city: str) -> str:
+    """查询城市的旅游景点"""
+    attractions = await fetch_attractions(city)
+    if "error" in attractions:
+        return f"⚠️ {attractions['error']}"
+
+    # 如果成功获取到景点，返回前三个景点的信息
+    result = "🌆 推荐景点：\n"
+    for attraction in attractions[:3]:
+        result += f"- {attraction['name']} ({attraction['address']})\n"
+
+    return result
+
+
 
 if __name__ == "__main__":
     mcp.run(transport='stdio')
