@@ -160,6 +160,29 @@ async def fetch_attractions(city_name: str) -> dict[str, Any] | None:
         except Exception as e:
             return {"error": f"请求失败: {str(e)}"}
 
+async def fetch_attraction_details(place_id: str) -> dict[str, Any] | None:
+    """根据景点ID查询详细信息"""
+    url = f"https://restapi.amap.com/v3/place/detail"
+    params = {
+        "id": place_id,
+        "key": AMAP_API_KEY
+    }
+
+    async with httpx.AsyncClient() as client:
+        try:
+            response = await client.get(url, params=params, timeout=10.0)
+            response.raise_for_status()
+            data = response.json()
+
+            if data.get("status") != "1":
+                return {"error": f"获取景点详情失败: {data.get('info', '未知错误')}"}
+
+            return data.get("result", {})
+        except httpx.HTTPStatusError as e:
+            return {"error": f"HTTP错误({e.response.status_code}): {e.response.text}"}
+        except Exception as e:
+            return {"error": f"请求失败: {str(e)}"}
+
 def format_weather(data: dict[str, Any]) -> str:
     """新版响应格式处理"""
     if "error" in data:
@@ -271,6 +294,24 @@ async def query_attractions(city: str) -> str:
     result = "🌆 推荐景点：\n"
     for attraction in attractions[:3]:
         result += f"- {attraction['name']} ({attraction['address']})\n"
+
+    return result
+
+@mcp.tool()
+async def query_attraction_details(place_id: str) -> str:
+    """查询景点详细信息"""
+    details = await fetch_attraction_details(place_id)
+    if "error" in details:
+        return f"⚠️ {details['error']}"
+
+    # 格式化详细信息
+    result = (
+        f"🏞 景点: {details['name']}\n"
+        f"📍 地址: {details['address']}\n"
+        f"🕒 开放时间: {details.get('open_time', '未知')}\n"
+        f"📞 联系电话: {details.get('tel', '未知')}\n"
+        f"📝 详情: {details.get('intro', '暂无简介')}\n"
+    )
 
     return result
 
