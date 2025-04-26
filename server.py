@@ -1,19 +1,25 @@
 import json
+import os
+from dotenv import load_dotenv
 import httpx
 from typing import Any
 from mcp.server.fastmcp import FastMCP
+from openai import OpenAI
+
+load_dotenv()
+openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"), base_url=os.getenv("BASE_URL"))
+model = os.getenv("MODEL", "gpt-4o")
 
 mcp = FastMCP("WeatherServer")
 
-# 高德地图API配置
-AMAP_API_KEY = "6957159626716e643224bd238731246c"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+BASE_URL = os.getenv("BASE_URL")
+MODEL = os.getenv("MODEL")
 
-# 和风天气配置
-API_KEY = "2a17cc0f463848bbab953524e5e7d1e8"
-API_HOST = "nx3aanmqqp.re.qweatherapi.com"
-USER_AGENT = "weather-app/1.0"
-
-
+AMAP_API_KEY = os.getenv("AMAP_API_KEY")
+API_KEY = os.getenv("HEFENG_API_KEY")
+API_HOST = os.getenv("HEFENG_API_HOST")
+USER_AGENT = os.getenv("USER_AGENT", "weather-app/1.0")
 
 async def fetch_geo_location(city: str) -> dict[str, Any] | None:
     """通过城市名获取LocationID（新版API路径）"""
@@ -316,6 +322,62 @@ async def query_attraction_details(place_id: str) -> str:
     return result
 
 
+@mcp.tool()
+async def generate_travel_plan(city: str) -> str:
+    """生成城市的旅行计划喵"""
+    try:
+        # 先定位城市ID
+        geo_data = await fetch_geo_location(city)
+        if "error" in geo_data:
+            return f"⚠️ 定位失败: {geo_data['error']}"
+
+        location_id = geo_data.get("id")
+        if not location_id:
+            return "⚠️ 无效的LocationID"
+
+        # 分别拉取天气、空气质量、景点
+        weather_data = await fetch_weather(location_id)
+        air_quality_data = await fetch_airQuality(location_id)
+        attractions_data = await fetch_attractions(city)
+
+        if not isinstance(attractions_data, list):
+            attractions_text = "未找到景点信息喵~"
+        else:
+            attractions_text = "\n".join(f"- {a.get('name', '未知')} ({a.get('address', '未知')})" for a in attractions_data[:5])
+
+        # 准备大模型输入
+        messages = [
+            {
+                "role": "system",
+                "content": (
+                    "你是一只元气满满、热情活泼的猫娘旅行助手喵~ "
+                    "根据用户提供的天气、空气质量和景点信息，生成详细、合理、有趣的旅行总结和每日行程安排"
+                    "旅行计划要分成两个部分：【总结】和【每日安排】，每天一个小标题，内容生动"
+                )
+            },
+            {
+                "role": "user",
+                "content": (
+                    f"帮我制定一份关于 {city} 的旅行计划，参考信息如下：\n\n"
+                    f"🌤 天气信息：{format_weather(weather_data)}\n\n"
+                    f"🌫 空气质量信息：{format_air_quality(air_quality_data)}\n\n"
+                    f"🎡 推荐景点：\n{attractions_text}\n\n"
+                    f"输出格式要求：【总结】部分 + 【每日安排】（每天一个小标题）"
+                )
+            }
+        ]
+
+        # 调用模型生成
+        response = openai_client.chat.completions.create(
+            model=model,
+            messages=messages
+        )
+
+        travel_plan = response.choices[0].message.content
+        return travel_plan
+
+    except Exception as e:
+        return f"❌ 生成旅行计划失败喵~ 错误信息: {str(e)}"
 
 if __name__ == "__main__":
     mcp.run(transport='stdio')
