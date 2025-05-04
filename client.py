@@ -116,12 +116,6 @@ class MCPClient:
                 if tool_name == "generate_travel_plan" and tool_content:
                     await self.save_travel_plan(tool_args.get("city", "未知城市"), tool_content)
 
-        else:
-            # 如果没有工具调用，中间直接append大模型自己的回答
-            messages.append({
-                "role": "assistant",
-                "content": first_message.content
-            })
 
         # 第二次调用 - 正式生成最终回复
         second_response = self.client.chat.completions.create(
