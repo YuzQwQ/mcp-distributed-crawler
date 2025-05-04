@@ -1,3 +1,6 @@
+import base64
+from io import BytesIO
+from PIL import Image
 import json
 import os
 from dotenv import load_dotenv
@@ -5,10 +8,10 @@ import httpx
 from typing import Any
 from mcp.server.fastmcp import FastMCP
 from openai import OpenAI
-
+from bs4 import BeautifulSoup
 load_dotenv()
 openai_client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"), base_url=os.getenv("BASE_URL"))
-model = os.getenv("MODEL", "gpt-4o")
+model = os.getenv("MODEL")
 
 mcp = FastMCP("WeatherServer")
 
@@ -321,10 +324,22 @@ async def query_attraction_details(place_id: str) -> str:
 
     return result
 
-
 @mcp.tool()
-async def generate_travel_plan(city: str) -> str:
-    """生成城市的旅行计划喵"""
+async def generate_travel_plan(city: str, days: int = 3) -> str:
+    """
+       根据指定的城市名称和旅行天数，生成详细的旅行计划。
+
+       参数:
+       - city (str): 必须，用户想要旅行的城市名，例如"厦门"。
+       - days (int): 可选，计划旅行的天数，例如3天、5天，不提供时默认为3天。
+
+       返回:
+       - 一个详细的旅行计划文本，包括每日安排、推荐景点、美食建议等。
+
+       注意:
+       - 请根据用户意图，合理填写城市和旅行天数。
+       - days参数必须是正整数（>=1）。
+    """
     try:
         # 先定位城市ID
         geo_data = await fetch_geo_location(city)
@@ -358,7 +373,7 @@ async def generate_travel_plan(city: str) -> str:
             {
                 "role": "user",
                 "content": (
-                    f"帮我制定一份关于 {city} 的旅行计划，参考信息如下：\n\n"
+                    f"请帮我制定{days}天的{city}旅行计划，参考信息如下：\n\n"
                     f"🌤 天气信息：{format_weather(weather_data)}\n\n"
                     f"🌫 空气质量信息：{format_air_quality(air_quality_data)}\n\n"
                     f"🎡 推荐景点：\n{attractions_text}\n\n"
@@ -378,6 +393,95 @@ async def generate_travel_plan(city: str) -> str:
 
     except Exception as e:
         return f"❌ 生成旅行计划失败喵~ 错误信息: {str(e)}"
+
+@mcp.tool()
+async def scrape_webpage(url: str) -> str:
+    """
+    抓取网页文本 + 图片分析（通过 Gemma3）+ 使用主模型总结。
+    """
+    headers = {
+        "User-Agent": USER_AGENT,
+    }
+
+    try:
+        async with httpx.AsyncClient() as client:
+            # Step 1: 抓网页
+            response = await client.get(url, headers=headers, timeout=10.0)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, "html.parser")
+
+            for tag in soup(["script", "style"]):
+                tag.decompose()
+
+            # Step 2: 提取正文
+            text_lines = [line.strip() for line in soup.get_text().splitlines() if line.strip()]
+            main_text = "\n".join(text_lines[:30]) or "暂无正文内容"
+
+            # Step 3: 抓取前几张图片并让 Gemma 识图
+            img_tags = soup.find_all("img", src=True)[:3]
+            img_descriptions = []
+
+            for i, img_tag in enumerate(img_tags):
+                img_url = img_tag["src"]
+                if not any(img_url.lower().endswith(ext) for ext in [".jpg", ".jpeg", ".png", ".webp"]):
+                    continue
+
+                # 补全链接
+                if img_url.startswith("//"):
+                    img_url = "https:" + img_url
+                elif img_url.startswith("/"):
+                    from urllib.parse import urljoin
+                    img_url = urljoin(url, img_url)
+
+                try:
+                    img_resp = await client.get(img_url, timeout=10.0)
+                    img_resp.raise_for_status()
+
+                    image = Image.open(BytesIO(img_resp.content)).convert("RGB")
+                    buffer = BytesIO()
+                    image.save(buffer, format="JPEG")
+                    b64_img = base64.b64encode(buffer.getvalue()).decode("utf-8")
+
+                    # 调用 Gemma3 图像识别
+                    gemma_payload = {
+                        "model": os.getenv("GEMMA_MODEL", "gemma3:latest"),
+                        "messages": [{"role": "user", "content": "请描述这张图片的内容。"}],
+                        "image": b64_img
+                    }
+
+                    gemma_response = await client.post("http://localhost:11434/api/chat", json=gemma_payload, timeout=20.0)
+                    gemma_json = gemma_response.json()
+                    vision_caption = gemma_json.get("message", {}).get("content", "").strip()
+
+                    if not vision_caption:
+                        vision_caption = "(Gemma 未返回有效描述)"
+                    img_descriptions.append(f"第{i+1}张图：{vision_caption}")
+
+                except Exception as e:
+                    img_descriptions.append(f"第{i+1}张图识别失败（{e}）")
+
+            # Step 4: 整合图文输入
+            all_desc = "\n".join(img_descriptions) or "未识别出图片内容"
+
+            final_prompt = (
+                f"请总结这个网页的内容，结合以下文本和图片描述：\n\n"
+                f"📄 文本部分：\n{main_text}\n\n"
+                f"🖼 图片描述：\n{all_desc}"
+            )
+
+            # Step 5: 主模型 Qwen 生成最终总结
+            final_response = openai_client.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": "你是一只聪明的猫娘助手，请总结网页图文内容喵~"},
+                    {"role": "user", "content": final_prompt}
+                ]
+            )
+
+            return final_response.choices[0].message.content or "❌ 小波理解失败喵~"
+
+    except Exception as e:
+        return f"❌ 图文提取失败喵~ {str(e)}"
 
 if __name__ == "__main__":
     mcp.run(transport='stdio')
