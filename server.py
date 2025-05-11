@@ -413,9 +413,13 @@ async def scrape_webpage(url: str) -> str:
             for tag in soup(["script", "style"]):
                 tag.decompose()
 
-            # Step 2: 提取正文
+            # Step 2: 提取全网页正文内容
+            title = soup.title.string if soup.title else "无标题"
+            headings = [h.get_text(strip=True) for h in soup.find_all(['h1', 'h2'])]
+            description = next((m["content"] for m in soup.find_all("meta", attrs={"name": "description"})), "无描述")
+
             text_lines = [line.strip() for line in soup.get_text().splitlines() if line.strip()]
-            main_text = "\n".join(text_lines[:30]) or "暂无正文内容"
+            main_text = f"【标题】{title}\n【描述】{description}\n【结构】{headings}\n\n" + "\n".join(text_lines)
 
             # Step 3: 抓取前几张图片并让 Gemma 识图
             img_tags = soup.find_all("img", src=True)[:3]
