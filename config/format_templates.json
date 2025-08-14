@@ -1,0 +1,226 @@
+{
+  "dfd": {
+    "name": "数据流图(DFD)知识库",
+    "description": "专门用于数据流图绘制知识的收集和分析",
+    "json_structure": {
+      "metadata": {
+        "source_url": "string",
+        "title": "string",
+        "crawl_time": "datetime",
+        "extraction_method": "string",
+        "topic": "string"
+      },
+      "knowledge_categories": [
+        {
+          "key": "dfd_concepts",
+          "name": "概念定义表",
+          "description": "DFD基本概念和元素定义",
+          "fields": {
+            "id": "string",
+            "type": "string",
+            "description": "string",
+            "symbol": "string",
+            "rules": "array"
+          }
+        },
+        {
+          "key": "dfd_rules",
+          "name": "规则库",
+          "description": "DFD绘制和验证规则",
+          "fields": {
+            "id": "string",
+            "category": "string",
+            "description": "string",
+            "condition": "string",
+            "validation": "string"
+          }
+        },
+        {
+          "key": "dfd_patterns",
+          "name": "模式模板",
+          "description": "DFD系统模式和模板",
+          "fields": {
+            "system": "string",
+            "level": "integer",
+            "processes": "array",
+            "entities": "array",
+            "data_stores": "array",
+            "flows": "array"
+          }
+        },
+        {
+          "key": "dfd_cases",
+          "name": "案例库",
+          "description": "错误案例和最佳实践",
+          "fields": {
+            "id": "string",
+            "type": "string",
+            "description": "string",
+            "incorrect": "object",
+            "correct": "object",
+            "explanation": "string"
+          }
+        },
+        {
+          "key": "dfd_nlp_mappings",
+          "name": "自然语言映射",
+          "description": "自然语言到DFD元素的映射规则",
+          "fields": {
+            "pattern": "string",
+            "element_type": "string",
+            "name_template": "string",
+            "flow_template": "string",
+            "action_mappings": "object"
+          }
+        }
+      ]
+    },
+    "markdown_template": {
+      "header": {
+        "title": "# 📚 {topic}知识库提取结果：{title}",
+        "metadata": [
+          "> 来源：[{title}]({source_url})  ",
+          "> 抓取时间：{crawl_time_human}",
+          "> 提取方法：{extraction_method}"
+        ]
+      },
+      "sections": [
+        {
+          "title": "## 📋 内容摘要",
+          "content": "{content_analysis}"
+        },
+        {
+          "title": "## 📊 知识库统计",
+          "content": [
+            "- **概念定义**: {dfd_concepts_count} 个",
+            "- **规则条目**: {dfd_rules_count} 个",
+            "- **模式模板**: {dfd_patterns_count} 个",
+            "- **案例示例**: {dfd_cases_count} 个",
+            "- **NLP映射**: {dfd_nlp_mappings_count} 个"
+          ]
+        },
+        {
+          "title": "## 🎯 1. DFD概念定义表 (dfd_concepts)",
+          "description": "提取的DFD基本概念和元素定义：",
+          "item_template": {
+            "header": "### {id} - {type}",
+            "fields": [
+              "- **描述**: {description}",
+              "- **符号**: {symbol}",
+              "- **规则**: {rules_joined}"
+            ]
+          },
+          "empty_message": "暂未提取到相关概念定义"
+        },
+        {
+          "title": "## 📏 2. DFD规则库 (dfd_rules)",
+          "description": "提取的DFD绘制和验证规则：",
+          "item_template": {
+            "header": "### {id} - {category}",
+            "fields": [
+              "- **描述**: {description}",
+              "- **条件**: {condition}",
+              "- **验证**: {validation}"
+            ]
+          },
+          "empty_message": "暂未提取到相关规则"
+        },
+        {
+          "title": "## 🏗️ 3. DFD模式模板 (dfd_patterns)",
+          "description": "提取的DFD系统模式和模板：",
+          "item_template": {
+            "header": "### {system} (Level {level})",
+            "fields": [
+              "- **处理过程**: {processes_count} 个",
+              "- **外部实体**: {entities_count} 个",
+              "- **数据存储**: {data_stores_count} 个",
+              "- **数据流**: {flows_count} 个"
+            ]
+          },
+          "empty_message": "暂未提取到相关模式模板"
+        },
+        {
+          "title": "## 📝 4. DFD案例库 (dfd_cases)",
+          "description": "提取的错误案例和最佳实践：",
+          "item_template": {
+            "header": "### {id} - {type}",
+            "fields": [
+              "- **描述**: {description}",
+              "- **说明**: {explanation}"
+            ]
+          },
+          "empty_message": "暂未提取到相关案例"
+        },
+        {
+          "title": "## 🔤 5. 自然语言映射 (dfd_nlp_mappings)",
+          "description": "提取的自然语言到DFD元素的映射规则：",
+          "item_template": {
+            "header": "### 模式: {pattern}",
+            "fields": [
+              "- **元素类型**: {element_type}",
+              "- **名称模板**: {name_template}",
+              "- **流模板**: {flow_template}"
+            ]
+          },
+          "empty_message": "暂未提取到相关NLP映射规则"
+        }
+      ],
+      "footer": {
+        "title": "## 🎨 应用说明",
+        "content": [
+          "以上提取的知识库数据可用于：",
+          "- DFD自动绘制和验证",
+          "- 自然语言到DFD的智能转换",
+          "- DFD绘制规范检查",
+          "- 系统分析模板库构建",
+          "- DFD教学案例库建设"
+        ]
+      }
+    },
+    "extraction_config": {
+      "concepts": {
+        "patterns": {
+          "process": {
+            "keywords": ["处理", "加工", "过程", "功能", "业务流程"],
+            "symbol": "圆形/椭圆形"
+          },
+          "entity": {
+            "keywords": ["外部实体", "实体", "用户", "客户", "管理员"],
+            "symbol": "矩形"
+          },
+          "data_store": {
+            "keywords": ["数据存储", "数据库", "文件", "存储"],
+            "symbol": "两条平行线"
+          },
+          "data_flow": {
+            "keywords": ["数据流", "信息流", "数据传输"],
+            "symbol": "箭头线"
+          }
+        }
+      },
+      "rules": {
+        "hierarchy": {
+          "keywords": ["层次", "Level", "分层", "细化"],
+          "description": "数据流图应采用分层结构，从Level 0开始逐层细化"
+        },
+        "connection": {
+          "keywords": ["连接", "流向", "箭头", "数据流"],
+          "description": "数据流必须连接不同类型的元素，不能直接连接相同类型"
+        },
+        "naming": {
+          "keywords": ["命名", "名称", "标识"],
+          "description": "元素名称应简洁明确，使用动宾结构描述处理过程"
+        }
+      },
+      "system_types": {
+        "电商系统": ["电商", "购物", "订单"],
+        "管理信息系统": ["管理", "信息系统", "MIS"],
+        "图书管理系统": ["图书", "借阅", "图书馆"]
+      },
+      "case_keywords": {
+        "error": ["错误", "问题", "注意", "避免", "不要", "禁止"],
+        "best_practice": ["正确", "建议", "最佳", "推荐", "应该", "规范"]
+      }
+    }
+  }
+}

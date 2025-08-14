@@ -8,6 +8,26 @@ from dotenv import load_dotenv
 import httpx
 from typing import Any, List, Dict
 from mcp.server.fastmcp import FastMCP
+import logging
+
+# 在导入任何自定义模块之前配置日志系统
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('mcp_server.log'),
+        # Remove StreamHandler to avoid stdout pollution
+    ],
+    force=True  # 强制重新配置，覆盖任何已存在的配置
+)
+
+# 确保所有已存在的 logger 都使用新配置
+for name in logging.Logger.manager.loggerDict:
+    logger_obj = logging.getLogger(name)
+    logger_obj.handlers.clear()
+    logger_obj.propagate = True
+
+# 现在可以安全地导入自定义模块
 from format_processor import FormatProcessor
 try:
     from httpx_socks import AsyncProxyTransport
@@ -104,36 +124,82 @@ class TorManager:
                     return False
                 
                 # 构建Tor启动命令
-                cmd = [
-                    tor_cmd,
-                    "--SocksPort", str(TOR_SOCKS_PORT),
-                    "--ControlPort", str(TOR_CONTROL_PORT),
-                    "--DataDirectory", "./tor_data",
-                    "--Log", "notice stdout"
-                ]
+                # 首先检查是否有配置文件
+                torrc_path = "./torrc"
+                if os.path.exists(torrc_path):
+                    cmd = [tor_cmd, "-f", torrc_path]
+                    # 如果设置了密码，添加密码配置
+                    if TOR_PASSWORD:
+                        cmd.extend(["--HashedControlPassword", self._hash_password(TOR_PASSWORD)])
+                else:
+                    # 使用命令行参数
+                    cmd = [
+                        tor_cmd,
+                        "--SocksPort", str(TOR_SOCKS_PORT),
+                        "--ControlPort", str(TOR_CONTROL_PORT),
+                        "--DataDirectory", "./tor_data",
+                        "--Log", "notice file ./tor_data/tor.log",
+                        "--NumEntryGuards", "8",
+                        "--CircuitBuildTimeout", "30",
+                        "--MaxClientCircuitsPending", "32"
+                    ]
+                    
+                    # 如果设置了密码，添加密码配置
+                    if TOR_PASSWORD:
+                        cmd.extend(["--HashedControlPassword", self._hash_password(TOR_PASSWORD)])
                 
-                # 如果设置了密码，添加密码配置
-                if TOR_PASSWORD:
-                    cmd.extend(["--HashedControlPassword", self._hash_password(TOR_PASSWORD)])
+                # 确保数据目录存在
+                data_dir = "./tor_data"
+                if not os.path.exists(data_dir):
+                    os.makedirs(data_dir)
                 
                 # 启动Tor进程，重定向输出到文件避免编码问题
-                log_file = open('./tor_data/tor.log', 'w', encoding='utf-8', errors='ignore')
-                self.tor_process = subprocess.Popen(
-                    cmd,
-                    stdout=log_file,
-                    stderr=subprocess.STDOUT,
-                    creationflags=subprocess.CREATE_NO_WINDOW if os.name == 'nt' else 0
-                )
-                self.log_file = log_file
-                
-                # 等待Tor启动
-                if self._wait_for_tor_ready():
-                    self.is_running = True
-                    # SUCCESS: Tor started, SOCKS proxy port ready
-                    return True
-                else:
-                    # ERROR: Tor startup timeout
-                    self.cleanup()
+                log_file_path = os.path.join(data_dir, 'tor.log')
+                try:
+                    log_file = open(log_file_path, 'w', encoding='utf-8', errors='ignore')
+                    
+                    # 记录启动命令用于调试
+                    logger.info(f"Starting Tor with command: {' '.join(cmd)}")
+                    
+                    self.tor_process = subprocess.Popen(
+                        cmd,
+                        stdout=log_file,
+                        stderr=subprocess.STDOUT,
+                        creationflags=subprocess.CREATE_NO_WINDOW if os.name == 'nt' else 0
+                    )
+                    self.log_file = log_file
+                    
+                    # 检查进程是否立即退出
+                    time.sleep(2)
+                    if self.tor_process.poll() is not None:
+                        # 进程已退出，读取日志查看错误
+                        log_file.close()
+                        try:
+                            with open(log_file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                                log_content = f.read()
+                                logger.error(f"Tor process exited with code {self.tor_process.returncode}")
+                                logger.error(f"Log content: {log_content[:500]}")
+                        except:
+                            pass
+                        return False
+                    
+                    # 等待Tor启动
+                    if self._wait_for_tor_ready():
+                        self.is_running = True
+                        # SUCCESS: Tor started, SOCKS proxy port ready
+                        return True
+                    else:
+                        # ERROR: Tor startup timeout
+                        self.cleanup()
+                        return False
+                        
+                except Exception as e:
+                    logger.error(f"Failed to start Tor process: {e}")
+                    if 'log_file' in locals():
+                        try:
+                            log_file.close()
+                        except:
+                            pass
                     return False
                     
         except Exception as e:
@@ -164,26 +230,40 @@ class TorManager:
             return None
     
     def _wait_for_tor_ready(self, timeout=30):
-        """等待Tor准备就绪"""
+        """等待Tor准备就绪（简化版本，只检查端口可用性）"""
         import socket
         start_time = time.time()
         
+        # 等待SOCKS端口可用
         while time.time() - start_time < timeout:
             try:
                 # 尝试连接SOCKS端口
                 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                sock.settimeout(1)
+                sock.settimeout(2)
                 result = sock.connect_ex(('127.0.0.1', TOR_SOCKS_PORT))
                 sock.close()
                 
                 if result == 0:
-                    return True
+                    # SOCKS端口可用，再检查控制端口
+                    try:
+                        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                        sock.settimeout(2)
+                        result = sock.connect_ex(('127.0.0.1', TOR_CONTROL_PORT))
+                        sock.close()
+                        
+                        if result == 0:
+                            # 两个端口都可用，认为Tor已准备就绪
+                            logger.info("Tor ports are ready")
+                            return True
+                    except:
+                        pass
                     
             except:
                 pass
                 
             time.sleep(1)
             
+        logger.warning(f"Tor startup timeout after {timeout} seconds")
         return False
     
     def new_identity(self):
@@ -252,191 +332,572 @@ def get_http_client_config():
                 # 使用httpx-socks的AsyncProxyTransport来支持SOCKS5代理
                 transport = AsyncProxyTransport.from_url(proxy_url)
                 config["transport"] = transport
-                print(f"使用Tor代理 (transport): {proxy_url}")
+                logger.info(f"使用Tor代理 (transport): {proxy_url}")
             except Exception as e:
-                print(f"代理配置错误: {e}")
-                print("将使用普通网络连接")
+                logger.warning(f"代理配置错误: {e}")
+                logger.info("将使用普通网络连接")
     elif USE_TOR and tor_manager and tor_manager.is_running and not SOCKS_AVAILABLE:
-        print("警告: 检测到Tor代理已启用，但httpx-socks未安装，无法使用SOCKS代理")
-        print("请运行: pip install httpx-socks[asyncio]")
+        logger.warning("检测到Tor代理已启用，但httpx-socks未安装，无法使用SOCKS代理")
+        logger.info("请运行: pip install httpx-socks[asyncio]")
     
     return config
 
 
+# 导入crawler_framework
+# 导入爬虫框架（在日志配置之后）
+from crawler_framework import CrawlerFramework
+
+# 初始化爬虫框架
+crawler = CrawlerFramework()
+
+# 获取当前模块的 logger
+logger = logging.getLogger(__name__)
+
 def search_web(keyword: str, max_results=12):
-    """使用SerpAPI搜索网页"""
+    """使用SerpAPI搜索网页 - 兼容性保留函数"""
+    logger.info("注意: search_web函数已经过时，建议使用新的通用爬虫框架 crawler.search_and_parse")
     try:
-        # 检查API密钥
-        if not SERPAPI_API_KEY:
-            print("错误: 未找到SerpAPI API密钥，请在.env文件中设置SERPAPI_API_KEY")
+        # 使用新框架的Google搜索
+        result = crawler.search_and_parse("google", keyword, max_results)
+        
+        if result["parsed_response"]["success"]:
+            # 返回URL列表以保持向后兼容
+            urls = [item["url"] for item in result["parsed_response"]["results"] if "url" in item]
+            return urls
+        else:
+            logger.error(f"搜索失败: {result['parsed_response'].get('error', '未知错误')}")
             return []
-
-        # DFD专业关键词扩展（精简版，只保留核心术语）
-        dfd_keywords = ["数据流图", "DFD", "Data Flow Diagram", "结构化分析"]
-        
-        # 构建增强的搜索查询
-        enhanced_queries = [keyword]
-        for dfd_term in dfd_keywords:
-            if dfd_term.lower() not in keyword.lower():
-                enhanced_queries.append(f"{keyword} {dfd_term}")
-        
-        all_results = []
-        
-        # 对每个增强查询进行搜索
-        for query in enhanced_queries[:3]:  # 限制查询数量避免过多请求
-            # 设置搜索参数
-            params = {
-                "engine": "google",  # 可选：google, bing, baidu
-                "q": query,
-                "api_key": SERPAPI_API_KEY,
-                "num": max_results // len(enhanced_queries[:3]) + 2,  # 分配搜索数量
-                "count": max_results // len(enhanced_queries[:3]) + 2,  # Bing参数
-                "hl": "zh-cn",  # 设置语言为中文
-                "gl": "cn",  # 设置地区为中国
-            }
-
-            print(f"使用SerpAPI搜索: {query}")
-
-            # 发送请求到SerpAPI
-            response = requests.get("https://serpapi.com/search", params=params)
-            response.raise_for_status()
-
-            # 解析JSON响应
-            try:
-                data = response.json()
-                # 确保data是字典类型
-                if not isinstance(data, dict):
-                    print(f"[ERROR] SerpAPI响应格式异常: {type(data)}")
-                    continue
-            except Exception as e:
-                print(f"[ERROR] SerpAPI JSON解析失败: {e}")
-                continue
-
-            # 处理有机搜索结果
-            if "organic_results" in data:
-                for result in data["organic_results"]:
-                    if "link" in result:
-                        url = result["link"]
-                        # 检查URL是否已存在，避免重复
-                        if url not in all_results:
-                            # DFD相关性检查（更严格的匹配）
-                            title = result.get("title", "").lower()
-                            snippet = result.get("snippet", "").lower()
-                            dfd_terms = ["数据流图", "dfd", "data flow diagram", "结构化分析"]
-                            
-                            # 只有标题或摘要包含DFD核心术语才添加
-                            is_dfd_related = any(term in title or term in snippet for term in dfd_terms)
-                            if is_dfd_related:
-                                all_results.append(url)
-                                print(f"添加搜索结果: {url} (DFD相关)")
-                            else:
-                                print(f"跳过非相关结果: {result.get('title', 'Unknown')}")
-                                
-                        if len(all_results) >= max_results:
-                            break
             
-            # 添加延迟避免请求过快
-            if query != enhanced_queries[:3][-1]:  # 不是最后一个查询
-                time.sleep(0.5)
-        
-        print(f"总共找到 {len(all_results)} 个去重后的搜索结果")
-        return all_results
-
     except Exception as e:
-        print(f"SerpAPI搜索失败: {str(e)}")
+        logger.error(f"搜索失败: {str(e)}")
         return []
 
-
-# 知乎反爬虫相关代码已禁用
-# def is_zhihu(url):
-#     return 'zhihu.com' in urlparse(url).netloc
-
-# def ensure_zhihu_cookie():
-#     cookie_path = Path("cookies/zhihu.json")
-#     # 如果Cookie不存在或太旧（如1天），自动刷新
-#     if not cookie_path.exists() or (cookie_path.stat().st_mtime < (time.time() - 86400)):
-#         print("正在自动登录知乎获取Cookie...")
-#         subprocess.run(["python", "login_and_save_cookie.py"], check=True)
-#     with open(cookie_path, "r", encoding="utf-8") as f:
-#         return json.load(f)
-
-# def get_cookies_for_url(url):
-#     if is_zhihu(url):
-#         return ensure_zhihu_cookie()
-#     # 可扩展其他站点
-#     return None
-
-def get_cookies_for_url(url):
-    # 知乎反爬虫功能已禁用
-    return None
-
-
-# 注意：原有的硬编码提取函数已被FormatProcessor替代
-# 现在通过配置文件驱动，提供更好的可扩展性
-
+@mcp.tool()
+def fetch_raw_data(engine: str, keyword: str, max_results: int = 10) -> str:
+    """
+    从指定搜索引擎获取原始数据
+    
+    Args:
+        engine: 搜索引擎名称 (google, bing, baidu, duckduckgo)
+        keyword: 搜索关键词
+        max_results: 最大结果数
+    
+    Returns:
+        包含原始数据、元数据和调试信息的JSON字符串
+    """
+    try:
+        result = crawler.fetch_raw_data(engine, keyword, max_results)
+        return json.dumps(result, ensure_ascii=False, indent=2)
+    except Exception as e:
+        error_result = {
+            "success": False,
+            "error": str(e),
+            "engine": engine,
+            "keyword": keyword
+        }
+        return json.dumps(error_result, ensure_ascii=False, indent=2)
 
 @mcp.tool()
-def start_tor_proxy() -> str:
-    """启动Tor代理服务"""
-    if not USE_TOR:
-        return "Tor代理功能未启用。请在.env文件中设置USE_TOR=true来启用。"
+def parse_search_results(raw_response_json: str, engine: str = None, custom_rules: str = None) -> str:
+    """
+    根据配置规则解析原始搜索数据
     
-    if not tor_manager:
-        return "Tor管理器未初始化。"
+    Args:
+        raw_response_json: fetch_raw_data返回的JSON字符串
+        engine: 搜索引擎名称（可选，如果raw_response中有）
+        custom_rules: 自定义解析规则的JSON字符串（可选）
     
-    if tor_manager.is_running:
-        return "Tor代理已经在运行中。"
-    
-    success = tor_manager.start_tor()
-    if success:
-        return f"[SUCCESS] Tor代理启动成功！SOCKS代理端口: {TOR_SOCKS_PORT}"
-    else:
-        return "[ERROR] Tor代理启动失败。请检查Tor是否已安装并配置正确。"
-
+    Returns:
+        解析后的结构化数据JSON字符串
+    """
+    try:
+        # 解析输入参数
+        raw_response = json.loads(raw_response_json)
+        custom_rules_dict = json.loads(custom_rules) if custom_rules else None
+        
+        # 执行解析
+        result = crawler.parse_results(raw_response, engine, custom_rules_dict)
+        return json.dumps(result, ensure_ascii=False, indent=2)
+        
+    except json.JSONDecodeError as e:
+        error_result = {
+            "success": False,
+            "error": f"JSON解析失败: {str(e)}"
+        }
+        return json.dumps(error_result, ensure_ascii=False, indent=2)
+    except Exception as e:
+        error_result = {
+            "success": False,
+            "error": str(e)
+        }
+        return json.dumps(error_result, ensure_ascii=False, indent=2)
 
 @mcp.tool()
-def stop_tor_proxy() -> str:
-    """停止Tor代理服务"""
+def search_and_parse_universal(engine: str, keyword: str, max_results: int = 10, custom_rules: str = None) -> str:
+    """
+    通用搜索和解析工具 - 一站式搜索和解析
+    
+    Args:
+        engine: 搜索引擎名称 (google, bing, baidu, duckduckgo)
+        keyword: 搜索关键词
+        max_results: 最大结果数
+        custom_rules: 自定义解析规则的JSON字符串（可选）
+        
+    Returns:
+        包含原始数据和解析数据的完整响应JSON字符串
+    """
+    try:
+        # 解析自定义规则
+        custom_rules_dict = json.loads(custom_rules) if custom_rules else None
+        
+        # 执行搜索和解析
+        result = crawler.search_and_parse(engine, keyword, max_results, custom_rules_dict)
+        return json.dumps(result, ensure_ascii=False, indent=2)
+        
+    except json.JSONDecodeError as e:
+        error_result = {
+            "success": False,
+            "error": f"自定义规则JSON解析失败: {str(e)}"
+        }
+        return json.dumps(error_result, ensure_ascii=False, indent=2)
+    except Exception as e:
+        error_result = {
+            "success": False,
+            "error": str(e),
+            "engine": engine,
+            "keyword": keyword
+        }
+        return json.dumps(error_result, ensure_ascii=False, indent=2)
+
+@mcp.tool()
+def get_available_search_engines() -> str:
+    """
+    获取可用的搜索引擎列表及其配置信息
+    
+    Returns:
+        搜索引擎信息的JSON字符串
+    """
+    try:
+        engines = crawler.get_available_engines()
+        engine_details = {}
+        
+        for engine in engines:
+            config = crawler.get_engine_info(engine)
+            engine_details[engine] = {
+                "api_name": config.get("api_name", "未知"),
+                "supported_parameters": config.get("parameters", {}).get("optional", []),
+                "primary_keys": config.get("parsing_rules", {}).get("primary_keys", [])
+            }
+        
+        result = {
+            "available_engines": engines,
+            "engine_details": engine_details,
+            "total_engines": len(engines)
+        }
+        
+        return json.dumps(result, ensure_ascii=False, indent=2)
+        
+    except Exception as e:
+        error_result = {
+            "success": False,
+            "error": str(e)
+        }
+        return json.dumps(error_result, ensure_ascii=False, indent=2)
+
+@mcp.tool()
+def configure_search_engine(engine: str, config_json: str) -> str:
+    """
+    动态配置搜索引擎解析规则（运行时配置）
+    
+    Args:
+        engine: 搜索引擎名称
+        config_json: 配置规则的JSON字符串
+        
+    Returns:
+        配置结果的JSON字符串
+    """
+    try:
+        config = json.loads(config_json)
+        
+        # 验证配置格式
+        required_fields = ["engine", "parsing_rules"]
+        for field in required_fields:
+            if field not in config:
+                return json.dumps({
+                    "success": False,
+                    "error": f"配置缺少必需字段: {field}"
+                }, ensure_ascii=False, indent=2)
+        
+        # 更新运行时配置
+        crawler.engine_configs[engine] = config
+        
+        result = {
+            "success": True,
+            "engine": engine,
+            "message": f"搜索引擎 {engine} 配置已更新",
+            "config_summary": {
+                "primary_keys": config.get("parsing_rules", {}).get("primary_keys", []),
+                "link_fields": config.get("parsing_rules", {}).get("link_fields", []),
+                "api_name": config.get("api_name", "未指定")
+            }
+        }
+        
+        return json.dumps(result, ensure_ascii=False, indent=2)
+        
+    except json.JSONDecodeError as e:
+        error_result = {
+            "success": False,
+            "error": f"配置JSON解析失败: {str(e)}"
+        }
+        return json.dumps(error_result, ensure_ascii=False, indent=2)
+    except Exception as e:
+        error_result = {
+            "success": False,
+            "error": str(e)
+        }
+        return json.dumps(error_result, ensure_ascii=False, indent=2)
+
+@mcp.tool()
+async def check_tor_ip() -> str:
+    """Check current IP address through Tor proxy"""
     if not USE_TOR or not tor_manager:
-        return "Tor代理功能未启用。"
+        return "Tor proxy feature is disabled."
     
     if not tor_manager.is_running:
-        return "Tor代理未运行。"
+        return "Tor proxy is not running. Please start Tor proxy first."
     
-    tor_manager.cleanup()
-    return "[SUCCESS] Tor代理已停止。"
+    try:
+        # Check IP through Tor proxy
+        config = get_http_client_config()
+        async with httpx.AsyncClient(**config) as client:
+            response = await client.get("https://httpbin.org/ip", timeout=10)
+            if response.status_code == 200:
+                ip_data = response.json()
+                tor_ip = ip_data.get('origin', 'Unknown')
+                
+                # Also check without proxy for comparison
+                async with httpx.AsyncClient() as normal_client:
+                    normal_response = await normal_client.get("https://httpbin.org/ip", timeout=10)
+                    if normal_response.status_code == 200:
+                        normal_ip_data = normal_response.json()
+                        normal_ip = normal_ip_data.get('origin', 'Unknown')
+                        
+                        return f"[SUCCESS] IP check completed\nTor IP: {tor_ip}\nNormal IP: {normal_ip}\nProxy working: {'Yes' if tor_ip != normal_ip else 'No'}"
+                    else:
+                        return f"[SUCCESS] Tor IP: {tor_ip}\n[WARNING] Could not get normal IP for comparison"
+            else:
+                return f"[ERROR] Failed to check IP through Tor. Status code: {response.status_code}"
+                
+    except Exception as e:
+        return f"[ERROR] Failed to check Tor IP: {str(e)}"
 
 
 @mcp.tool()
-def change_tor_identity() -> str:
-    """更换Tor身份（获取新IP地址）"""
+async def test_tor_connection() -> str:
+    """Test Tor proxy connection with multiple endpoints"""
     if not USE_TOR or not tor_manager:
-        return "Tor代理功能未启用。"
+        return "Tor proxy feature is disabled."
     
     if not tor_manager.is_running:
-        return "Tor代理未运行。请先启动Tor代理。"
+        return "Tor proxy is not running. Please start Tor proxy first."
     
-    success = tor_manager.new_identity()
-    if success:
-        return "[SUCCESS] 已成功更换Tor身份，IP地址已更新。"
-    else:
-        return "[ERROR] 更换Tor身份失败。"
+    test_urls = [
+        "https://httpbin.org/ip",
+        "https://check.torproject.org/api/ip",
+        "https://icanhazip.com"
+    ]
+    
+    results = []
+    config = get_http_client_config()
+    
+    async with httpx.AsyncClient(**config) as client:
+        for url in test_urls:
+            try:
+                start_time = time.time()
+                response = await client.get(url, timeout=15)
+                end_time = time.time()
+                
+                if response.status_code == 200:
+                    response_time = round((end_time - start_time) * 1000, 2)
+                    results.append(f"✓ {url}: OK ({response_time}ms)")
+                else:
+                    results.append(f"✗ {url}: HTTP {response.status_code}")
+                    
+            except Exception as e:
+                results.append(f"✗ {url}: {str(e)}")
+    
+    success_count = len([r for r in results if r.startswith('✓')])
+    total_count = len(results)
+    
+    status = "[SUCCESS]" if success_count == total_count else "[PARTIAL]" if success_count > 0 else "[ERROR]"
+    
+    return f"{status} Tor connection test completed ({success_count}/{total_count} passed)\n" + "\n".join(results)
 
 
 @mcp.tool()
-def get_tor_status() -> str:
-    """获取Tor代理状态"""
+def validate_tor_config() -> str:
+    """Validate Tor configuration settings"""
+    issues = []
+    warnings = []
+    
+    # Check if Tor is enabled
     if not USE_TOR:
-        return "Tor代理功能未启用。请在.env文件中设置USE_TOR=true来启用。"
+        return "Tor proxy feature is disabled. Set USE_TOR=true in .env to enable."
     
-    if not tor_manager:
-        return "Tor管理器未初始化。"
-    
-    if tor_manager.is_running:
-        proxy_url = tor_manager.get_proxy_config()
-        return f"Tor代理正在运行\n代理地址: {proxy_url}\nSOCKS端口: {TOR_SOCKS_PORT}\n控制端口: {TOR_CONTROL_PORT}"
+    # Check Tor executable path
+    if not TOR_EXECUTABLE_PATH:
+        issues.append("TOR_EXECUTABLE_PATH is not set")
     else:
-        return "Tor代理未运行。"
+        import os
+        if not os.path.exists(TOR_EXECUTABLE_PATH):
+            issues.append(f"Tor executable not found at: {TOR_EXECUTABLE_PATH}")
+    
+    # Check ports
+    if TOR_SOCKS_PORT == TOR_CONTROL_PORT:
+        issues.append("SOCKS port and Control port cannot be the same")
+    
+    if TOR_SOCKS_PORT < 1024 or TOR_SOCKS_PORT > 65535:
+        issues.append(f"Invalid SOCKS port: {TOR_SOCKS_PORT} (must be 1024-65535)")
+    
+    if TOR_CONTROL_PORT < 1024 or TOR_CONTROL_PORT > 65535:
+        issues.append(f"Invalid Control port: {TOR_CONTROL_PORT} (must be 1024-65535)")
+    
+    # Check password
+    if not TOR_PASSWORD:
+        warnings.append("No control password set (recommended for security)")
+    
+    # Check httpx-socks availability
+    if not SOCKS_AVAILABLE:
+        issues.append("httpx-socks library not available. Install with: pip install httpx-socks")
+    
+    # Generate report
+    if issues:
+        return f"[ERROR] Configuration validation failed:\n" + "\n".join(f"- {issue}" for issue in issues) + \
+               (f"\n\nWarnings:\n" + "\n".join(f"- {warning}" for warning in warnings) if warnings else "")
+    elif warnings:
+        return f"[WARNING] Configuration has warnings:\n" + "\n".join(f"- {warning}" for warning in warnings)
+    else:
+        return "[SUCCESS] Tor configuration is valid"
+
+
+@mcp.tool()
+def get_tor_bootstrap_status() -> str:
+    """Get detailed Tor bootstrap status and progress"""
+    if not USE_TOR or not tor_manager:
+        return "Tor proxy feature is disabled."
+    
+    if not tor_manager.is_running:
+        return "Tor proxy is not running. Please start Tor proxy first."
+    
+    try:
+        import socket
+        import re
+        
+        # Connect to control port
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(5)
+        sock.connect(('127.0.0.1', TOR_CONTROL_PORT))
+        
+        # Authenticate
+        if TOR_PASSWORD:
+            auth_cmd = f'AUTHENTICATE "{TOR_PASSWORD}"\r\n'
+        else:
+            auth_cmd = 'AUTHENTICATE\r\n'
+        
+        sock.send(auth_cmd.encode())
+        response = sock.recv(1024).decode()
+        
+        if '250 OK' not in response:
+            sock.close()
+            return "[ERROR] Failed to authenticate with Tor control port"
+        
+        results = []
+        
+        # Get bootstrap status
+        sock.send(b'GETINFO status/bootstrap-phase\r\n')
+        bootstrap_response = sock.recv(1024).decode()
+        
+        if 'status/bootstrap-phase=' in bootstrap_response:
+            # Extract bootstrap info
+            lines = bootstrap_response.split('\n')
+            for line in lines:
+                if 'status/bootstrap-phase=' in line:
+                    bootstrap_info = line.split('status/bootstrap-phase=')[1].strip()
+                    
+                    # Parse progress
+                    progress_match = re.search(r'PROGRESS=(\d+)', bootstrap_info)
+                    if progress_match:
+                        progress = int(progress_match.group(1))
+                        results.append(f"Bootstrap Progress: {progress}%")
+                        
+                        if progress == 100:
+                            results.append("Status: ✅ Fully bootstrapped")
+                        elif progress >= 80:
+                            results.append("Status: 🟡 Nearly ready")
+                        else:
+                            results.append("Status: 🔄 Still bootstrapping")
+                    
+                    # Parse summary
+                    summary_match = re.search(r'SUMMARY="([^"]+)"', bootstrap_info)
+                    if summary_match:
+                        summary = summary_match.group(1)
+                        results.append(f"Summary: {summary}")
+                    
+                    break
+        
+        # Get circuit count
+        sock.send(b'GETINFO status/circuit-established\r\n')
+        circuit_response = sock.recv(1024).decode()
+        
+        if 'status/circuit-established=' in circuit_response:
+            if 'status/circuit-established=1' in circuit_response:
+                results.append("Circuits: ✅ Established")
+            else:
+                results.append("Circuits: ❌ Not established")
+        
+        # Get version info
+        sock.send(b'GETINFO version\r\n')
+        version_response = sock.recv(1024).decode()
+        
+        if 'version=' in version_response:
+            lines = version_response.split('\n')
+            for line in lines:
+                if 'version=' in line:
+                    version = line.split('version=')[1].strip()
+                    results.append(f"Tor Version: {version}")
+                    break
+        
+        sock.send(b'QUIT\r\n')
+        sock.close()
+        
+        if results:
+            return "[SUCCESS] Tor bootstrap status:\n" + "\n".join(results)
+        else:
+            return "[WARNING] Could not retrieve bootstrap status"
+            
+    except Exception as e:
+        return f"[ERROR] Failed to get bootstrap status: {str(e)}"
+
+
+@mcp.tool()
+async def auto_rotate_tor_identity(interval_seconds: int = 300, max_rotations: int = 10) -> str:
+    """Automatically rotate Tor identity at specified intervals"""
+    if not USE_TOR or not tor_manager:
+        return "Tor proxy feature is disabled."
+    
+    if not tor_manager.is_running:
+        return "Tor proxy is not running. Please start Tor proxy first."
+    
+    if interval_seconds < 60:
+        return "[ERROR] Minimum interval is 60 seconds to avoid overloading Tor network."
+    
+    if max_rotations < 1 or max_rotations > 100:
+        return "[ERROR] Max rotations must be between 1 and 100."
+    
+    try:
+        rotation_count = 0
+        results = []
+        
+        results.append(f"[INFO] Starting automatic Tor identity rotation")
+        results.append(f"[INFO] Interval: {interval_seconds} seconds, Max rotations: {max_rotations}")
+        
+        # Get initial IP
+        try:
+            config = get_http_client_config()
+            async with httpx.AsyncClient(**config) as client:
+                response = await client.get("https://httpbin.org/ip", timeout=10)
+                if response.status_code == 200:
+                    initial_ip = response.json().get('origin', 'Unknown')
+                    results.append(f"[INFO] Initial IP: {initial_ip}")
+        except:
+            results.append(f"[WARNING] Could not get initial IP")
+        
+        while rotation_count < max_rotations:
+            # Wait for the specified interval
+            await asyncio.sleep(interval_seconds)
+            
+            # Rotate identity
+            success = tor_manager.new_identity()
+            rotation_count += 1
+            
+            if success:
+                # Wait a bit for the new circuit to establish
+                await asyncio.sleep(10)
+                
+                # Check new IP
+                try:
+                    config = get_http_client_config()
+                    async with httpx.AsyncClient(**config) as client:
+                        response = await client.get("https://httpbin.org/ip", timeout=10)
+                        if response.status_code == 200:
+                            new_ip = response.json().get('origin', 'Unknown')
+                            results.append(f"[SUCCESS] Rotation {rotation_count}: New IP {new_ip}")
+                        else:
+                            results.append(f"[WARNING] Rotation {rotation_count}: Could not verify new IP")
+                except Exception as e:
+                    results.append(f"[WARNING] Rotation {rotation_count}: IP check failed - {str(e)}")
+            else:
+                results.append(f"[ERROR] Rotation {rotation_count}: Failed to change identity")
+        
+        results.append(f"[INFO] Automatic rotation completed. Total rotations: {rotation_count}")
+        return "\n".join(results)
+        
+    except Exception as e:
+        return f"[ERROR] Auto rotation failed: {str(e)}"
+
+
+@mcp.tool()
+def get_tor_circuit_info() -> str:
+    """Get information about current Tor circuit"""
+    if not USE_TOR or not tor_manager:
+        return "Tor proxy feature is disabled."
+    
+    if not tor_manager.is_running:
+        return "Tor proxy is not running. Please start Tor proxy first."
+    
+    try:
+        import socket
+        import struct
+        
+        # Try to connect to Tor control port
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(5)
+        sock.connect(('127.0.0.1', TOR_CONTROL_PORT))
+        
+        # Authenticate if password is set
+        if TOR_PASSWORD:
+            auth_cmd = f'AUTHENTICATE "{TOR_PASSWORD}"\r\n'
+        else:
+            auth_cmd = 'AUTHENTICATE\r\n'
+        
+        sock.send(auth_cmd.encode())
+        response = sock.recv(1024).decode()
+        
+        if '250 OK' not in response:
+            sock.close()
+            return "[ERROR] Failed to authenticate with Tor control port"
+        
+        # Get circuit information
+        sock.send(b'GETINFO circuit-status\r\n')
+        circuit_response = sock.recv(4096).decode()
+        
+        sock.send(b'QUIT\r\n')
+        sock.close()
+        
+        if '250 OK' in circuit_response:
+            lines = circuit_response.split('\n')
+            circuit_lines = [line for line in lines if line.startswith('250-circuit-status=') or (line.startswith('250+circuit-status='))]
+            
+            if circuit_lines:
+                return f"[SUCCESS] Tor circuit information:\n" + "\n".join(circuit_lines)
+            else:
+                return "[INFO] No active circuits found"
+        else:
+            return "[ERROR] Failed to get circuit information"
+            
+    except Exception as e:
+        return f"[ERROR] Failed to get circuit info: {str(e)}"
+
 
 @mcp.tool()
 async def scrape_webpage(url: str, headers=None, cookies=None) -> str:
@@ -585,7 +1046,7 @@ async def scrape_webpage(url: str, headers=None, cookies=None) -> str:
 
                 main_text = f"【标题】{title}\n【描述】{description}\n【结构】{headings}\n\n" + "\n".join(main_content)
             except Exception as e:
-                print(f"[ERROR] 网页解析失败 {url}: {e}")
+                logger.error(f"网页解析失败 {url}: {e}")
                 return f"{{\"error\": \"网页解析失败: {str(e)}\", \"url\": \"{url}\"}}"
 
             # Step 3: 尝试处理图片
@@ -616,10 +1077,10 @@ async def scrape_webpage(url: str, headers=None, cookies=None) -> str:
                         if vision_caption and not vision_caption.startswith("图片识别失败"):
                             img_descriptions.append(f"第{i+1}张图：{vision_caption}")
                     except Exception as e:
-                        print(f"处理图片 {img_url} 时出错: {str(e)}")
+                        logger.warning(f"处理图片 {img_url} 时出错: {str(e)}")
                         continue
             except Exception as e:
-                print(f"图片处理过程出错: {str(e)}")
+                logger.warning(f"图片处理过程出错: {str(e)}")
 
             # Step 4: 整合图文输入
             all_desc = "\n".join(img_descriptions) if img_descriptions else "未识别出图片内容"
@@ -692,7 +1153,7 @@ async def scrape_webpage(url: str, headers=None, cookies=None) -> str:
                     content_analysis = str(final_response)
             except Exception as e:
                 content_analysis = f"[ERROR] 内容分析失败: {str(e)}"
-                print(f"处理final_response时出错: {e}, final_response类型: {type(final_response)}")
+                logger.error(f"处理final_response时出错: {e}, final_response类型: {type(final_response)}")
             
             # 使用配置化的格式处理器构建知识库数据
             # 使用当前默认格式类型（可配置）
@@ -793,155 +1254,41 @@ async def scrape_webpage(url: str, headers=None, cookies=None) -> str:
         return f"[ERROR] 图文提取失败 {str(e)}"
 
 @mcp.tool()
-async def save_to_knowledge_base(json_data: str, base_filename: str = None) -> str:
+def save_to_knowledge_base(json_data: str, base_filename: str = None, format_type: str = "dfd") -> str:
     """
-    将提取的DFD知识库数据保存到5个独立的JSON文件中，模拟数据库表结构
+    使用通用格式处理器保存知识库数据到独立文件中，支持多种格式类型
     """
     try:
         import json as _json
-        from datetime import datetime as _dt
         
         # 解析输入的JSON数据
         data = _json.loads(json_data) if isinstance(json_data, str) else json_data
         
-        # 生成文件名前缀
-        if not base_filename:
-            timestamp = _dt.now().strftime('%Y%m%d_%H%M%S')
-            base_filename = f"dfd_knowledge_{timestamp}"
+        # 创建指定格式类型的格式处理器
+        processor = FormatProcessor(format_type=format_type)
         
-        # 创建知识库目录
-        kb_dir = Path("shared_data/knowledge_base")
-        kb_dir.mkdir(parents=True, exist_ok=True)
+        # 使用格式处理器保存数据
+        result = processor.save_knowledge_base(data, base_filename)
         
-        saved_files = []
-        
-        # 1. 保存 dfd_concepts
-        if 'dfd_concepts' in data and data['dfd_concepts']:
-            concepts_file = kb_dir / f"{base_filename}_concepts.json"
-            concepts_data = {
-                "table_name": "dfd_concepts",
-                "description": "DFD元素定义表（概念库）",
-                "schema": {
-                    "id": "text (主键)",
-                    "type": "text (元素类型)",
-                    "description": "text (元素描述)",
-                    "symbol": "text (图形符号)",
-                    "rules": "jsonb (元素规则数组)"
-                },
-                "data": data['dfd_concepts'],
-                "metadata": data.get('metadata', {})
-            }
-            with open(concepts_file, 'w', encoding='utf-8') as f:
-                _json.dump(concepts_data, f, ensure_ascii=False, indent=2)
-            saved_files.append(str(concepts_file))
-        
-        # 2. 保存 dfd_rules
-        if 'dfd_rules' in data and data['dfd_rules']:
-            rules_file = kb_dir / f"{base_filename}_rules.json"
-            rules_data = {
-                "table_name": "dfd_rules",
-                "description": "DFD规则库（分为层次规则、连接规则、命名规则）",
-                "schema": {
-                    "id": "text (主键)",
-                    "category": "text (规则分类)",
-                    "description": "text (规则说明)",
-                    "condition": "text (条件语法)",
-                    "validation": "text (验证表达式)"
-                },
-                "data": data['dfd_rules'],
-                "metadata": data.get('metadata', {})
-            }
-            with open(rules_file, 'w', encoding='utf-8') as f:
-                _json.dump(rules_data, f, ensure_ascii=False, indent=2)
-            saved_files.append(str(rules_file))
-        
-        # 3. 保存 dfd_patterns
-        if 'dfd_patterns' in data and data['dfd_patterns']:
-            patterns_file = kb_dir / f"{base_filename}_patterns.json"
-            patterns_data = {
-                "table_name": "dfd_patterns",
-                "description": "DFD模板库（模式库）",
-                "schema": {
-                    "id": "serial (自增ID)",
-                    "system": "text (系统名称)",
-                    "level": "int (DFD层级)",
-                    "processes": "jsonb (加工列表)",
-                    "entities": "jsonb (外部实体列表)",
-                    "data_stores": "jsonb (数据存储列表)",
-                    "flows": "jsonb (数据流数组)"
-                },
-                "data": data['dfd_patterns'],
-                "metadata": data.get('metadata', {})
-            }
-            with open(patterns_file, 'w', encoding='utf-8') as f:
-                _json.dump(patterns_data, f, ensure_ascii=False, indent=2)
-            saved_files.append(str(patterns_file))
-        
-        # 4. 保存 dfd_cases
-        if 'dfd_cases' in data and data['dfd_cases']:
-            cases_file = kb_dir / f"{base_filename}_cases.json"
-            cases_data = {
-                "table_name": "dfd_cases",
-                "description": "DFD错误/示例案例库",
-                "schema": {
-                    "id": "text (案例ID)",
-                    "type": "text (error_case 或 best_practice)",
-                    "description": "text (描述)",
-                    "incorrect": "jsonb (错误结构)",
-                    "correct": "jsonb (正确结构)",
-                    "explanation": "text (说明解释)"
-                },
-                "data": data['dfd_cases'],
-                "metadata": data.get('metadata', {})
-            }
-            with open(cases_file, 'w', encoding='utf-8') as f:
-                _json.dump(cases_data, f, ensure_ascii=False, indent=2)
-            saved_files.append(str(cases_file))
-        
-        # 5. 保存 dfd_nlp_mappings
-        if 'dfd_nlp_mappings' in data and data['dfd_nlp_mappings']:
-            nlp_file = kb_dir / f"{base_filename}_nlp_mappings.json"
-            nlp_data = {
-                "table_name": "dfd_nlp_mappings",
-                "description": "自然语言映射规则库",
-                "schema": {
-                    "id": "serial (自增ID)",
-                    "pattern": "text (匹配句式)",
-                    "element_type": "text (映射出的DFD元素类型)",
-                    "name_template": "text (名称模板)",
-                    "flow_template": "text (数据流模板)",
-                    "action_mappings": "jsonb (动作转换)"
-                },
-                "data": data['dfd_nlp_mappings'],
-                "metadata": data.get('metadata', {})
-            }
-            with open(nlp_file, 'w', encoding='utf-8') as f:
-                _json.dump(nlp_data, f, ensure_ascii=False, indent=2)
-            saved_files.append(str(nlp_file))
-        
-        # 生成汇总报告
-        summary_file = kb_dir / f"{base_filename}_summary.json"
-        summary_data = {
-            "extraction_summary": {
-                "source_url": data.get('metadata', {}).get('source_url', ''),
-                "extraction_time": _dt.now().isoformat(),
-                "total_files_saved": len(saved_files),
-                "statistics": data.get('statistics', {})
-            },
-            "saved_files": saved_files,
-            "knowledge_base_structure": {
-                "dfd_concepts": "元素定义表（概念库）",
-                "dfd_rules": "规则库（层次、连接、命名规则）",
-                "dfd_patterns": "模板库（模式库）",
-                "dfd_cases": "错误/示例案例库",
-                "dfd_nlp_mappings": "自然语言映射规则库"
-            }
-        }
-        
-        with open(summary_file, 'w', encoding='utf-8') as f:
-            _json.dump(summary_data, f, ensure_ascii=False, indent=2)
-        
-        return f"[SUCCESS] DFD知识库数据已保存到5个独立文件:\n" + "\n".join([f"- {file}" for file in saved_files]) + f"\n\n汇总报告: {summary_file}\n\n统计信息:\n- 概念定义: {data.get('statistics', {}).get('concepts_count', 0)} 个\n- 规则条目: {data.get('statistics', {}).get('rules_count', 0)} 个\n- 模式模板: {data.get('statistics', {}).get('patterns_count', 0)} 个\n- 案例示例: {data.get('statistics', {}).get('cases_count', 0)} 个\n- NLP映射: {data.get('statistics', {}).get('nlp_mappings_count', 0)} 个"
+        if result["success"]:
+            saved_files = result["saved_files"]
+            summary_file = result["summary_file"]
+            statistics = result["statistics"]
+            
+            # 构建成功消息
+            success_msg = f"[SUCCESS] {processor.get_format_name()}数据已保存到{len(saved_files)}个独立文件:\n"
+            success_msg += "\n".join([f"- {file}" for file in saved_files])
+            success_msg += f"\n\n汇总报告: {summary_file}\n\n统计信息:\n"
+            
+            # 动态生成统计信息
+            for key, value in statistics.items():
+                if key.endswith('_count'):
+                    category_name = key.replace('_count', '').replace('dfd_', '')
+                    success_msg += f"- {category_name}: {value} 个\n"
+            
+            return success_msg
+        else:
+            return f"[ERROR] 保存知识库数据失败: {result['error']}"
         
     except Exception as e:
         return f"[ERROR] 保存知识库数据失败: {str(e)}"
@@ -953,27 +1300,27 @@ async def search_and_scrape(keyword: str, top_k: int = 12) -> str:
     """
     try:
         # 尝试搜索
-        print(f"开始搜索关键词: {keyword}")
+        logger.info(f"开始搜索关键词: {keyword}")
         links = search_web(keyword, max_results=top_k)
         if not links:
-            print("未找到任何搜索结果")
+            logger.info("未找到任何搜索结果")
             return "⚠️ 没有找到相关网页喵~"
 
-        print(f"找到 {len(links)} 个搜索结果，开始处理...")
+        logger.info(f"找到 {len(links)} 个搜索结果，开始处理...")
         # 抓取内容
         summaries = []
         for i, url in enumerate(links):
             try:
-                print(f"正在处理第 {i+1} 个链接: {url}")
+                logger.info(f"正在处理第 {i+1} 个链接: {url}")
                 # 添加延迟避免请求过快
                 if i > 0:
                     await asyncio.sleep(1)
                 
                 summary = await scrape_webpage(url)
                 summaries.append(f"🔗 网页 {i+1}: {url}\n{summary}\n")
-                print(f"第 {i+1} 个链接处理完成")
+                logger.info(f"第 {i+1} 个链接处理完成")
             except Exception as e:
-                print(f"处理网页 {url} 时出错: {str(e)}")
+                logger.warning(f"处理网页 {url} 时出错: {str(e)}")
                 summaries.append(f"🔗 网页 {i+1}: {url}\n❌ 处理失败喵~ {str(e)}\n")
 
         if not summaries:
@@ -982,7 +1329,7 @@ async def search_and_scrape(keyword: str, top_k: int = 12) -> str:
         return "\n\n".join(summaries)
         
     except Exception as e:
-        print(f"搜索或抓取过程中出错: {str(e)}")
+        logger.error(f"搜索或抓取过程中出错: {str(e)}")
         return f"[ERROR] 搜索或抓取失败 {str(e)}"
 
 if __name__ == "__main__":

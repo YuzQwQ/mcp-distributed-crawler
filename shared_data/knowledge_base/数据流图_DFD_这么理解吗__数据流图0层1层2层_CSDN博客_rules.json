@@ -1,0 +1,34 @@
+{
+  "table_name": "dfd_rules",
+  "description": "DFD规则库（分为层次规则、连接规则、命名规则）",
+  "schema": {
+    "id": "text (主键)",
+    "category": "text (规则分类)",
+    "description": "text (规则说明)",
+    "condition": "text (条件语法)",
+    "validation": "text (验证表达式)"
+  },
+  "data": [
+    {
+      "id": "hi-01",
+      "category": "hierarchy",
+      "description": "分层结构规则",
+      "condition": "hierarchy_condition",
+      "validation": "check_hierarchy_rules()"
+    },
+    {
+      "id": "co-02",
+      "category": "connection",
+      "description": "连接规则",
+      "condition": "connection_condition",
+      "validation": "check_connection_rules()"
+    }
+  ],
+  "metadata": {
+    "source_url": "https://blog.csdn.net/qq_63786973/article/details/130622249",
+    "source_title": "数据流图（DFD）这么理解吗？_数据流图0层1层2层-CSDN博客",
+    "crawl_time": "2025-08-09T11:04:38.948451",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  }
+}

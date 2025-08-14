@@ -1,0 +1,16 @@
+httpx[socks]
+httpx-socks[asyncio]  # 添加SOCKS代理支持
+openai
+python-dotenv
+beautifulsoup4
+duckduckgo-search
+aiosqlite
+pillow
+requests[socks]
+selenium>=4.1.0
+webdriver-manager>=3.5.2
+# stem>=1.8.0  # Tor控制包，可选依赖，如需使用Tor请手动安装
+mcp
+aiohttp
+serpapi
+fastmcp

@@ -1,0 +1,28 @@
+{
+  "extraction_summary": {
+    "source_url": "https://blog.csdn.net/qq_41784749/article/details/112227057",
+    "extraction_time": "2025-08-09T11:02:15.341454",
+    "total_files_saved": 5,
+    "statistics": {
+      "concepts_count": 4,
+      "rules_count": 2,
+      "patterns_count": 1,
+      "cases_count": 1,
+      "mappings_count": 2
+    }
+  },
+  "saved_files": [
+    "shared_data\\knowledge_base\\数据流图DFD_详细介绍_dfd图_CSDN博客_concepts.json",
+    "shared_data\\knowledge_base\\数据流图DFD_详细介绍_dfd图_CSDN博客_rules.json",
+    "shared_data\\knowledge_base\\数据流图DFD_详细介绍_dfd图_CSDN博客_patterns.json",
+    "shared_data\\knowledge_base\\数据流图DFD_详细介绍_dfd图_CSDN博客_cases.json",
+    "shared_data\\knowledge_base\\数据流图DFD_详细介绍_dfd图_CSDN博客_nlp_mappings.json"
+  ],
+  "knowledge_base_structure": {
+    "dfd_concepts": "元素定义表（概念库）",
+    "dfd_rules": "规则库（层次、连接、命名规则）",
+    "dfd_patterns": "模板库（模式库）",
+    "dfd_cases": "错误/示例案例库",
+    "dfd_nlp_mappings": "自然语言映射规则库"
+  }
+}

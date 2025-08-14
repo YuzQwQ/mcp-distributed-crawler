@@ -1,0 +1,56 @@
+{
+  "table_name": "dfd_concepts",
+  "description": "DFD元素定义表（概念库）",
+  "schema": {
+    "id": "text (主键)",
+    "type": "text (元素类型)",
+    "description": "text (元素描述)",
+    "symbol": "text (图形符号)",
+    "rules": "jsonb (元素规则数组)"
+  },
+  "data": [
+    {
+      "id": "proc-001",
+      "type": "process",
+      "description": "处理相关的DFD元素定义",
+      "symbol": "圆形",
+      "rules": [
+        "处理的使用规则和约定"
+      ]
+    },
+    {
+      "id": "enti-002",
+      "type": "entity",
+      "description": "外部实体相关的DFD元素定义",
+      "symbol": "矩形",
+      "rules": [
+        "外部实体的使用规则和约定"
+      ]
+    },
+    {
+      "id": "data-003",
+      "type": "data_store",
+      "description": "数据存储相关的DFD元素定义",
+      "symbol": "平行线",
+      "rules": [
+        "数据存储的使用规则和约定"
+      ]
+    },
+    {
+      "id": "data-004",
+      "type": "data_flow",
+      "description": "数据流相关的DFD元素定义",
+      "symbol": "箭头",
+      "rules": [
+        "数据流的使用规则和约定"
+      ]
+    }
+  ],
+  "metadata": {
+    "source_url": "https://www.feishu.cn/template/general-data-flow-diagram",
+    "source_title": "无标题",
+    "crawl_time": "2025-08-09T11:06:15.756958",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  }
+}

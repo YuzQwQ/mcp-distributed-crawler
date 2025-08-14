@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "source_url": "http://www.ais.nptu.edu.tw/ais/961%20materials/DFD_961.pdf",
+    "source_title": "无标题",
+    "crawl_time": "2025-08-06T21:45:01.634978",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  },
+  "statistics": {
+    "concepts_count": 1,
+    "rules_count": 0,
+    "patterns_count": 0,
+    "cases_count": 2,
+    "mappings_count": 0
+  },
+  "dfd_concepts": [
+    {
+      "id": "data-001",
+      "type": "data_flow",
+      "description": "数据流相关的DFD元素定义",
+      "symbol": "箭头",
+      "rules": [
+        "数据流的使用规则和约定"
+      ]
+    }
+  ],
+  "dfd_rules": [],
+  "dfd_patterns": [],
+  "dfd_cases": [
+    {
+      "id": "case-err-001",
+      "type": "error_case",
+      "description": "从网页内容中识别的DFD绘制错误案例",
+      "incorrect": {
+        "elements": [
+          "错误的元素连接"
+        ],
+        "flows": [
+          "不规范的数据流"
+        ]
+      },
+      "correct": {
+        "elements": [
+          "正确的元素连接"
+        ],
+        "flows": [
+          "规范的数据流"
+        ]
+      },
+      "explanation": "基于网页内容总结的错误原因和改正方法"
+    },
+    {
+      "id": "case-best-002",
+      "type": "best_practice",
+      "description": "从网页内容中提取的DFD最佳实践",
+      "incorrect": {},
+      "correct": {
+        "elements": [
+          "推荐的元素设计"
+        ],
+        "flows": [
+          "标准的数据流设计"
+        ]
+      },
+      "explanation": "基于网页内容总结的最佳实践要点"
+    }
+  ],
+  "dfd_nlp_mappings": []
+}

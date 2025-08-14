@@ -1,0 +1,43 @@
+{
+  "table_name": "dfd_nlp_mappings",
+  "description": "自然语言映射规则库",
+  "schema": {
+    "id": "serial (自增ID)",
+    "pattern": "text (匹配句式)",
+    "element_type": "text (映射出的DFD元素类型)",
+    "name_template": "text (名称模板)",
+    "flow_template": "text (数据流模板)",
+    "action_mappings": "jsonb (动作转换)"
+  },
+  "data": [
+    {
+      "pattern": "用户 [action] 系统",
+      "element_type": "data_flow",
+      "name_template": "{用户}到{系统}的{action}",
+      "flow_template": "{action}请求",
+      "action_mappings": {
+        "提交": "输入",
+        "查询": "请求",
+        "修改": "更新"
+      }
+    },
+    {
+      "pattern": "系统 [action] 数据库",
+      "element_type": "data_flow",
+      "name_template": "{系统}对{数据库}的{action}",
+      "flow_template": "{action}操作",
+      "action_mappings": {
+        "存储": "写入",
+        "读取": "查询",
+        "删除": "移除"
+      }
+    }
+  ],
+  "metadata": {
+    "source_url": "https://blog.csdn.net/qq_52108058/article/details/130657109",
+    "source_title": "数据流图（DFD）原理与试题解析-CSDN博客",
+    "crawl_time": "2025-08-09T11:06:03.514599",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  }
+}

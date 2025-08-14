@@ -1,0 +1,58 @@
+{
+  "table_name": "dfd_cases",
+  "description": "DFD错误/示例案例库",
+  "schema": {
+    "id": "text (案例ID)",
+    "type": "text (error_case 或 best_practice)",
+    "description": "text (描述)",
+    "incorrect": "jsonb (错误结构)",
+    "correct": "jsonb (正确结构)",
+    "explanation": "text (说明解释)"
+  },
+  "data": [
+    {
+      "id": "case-err-001",
+      "type": "error_case",
+      "description": "从网页内容中识别的DFD绘制错误案例",
+      "incorrect": {
+        "elements": [
+          "错误的元素连接"
+        ],
+        "flows": [
+          "不规范的数据流"
+        ]
+      },
+      "correct": {
+        "elements": [
+          "正确的元素连接"
+        ],
+        "flows": [
+          "规范的数据流"
+        ]
+      },
+      "explanation": "基于网页内容总结的错误原因和改正方法"
+    },
+    {
+      "id": "case-best-002",
+      "type": "best_practice",
+      "description": "从网页内容中提取的DFD最佳实践",
+      "incorrect": {},
+      "correct": {
+        "elements": [
+          "推荐的元素设计"
+        ],
+        "flows": [
+          "标准的数据流设计"
+        ]
+      },
+      "explanation": "基于网页内容总结的最佳实践要点"
+    }
+  ],
+  "metadata": {
+    "source_url": "https://blog.csdn.net/xiaoxiang2017/article/details/81456317",
+    "source_title": "（一）1.   数据流图（DFD）概念及画法_三层dfd-CSDN博客",
+    "crawl_time": "2025-08-09T11:01:29.175972",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  }
+}

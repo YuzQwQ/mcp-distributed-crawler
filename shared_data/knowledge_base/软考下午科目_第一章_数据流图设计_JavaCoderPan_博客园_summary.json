@@ -1,0 +1,28 @@
+{
+  "extraction_summary": {
+    "source_url": "https://www.cnblogs.com/atwood-pan/p/17205839.html",
+    "extraction_time": "2025-08-09T11:03:19.644456",
+    "total_files_saved": 5,
+    "statistics": {
+      "concepts_count": 4,
+      "rules_count": 2,
+      "patterns_count": 1,
+      "cases_count": 1,
+      "mappings_count": 2
+    }
+  },
+  "saved_files": [
+    "shared_data\\knowledge_base\\软考下午科目_第一章_数据流图设计_JavaCoderPan_博客园_concepts.json",
+    "shared_data\\knowledge_base\\软考下午科目_第一章_数据流图设计_JavaCoderPan_博客园_rules.json",
+    "shared_data\\knowledge_base\\软考下午科目_第一章_数据流图设计_JavaCoderPan_博客园_patterns.json",
+    "shared_data\\knowledge_base\\软考下午科目_第一章_数据流图设计_JavaCoderPan_博客园_cases.json",
+    "shared_data\\knowledge_base\\软考下午科目_第一章_数据流图设计_JavaCoderPan_博客园_nlp_mappings.json"
+  ],
+  "knowledge_base_structure": {
+    "dfd_concepts": "元素定义表（概念库）",
+    "dfd_rules": "规则库（层次、连接、命名规则）",
+    "dfd_patterns": "模板库（模式库）",
+    "dfd_cases": "错误/示例案例库",
+    "dfd_nlp_mappings": "自然语言映射规则库"
+  }
+}

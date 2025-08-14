@@ -132,7 +132,12 @@ class MCPClient:
         if first_message.tool_calls:
             for tool_call in first_message.tool_calls:
                 tool_name = tool_call.function.name
-                tool_args = json.loads(tool_call.function.arguments)
+                try:
+                    tool_args = json.loads(tool_call.function.arguments)
+                except json.JSONDecodeError as e:
+                    print(f"[ERROR] 工具参数JSON解析失败: {e}")
+                    print(f"[DEBUG] 原始参数: {tool_call.function.arguments}")
+                    return f"抱歉，工具调用参数格式错误：{str(e)}"
 
                 print(f"\n[调用工具 {tool_name} 参数: {tool_args}]\n")
 

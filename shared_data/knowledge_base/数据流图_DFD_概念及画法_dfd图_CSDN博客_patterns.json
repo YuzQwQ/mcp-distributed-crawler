@@ -1,0 +1,51 @@
+{
+  "table_name": "dfd_patterns",
+  "description": "DFD模板库（模式库）",
+  "schema": {
+    "id": "serial (自增ID)",
+    "system": "text (系统名称)",
+    "level": "int (DFD层级)",
+    "processes": "jsonb (加工列表)",
+    "entities": "jsonb (外部实体列表)",
+    "data_stores": "jsonb (数据存储列表)",
+    "flows": "jsonb (数据流数组)"
+  },
+  "data": [
+    {
+      "system": "电商系统",
+      "level": 0,
+      "processes": [
+        {
+          "id": "P1",
+          "name": "电商系统核心处理"
+        }
+      ],
+      "entities": [
+        {
+          "id": "E1",
+          "name": "用户"
+        }
+      ],
+      "data_stores": [
+        {
+          "id": "D1",
+          "name": "数据库"
+        }
+      ],
+      "flows": [
+        {
+          "from": "E1",
+          "to": "P1",
+          "data": "输入数据"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "source_url": "https://blog.csdn.net/lishanleilixin/article/details/89330427",
+    "source_title": "数据流图（DFD）概念及画法_dfd图-CSDN博客",
+    "crawl_time": "2025-08-06T21:43:14.748701",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  }
+}

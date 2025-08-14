@@ -1,0 +1,34 @@
+{
+  "table_name": "dfd_rules",
+  "description": "DFD规则库（分为层次规则、连接规则、命名规则）",
+  "schema": {
+    "id": "text (主键)",
+    "category": "text (规则分类)",
+    "description": "text (规则说明)",
+    "condition": "text (条件语法)",
+    "validation": "text (验证表达式)"
+  },
+  "data": [
+    {
+      "id": "hi-01",
+      "category": "hierarchy",
+      "description": "分层结构规则",
+      "condition": "hierarchy_condition",
+      "validation": "check_hierarchy_rules()"
+    },
+    {
+      "id": "co-02",
+      "category": "connection",
+      "description": "连接规则",
+      "condition": "connection_condition",
+      "validation": "check_connection_rules()"
+    }
+  ],
+  "metadata": {
+    "source_url": "https://www.cnblogs.com/atwood-pan/p/17205839.html",
+    "source_title": "软考下午科目——第一章——数据流图设计 - JavaCoderPan - 博客园",
+    "crawl_time": "2025-08-09T11:03:19.640415",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  }
+}
