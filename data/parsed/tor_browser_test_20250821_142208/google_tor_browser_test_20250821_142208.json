@@ -1,0 +1,81 @@
+{
+  "success": true,
+  "engine": "google",
+  "keyword": "tor browser test",
+  "timestamp": "20250821_142208",
+  "total_found": 3,
+  "results": [
+    {
+      "url": "https://www.browserling.com/tor-testing",
+      "title": "Online Tor and Onion Browser Testing",
+      "snippet": "Browserling offers free online cross-browser testing of onion websites in the Tor browser. We have installed the Tor browser in virtual machines, running on ...",
+      "position": 1,
+      "metadata": {
+        "source": "Browserling"
+      }
+    },
+    {
+      "url": "https://forum.torproject.org/t/how-to-test-tor-and-relay-explanation/10016",
+      "title": "How to test tor and relay explanation",
+      "snippet": "To test new and upcoming features in the browser, I'd recommend installing Tor Browser Alpha. More information about this: Tor Project | Become an alpha tester.",
+      "position": 2,
+      "metadata": {
+        "date": "2023年10月31日",
+        "source": "Tor Project Forum"
+      }
+    },
+    {
+      "url": "https://catonmat.net/how-to-test-onion-links-without-installing-tor-browser",
+      "title": "How to Test Onion Links Without Installing the Tor Browser",
+      "snippet": "Simply visit browserling.com/tor and you'll get an online Tor browser for testing your onion website.",
+      "position": 3,
+      "metadata": {
+        "source": "CatOnMat"
+      }
+    }
+  ],
+  "parsing_info": {
+    "rules_used": {
+      "primary_keys": [
+        "organic_results",
+        "web_results",
+        "news_results",
+        "related_questions"
+      ],
+      "link_fields": [
+        "link",
+        "url",
+        "displayed_link"
+      ],
+      "title_fields": [
+        "title",
+        "name"
+      ],
+      "snippet_fields": [
+        "snippet",
+        "description",
+        "content"
+      ],
+      "position_fields": [
+        "position",
+        "rank"
+      ],
+      "metadata_fields": [
+        "date",
+        "source",
+        "domain"
+      ]
+    },
+    "raw_data_keys": [
+      "search_metadata",
+      "search_parameters",
+      "search_information",
+      "inline_images",
+      "organic_results",
+      "related_searches",
+      "pagination",
+      "serpapi_pagination"
+    ],
+    "extraction_method": "config_based"
+  }
+}

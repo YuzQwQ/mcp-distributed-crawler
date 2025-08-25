@@ -1,0 +1,27 @@
+{
+  "engine": "bing",
+  "api_name": "SerpAPI",
+  "base_url": "https://serpapi.com/search",
+  "parsing_rules": {
+    "primary_keys": ["webPages.value", "organic_results", "web_results"],
+    "link_fields": ["url", "link"],
+    "title_fields": ["name", "title"],
+    "snippet_fields": ["snippet", "description", "summary"],
+    "position_fields": ["rank", "position"],
+    "metadata_fields": ["dateLastCrawled", "displayUrl", "language"]
+  },
+  "parameters": {
+    "default": {
+      "engine": "bing",
+      "count": 10,
+      "mkt": "zh-CN"
+    },
+    "required": ["q", "api_key"],
+    "optional": ["count", "offset", "mkt", "responseFilter"]
+  },
+  "response_mapping": {
+    "results_path": "webPages.value",
+    "total_results_path": "webPages.totalEstimatedMatches",
+    "search_time_path": "search_metadata.created_at"
+  }
+}

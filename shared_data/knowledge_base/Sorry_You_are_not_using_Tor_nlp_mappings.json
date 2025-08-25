@@ -1,0 +1,42 @@
+{
+  "table_name": "dfd_nlp_mappings",
+  "description": "自然语言到DFD元素的映射规则",
+  "schema": {
+    "pattern": "text",
+    "element_type": "text",
+    "name_template": "text",
+    "flow_template": "text",
+    "action_mappings": "jsonb (对象)"
+  },
+  "data": [
+    {
+      "pattern": "用户 [action] 系统",
+      "element_type": "data_flow",
+      "name_template": "{用户}到{系统}的{action}",
+      "flow_template": "{action}请求",
+      "action_mappings": {
+        "提交": "输入",
+        "查询": "请求",
+        "修改": "更新"
+      }
+    },
+    {
+      "pattern": "系统 [action] 数据库",
+      "element_type": "data_flow",
+      "name_template": "{系统}对{数据库}的{action}",
+      "flow_template": "{action}操作",
+      "action_mappings": {
+        "存储": "写入",
+        "读取": "查询",
+        "删除": "移除"
+      }
+    }
+  ],
+  "metadata": {
+    "source_url": "https://check.torproject.org/",
+    "source_title": "\n    \n      Sorry. You are not using Tor.\n    \n",
+    "crawl_time": "2025-08-21T14:22:08.849614",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  }
+}

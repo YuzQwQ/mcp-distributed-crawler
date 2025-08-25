@@ -1,0 +1,16 @@
+Aug 10 21:15:21.317 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 10 21:15:21.317 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 10 21:15:21.346 [notice] Configuration file "C:\Users\17587\AppData\Roaming\tor\torrc" not present, using reasonable defaults.
+Aug 10 21:15:21.347 [warn] Path for DataDirectory (./tor_data_debug) is relative and will resolve to D:\develop\MCP-develop\mcp-client\tor_data_debug. Is this what you wanted?
+Aug 10 21:15:21.348 [warn] Path for GeoIPFile (<default>) is relative and will resolve to D:\develop\MCP-develop\mcp-client\<default>. Is this what you wanted?
+Aug 10 21:15:21.348 [warn] Path for GeoIPv6File (<default>) is relative and will resolve to D:\develop\MCP-develop\mcp-client\<default>. Is this what you wanted?
+Aug 10 21:15:21.348 [warn] ControlPort is open, but no authentication method has been configured.  This means that any program on your computer can reconfigure your Tor.  That's bad!  You should upgrade your Tor controller as soon as possible.
+Aug 10 21:15:21.350 [notice] Opening Socks listener on 127.0.0.1:9050
+Aug 10 21:15:21.350 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Aug 10 21:15:21.350 [notice] Opening Control listener on 127.0.0.1:9051
+Aug 10 21:15:21.351 [notice] Opened Control listener connection (ready) on 127.0.0.1:9051
+Aug 10 21:15:21.000 [notice] Set list of supported TLS groups to: P-256:X25519:P-224
+Aug 10 21:15:21.000 [notice] Bootstrapped 0% (starting): Starting
+Aug 10 21:15:21.000 [notice] Starting with guard context "default"
+Aug 10 21:15:22.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Aug 10 21:15:29.000 [notice] New control connection opened from 127.0.0.1.

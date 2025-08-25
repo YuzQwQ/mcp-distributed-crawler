@@ -1,0 +1,149 @@
+{
+  "success": true,
+  "engine": "google",
+  "keyword": "dfd基础概念",
+  "timestamp": "20250813_212203",
+  "total_found": 10,
+  "results": [
+    {
+      "url": "https://blog.csdn.net/lishanleilixin/article/details/89330427",
+      "title": "数据流图（DFD）概念及画法转载",
+      "snippet": "数据流图（Data Flow Diagram）：简称DFD，它从数据传递和加工角度，以图形方式来表达系统的逻辑功能、以图形的方式描绘数据在系统中流动和处理的过程，由于它只 ...",
+      "position": 1,
+      "metadata": {
+        "date": "2019年4月16日",
+        "source": "CSDN博客"
+      }
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/589061234",
+      "title": "数据流图（DFD）",
+      "snippet": "数据流图（DFD，Data Flow Diagram）也称分层数据流图，是在需求分析阶段用到的一种工具，在结构化的需求分析中，DFD的使用频度极高。 数据流图基本概念. 在数据 ...",
+      "position": 2,
+      "metadata": {
+        "date": "2022年12月4日",
+        "source": "知乎专栏"
+      }
+    },
+    {
+      "url": "https://blog.csdn.net/qq_63786973/article/details/130622249",
+      "title": "数据流图（DFD）这么理解吗？ 原创",
+      "snippet": "数据流图（Data Flow Diagram，简称DFD）作为一种强大且直观的工具，能够以图形化的方式描述系统中数据的来源、处理、存储和去向，帮助人们准确把握系统的工作 ...",
+      "position": 3,
+      "metadata": {
+        "date": "2023年5月11日",
+        "source": "CSDN博客"
+      }
+    },
+    {
+      "url": "https://developer.aliyun.com/article/1372330",
+      "title": "【软件设计师-从小白到大牛】下午题基础篇：第一章数据流图 ...",
+      "snippet": "本文探讨了在微服务架构中进行数据库设计时，如何平衡数据的一致性、独立性与系统整体性能之间的关系。文章首先介绍了微服务架构的基本概念及其对数据库 ...",
+      "position": 4,
+      "metadata": {
+        "date": "2023年11月10日",
+        "source": "阿里云开发者社区"
+      }
+    },
+    {
+      "url": "https://www.cnblogs.com/fengkungui/p/6789581.html",
+      "title": "数据流图技术相关基础知识",
+      "snippet": "1.数据流图的基本概念简称DFD，它从数据传递和加工角度，以图形方式来表达系统的逻辑功能、数据在系统内部的逻辑流向和逻辑变换过程，是结构化系统分析 ...",
+      "position": 5,
+      "metadata": {
+        "date": "2016年10月21日",
+        "source": "博客园"
+      }
+    },
+    {
+      "url": "http://www.ais.nptu.edu.tw/ais/961%20materials/DFD_961.pdf",
+      "title": "資料流程圖(DFD)",
+      "snippet": "實體DFD描述系統的基礎架構，可回答如何做(how)、在哪做. (where)、誰來做(by whom)等問題。 – 邏輯資料流程圖(logical DFD)：此圖中，資料是泛稱； bubble代表處理資料的程序 ...",
+      "position": 6,
+      "metadata": {
+        "source": "周國華老師會計教學網站"
+      }
+    },
+    {
+      "url": "https://www.modb.pro/db/21986",
+      "title": "DBA 我想上一层楼，DFD 了解一下",
+      "snippet": "在绘制DFD的时候会以四种图形来描述DFD的四个基本概念， 1 外部实体2 过程 3 数据存储4 数据流来组成DFD，其中是可以用不同的图形来表达这四种实体的不同。",
+      "position": 7,
+      "metadata": {
+        "date": "2020年2月28日",
+        "source": "墨天轮"
+      }
+    },
+    {
+      "url": "https://juejin.cn/post/7158772350555521060",
+      "title": "软件工程师——(十三)数据流图(DFD)(重点)",
+      "snippet": "2. 基本概念(数据流图又称之为 分层数据流图 ) · 1、顶层图. 中间 椭圆 代表 要开发的系统 , 方框 代表 外部实体; 外部实体和本系统 存在 数据流转的关系 ...",
+      "position": 8,
+      "metadata": {
+        "date": "2022年10月26日",
+        "source": "掘金"
+      }
+    },
+    {
+      "url": "https://www.echo.cool/docs/fundamental/database/database-design-and-modeling/data-flow-graph-dfd/",
+      "title": "数据流图(DFD) - 代码酷",
+      "snippet": "数据流图（Data Flow Diagram，简称DFD）是一种用于描述系统中数据流动和处理过程的图形化工具。它通过简单的符号和箭头，展示数据如何在系统中流动、存储和处理。DFD广泛应用 ...",
+      "position": 9,
+      "metadata": {
+        "source": "echo.cool"
+      }
+    },
+    {
+      "url": "https://www.cnblogs.com/atwood-pan/p/17205839.html",
+      "title": "软考下午科目——第一章——数据流图设计",
+      "snippet": "数据流图又称数据流程图（Data Flow Diagram，DFD），是一种便于用户理解、分析系统数据流程的图形工具。它摆脱了系统的物理内容，精确地在逻辑上描述系统的 ...",
+      "position": 10,
+      "metadata": {
+        "date": "2022年5月2日",
+        "source": "博客园"
+      }
+    }
+  ],
+  "parsing_info": {
+    "rules_used": {
+      "primary_keys": [
+        "organic_results",
+        "web_results",
+        "news_results",
+        "related_questions"
+      ],
+      "link_fields": [
+        "link",
+        "url",
+        "displayed_link"
+      ],
+      "title_fields": [
+        "title",
+        "name"
+      ],
+      "snippet_fields": [
+        "snippet",
+        "description",
+        "content"
+      ],
+      "position_fields": [
+        "position",
+        "rank"
+      ],
+      "metadata_fields": [
+        "date",
+        "source",
+        "domain"
+      ]
+    },
+    "raw_data_keys": [
+      "search_metadata",
+      "search_parameters",
+      "search_information",
+      "organic_results",
+      "pagination",
+      "serpapi_pagination"
+    ],
+    "extraction_method": "config_based"
+  }
+}

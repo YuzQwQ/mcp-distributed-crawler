@@ -1,0 +1,27 @@
+{
+  "engine": "duckduckgo",
+  "api_name": "duckduckgo_search",
+  "base_url": "local",
+  "parsing_rules": {
+    "primary_keys": ["results", "organic_results"],
+    "link_fields": ["href", "url", "link"],
+    "title_fields": ["title", "name"],
+    "snippet_fields": ["body", "snippet", "description"],
+    "position_fields": ["position"],
+    "metadata_fields": ["source", "icon", "favicon"]
+  },
+  "parameters": {
+    "default": {
+      "region": "cn-zh",
+      "max_results": 10,
+      "safesearch": "moderate"
+    },
+    "required": ["query"],
+    "optional": ["region", "max_results", "safesearch", "time", "backend"]
+  },
+  "response_mapping": {
+    "results_path": "results",
+    "total_results_path": "total_results",
+    "search_time_path": "search_time"
+  }
+}

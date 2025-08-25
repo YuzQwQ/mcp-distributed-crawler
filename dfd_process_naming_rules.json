@@ -1,0 +1,89 @@
+{
+  "dfd_process_naming_rules": {
+    "title": "DFD处理(Process)命名规范",
+    "description": "数据流图中处理(加工)元素的命名规范和示例",
+    "core_principles": {
+      "primary_format": "动词+名词",
+      "alternative_formats": ["动词+宾语", "名词+动词", "单一名词(特殊情况)"],
+      "must_contain": "动词(表示功能操作)",
+      "purpose": "表明处理过程的具体功能和操作"
+    },
+    "naming_rules": [
+      {
+        "rule_id": "R001",
+        "category": "naming",
+        "rule_type": "format",
+        "description": "处理名称必须采用动词+名词的格式",
+        "examples": ["生成报告", "发出通知", "处理订单", "验证用户"]
+      },
+      {
+        "rule_id": "R002",
+        "category": "naming",
+        "rule_type": "content",
+        "description": "处理名称必须包含一个动词，体现功能性",
+        "examples": ["批改作业", "记录分数", "计算工资", "检查合理性"]
+      },
+      {
+        "rule_id": "R003",
+        "category": "naming",
+        "rule_type": "exception",
+        "description": "特殊情况下可使用名词+动词或单一名词格式",
+        "examples": ["物流跟踪", "用户管理", "库存管理"]
+      },
+      {
+        "rule_id": "R004",
+        "category": "naming",
+        "rule_type": "constraint",
+        "description": "避免使用控制流名称，专注于数据变换功能",
+        "counter_examples": ["月末", "启动", "结束"]
+      }
+    ],
+    "standard_examples": {
+      "business_operations": [
+        "处理订单",
+        "验证用户",
+        "生成报告",
+        "发出通知",
+        "计算工资",
+        "检查库存"
+      ],
+      "educational_system": [
+        "批改作业",
+        "记录分数",
+        "统计成绩",
+        "生成成绩单"
+      ],
+      "data_processing": [
+        "转换格式",
+        "验证数据",
+        "更新记录",
+        "查询信息"
+      ]
+    },
+    "identification_methods": [
+      {
+        "method": "从需求描述提取",
+        "description": "在需求文档中寻找动词+名词结构的功能描述"
+      },
+      {
+        "method": "功能导向命名",
+        "description": "基于处理的输入输出数据流确定功能名称"
+      },
+      {
+        "method": "数据变换分析",
+        "description": "分析数据如何从输入转换为输出来确定处理名称"
+      }
+    ],
+    "quality_guidelines": [
+      "名称应反映整个处理过程，而非部分功能",
+      "避免使用空洞或模糊的名称",
+      "保持命名的一致性和规范性",
+      "确保名称能清晰表达处理的业务含义"
+    ],
+    "sources": [
+      "软件设计师考试教材",
+      "数据流图设计规范",
+      "系统分析与设计理论"
+    ]
+  }
+}

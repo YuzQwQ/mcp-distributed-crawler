@@ -1,0 +1,584 @@
+2025-08-13 21:01:24,515 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-13 21:01:27,452 - INFO - Tor ports are ready
+2025-08-13 21:06:00,661 - WARNING - 配置文件未找到: D:\develop\MCP-develop\config\format_templates.json，将使用默认配置
+2025-08-13 21:06:00,663 - INFO - 已加载配置: baidu
+2025-08-13 21:06:00,663 - INFO - 已加载配置: bing
+2025-08-13 21:06:00,664 - INFO - 已加载配置: duckduckgo
+2025-08-13 21:06:00,664 - INFO - 已加载配置: google
+2025-08-13 21:06:01,459 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-13 21:06:04,169 - INFO - Tor ports are ready
+2025-08-13 21:07:46,264 - WARNING - 配置文件未找到: D:\develop\MCP-develop\config\format_templates.json，将使用默认配置
+2025-08-13 21:07:46,266 - INFO - 已加载配置: baidu
+2025-08-13 21:07:46,266 - INFO - 已加载配置: bing
+2025-08-13 21:07:46,266 - INFO - 已加载配置: duckduckgo
+2025-08-13 21:07:46,267 - INFO - 已加载配置: google
+2025-08-13 21:07:47,097 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-13 21:07:49,872 - INFO - Tor ports are ready
+2025-08-13 21:08:41,620 - WARNING - 配置文件未找到: D:\develop\MCP-develop\config\format_templates.json，将使用默认配置
+2025-08-13 21:08:41,622 - INFO - 已加载配置: baidu
+2025-08-13 21:08:41,623 - INFO - 已加载配置: bing
+2025-08-13 21:08:41,623 - INFO - 已加载配置: duckduckgo
+2025-08-13 21:08:41,623 - INFO - 已加载配置: google
+2025-08-13 21:08:42,452 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-13 21:08:45,231 - INFO - Tor ports are ready
+2025-08-13 21:08:45,243 - INFO - Processing request of type ListToolsRequest
+2025-08-13 21:08:49,807 - INFO - Processing request of type ListToolsRequest
+2025-08-13 21:12:26,865 - WARNING - 配置文件未找到: D:\develop\MCP-develop\config\format_templates.json，将使用默认配置
+2025-08-13 21:12:26,868 - INFO - 已加载配置: baidu
+2025-08-13 21:12:26,868 - INFO - 已加载配置: bing
+2025-08-13 21:12:26,868 - INFO - 已加载配置: duckduckgo
+2025-08-13 21:12:26,868 - INFO - 已加载配置: google
+2025-08-13 21:12:27,771 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-13 21:12:30,593 - ERROR - Tor process exited with code 1
+2025-08-13 21:12:30,593 - ERROR - Log content: Aug 13 21:12:28.606 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 13 21:12:28.606 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 13 21:12:28.625 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 13 21:12:28.625 [warn] Path for DataDirectory (./
+2025-08-13 21:12:30,603 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-08-13 21:15:06,515 - WARNING - 配置文件未找到: D:\develop\MCP-develop\config\format_templates.json，将使用默认配置
+2025-08-13 21:15:06,516 - INFO - 已加载配置: baidu
+2025-08-13 21:15:06,517 - INFO - 已加载配置: bing
+2025-08-13 21:15:06,517 - INFO - 已加载配置: duckduckgo
+2025-08-13 21:15:06,517 - INFO - 已加载配置: google
+2025-08-13 21:15:07,458 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-13 21:15:10,379 - ERROR - Tor process exited with code 1
+2025-08-13 21:15:10,379 - ERROR - Log content: Aug 13 21:15:08.387 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 13 21:15:08.387 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 13 21:15:08.404 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 13 21:15:08.405 [warn] Path for DataDirectory (./
+2025-08-13 21:15:10,392 - INFO - Processing request of type ListToolsRequest
+2025-08-13 21:15:48,996 - WARNING - 配置文件未找到: D:\develop\MCP-develop\config\format_templates.json，将使用默认配置
+2025-08-13 21:15:48,997 - INFO - 已加载配置: baidu
+2025-08-13 21:15:48,998 - INFO - 已加载配置: bing
+2025-08-13 21:15:48,998 - INFO - 已加载配置: duckduckgo
+2025-08-13 21:15:48,998 - INFO - 已加载配置: google
+2025-08-13 21:15:50,037 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-13 21:15:52,898 - ERROR - Tor process exited with code 1
+2025-08-13 21:15:52,898 - ERROR - Log content: Aug 13 21:15:50.907 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 13 21:15:50.907 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 13 21:15:50.924 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 13 21:15:50.924 [warn] Path for DataDirectory (./
+2025-08-13 21:15:52,911 - INFO - Processing request of type ListToolsRequest
+2025-08-13 21:15:52,913 - INFO - Processing request of type ListToolsRequest
+2025-08-13 21:19:02,716 - WARNING - 配置文件未找到: D:\develop\MCP-develop\config\format_templates.json，将使用默认配置
+2025-08-13 21:19:02,718 - INFO - 已加载配置: baidu
+2025-08-13 21:19:02,718 - INFO - 已加载配置: bing
+2025-08-13 21:19:02,718 - INFO - 已加载配置: duckduckgo
+2025-08-13 21:19:02,718 - INFO - 已加载配置: google
+2025-08-13 21:19:03,609 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-13 21:19:06,456 - ERROR - Tor process exited with code 1
+2025-08-13 21:19:06,457 - ERROR - Log content: Aug 13 21:19:04.467 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 13 21:19:04.467 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 13 21:19:04.484 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 13 21:19:04.485 [warn] Path for DataDirectory (./
+2025-08-13 21:19:06,470 - INFO - Processing request of type ListToolsRequest
+2025-08-13 21:19:06,473 - INFO - Processing request of type ListToolsRequest
+2025-08-13 21:19:12,208 - INFO - Processing request of type CallToolRequest
+2025-08-13 21:19:14,420 - INFO - SerpAPI请求URL: https://serpapi.com/search?engine=google&hl=zh-cn&gl=cn&num=15&q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5+%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE%E6%A0%B8%E5%BF%83%E5%85%83%E7%B4%A0+%E7%BB%98%E5%88%B6%E8%A7%84%E8%8C%83&api_key=8acd7ec820a33b7bbde52799673593bc5554055bdbccf3a7ae494ba70608b00b
+2025-08-13 21:19:14,420 - INFO - 响应状态码: 200
+2025-08-13 21:19:14,420 - INFO - 响应大小: 24105 bytes
+2025-08-13 21:19:14,423 - INFO - 原始数据已保存: data\raw\google_dfd基础概念_数据流图核心元素_绘制规范_20250813_211912.json
+2025-08-13 21:19:14,424 - INFO - 解析数据已保存: data\parsed\google_dfd基础概念_数据流图核心元素_绘制规范_20250813_211912.json, data\parsed\google_dfd基础概念_数据流图核心元素_绘制规范_20250813_211912.md
+2025-08-13 21:20:40,224 - WARNING - 配置文件未找到: D:\develop\MCP-develop\config\format_templates.json，将使用默认配置
+2025-08-13 21:20:40,226 - INFO - 已加载配置: baidu
+2025-08-13 21:20:40,227 - INFO - 已加载配置: bing
+2025-08-13 21:20:40,227 - INFO - 已加载配置: duckduckgo
+2025-08-13 21:20:40,227 - INFO - 已加载配置: google
+2025-08-13 21:20:41,116 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-13 21:20:44,088 - ERROR - Tor process exited with code 1
+2025-08-13 21:20:44,088 - ERROR - Log content: Aug 13 21:20:42.101 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 13 21:20:42.101 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 13 21:20:42.122 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 13 21:20:42.124 [warn] Path for DataDirectory (./
+2025-08-13 21:20:44,100 - INFO - Processing request of type ListToolsRequest
+2025-08-13 21:21:47,182 - WARNING - 配置文件未找到: D:\develop\MCP-develop\config\format_templates.json，将使用默认配置
+2025-08-13 21:21:47,183 - INFO - 已加载配置: baidu
+2025-08-13 21:21:47,183 - INFO - 已加载配置: bing
+2025-08-13 21:21:47,184 - INFO - 已加载配置: duckduckgo
+2025-08-13 21:21:47,184 - INFO - 已加载配置: google
+2025-08-13 21:21:47,854 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-13 21:21:50,561 - INFO - Tor ports are ready
+2025-08-13 21:21:50,573 - INFO - Processing request of type ListToolsRequest
+2025-08-13 21:21:55,173 - INFO - Processing request of type ListToolsRequest
+2025-08-13 21:22:03,855 - INFO - Processing request of type CallToolRequest
+2025-08-13 21:22:07,401 - INFO - SerpAPI请求URL: https://serpapi.com/search?engine=google&hl=zh-cn&gl=cn&num=10&q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&api_key=8acd7ec820a33b7bbde52799673593bc5554055bdbccf3a7ae494ba70608b00b
+2025-08-13 21:22:07,401 - INFO - 响应状态码: 200
+2025-08-13 21:22:07,401 - INFO - 响应大小: 15892 bytes
+2025-08-13 21:22:07,404 - INFO - 原始数据已保存: data\raw\google_dfd基础概念_20250813_212203.json
+2025-08-13 21:22:07,409 - INFO - 解析数据已保存: data\parsed\google_dfd基础概念_20250813_212203.json, data\parsed\google_dfd基础概念_20250813_212203.md
+2025-08-14 08:38:14,047 - INFO - 已加载配置: baidu
+2025-08-14 08:38:14,048 - INFO - 已加载配置: bing
+2025-08-14 08:38:14,049 - INFO - 已加载配置: duckduckgo
+2025-08-14 08:38:14,050 - INFO - 已加载配置: google
+2025-08-14 08:39:34,800 - INFO - 已加载配置: baidu
+2025-08-14 08:39:34,800 - INFO - 已加载配置: bing
+2025-08-14 08:39:34,801 - INFO - 已加载配置: duckduckgo
+2025-08-14 08:39:34,801 - INFO - 已加载配置: google
+2025-08-14 08:41:11,069 - INFO - 已加载配置: baidu
+2025-08-14 08:41:11,069 - INFO - 已加载配置: bing
+2025-08-14 08:41:11,069 - INFO - 已加载配置: duckduckgo
+2025-08-14 08:41:11,069 - INFO - 已加载配置: google
+2025-08-14 08:47:10,018 - INFO - 已加载配置: baidu
+2025-08-14 08:47:10,019 - INFO - 已加载配置: bing
+2025-08-14 08:47:10,019 - INFO - 已加载配置: duckduckgo
+2025-08-14 08:47:10,019 - INFO - 已加载配置: google
+2025-08-14 08:47:10,862 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-14 08:47:13,648 - INFO - Tor ports are ready
+2025-08-14 08:47:13,660 - INFO - Processing request of type ListToolsRequest
+2025-08-14 09:03:27,667 - INFO - 已加载配置: baidu
+2025-08-14 09:03:27,667 - INFO - 已加载配置: bing
+2025-08-14 09:03:27,668 - INFO - 已加载配置: duckduckgo
+2025-08-14 09:03:27,668 - INFO - 已加载配置: google
+2025-08-14 09:03:28,523 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-14 09:03:31,418 - INFO - Tor ports are ready
+2025-08-14 09:03:31,431 - INFO - Processing request of type ListToolsRequest
+2025-08-14 09:04:23,636 - INFO - Processing request of type ListToolsRequest
+2025-08-14 09:05:56,391 - INFO - Processing request of type ListToolsRequest
+2025-08-14 09:16:24,470 - INFO - 已加载配置: baidu
+2025-08-14 09:16:24,471 - INFO - 已加载配置: bing
+2025-08-14 09:16:24,471 - INFO - 已加载配置: duckduckgo
+2025-08-14 09:16:24,472 - INFO - 已加载配置: google
+2025-08-14 09:16:25,331 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-14 09:16:28,091 - INFO - Tor ports are ready
+2025-08-14 09:16:28,102 - INFO - Processing request of type ListToolsRequest
+2025-08-14 09:16:31,176 - INFO - Processing request of type ListToolsRequest
+2025-08-14 09:16:37,153 - INFO - Processing request of type CallToolRequest
+2025-08-14 09:16:39,669 - INFO - SerpAPI请求URL: https://serpapi.com/search?engine=google&hl=zh-cn&gl=cn&num=15&q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&api_key=8acd7ec820a33b7bbde52799673593bc5554055bdbccf3a7ae494ba70608b00b
+2025-08-14 09:16:39,669 - INFO - 响应状态码: 200
+2025-08-14 09:16:39,670 - INFO - 响应大小: 26330 bytes
+2025-08-14 09:16:39,672 - INFO - 原始数据已保存: data\raw\DFD_处理过程命名规范_动词_名词_20250814_091637\google_DFD_处理过程命名规范_动词_名词_20250814_091637.json
+2025-08-14 09:16:39,674 - INFO - 解析数据已保存: data\parsed\DFD_处理过程命名规范_动词_名词_20250814_091637\google_DFD_处理过程命名规范_动词_名词_20250814_091637.json, data\parsed\DFD_处理过程命名规范_动词_名词_20250814_091637\google_DFD_处理过程命名规范_动词_名词_20250814_091637.md
+2025-08-14 09:33:41,461 - INFO - 已加载配置: baidu
+2025-08-14 09:33:41,462 - INFO - 已加载配置: bing
+2025-08-14 09:33:41,462 - INFO - 已加载配置: duckduckgo
+2025-08-14 09:33:41,463 - INFO - 已加载配置: google
+2025-08-14 09:41:44,926 - INFO - 已加载配置: baidu
+2025-08-14 09:41:44,927 - INFO - 已加载配置: bing
+2025-08-14 09:41:44,927 - INFO - 已加载配置: duckduckgo
+2025-08-14 09:41:44,927 - INFO - 已加载配置: google
+2025-08-14 09:41:45,744 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-14 09:41:48,664 - INFO - Tor ports are ready
+2025-08-14 09:41:48,676 - INFO - Processing request of type ListToolsRequest
+2025-08-14 09:47:28,657 - INFO - Processing request of type ListToolsRequest
+2025-08-14 09:47:37,798 - INFO - Processing request of type CallToolRequest
+2025-08-14 09:47:42,543 - INFO - SerpAPI请求URL: https://serpapi.com/search?engine=google&hl=zh-cn&gl=cn&num=15&q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+DFD+%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5+%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B+%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8+%E6%95%B0%E6%8D%AE%E6%B5%81+%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84+%E5%88%86%E8%A7%A3%E6%96%B9%E6%B3%95+%E7%BB%98%E5%88%B6%E8%A7%84%E8%8C%83+%E7%AC%A6%E5%8F%B7%E6%A0%87%E5%87%86+%E5%91%BD%E5%90%8D%E7%BA%A6%E5%AE%9A+%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90+%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8&api_key=8acd7ec820a33b7bbde52799673593bc5554055bdbccf3a7ae494ba70608b00b
+2025-08-14 09:47:42,543 - INFO - 响应状态码: 200
+2025-08-14 09:47:42,543 - INFO - 响应大小: 29001 bytes
+2025-08-14 09:47:42,546 - INFO - 原始数据已保存: data\raw\数据流图_DFD_核心概念_外部实体_处理过程_数据存储_数据流_层次结构_分解方法_绘制规范_符号_20250814_094737\google_数据流图_DFD_核心概念_外部实体_处理过程_数据存储_数据流_层次结构_分解方法_绘制规范_符号_20250814_094737.json
+2025-08-14 09:47:42,548 - INFO - 解析数据已保存: data\parsed\数据流图_DFD_核心概念_外部实体_处理过程_数据存储_数据流_层次结构_分解方法_绘制规范_符号_20250814_094737\google_数据流图_DFD_核心概念_外部实体_处理过程_数据存储_数据流_层次结构_分解方法_绘制规范_符号_20250814_094737.json, data\parsed\数据流图_DFD_核心概念_外部实体_处理过程_数据存储_数据流_层次结构_分解方法_绘制规范_符号_20250814_094737\google_数据流图_DFD_核心概念_外部实体_处理过程_数据存储_数据流_层次结构_分解方法_绘制规范_符号_20250814_094737.md
+2025-08-14 09:48:09,298 - INFO - Processing request of type ListToolsRequest
+2025-08-14 09:48:22,160 - INFO - Processing request of type CallToolRequest
+2025-08-14 09:48:24,221 - INFO - SerpAPI请求URL: https://serpapi.com/search?engine=google&hl=zh-cn&gl=cn&num=10&q=DFD+Process+Depth+Analysis&api_key=8acd7ec820a33b7bbde52799673593bc5554055bdbccf3a7ae494ba70608b00b
+2025-08-14 09:48:24,221 - INFO - 响应状态码: 200
+2025-08-14 09:48:24,221 - INFO - 响应大小: 32403 bytes
+2025-08-14 09:48:24,223 - INFO - 原始数据已保存: data\raw\DFD_Process_Depth_Analysis_20250814_094822\google_DFD_Process_Depth_Analysis_20250814_094822.json
+2025-08-14 09:48:24,225 - INFO - 解析数据已保存: data\parsed\DFD_Process_Depth_Analysis_20250814_094822\google_DFD_Process_Depth_Analysis_20250814_094822.json, data\parsed\DFD_Process_Depth_Analysis_20250814_094822\google_DFD_Process_Depth_Analysis_20250814_094822.md
+2025-08-14 09:48:40,447 - INFO - Processing request of type ListToolsRequest
+2025-08-14 09:48:45,271 - INFO - Processing request of type CallToolRequest
+2025-08-14 09:48:45,271 - INFO - 开始搜索关键词: 处理的分解原则和方法 数据流图 DFD
+2025-08-14 09:48:45,271 - INFO - 注意: search_web函数已经过时，建议使用新的通用爬虫框架 crawler.search_and_parse
+2025-08-14 09:48:49,654 - INFO - SerpAPI请求URL: https://serpapi.com/search?engine=google&hl=zh-cn&gl=cn&num=12&q=%E5%A4%84%E7%90%86%E7%9A%84%E5%88%86%E8%A7%A3%E5%8E%9F%E5%88%99%E5%92%8C%E6%96%B9%E6%B3%95+%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+DFD&api_key=8acd7ec820a33b7bbde52799673593bc5554055bdbccf3a7ae494ba70608b00b
+2025-08-14 09:48:49,654 - INFO - 响应状态码: 200
+2025-08-14 09:48:49,654 - INFO - 响应大小: 24527 bytes
+2025-08-14 09:48:49,656 - INFO - 原始数据已保存: data\raw\处理的分解原则和方法_数据流图_DFD_20250814_094845\google_处理的分解原则和方法_数据流图_DFD_20250814_094845.json
+2025-08-14 09:48:49,658 - INFO - 解析数据已保存: data\parsed\处理的分解原则和方法_数据流图_DFD_20250814_094845\google_处理的分解原则和方法_数据流图_DFD_20250814_094845.json, data\parsed\处理的分解原则和方法_数据流图_DFD_20250814_094845\google_处理的分解原则和方法_数据流图_DFD_20250814_094845.md
+2025-08-14 09:48:49,658 - INFO - 找到 12 个搜索结果，开始处理...
+2025-08-14 09:48:49,658 - INFO - 正在处理第 1 个链接: https://www.cnblogs.com/ITnoteforlsy/p/16288221.html
+2025-08-14 09:48:49,806 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-14 09:49:19,820 - INFO - 第 1 个链接处理完成
+2025-08-14 09:49:19,820 - INFO - 正在处理第 2 个链接: https://blog.csdn.net/qq_29385297/article/details/124460539
+2025-08-14 09:49:20,989 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-14 09:49:50,998 - INFO - 第 2 个链接处理完成
+2025-08-14 09:49:50,998 - INFO - 正在处理第 3 个链接: https://zhuanlan.zhihu.com/p/589061234
+2025-08-14 09:49:52,169 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-14 09:50:22,185 - INFO - 第 3 个链接处理完成
+2025-08-14 09:50:22,185 - INFO - 正在处理第 4 个链接: https://blog.csdn.net/xiaoxiang2017/article/details/81456317
+2025-08-14 09:50:23,342 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-14 09:50:53,357 - INFO - 第 4 个链接处理完成
+2025-08-14 09:50:53,357 - INFO - 正在处理第 5 个链接: https://xie.infoq.cn/article/bcf0498b3adc1566bf2f63e07
+2025-08-14 09:50:54,529 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-14 09:51:24,545 - INFO - 第 5 个链接处理完成
+2025-08-14 09:51:24,546 - INFO - 正在处理第 6 个链接: https://cloud.kepuchina.cn/newSearch/imgText?id=6972589962014724096
+2025-08-14 09:51:25,700 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-14 09:51:55,716 - INFO - 第 6 个链接处理完成
+2025-08-14 09:51:55,716 - INFO - 正在处理第 7 个链接: https://zh.wikipedia.org/zh-cn/%E8%B3%87%E6%96%99%E6%B5%81%E7%A8%8B%E5%9C%96
+2025-08-14 09:51:56,942 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-14 09:52:26,951 - INFO - 第 7 个链接处理完成
+2025-08-14 09:52:26,951 - INFO - 正在处理第 8 个链接: http://www.uml.org.cn/sjjm/202006302.asp
+2025-08-14 09:52:28,106 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-14 09:52:58,116 - INFO - 第 8 个链接处理完成
+2025-08-14 09:52:58,116 - INFO - 正在处理第 9 个链接: https://www.cnblogs.com/bewolf/p/4499911.html
+2025-08-14 09:52:59,283 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-14 09:53:29,296 - INFO - 第 9 个链接处理完成
+2025-08-14 09:53:29,296 - INFO - 正在处理第 10 个链接: https://jingyan.baidu.com/article/4f34706eefdb04e387b56deb.html
+2025-08-14 09:53:30,457 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-14 09:54:00,460 - INFO - 第 10 个链接处理完成
+2025-08-14 09:54:00,461 - INFO - 正在处理第 11 个链接: https://cloud.tencent.com/developer/article/2039273
+2025-08-14 09:54:01,615 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-14 09:54:31,618 - INFO - 第 11 个链接处理完成
+2025-08-14 09:54:31,618 - INFO - 正在处理第 12 个链接: https://baike.baidu.com/item/%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE%28DataFlowDiagram%2CDFD%29/15176258?noadapt=1
+2025-08-14 09:54:32,781 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-14 09:55:02,783 - INFO - 第 12 个链接处理完成
+2025-08-14 09:55:24,562 - INFO - Processing request of type ListToolsRequest
+2025-08-14 09:56:16,226 - INFO - Processing request of type ListToolsRequest
+2025-08-14 09:57:13,879 - INFO - Processing request of type ListToolsRequest
+2025-08-14 09:58:09,001 - INFO - Processing request of type ListToolsRequest
+2025-08-14 09:59:06,353 - INFO - Processing request of type ListToolsRequest
+2025-08-14 10:00:07,770 - INFO - Processing request of type ListToolsRequest
+2025-08-14 10:01:22,227 - INFO - Processing request of type ListToolsRequest
+2025-08-14 10:02:21,374 - INFO - Processing request of type ListToolsRequest
+2025-08-14 10:03:18,717 - INFO - Processing request of type ListToolsRequest
+2025-08-14 10:04:29,262 - INFO - Processing request of type ListToolsRequest
+2025-08-14 10:05:36,114 - INFO - Processing request of type ListToolsRequest
+2025-08-14 10:06:31,458 - INFO - Processing request of type ListToolsRequest
+2025-08-14 10:07:52,125 - INFO - Processing request of type ListToolsRequest
+2025-08-14 10:08:52,888 - INFO - Processing request of type ListToolsRequest
+2025-08-14 10:10:11,115 - INFO - Processing request of type ListToolsRequest
+2025-08-14 10:10:12,849 - INFO - Processing request of type ListToolsRequest
+2025-08-14 10:10:14,443 - INFO - Processing request of type ListToolsRequest
+2025-08-14 10:10:15,927 - INFO - Processing request of type ListToolsRequest
+2025-08-14 10:10:17,613 - INFO - Processing request of type ListToolsRequest
+2025-08-20 19:24:45,064 - INFO - 已加载配置: baidu
+2025-08-20 19:24:45,065 - INFO - 已加载配置: bing
+2025-08-20 19:24:45,065 - INFO - 已加载配置: duckduckgo
+2025-08-20 19:24:45,065 - INFO - 已加载配置: google
+2025-08-20 19:26:03,257 - INFO - 已加载配置: baidu
+2025-08-20 19:26:03,257 - INFO - 已加载配置: bing
+2025-08-20 19:26:03,257 - INFO - 已加载配置: duckduckgo
+2025-08-20 19:26:03,257 - INFO - 已加载配置: google
+2025-08-20 19:26:03,870 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-20 19:26:06,358 - INFO - Tor ports are ready
+2025-08-20 19:26:16,522 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-20 19:26:26,708 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-20 19:27:14,325 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-20 19:27:16,822 - INFO - Tor ports are ready
+2025-08-20 19:27:22,116 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-20 19:54:43,601 - INFO - 已加载配置: baidu
+2025-08-20 19:54:43,601 - INFO - 已加载配置: bing
+2025-08-20 19:54:43,601 - INFO - 已加载配置: duckduckgo
+2025-08-20 19:54:43,602 - INFO - 已加载配置: google
+2025-08-20 19:54:44,154 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-20 19:54:46,594 - INFO - Tor ports are ready
+2025-08-20 19:56:47,092 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-20 19:56:57,363 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-20 20:02:00,517 - INFO - 已加载配置: baidu
+2025-08-20 20:02:00,518 - INFO - 已加载配置: bing
+2025-08-20 20:02:00,518 - INFO - 已加载配置: duckduckgo
+2025-08-20 20:02:00,518 - INFO - 已加载配置: google
+2025-08-20 20:02:01,058 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-20 20:02:03,556 - INFO - Tor ports are ready
+2025-08-20 20:04:03,994 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-20 20:04:14,284 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-20 20:11:22,719 - INFO - 已加载配置: baidu
+2025-08-20 20:11:22,720 - INFO - 已加载配置: bing
+2025-08-20 20:11:22,720 - INFO - 已加载配置: duckduckgo
+2025-08-20 20:11:22,720 - INFO - 已加载配置: google
+2025-08-20 20:11:23,216 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-20 20:11:25,669 - INFO - Tor ports are ready
+2025-08-20 20:13:12,261 - INFO - 已加载配置: baidu
+2025-08-20 20:13:12,262 - INFO - 已加载配置: bing
+2025-08-20 20:13:12,262 - INFO - 已加载配置: duckduckgo
+2025-08-20 20:13:12,263 - INFO - 已加载配置: google
+2025-08-20 20:13:14,015 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-20 20:13:16,461 - INFO - Tor ports are ready
+2025-08-21 07:02:18,896 - INFO - 已加载配置: baidu
+2025-08-21 07:02:18,897 - INFO - 已加载配置: bing
+2025-08-21 07:02:18,897 - INFO - 已加载配置: duckduckgo
+2025-08-21 07:02:18,898 - INFO - 已加载配置: google
+2025-08-21 07:02:19,475 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 07:02:21,990 - INFO - Tor ports are ready
+2025-08-21 07:04:22,367 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-21 07:04:32,558 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-21 12:03:10,293 - INFO - 已加载配置: baidu
+2025-08-21 12:03:10,293 - INFO - 已加载配置: bing
+2025-08-21 12:03:10,293 - INFO - 已加载配置: duckduckgo
+2025-08-21 12:03:10,293 - INFO - 已加载配置: google
+2025-08-21 12:03:10,826 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 12:03:13,292 - INFO - Tor ports are ready
+2025-08-21 12:04:21,690 - INFO - 已加载配置: baidu
+2025-08-21 12:04:21,691 - INFO - 已加载配置: bing
+2025-08-21 12:04:21,691 - INFO - 已加载配置: duckduckgo
+2025-08-21 12:04:21,691 - INFO - 已加载配置: google
+2025-08-21 12:04:22,346 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 12:04:24,921 - ERROR - Tor process exited with code 1
+2025-08-21 12:04:24,922 - ERROR - Log content: Aug 21 12:04:22.927 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 12:04:22.927 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 12:04:22.948 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 12:04:22.949 [warn] Path for DataDirectory (./
+2025-08-21 12:04:24,934 - INFO - Processing request of type ListToolsRequest
+2025-08-21 14:19:55,251 - INFO - 已加载配置: baidu
+2025-08-21 14:19:55,251 - INFO - 已加载配置: bing
+2025-08-21 14:19:55,252 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:19:55,252 - INFO - 已加载配置: google
+2025-08-21 14:19:56,038 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:19:58,813 - ERROR - Tor process exited with code 1
+2025-08-21 14:19:58,813 - ERROR - Log content: Aug 21 14:19:56.829 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:19:56.829 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:19:56.846 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:19:56.846 [warn] Path for DataDirectory (./
+2025-08-21 14:19:58,824 - INFO - Processing request of type ListToolsRequest
+2025-08-21 14:19:58,827 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:20:00,383 - INFO - HTTP Request: GET https://httpbin.org/ip "HTTP/1.1 200 OK"
+2025-08-21 14:20:12,955 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-21 14:20:12,969 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:20:14,969 - INFO - HTTP Request: GET https://httpbin.org/user-agent "HTTP/1.1 200 OK"
+2025-08-21 14:20:25,954 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-21 14:20:25,972 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:20:28,259 - INFO - HTTP Request: GET https://httpbin.org/headers "HTTP/1.1 200 OK"
+2025-08-21 14:21:28,317 - INFO - Retrying request to /chat/completions in 0.390144 seconds
+2025-08-21 14:21:47,444 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-21 14:21:47,457 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:21:48,960 - INFO - HTTP Request: GET https://check.torproject.org/ "HTTP/1.1 200 OK"
+2025-08-21 14:21:49,331 - INFO - HTTP Request: GET https://check.torproject.org/torcheck/img/tor-off.png "HTTP/1.1 200 OK"
+2025-08-21 14:21:52,005 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-21 14:22:08,847 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-21 14:22:08,860 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:22:08,860 - INFO - 开始搜索关键词: tor browser test
+2025-08-21 14:22:08,860 - INFO - 注意: search_web函数已经过时，建议使用新的通用爬虫框架 crawler.search_and_parse
+2025-08-21 14:22:10,579 - INFO - SerpAPI请求URL: https://serpapi.com/search?engine=google&hl=zh-cn&gl=cn&num=3&q=tor+browser+test&api_key=8acd7ec820a33b7bbde52799673593bc5554055bdbccf3a7ae494ba70608b00b
+2025-08-21 14:22:10,579 - INFO - 响应状态码: 200
+2025-08-21 14:22:10,579 - INFO - 响应大小: 16155 bytes
+2025-08-21 14:22:10,581 - INFO - 原始数据已保存: data\raw\tor_browser_test_20250821_142208\google_tor_browser_test_20250821_142208.json
+2025-08-21 14:22:10,585 - INFO - 解析数据已保存: data\parsed\tor_browser_test_20250821_142208\google_tor_browser_test_20250821_142208.json, data\parsed\tor_browser_test_20250821_142208\google_tor_browser_test_20250821_142208.md
+2025-08-21 14:22:10,585 - INFO - 找到 3 个搜索结果，开始处理...
+2025-08-21 14:22:10,585 - INFO - 正在处理第 1 个链接: https://www.browserling.com/tor-testing
+2025-08-21 14:22:11,859 - INFO - HTTP Request: GET https://www.browserling.com/tor-testing "HTTP/1.1 200 OK"
+2025-08-21 14:22:12,199 - INFO - HTTP Request: GET https://www.browserling.com/images/subscribe-paper-airplane.png "HTTP/1.1 200 OK"
+2025-08-21 14:22:14,576 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-21 14:22:57,455 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-21 14:22:57,469 - INFO - 第 1 个链接处理完成
+2025-08-21 14:22:57,470 - INFO - 正在处理第 2 个链接: https://forum.torproject.org/t/how-to-test-tor-and-relay-explanation/10016
+2025-08-21 14:22:59,892 - INFO - HTTP Request: GET https://forum.torproject.org/t/how-to-test-tor-and-relay-explanation/10016 "HTTP/1.1 200 OK"
+2025-08-21 14:23:07,336 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-21 14:23:07,344 - INFO - 第 2 个链接处理完成
+2025-08-21 14:23:07,344 - INFO - 正在处理第 3 个链接: https://catonmat.net/how-to-test-onion-links-without-installing-tor-browser
+2025-08-21 14:23:09,859 - INFO - HTTP Request: GET https://catonmat.net/how-to-test-onion-links-without-installing-tor-browser "HTTP/1.1 200 OK"
+2025-08-21 14:23:10,188 - INFO - HTTP Request: GET https://catonmat.net/images/this-space-reserved-for-jelly-stains.png "HTTP/1.1 200 OK"
+2025-08-21 14:23:12,830 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-21 14:23:52,192 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-21 14:23:52,213 - INFO - 第 3 个链接处理完成
+2025-08-21 14:26:31,103 - INFO - 已加载配置: baidu
+2025-08-21 14:26:31,103 - INFO - 已加载配置: bing
+2025-08-21 14:26:31,104 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:26:31,104 - INFO - 已加载配置: google
+2025-08-21 14:26:31,797 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:26:34,353 - ERROR - Tor process exited with code 1
+2025-08-21 14:26:34,353 - ERROR - Log content: Aug 21 14:26:32.365 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:26:32.365 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:26:32.382 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:26:32.382 [warn] Path for DataDirectory (./
+2025-08-21 14:26:34,366 - INFO - Processing request of type ListToolsRequest
+2025-08-21 14:26:34,369 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:26:34,374 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:26:34,377 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:26:34,380 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:26:34,383 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:28:42,661 - INFO - 已加载配置: baidu
+2025-08-21 14:28:42,661 - INFO - 已加载配置: bing
+2025-08-21 14:28:42,662 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:28:42,662 - INFO - 已加载配置: google
+2025-08-21 14:28:43,169 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:28:45,731 - ERROR - Tor process exited with code 1
+2025-08-21 14:28:45,731 - ERROR - Log content: Aug 21 14:28:43.742 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:28:43.742 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:28:43.759 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:28:43.760 [warn] Path for DataDirectory (./
+2025-08-21 14:29:24,875 - INFO - 已加载配置: baidu
+2025-08-21 14:29:24,876 - INFO - 已加载配置: bing
+2025-08-21 14:29:24,876 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:29:24,876 - INFO - 已加载配置: google
+2025-08-21 14:29:25,504 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:29:28,110 - ERROR - Tor process exited with code 1
+2025-08-21 14:29:28,110 - ERROR - Log content: Aug 21 14:29:26.124 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:29:26.125 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:29:26.141 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:29:26.142 [warn] Path for DataDirectory (./
+2025-08-21 14:29:28,121 - INFO - Processing request of type ListToolsRequest
+2025-08-21 14:29:28,124 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:29:28,126 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:29:28,128 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:29:28,130 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:29:28,133 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:30:53,637 - INFO - 已加载配置: baidu
+2025-08-21 14:30:53,638 - INFO - 已加载配置: bing
+2025-08-21 14:30:53,638 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:30:53,639 - INFO - 已加载配置: google
+2025-08-21 14:30:54,266 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:30:56,883 - ERROR - Tor process exited with code 1
+2025-08-21 14:30:56,883 - ERROR - Log content: Aug 21 14:30:54.887 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:30:54.887 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:30:54.905 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:30:54.906 [warn] Path for DataDirectory (./
+2025-08-21 14:30:56,896 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:30:56,899 - INFO - Processing request of type ListToolsRequest
+2025-08-21 14:30:56,903 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:32:14,649 - INFO - 已加载配置: baidu
+2025-08-21 14:32:14,650 - INFO - 已加载配置: bing
+2025-08-21 14:32:14,650 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:32:14,650 - INFO - 已加载配置: google
+2025-08-21 14:32:15,189 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:32:17,772 - ERROR - Tor process exited with code 1
+2025-08-21 14:32:17,772 - ERROR - Log content: Aug 21 14:32:15.785 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:32:15.785 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:32:15.805 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:32:15.806 [warn] Path for DataDirectory (D:
+2025-08-21 14:33:12,927 - INFO - 已加载配置: baidu
+2025-08-21 14:33:12,927 - INFO - 已加载配置: bing
+2025-08-21 14:33:12,927 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:33:12,927 - INFO - 已加载配置: google
+2025-08-21 14:33:13,565 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:33:16,139 - ERROR - Tor process exited with code 1
+2025-08-21 14:33:16,139 - ERROR - Log content: Aug 21 14:33:14.151 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:33:14.151 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:33:14.165 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:33:14.166 [warn] Path for DataDirectory (D:
+2025-08-21 14:33:16,152 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:33:16,155 - INFO - Processing request of type ListToolsRequest
+2025-08-21 14:33:16,158 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:37:04,837 - INFO - 已加载配置: baidu
+2025-08-21 14:37:04,837 - INFO - 已加载配置: bing
+2025-08-21 14:37:04,837 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:37:04,837 - INFO - 已加载配置: google
+2025-08-21 14:37:05,311 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:37:07,769 - ERROR - Tor process exited with code 1
+2025-08-21 14:37:07,769 - ERROR - Log content: Aug 21 14:37:05.773 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:37:05.773 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:37:05.797 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:37:05.797 [warn] Error while parsing config
+2025-08-21 14:37:29,215 - INFO - 已加载配置: baidu
+2025-08-21 14:37:29,215 - INFO - 已加载配置: bing
+2025-08-21 14:37:29,216 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:37:29,216 - INFO - 已加载配置: google
+2025-08-21 14:37:29,889 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:37:32,454 - ERROR - Tor process exited with code 1
+2025-08-21 14:37:32,455 - ERROR - Log content: Aug 21 14:37:30.467 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:37:30.467 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:37:30.483 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:37:30.483 [warn] Error while parsing config
+2025-08-21 14:37:32,468 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:37:32,470 - INFO - Processing request of type ListToolsRequest
+2025-08-21 14:37:32,473 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:41:06,641 - INFO - 已加载配置: baidu
+2025-08-21 14:41:06,641 - INFO - 已加载配置: bing
+2025-08-21 14:41:06,641 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:41:06,642 - INFO - 已加载配置: google
+2025-08-21 14:41:07,165 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:41:09,678 - ERROR - Tor process exited with code 1
+2025-08-21 14:41:09,678 - ERROR - Log content: Aug 21 14:41:07.688 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:41:07.688 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:41:07.705 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:41:07.706 [warn] Path for DataDirectory (D:
+2025-08-21 14:41:39,699 - INFO - 已加载配置: baidu
+2025-08-21 14:41:39,699 - INFO - 已加载配置: bing
+2025-08-21 14:41:39,699 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:41:39,700 - INFO - 已加载配置: google
+2025-08-21 14:41:40,364 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:41:42,920 - ERROR - Tor process exited with code 1
+2025-08-21 14:41:42,921 - ERROR - Log content: Aug 21 14:41:40.929 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:41:40.930 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:41:40.948 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:41:40.949 [warn] Path for DataDirectory (D:
+2025-08-21 14:41:42,934 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:41:42,936 - INFO - Processing request of type ListToolsRequest
+2025-08-21 14:41:42,939 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:44:06,639 - INFO - 已加载配置: baidu
+2025-08-21 14:44:06,639 - INFO - 已加载配置: bing
+2025-08-21 14:44:06,640 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:44:06,640 - INFO - 已加载配置: google
+2025-08-21 14:44:07,198 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:44:09,750 - ERROR - Tor process exited with code 1
+2025-08-21 14:44:09,751 - ERROR - Log content: Aug 21 14:44:07.761 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:44:07.762 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:44:07.779 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:44:07.780 [warn] Path for DataDirectory (./
+2025-08-21 14:44:36,068 - INFO - 已加载配置: baidu
+2025-08-21 14:44:36,068 - INFO - 已加载配置: bing
+2025-08-21 14:44:36,068 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:44:36,068 - INFO - 已加载配置: google
+2025-08-21 14:44:36,776 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:44:39,364 - ERROR - Tor process exited with code 1
+2025-08-21 14:44:39,364 - ERROR - Log content: Aug 21 14:44:37.376 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:44:37.376 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:44:37.393 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:44:37.394 [warn] Path for DataDirectory (./
+2025-08-21 14:44:39,374 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:44:39,377 - INFO - Processing request of type ListToolsRequest
+2025-08-21 14:44:39,380 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:46:21,197 - INFO - 已加载配置: baidu
+2025-08-21 14:46:21,198 - INFO - 已加载配置: bing
+2025-08-21 14:46:21,198 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:46:21,198 - INFO - 已加载配置: google
+2025-08-21 14:46:21,711 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:46:24,185 - INFO - Tor ports are ready
+2025-08-21 14:46:50,080 - INFO - 已加载配置: baidu
+2025-08-21 14:46:50,081 - INFO - 已加载配置: bing
+2025-08-21 14:46:50,081 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:46:50,081 - INFO - 已加载配置: google
+2025-08-21 14:46:50,705 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:46:53,346 - ERROR - Tor process exited with code 1
+2025-08-21 14:46:53,346 - ERROR - Log content: Aug 21 14:46:51.351 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:46:51.351 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:46:51.367 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:46:51.367 [warn] Path for DataDirectory (./
+2025-08-21 14:46:53,359 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:46:53,362 - INFO - Processing request of type ListToolsRequest
+2025-08-21 14:46:53,364 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:48:10,040 - INFO - 已加载配置: baidu
+2025-08-21 14:48:10,041 - INFO - 已加载配置: bing
+2025-08-21 14:48:10,041 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:48:10,041 - INFO - 已加载配置: google
+2025-08-21 14:48:10,639 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:48:13,172 - ERROR - Tor process exited with code 1
+2025-08-21 14:48:13,172 - ERROR - Log content: Aug 21 14:48:11.185 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:48:11.185 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:48:11.201 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:48:11.201 [warn] Path for DataDirectory (./
+2025-08-21 14:48:13,184 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:48:13,186 - INFO - Processing request of type ListToolsRequest
+2025-08-21 14:48:13,189 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:50:42,699 - INFO - 已加载配置: baidu
+2025-08-21 14:50:42,700 - INFO - 已加载配置: bing
+2025-08-21 14:50:42,700 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:50:42,700 - INFO - 已加载配置: google
+2025-08-21 14:50:43,287 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:50:45,846 - ERROR - Tor process exited with code 1
+2025-08-21 14:50:45,846 - ERROR - Log content: Aug 21 14:50:43.856 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:50:43.856 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:50:43.875 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:50:43.876 [warn] Path for DataDirectory (./
+2025-08-21 14:51:37,012 - INFO - 已加载配置: baidu
+2025-08-21 14:51:37,012 - INFO - 已加载配置: bing
+2025-08-21 14:51:37,012 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:51:37,012 - INFO - 已加载配置: google
+2025-08-21 14:51:37,684 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe -f ./torrc
+2025-08-21 14:51:40,239 - ERROR - Tor process exited with code 1
+2025-08-21 14:51:40,240 - ERROR - Log content: Aug 21 14:51:38.249 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Aug 21 14:51:38.249 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Aug 21 14:51:38.267 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc".
+Aug 21 14:51:38.267 [warn] Path for DataDirectory (./
+2025-08-21 14:51:40,253 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:51:40,256 - INFO - Processing request of type ListToolsRequest
+2025-08-21 14:51:40,258 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:53:10,005 - INFO - 已加载配置: baidu
+2025-08-21 14:53:10,005 - INFO - 已加载配置: bing
+2025-08-21 14:53:10,005 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:53:10,006 - INFO - 已加载配置: google
+2025-08-21 14:53:10,057 - INFO - Detected existing Tor process, using it
+2025-08-21 14:53:36,597 - INFO - 已加载配置: baidu
+2025-08-21 14:53:36,597 - INFO - 已加载配置: bing
+2025-08-21 14:53:36,598 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:53:36,598 - INFO - 已加载配置: google
+2025-08-21 14:53:36,639 - INFO - Detected existing Tor process, using it
+2025-08-21 14:53:36,650 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:53:36,674 - INFO - Processing request of type ListToolsRequest
+2025-08-21 14:53:36,676 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:53:36,832 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-21 14:54:52,879 - INFO - 已加载配置: baidu
+2025-08-21 14:54:52,879 - INFO - 已加载配置: bing
+2025-08-21 14:54:52,879 - INFO - 已加载配置: duckduckgo
+2025-08-21 14:54:52,879 - INFO - 已加载配置: google
+2025-08-21 14:54:52,907 - INFO - Detected existing Tor process, using it
+2025-08-21 14:54:52,919 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:54:52,942 - INFO - Processing request of type ListToolsRequest
+2025-08-21 14:54:52,946 - INFO - Processing request of type CallToolRequest
+2025-08-21 14:54:53,095 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050

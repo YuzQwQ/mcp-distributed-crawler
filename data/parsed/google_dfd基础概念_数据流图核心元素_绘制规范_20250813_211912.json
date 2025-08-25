@@ -1,0 +1,198 @@
+{
+  "success": true,
+  "engine": "google",
+  "keyword": "dfd基础概念 数据流图核心元素 绘制规范",
+  "timestamp": "20250813_211912",
+  "total_found": 15,
+  "results": [
+    {
+      "url": "https://blog.csdn.net/lpw_cn/article/details/139532750",
+      "title": "数据流图（DFD）绘制规范原创",
+      "snippet": "DFD主要由以下基本元素组成：. 过程（Process）：. 表示数据处理的步骤或功能。 通常用圆形或椭圆形表示，内部写上过程名称 ...",
+      "position": 1,
+      "metadata": {
+        "date": "2024年6月7日",
+        "source": "CSDN博客"
+      }
+    },
+    {
+      "url": "https://blog.csdn.net/lishanleilixin/article/details/89330427",
+      "title": "数据流图（DFD）概念及画法转载",
+      "snippet": "数据流图（Data Flow Diagram）：简称DFD，它从数据传递和加工角度，以图形方式来表达系统的逻辑功能、以图形的方式描绘数据在系统中流动和处理的过程，由于它只 ...",
+      "position": 2,
+      "metadata": {
+        "date": "2019年4月16日",
+        "source": "CSDN博客"
+      }
+    },
+    {
+      "url": "https://cloud.tencent.com/developer/article/2039273",
+      "title": "软件工程— 数据流图的画法",
+      "snippet": "本文介绍数据流图（DFD）概念、基本符号、画法，以工厂订单报表为例展示分层绘制过程，涵盖顶层、0层、1层数据流图，还提及命名规范、附加符号，附教务和图书馆管理子系统 ...",
+      "position": 3,
+      "metadata": {
+        "source": "腾讯云"
+      }
+    },
+    {
+      "url": "https://juejin.cn/post/7131659376221224991",
+      "title": "一篇文章带你学会如何画数据流图（DFD）",
+      "snippet": "数据流图(DFD) 是一种图形化技术，它描绘信息流和数据从输入移动到输出的过程中所经受的变换。 在数据流图中没有任何具体的物理部件，它只是描绘数据在软件 ...",
+      "position": 4,
+      "metadata": {
+        "date": "2022年8月14日",
+        "source": "掘金"
+      }
+    },
+    {
+      "url": "https://www.processon.io/zh-tw/blog/data-flow-diagram",
+      "title": "什麼是DFD（資料流程圖）？符號、結構，教程、範例",
+      "snippet": "資料流程圖（DFD） ，是一種圖形表示方法，用於描繪系統中資料的流動、儲存、處理及外部實體之間的互動過程。它透過將複雜的系統分解為易於理解的組件和 ...",
+      "position": 5,
+      "metadata": {
+        "date": "2024年11月28日",
+        "source": "processon.io"
+      }
+    },
+    {
+      "url": "https://www.jiandaoyun.com/nblog/131883/",
+      "title": "如何绘制高效ERP数据流图？",
+      "snippet": "一、ERP数据流图的基础概念与作用 · 展现信息在ERP各功能模块间的运动路径。 · 便于发现流程瓶颈与重复环节。 · 有助于需求分析、系统设计及用户培训。",
+      "position": 6,
+      "metadata": {
+        "date": "2025年7月17日",
+        "source": "简道云"
+      }
+    },
+    {
+      "url": "https://cloud.tencent.com/developer/article/1906134",
+      "title": "软件工程—数据流图的概念及步骤",
+      "snippet": "数据流图（DFD）是结构化系统分析工具，通过图形描述数据传递与加工。涵盖元素、绘制步骤及注意事项，并结合高校选课、医院监护等五案例，分层展示系统数据流图绘制方法。",
+      "position": 7,
+      "metadata": {
+        "source": "腾讯云"
+      }
+    },
+    {
+      "url": "https://www.feishu.cn/template/general-data-flow-diagram",
+      "title": "数据流图模板- 飞书官网",
+      "snippet": "数据流图由四个主要组件构成：数据流、处理过程、数据存储和外部实体。这些组件共同描绘了数据在系统中的流动和变化，提供了一个清晰的数据处理视图。了解这些组件的功能和 ...",
+      "position": 8,
+      "metadata": {
+        "source": "Feishu"
+      }
+    },
+    {
+      "url": "https://www.cnblogs.com/johnnyzen/p/14644010.html",
+      "title": "系统建模之程序流程图|系统流程图|数据流图- 千千寰宇",
+      "snippet": "第0层DFD称为系统基本模型，可以将整个软件系统表示为一个具有输入和输出的黑匣子。用一个圆圈表示。 上一层DFD中的每一个圆圈可以进一步扩展成一个独立的数据流图，以揭示 ...",
+      "position": 9,
+      "metadata": {
+        "source": "博客园"
+      }
+    },
+    {
+      "url": "https://xie.infoq.cn/article/ba391231f98bed72b5ef2ceba",
+      "title": "数据流图：一篇文章教你如何轻松画出来",
+      "snippet": "1. 开始绘制：数据流. 首先，我们需要确定系统中涉及到的所有数据流，并将其表示在数据流图中。 · 2. 继续绘制：处理过程. 接下来，我们需要确定系统中涉及到的 ...",
+      "position": 10,
+      "metadata": {
+        "date": "2023年11月13日",
+        "source": "InfoQ 写作社区"
+      }
+    },
+    {
+      "url": "https://blog.51cto.com/u_16175134/9491888",
+      "title": "软考业务流程图和数据流图的区别 - 51CTO博客",
+      "snippet": "在绘制数据流图时，常见的元素包括：数据流、处理过程、数据存储和外部实体。数据流表示数据在系统中的流动路径；处理过程表示对数据进行的操作或变换；数据 ...",
+      "position": 11,
+      "metadata": {
+        "date": "2024年1月30日",
+        "source": "51CTO博客"
+      }
+    },
+    {
+      "url": "https://www.esensoft.com/industry-news/dx-40318.html",
+      "title": "数据流图详解：用途、绘制步骤与数据中台实例应用",
+      "snippet": "在数据流图中，各元素有一套标准符号和规范，以便更好地理解和解释系统的数据流向。以下是常见的数据流图元素及其标准符号：. 1、实体/角色（Entity/Agent）： ...",
+      "position": 12,
+      "metadata": {
+        "date": "2024年3月28日",
+        "source": "亿信华辰"
+      }
+    },
+    {
+      "url": "https://www.drawzh.com/1076.html",
+      "title": "数据流程图（需求分析方法和建模工具） - Draw",
+      "snippet": "数据流图：简称DFD，就是采用图形方式来表达系统的逻辑功能、数据在系统 ... 数据流图的基本符号的意思：. 1.矩形表示数据的外部实体；. 2.圆角的 ...",
+      "position": 13,
+      "metadata": {
+        "date": "2020年1月10日",
+        "source": "drawzh.com"
+      }
+    },
+    {
+      "url": "https://cloud.baidu.com/article/3297006",
+      "title": "软件工程中的核心工具：如何绘制数据流图",
+      "snippet": "数据流图主要由四种基本元素构成：数据源（Data Source）、数据存储（Data Storage）、数据处理（Data Process）和数据流（Data Flow）。",
+      "position": 14,
+      "metadata": {
+        "date": "2024年4月6日",
+        "source": "百度智能云"
+      }
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/589061234",
+      "title": "数据流图（DFD）",
+      "snippet": "在数据流图中，基本的元素包括种：数据流、加工、数据存储（文件）、外部实体。 数据流含义的诠释在数据字典中。 数据库就是典型的数据存储。为了表达相关的 ...",
+      "position": 15,
+      "metadata": {
+        "date": "2022年12月4日",
+        "source": "知乎专栏"
+      }
+    }
+  ],
+  "parsing_info": {
+    "rules_used": {
+      "primary_keys": [
+        "organic_results",
+        "web_results",
+        "news_results",
+        "related_questions"
+      ],
+      "link_fields": [
+        "link",
+        "url",
+        "displayed_link"
+      ],
+      "title_fields": [
+        "title",
+        "name"
+      ],
+      "snippet_fields": [
+        "snippet",
+        "description",
+        "content"
+      ],
+      "position_fields": [
+        "position",
+        "rank"
+      ],
+      "metadata_fields": [
+        "date",
+        "source",
+        "domain"
+      ]
+    },
+    "raw_data_keys": [
+      "search_metadata",
+      "search_parameters",
+      "search_information",
+      "organic_results",
+      "related_searches",
+      "pagination",
+      "serpapi_pagination"
+    ],
+    "extraction_method": "config_based"
+  }
+}

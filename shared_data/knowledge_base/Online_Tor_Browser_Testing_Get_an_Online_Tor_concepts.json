@@ -1,0 +1,56 @@
+{
+  "table_name": "dfd_concepts",
+  "description": "DFD基本概念和元素定义",
+  "schema": {
+    "id": "text",
+    "type": "text",
+    "description": "text",
+    "symbol": "text",
+    "rules": "jsonb (数组)"
+  },
+  "data": [
+    {
+      "id": "proc-001",
+      "type": "process",
+      "description": "处理相关的DFD元素定义",
+      "symbol": "圆形/椭圆形",
+      "rules": [
+        "处理的使用规则和约定"
+      ]
+    },
+    {
+      "id": "enti-002",
+      "type": "entity",
+      "description": "外部实体相关的DFD元素定义",
+      "symbol": "矩形",
+      "rules": [
+        "外部实体的使用规则和约定"
+      ]
+    },
+    {
+      "id": "data-003",
+      "type": "data_store",
+      "description": "数据存储相关的DFD元素定义",
+      "symbol": "两条平行线",
+      "rules": [
+        "数据存储的使用规则和约定"
+      ]
+    },
+    {
+      "id": "data-004",
+      "type": "data_flow",
+      "description": "数据流相关的DFD元素定义",
+      "symbol": "箭头线",
+      "rules": [
+        "数据流的使用规则和约定"
+      ]
+    }
+  ],
+  "metadata": {
+    "source_url": "https://www.browserling.com/tor-testing",
+    "source_title": "Online Tor Browser Testing – Get an Online Tor",
+    "crawl_time": "2025-08-21T14:22:57.461649",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  }
+}

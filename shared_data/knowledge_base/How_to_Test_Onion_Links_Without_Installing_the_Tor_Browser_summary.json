@@ -1,0 +1,28 @@
+{
+  "extraction_summary": {
+    "source_url": "https://catonmat.net/how-to-test-onion-links-without-installing-tor-browser",
+    "extraction_time": "2025-08-21T14:23:52.210814",
+    "total_files_saved": 5,
+    "statistics": {
+      "concepts_count": 4,
+      "rules_count": 3,
+      "patterns_count": 1,
+      "cases_count": 2,
+      "mappings_count": 2
+    }
+  },
+  "saved_files": [
+    "shared_data\\knowledge_base\\How_to_Test_Onion_Links_Without_Installing_the_Tor_Browser_concepts.json",
+    "shared_data\\knowledge_base\\How_to_Test_Onion_Links_Without_Installing_the_Tor_Browser_rules.json",
+    "shared_data\\knowledge_base\\How_to_Test_Onion_Links_Without_Installing_the_Tor_Browser_patterns.json",
+    "shared_data\\knowledge_base\\How_to_Test_Onion_Links_Without_Installing_the_Tor_Browser_cases.json",
+    "shared_data\\knowledge_base\\How_to_Test_Onion_Links_Without_Installing_the_Tor_Browser_nlp_mappings.json"
+  ],
+  "knowledge_base_structure": {
+    "dfd_concepts": "DFD基本概念和元素定义",
+    "dfd_rules": "DFD绘制和验证规则",
+    "dfd_patterns": "DFD系统模式和模板",
+    "dfd_cases": "错误案例和最佳实践",
+    "dfd_nlp_mappings": "自然语言到DFD元素的映射规则"
+  }
+}

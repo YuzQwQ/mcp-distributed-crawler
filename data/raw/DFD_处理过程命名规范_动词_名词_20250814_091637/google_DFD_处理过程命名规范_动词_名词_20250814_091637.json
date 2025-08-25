@@ -1,0 +1,363 @@
+{
+  "success": true,
+  "engine": "google",
+  "keyword": "DFD 处理过程命名规范 动词 名词",
+  "max_results": 15,
+  "timestamp": "20250814_091637",
+  "request_time": 2.516,
+  "raw_data": {
+    "search_metadata": {
+      "id": "689d38f673d224def5baf9bb",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/020f737cc385e296/689d38f673d224def5baf9bb.json",
+      "pixel_position_endpoint": "https://serpapi.com/searches/020f737cc385e296/689d38f673d224def5baf9bb.json_with_pixel_position",
+      "created_at": "2025-08-14 01:16:38 UTC",
+      "processed_at": "2025-08-14 01:16:38 UTC",
+      "google_url": "https://www.google.com/search?q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&oq=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&hl=zh-cn&gl=cn&num=15&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/020f737cc385e296/689d38f673d224def5baf9bb.html",
+      "total_time_taken": 1.29
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "DFD 处理过程命名规范 动词 名词",
+      "google_domain": "google.com",
+      "hl": "zh-cn",
+      "gl": "cn",
+      "num": "15",
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "DFD 处理过程命名规范 动词 名词",
+      "total_results": 1010,
+      "time_taken_displayed": 0.22,
+      "organic_results_state": "Results for exact spelling"
+    },
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "数据流图DFD画法转载",
+        "link": "https://blog.csdn.net/zmx729618/article/details/70159757",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://blog.csdn.net/zmx729618/article/details/70159757&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECBYQAQ",
+        "displayed_link": "https://blog.csdn.net › zmx729618 › article › details",
+        "favicon": "https://serpapi.com/searches/689d38f673d224def5baf9bb/images/9cc6cf7841448a9c584e258f5dfcabdbad9250a1b4ca7cc3f91f09ddb4d17acb.png",
+        "date": "2017年4月13日",
+        "snippet": "2）为处理命名 A．通常先为数据流命名，然后再为与之相关联的处理命名； B．名字应该反映整个处理的功能； C．应该尽量避免空洞笼统的动词做名字，如“处理”、“加工 ...",
+        "snippet_highlighted_words": [
+          "处理命名",
+          "命名",
+          "处理命名",
+          "处理",
+          "动词",
+          "处理"
+        ],
+        "source": "CSDN博客"
+      },
+      {
+        "position": 2,
+        "title": "什么是数据流图(DFD)？",
+        "link": "https://www.ibm.com/cn-zh/think/topics/data-flow-diagram",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ibm.com/cn-zh/think/topics/data-flow-diagram&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECBcQAQ",
+        "displayed_link": "https://www.ibm.com › topics › data-flow-diagram",
+        "favicon": "https://serpapi.com/searches/689d38f673d224def5baf9bb/images/9cc6cf7841448a9c584e258f5dfcabdb5253f0632a14563b1f4882ed21feec13.png",
+        "snippet": "数据流图(DFD) 规则 · 每个数据流都标有简短的描述性文本标记，用于标识正在移动的数据的类型。 · 每个流程都标有一个简短的动词短语，描述正在执行的数据转换。 · 每个数据存储 ...",
+        "snippet_highlighted_words": [
+          "DFD",
+          "动词"
+        ],
+        "source": "IBM"
+      },
+      {
+        "position": 3,
+        "title": "【软件工程】数据流图DFD 原创",
+        "link": "https://blog.csdn.net/wendao76/article/details/142799667",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://blog.csdn.net/wendao76/article/details/142799667&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECBkQAQ",
+        "displayed_link": "https://blog.csdn.net › wendao76 › article › details",
+        "favicon": "https://serpapi.com/searches/689d38f673d224def5baf9bb/images/9cc6cf7841448a9c584e258f5dfcabdb4d3662f991e4a9892c8c4524fa710cf8.png",
+        "date": "2024年10月10日",
+        "snippet": "除了与数据存储之间的数据流不用命名外，数据流应该用名词或名词短语命名。 处理（加工）：用圆或 椭圆 （有时也用矩形）表示，代表对数据进行加工或处理的环节。",
+        "snippet_highlighted_words": [
+          "命名",
+          "名词",
+          "名词",
+          "命名",
+          "处理",
+          "处理"
+        ],
+        "source": "CSDN博客"
+      },
+      {
+        "position": 4,
+        "title": "数据流图DFD画法「建议收藏」",
+        "link": "https://cloud.tencent.com/developer/article/2030083?policyId=1003",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://cloud.tencent.com/developer/article/2030083%3FpolicyId%3D1003&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECB0QAQ",
+        "displayed_link": "https://cloud.tencent.com › developer › article",
+        "favicon": "https://serpapi.com/searches/689d38f673d224def5baf9bb/images/9cc6cf7841448a9c584e258f5dfcabdb12789f9941a36a580b0513045e89074d.png",
+        "date": "2022年6月25日",
+        "snippet": "通常先为数据流命名，然后再为与之相关联的处理命名； B．名字应该反映整个处理的功能； C．应该尽量避免空洞笼统的动词做名字，如“处理”、“加工”; D．通常用一个 ...",
+        "snippet_highlighted_words": [
+          "命名",
+          "处理命名",
+          "处理",
+          "动词",
+          "处理"
+        ],
+        "source": "腾讯云"
+      },
+      {
+        "position": 5,
+        "title": "数据流图DFD画法「建议收藏」",
+        "link": "https://cloud.tencent.com.cn/developer/article/2030083",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://cloud.tencent.com.cn/developer/article/2030083&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECBgQAQ",
+        "displayed_link": "https://cloud.tencent.com.cn › developer › article",
+        "favicon": "https://serpapi.com/searches/689d38f673d224def5baf9bb/images/9cc6cf7841448a9c584e258f5dfcabdba7194f3f37eb6e21b0d982a756d734cb.png",
+        "date": "2022年6月25日",
+        "snippet": "应该尽量避免空洞笼统的动词做名字，如“处理”、“加工”; D．通常用一个动词命名，如果必须用两个动词才能描述整个处理的功能，则可能要把这个处理分解成两个 ...",
+        "snippet_highlighted_words": [
+          "动词",
+          "处理",
+          "动词命名",
+          "动词",
+          "处理",
+          "处理"
+        ],
+        "source": "腾讯云"
+      },
+      {
+        "position": 6,
+        "title": "逻辑模型的工具－数据流图DFD - 蛤蟆",
+        "link": "https://www.cnblogs.com/netflu/archive/2010/01/22/1654005.html",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cnblogs.com/netflu/archive/2010/01/22/1654005.html&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECB8QAQ",
+        "displayed_link": "https://www.cnblogs.com › netflu › archive › 2010/01/22",
+        "favicon": "https://serpapi.com/searches/689d38f673d224def5baf9bb/images/9cc6cf7841448a9c584e258f5dfcabdbc927dc877ba8cdaeb38f363f3331a7ad.png",
+        "date": "2010年1月22日",
+        "snippet": "信息处理过程：处理内容；处理周期；处理方法；处理时间；处理场所；其它 ... 理想的加工名由一个具体的动词和一个具体的宾语(名词)组成。数据流 ...",
+        "snippet_highlighted_words": [
+          "理想的加工名由一个具体的动词和一个具体的宾语(名词)组成"
+        ],
+        "source": "博客园"
+      },
+      {
+        "position": 7,
+        "title": "逻辑模型的工具－数据流图DFD - 科技- 新浪",
+        "link": "https://tech.sina.cn/2008-12-05/detail-iaaaaaaa4439252.d.html",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://tech.sina.cn/2008-12-05/detail-iaaaaaaa4439252.d.html&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECCEQAQ",
+        "displayed_link": "https://tech.sina.cn › detail-iaaaaaaa4439252.d.html",
+        "favicon": "https://serpapi.com/searches/689d38f673d224def5baf9bb/images/9cc6cf7841448a9c584e258f5dfcabdb6344bee1232a60610a5c27ca6f0e9ed6.png",
+        "date": "2008年12月5日",
+        "snippet": "加工和数据流的名字必须体现被命名对象的全部内容而不是一部分。对于加工的名字，应检查它的含义与被加工的输入/输出数据流是否匹配。 一个加工的输出数据 ...",
+        "snippet_highlighted_words": [
+          "命名"
+        ],
+        "source": "新浪网"
+      },
+      {
+        "position": 8,
+        "title": "概念----数据流图(DFD), - woaidongmao - C++博客",
+        "link": "http://www.cppblog.com/woaidongmao/archive/2008/08/21/59545.html",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.cppblog.com/woaidongmao/archive/2008/08/21/59545.html&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECDMQAQ",
+        "displayed_link": "http://www.cppblog.com › archive › 2008/08/21",
+        "date": "2008年8月21日",
+        "snippet": "对数据流进行某些操作或变换。每个加工也要有名字，通常是动词短语，简明地描述完成什么加工。在分层的数据流图中，加工还应编号。 (3)数据存储(又称为文件)， ...",
+        "snippet_highlighted_words": [
+          "动词"
+        ],
+        "source": "cppblog.com"
+      },
+      {
+        "position": 9,
+        "title": "离线数据仓库规范 - 阿里云开发者社区",
+        "link": "https://developer.aliyun.com/article/1430028",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.aliyun.com/article/1430028&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECDYQAQ",
+        "displayed_link": "https://developer.aliyun.com › article",
+        "favicon": "https://serpapi.com/searches/689d38f673d224def5baf9bb/images/9cc6cf7841448a9c584e258f5dfcabdbe9f0cae371f411a869962c4ec5f9dd35.png",
+        "date": "2024年1月29日",
+        "snippet": "指标命名规范要遵循两个基本的原则：易懂，就是看到指标的名称，就可以基本判断这个指标归属于哪个业务过程；统一，就是要确保派生指标和它继承的原子指标命名 ...",
+        "snippet_highlighted_words": [
+          "命名规范",
+          "过程"
+        ],
+        "source": "阿里云开发者社区"
+      },
+      {
+        "position": 10,
+        "title": "企业如何做好数据仓库命名规范",
+        "link": "https://zhuanlan.zhihu.com/p/674696132",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://zhuanlan.zhihu.com/p/674696132&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECDUQAQ",
+        "displayed_link": "https://zhuanlan.zhihu.com › ...",
+        "favicon": "https://serpapi.com/searches/689d38f673d224def5baf9bb/images/9cc6cf7841448a9c584e258f5dfcabdba6fc53769d9dfbe383bfe64ff18d5c60.png",
+        "date": "2023年12月26日",
+        "snippet": "（3）DWD层表命名规范 ... 使用简洁的名称：索引名称应该简单、易于理解、与索引所涉及的列相关，并且具有描述性，可以从名称中快速获得该索引执行的目的和过程。",
+        "snippet_highlighted_words": [
+          "DWD",
+          "命名规范",
+          "过程"
+        ],
+        "source": "知乎专栏"
+      },
+      {
+        "position": 11,
+        "title": "数据流向架构图怎么画数据流图的绘制步骤 - 51CTO博客",
+        "link": "https://blog.51cto.com/u_16099276/8832655",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://blog.51cto.com/u_16099276/8832655&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECDcQAQ",
+        "displayed_link": "https://blog.51cto.com › ...",
+        "favicon": "https://serpapi.com/searches/689d38f673d224def5baf9bb/images/9cc6cf7841448a9c584e258f5dfcabdbf9fb7167b438ececa6091286baba99d9.png",
+        "date": "2023年12月15日",
+        "snippet": "A．通常先为数据流命名，然后再为与之相关联的处理命名； B．名字应该反映整个处理的功能； C．应该尽量避免空洞笼统的动词做名字，如“处理”、“加工”; D．通常用 ...",
+        "snippet_highlighted_words": [
+          "命名",
+          "处理命名",
+          "处理",
+          "动词",
+          "处理"
+        ],
+        "source": "51CTO博客"
+      },
+      {
+        "position": 12,
+        "title": "数据仓库服务(DWS) 8.1.1.500 使用指南(for 华为云Stack ...",
+        "link": "https://support.huawei.com/enterprise/it/doc/EDOC1100374361?currentPartNo=k004&togo=content",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://support.huawei.com/enterprise/it/doc/EDOC1100374361%3FcurrentPartNo%3Dk004%26togo%3Dcontent&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECDQQAQ",
+        "displayed_link": "https://support.huawei.com › ... › 操作维护 › 用户指南",
+        "favicon": "https://serpapi.com/searches/689d38f673d224def5baf9bb/images/9cc6cf7841448a9c584e258f5dfcabdb7428a2fdac6f2d39aaf4a00153ec99df.png",
+        "date": "2024年5月13日",
+        "snippet": "○ “文件名”：指定导出文件的名称。表名默认显示在此字段中。 说明 文件名遵循Windows文件命名规范。 ○ “导出路径”：选择保存导出文件的位置。所选 ...",
+        "snippet_highlighted_words": [
+          "命名规范"
+        ],
+        "source": "Huawei"
+      },
+      {
+        "position": 13,
+        "title": "知识的自动生成系统、自动设计方法及其自动设计系统",
+        "link": "https://patents.google.com/patent/CN1266645C/zh",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://patents.google.com/patent/CN1266645C/zh&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECDAQAQ",
+        "displayed_link": "https://patents.google.com › patent",
+        "snippet": "本发明是将母概念和子概念(群)作为一对单位形态的知识加以运用，作为意图达成或设计的知识进行自动生成的方法和其程序及其系统，其特征是：具有在母概念的动词部分索引子 ...",
+        "snippet_highlighted_words": [
+          "动词"
+        ],
+        "source": "Google Patents"
+      },
+      {
+        "position": 14,
+        "title": "Gsql | openGauss文档",
+        "link": "https://docs.opengauss.org/zh/docs/7.0.0-RC1/docs/ToolandCommandReference/gsql.html",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://docs.opengauss.org/zh/docs/7.0.0-RC1/docs/ToolandCommandReference/gsql.html&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECDEQAQ",
+        "displayed_link": "https://docs.opengauss.org › ToolandCommandReference",
+        "favicon": "https://serpapi.com/searches/689d38f673d224def5baf9bb/images/9cc6cf7841448a9c584e258f5dfcabdbd5c4a86518641327ef3de20688166239.png",
+        "snippet": "说明：. 变量只是简单的名称/值对，这里的值可以是任意长度。 变量名称必须由字母（包括非拉丁字母）、数字和下划线组成，且对大小写敏感。 如果使用\\set varname的格式（不带第 ...",
+        "source": "openGauss文档"
+      },
+      {
+        "position": 15,
+        "title": "第5 章面向数据流的分析方法",
+        "link": "https://www.wsbookshow.com/uploads/bookfile/201105/9787508459325_2.pdf",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wsbookshow.com/uploads/bookfile/201105/9787508459325_2.pdf&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQFnoECDIQAQ",
+        "displayed_link": "https://www.wsbookshow.com › bookfile",
+        "favicon": "https://serpapi.com/searches/689d38f673d224def5baf9bb/images/9cc6cf7841448a9c584e258f5dfcabdb89cd8fd2ec4883752e392759cd5dd6e4.png",
+        "snippet": "... 动词，加上一个具体的宾语组成。应尽量避免使用“加. 工”、“处理”等空洞笼统的动词作名字。 4）通常名字中仅包括一个动词。如果必须用两个动词才能描述整个加工的功能，则把这.",
+        "snippet_highlighted_words": [
+          "动词",
+          "处理",
+          "动词",
+          "动词",
+          "动词"
+        ],
+        "source": "万水书苑"
+      }
+    ],
+    "related_searches": [
+      {
+        "block_position": 1,
+        "query": "数据处理流程图",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B%E5%9B%BE&sa=X&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ1QJ6BAhBEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B%E5%9B%BE"
+      },
+      {
+        "block_position": 1,
+        "query": "标准的数据流图",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=%E6%A0%87%E5%87%86%E7%9A%84%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE&sa=X&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ1QJ6BAg6EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E6%A0%87%E5%87%86%E7%9A%84%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE"
+      },
+      {
+        "block_position": 1,
+        "query": "流程图,时序图",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=%E6%B5%81%E7%A8%8B%E5%9B%BE,%E6%97%B6%E5%BA%8F%E5%9B%BE&sa=X&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ1QJ6BAg5EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E6%B5%81%E7%A8%8B%E5%9B%BE%2C%E6%97%B6%E5%BA%8F%E5%9B%BE"
+      },
+      {
+        "block_position": 1,
+        "query": "飞 书画 时序图",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=%E9%A3%9E+%E4%B9%A6%E7%94%BB+%E6%97%B6%E5%BA%8F%E5%9B%BE&sa=X&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ1QJ6BAg4EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E9%A3%9E+%E4%B9%A6%E7%94%BB+%E6%97%B6%E5%BA%8F%E5%9B%BE"
+      },
+      {
+        "block_position": 1,
+        "query": "软件结构图",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=%E8%BD%AF%E4%BB%B6%E7%BB%93%E6%9E%84%E5%9B%BE&sa=X&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ1QJ6BAgvEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E8%BD%AF%E4%BB%B6%E7%BB%93%E6%9E%84%E5%9B%BE"
+      },
+      {
+        "block_position": 1,
+        "query": "数据流图 符号",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+%E7%AC%A6%E5%8F%B7&sa=X&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ1QJ6BAguEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+%E7%AC%A6%E5%8F%B7"
+      },
+      {
+        "block_position": 1,
+        "query": "Draw io 数据流图",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=Draw+io+%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE&sa=X&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ1QJ6BAgtEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=Draw+io+%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE"
+      },
+      {
+        "block_position": 1,
+        "query": "业务 流 图",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=%E4%B8%9A%E5%8A%A1+%E6%B5%81+%E5%9B%BE&sa=X&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ1QJ6BAgsEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E4%B8%9A%E5%8A%A1+%E6%B5%81+%E5%9B%BE"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "next": "https://www.google.com/search?q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=9jidaNWaNOXbi-gPo8_VoQM&start=15&sa=N&sstk=Ac65TH7ODwAboAThsOdBRtBtNQ2T-Yq1v_v1iL9jUbVrq6zhU6T5EaaxEQ7AZ9Kmcwxo7htmsS0huWRcFM6eECTnYnVhUsypgz4h3A&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ8NMDegQICBAU",
+      "other_pages": {
+        "2": "https://www.google.com/search?q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=9jidaNWaNOXbi-gPo8_VoQM&start=15&sa=N&sstk=Ac65TH7ODwAboAThsOdBRtBtNQ2T-Yq1v_v1iL9jUbVrq6zhU6T5EaaxEQ7AZ9Kmcwxo7htmsS0huWRcFM6eECTnYnVhUsypgz4h3A&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ8tMDegQICBAE",
+        "3": "https://www.google.com/search?q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=9jidaNWaNOXbi-gPo8_VoQM&start=30&sa=N&sstk=Ac65TH7ODwAboAThsOdBRtBtNQ2T-Yq1v_v1iL9jUbVrq6zhU6T5EaaxEQ7AZ9Kmcwxo7htmsS0huWRcFM6eECTnYnVhUsypgz4h3A&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ8tMDegQICBAG",
+        "4": "https://www.google.com/search?q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=9jidaNWaNOXbi-gPo8_VoQM&start=45&sa=N&sstk=Ac65TH7ODwAboAThsOdBRtBtNQ2T-Yq1v_v1iL9jUbVrq6zhU6T5EaaxEQ7AZ9Kmcwxo7htmsS0huWRcFM6eECTnYnVhUsypgz4h3A&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ8tMDegQICBAI",
+        "5": "https://www.google.com/search?q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=9jidaNWaNOXbi-gPo8_VoQM&start=60&sa=N&sstk=Ac65TH7ODwAboAThsOdBRtBtNQ2T-Yq1v_v1iL9jUbVrq6zhU6T5EaaxEQ7AZ9Kmcwxo7htmsS0huWRcFM6eECTnYnVhUsypgz4h3A&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ8tMDegQICBAK",
+        "6": "https://www.google.com/search?q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=9jidaNWaNOXbi-gPo8_VoQM&start=75&sa=N&sstk=Ac65TH7ODwAboAThsOdBRtBtNQ2T-Yq1v_v1iL9jUbVrq6zhU6T5EaaxEQ7AZ9Kmcwxo7htmsS0huWRcFM6eECTnYnVhUsypgz4h3A&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ8tMDegQICBAM",
+        "7": "https://www.google.com/search?q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=9jidaNWaNOXbi-gPo8_VoQM&start=90&sa=N&sstk=Ac65TH7ODwAboAThsOdBRtBtNQ2T-Yq1v_v1iL9jUbVrq6zhU6T5EaaxEQ7AZ9Kmcwxo7htmsS0huWRcFM6eECTnYnVhUsypgz4h3A&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ8tMDegQICBAO",
+        "8": "https://www.google.com/search?q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=9jidaNWaNOXbi-gPo8_VoQM&start=105&sa=N&sstk=Ac65TH7ODwAboAThsOdBRtBtNQ2T-Yq1v_v1iL9jUbVrq6zhU6T5EaaxEQ7AZ9Kmcwxo7htmsS0huWRcFM6eECTnYnVhUsypgz4h3A&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ8tMDegQICBAQ",
+        "9": "https://www.google.com/search?q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=9jidaNWaNOXbi-gPo8_VoQM&start=120&sa=N&sstk=Ac65TH7ODwAboAThsOdBRtBtNQ2T-Yq1v_v1iL9jUbVrq6zhU6T5EaaxEQ7AZ9Kmcwxo7htmsS0huWRcFM6eECTnYnVhUsypgz4h3A&ved=2ahUKEwjV7dKzkImPAxXl7QIHHaNnNTQQ8tMDegQICBAS"
+      }
+    },
+    "serpapi_pagination": {
+      "current": 1,
+      "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&start=15",
+      "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&start=15",
+      "other_pages": {
+        "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&start=15",
+        "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&start=30",
+        "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&start=45",
+        "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&start=60",
+        "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&start=75",
+        "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&start=90",
+        "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&start=105",
+        "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=DFD+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83+%E5%8A%A8%E8%AF%8D+%E5%90%8D%E8%AF%8D&start=120"
+      }
+    }
+  },
+  "debug_info": {
+    "config_used": "google",
+    "api_name": "SerpAPI",
+    "data_keys": [
+      "search_metadata",
+      "search_parameters",
+      "search_information",
+      "organic_results",
+      "related_searches",
+      "pagination",
+      "serpapi_pagination"
+    ],
+    "data_size": 21149
+  }
+}

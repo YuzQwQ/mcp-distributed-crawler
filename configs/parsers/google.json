@@ -1,0 +1,28 @@
+{
+  "engine": "google",
+  "api_name": "SerpAPI",
+  "base_url": "https://serpapi.com/search",
+  "parsing_rules": {
+    "primary_keys": ["organic_results", "web_results", "news_results", "related_questions"],
+    "link_fields": ["link", "url", "displayed_link"],
+    "title_fields": ["title", "name"],
+    "snippet_fields": ["snippet", "description", "content"],
+    "position_fields": ["position", "rank"],
+    "metadata_fields": ["date", "source", "domain"]
+  },
+  "parameters": {
+    "default": {
+      "engine": "google",
+      "hl": "zh-cn",
+      "gl": "cn",
+      "num": 10
+    },
+    "required": ["q", "api_key"],
+    "optional": ["num", "start", "hl", "gl", "safe", "filter"]
+  },
+  "response_mapping": {
+    "results_path": "organic_results",
+    "total_results_path": "search_information.total_results",
+    "search_time_path": "search_metadata.created_at"
+  }
+}

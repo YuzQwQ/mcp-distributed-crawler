@@ -1,0 +1,36 @@
+{
+  "table_name": "dfd_cases",
+  "description": "错误案例和最佳实践",
+  "schema": {
+    "id": "text",
+    "type": "text",
+    "description": "text",
+    "incorrect": "jsonb (对象)",
+    "correct": "jsonb (对象)",
+    "explanation": "text"
+  },
+  "data": [
+    {
+      "id": "case-best-001",
+      "type": "best_practice",
+      "description": "从网页内容中提取的DFD最佳实践",
+      "incorrect": {},
+      "correct": {
+        "elements": [
+          "推荐的元素设计"
+        ],
+        "flows": [
+          "标准的数据流设计"
+        ]
+      },
+      "explanation": "基于网页内容总结的最佳实践要点"
+    }
+  ],
+  "metadata": {
+    "source_url": "https://check.torproject.org/",
+    "source_title": "\n    \n      Sorry. You are not using Tor.\n    \n",
+    "crawl_time": "2025-08-21T14:22:08.849614",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  }
+}

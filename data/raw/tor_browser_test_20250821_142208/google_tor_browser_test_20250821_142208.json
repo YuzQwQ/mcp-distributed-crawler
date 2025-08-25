@@ -1,0 +1,241 @@
+{
+  "success": true,
+  "engine": "google",
+  "keyword": "tor browser test",
+  "max_results": 3,
+  "timestamp": "20250821_142208",
+  "request_time": 1.719,
+  "raw_data": {
+    "search_metadata": {
+      "id": "68a6bb11a3ce84da203ef48e",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/18860f7cc11f5cee/68a6bb11a3ce84da203ef48e.json",
+      "pixel_position_endpoint": "https://serpapi.com/searches/18860f7cc11f5cee/68a6bb11a3ce84da203ef48e.json_with_pixel_position",
+      "created_at": "2025-08-21 06:22:09 UTC",
+      "processed_at": "2025-08-21 06:22:09 UTC",
+      "google_url": "https://www.google.com/search?q=tor+browser+test&oq=tor+browser+test&hl=zh-cn&gl=cn&num=3&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/18860f7cc11f5cee/68a6bb11a3ce84da203ef48e.html",
+      "total_time_taken": 0.86
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "tor browser test",
+      "google_domain": "google.com",
+      "hl": "zh-cn",
+      "gl": "cn",
+      "num": "3",
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "tor browser test",
+      "total_results": 64500000,
+      "time_taken_displayed": 0.18,
+      "organic_results_state": "Results for exact spelling"
+    },
+    "inline_images": [
+      {
+        "source": "https://forum.torproject.org/t/help-us-test-the-new-connection-assist-in-tor-browser-alpha/3654",
+        "thumbnail": "https://serpapi.com/searches/68a6bb11a3ce84da203ef48e/images/c267cd93b8d57a50b6f1d6875f778b55752b1ffd835184895488d45104609dfb.jpeg",
+        "original": "https://forum.torproject.org/uploads/default/original/2X/6/6d3239a79e011457de0ac16f62386cc847247b97.png",
+        "title": "Help us test the new Connection Assist in Tor Browser Alpha ...",
+        "source_name": "Tor Project Forum"
+      },
+      {
+        "source": "https://www.reddit.com/r/TOR/comments/j6fozn/tor_browser_speed_test_results_unbelievable/",
+        "thumbnail": "https://serpapi.com/searches/68a6bb11a3ce84da203ef48e/images/c267cd93b8d57a500dbbd55b7d58f8ad59f58297304fc319834810de619c55b0.jpeg",
+        "original": "https://i.redd.it/ewc8xc5w2kr51.png",
+        "title": "TOR Browser Speed Test Results! Unbelievable!! : r/TOR",
+        "source_name": "Reddit"
+      },
+      {
+        "source": "https://forum.torproject.org/t/strangely-fast-download-speed-and-zero-upload-speed-test/7371",
+        "thumbnail": "https://serpapi.com/searches/68a6bb11a3ce84da203ef48e/images/c267cd93b8d57a5095ee835324889cd6bc930c2d32482ce425fcecb64cbe2cde.jpeg",
+        "original": "https://forum.torproject.org/uploads/default/original/2X/3/32224d08832e6964dff869cc53d968e024409621.png",
+        "title": "Strangely fast download speed and zero upload speed test ...",
+        "source_name": "Tor Project Forum"
+      },
+      {
+        "source": "https://tb-manual.torproject.org/troubleshooting/",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs-UwcqMQXe_8ezGNfBTgqwbP-HxLmcA59hZGNualE_GCDoHhokeZjrhs&s",
+        "original": "https://tb-manual.torproject.org/static/images/connection-assist-status.png",
+        "title": "TROUBLESHOOTING | Tor Project | Tor Browser Manual",
+        "source_name": "Tor Browser User Manual - Tor Project"
+      },
+      {
+        "source": "https://www.whonix.org/wiki/Browser_Tests",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2BaZyxloK5F4LzrxjOsccEIoE9pXHTzicWwwPe-RSe90fTBMPUWs5WtI&s",
+        "original": "https://www.whonix.org/w/images/8/8d/Whatismybrowser.png",
+        "title": "Browser Tests - Whonix",
+        "source_name": "Whonix"
+      },
+      {
+        "source": "https://blog.torproject.org/new-alpha-release-tor-browser-145a3/",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8KyDsJaN3aM2oV-XBF5mgQ6Hnx5bCuymEb4XW_NNx_X6u3GPEhiINdFs&s",
+        "original": "https://blog.torproject.org/new-alpha-release-tor-browser-145a3/lead.png",
+        "title": "New Alpha Release: Tor Browser 14.5a3 | The Tor Project",
+        "source_name": "Tor Blog - Tor Project"
+      },
+      {
+        "source": "https://www.maketecheasier.com/open-onion-links-without-tor-browser/",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx1FYcySwuCVah9PZ0tGrgZ2DyysMEoRRNlLAdYRxMgCA5VAmjuSkRhkY&s",
+        "original": "https://www.maketecheasier.com/assets/uploads/2024/09/Onion-Without-Tor-Brave-Browserling-Cross-Browser-Testing.jpg",
+        "title": "5 Ways to Open Onion Links Without Tor Browser - Make Tech ...",
+        "source_name": "Make Tech Easier"
+      },
+      {
+        "source": "https://forum.torproject.org/t/how-to-start-tor-browser-on-linux/11202",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVHXYowO7-KSLfyfxmLICXaAoG9KDfpmoqLRW0ciL3lpswj6Rc1yBN6q8&s",
+        "original": "https://forum.torproject.org/uploads/default/original/2X/a/a9413cb067aedb31dab4a0afe201367a67b5dc83.jpeg",
+        "title": "How to start Tor Browser on Linux - Tor Browser Desktop ...",
+        "source_name": "Tor Project Forum"
+      },
+      {
+        "source": "https://tb-manual.torproject.org/running-tor-browser/",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThmeP58GCPcgs9_jyOF_gzdZtmYXe4aFDn7moEUFbtHxhkbfkl6yhPOu0&s",
+        "original": "https://tb-manual.torproject.org/static/images/connection-test-failure.png",
+        "title": "RUNNING TOR BROWSER FOR THE FIRST TIME | Tor Project | Tor ...",
+        "source_name": "Tor Browser User Manual - Tor Project"
+      }
+    ],
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "Online Tor and Onion Browser Testing",
+        "link": "https://www.browserling.com/tor-testing",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.browserling.com/tor-testing&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQFnoECAkQAQ",
+        "displayed_link": "https://www.browserling.com › tor-testing",
+        "favicon": "https://serpapi.com/searches/68a6bb11a3ce84da203ef48e/images/1df832cedb312f45ec44d0e83e73d7268f0ee800e073e7b9f0d575956be1990d.png",
+        "snippet": "Browserling offers free online cross-browser testing of onion websites in the Tor browser. We have installed the Tor browser in virtual machines, running on ...",
+        "snippet_highlighted_words": [
+          "testing",
+          "Tor browser",
+          "Tor browser"
+        ],
+        "source": "Browserling"
+      },
+      {
+        "position": 2,
+        "title": "How to test tor and relay explanation",
+        "link": "https://forum.torproject.org/t/how-to-test-tor-and-relay-explanation/10016",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://forum.torproject.org/t/how-to-test-tor-and-relay-explanation/10016&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQFnoECBkQAQ",
+        "displayed_link": "https://forum.torproject.org › how-to-test-t...",
+        "favicon": "https://serpapi.com/searches/68a6bb11a3ce84da203ef48e/images/1df832cedb312f45ec44d0e83e73d726ac08c1509653e687d8d4afaeeeefeaa5.png",
+        "date": "2023年10月31日",
+        "snippet": "To test new and upcoming features in the browser, I'd recommend installing Tor Browser Alpha. More information about this: Tor Project | Become an alpha tester.",
+        "snippet_highlighted_words": [
+          "Tor Browser Alpha"
+        ],
+        "source": "Tor Project Forum"
+      },
+      {
+        "position": 3,
+        "title": "How to Test Onion Links Without Installing the Tor Browser",
+        "link": "https://catonmat.net/how-to-test-onion-links-without-installing-tor-browser",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://catonmat.net/how-to-test-onion-links-without-installing-tor-browser&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQFnoECBoQAQ",
+        "displayed_link": "https://catonmat.net › how-to-test-onion-lin...",
+        "favicon": "https://serpapi.com/searches/68a6bb11a3ce84da203ef48e/images/1df832cedb312f45ec44d0e83e73d726a161e4c204091eb0e1f3e432459046a1.png",
+        "snippet": "Simply visit browserling.com/tor and you'll get an online Tor browser for testing your onion website.",
+        "snippet_highlighted_words": [
+          "Simply visit browserling.com/tor"
+        ],
+        "source": "CatOnMat"
+      }
+    ],
+    "related_searches": [
+      {
+        "block_position": 1,
+        "query": "Tor Browser",
+        "link": "https://www.google.com/search?num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&q=Tor+Browser&sa=X&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ1QJ6BAgrEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=Tor+Browser"
+      },
+      {
+        "block_position": 1,
+        "query": "Onion Browser",
+        "link": "https://www.google.com/search?num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&q=Onion+Browser&sa=X&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ1QJ6BAgnEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=Onion+Browser"
+      },
+      {
+        "block_position": 1,
+        "query": "Tor Browser website",
+        "link": "https://www.google.com/search?num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&q=Tor+Browser+website&sa=X&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ1QJ6BAgkEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=Tor+Browser+website"
+      },
+      {
+        "block_position": 1,
+        "query": "Request bridges from within Tor Browser",
+        "link": "https://www.google.com/search?num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&q=Request+bridges+from+within+Tor+Browser&sa=X&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ1QJ6BAgqEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=Request+bridges+from+within+Tor+Browser"
+      },
+      {
+        "block_position": 1,
+        "query": "Virtual browser",
+        "link": "https://www.google.com/search?num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&q=Virtual+browser&sa=X&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ1QJ6BAgmEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=Virtual+browser"
+      },
+      {
+        "block_position": 1,
+        "query": "Onion Browser Button",
+        "link": "https://www.google.com/search?num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&q=Onion+Browser+Button&sa=X&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ1QJ6BAgoEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=Onion+Browser+Button"
+      },
+      {
+        "block_position": 1,
+        "query": "洋葱浏览 器官 网",
+        "link": "https://www.google.com/search?num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&q=%E6%B4%8B%E8%91%B1%E6%B5%8F%E8%A7%88+%E5%99%A8%E5%AE%98+%E7%BD%91&sa=X&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ1QJ6BAglEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=%E6%B4%8B%E8%91%B1%E6%B5%8F%E8%A7%88+%E5%99%A8%E5%AE%98+%E7%BD%91"
+      },
+      {
+        "block_position": 1,
+        "query": "Orbot",
+        "link": "https://www.google.com/search?num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&q=Orbot&sa=X&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ1QJ6BAgpEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=Orbot"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "next": "https://www.google.com/search?q=tor+browser+test&num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&ei=EbumaPTqPM7awPAPqeKigQs&start=3&sa=N&sstk=Ac65TH5Kdks2jLm6O4yJs_Gd4IB5H3H4XaqVpBIXKxupfc2QWi9mgurVChIF8_kyZcHu2sflGHVBu2HvH-iDbVV3tkfzEUjNhLIJmA&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ8NMDegQIIhAW",
+      "other_pages": {
+        "2": "https://www.google.com/search?q=tor+browser+test&num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&ei=EbumaPTqPM7awPAPqeKigQs&start=3&sa=N&sstk=Ac65TH5Kdks2jLm6O4yJs_Gd4IB5H3H4XaqVpBIXKxupfc2QWi9mgurVChIF8_kyZcHu2sflGHVBu2HvH-iDbVV3tkfzEUjNhLIJmA&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ8tMDegQIIhAE",
+        "3": "https://www.google.com/search?q=tor+browser+test&num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&ei=EbumaPTqPM7awPAPqeKigQs&start=6&sa=N&sstk=Ac65TH5Kdks2jLm6O4yJs_Gd4IB5H3H4XaqVpBIXKxupfc2QWi9mgurVChIF8_kyZcHu2sflGHVBu2HvH-iDbVV3tkfzEUjNhLIJmA&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ8tMDegQIIhAG",
+        "4": "https://www.google.com/search?q=tor+browser+test&num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&ei=EbumaPTqPM7awPAPqeKigQs&start=9&sa=N&sstk=Ac65TH5Kdks2jLm6O4yJs_Gd4IB5H3H4XaqVpBIXKxupfc2QWi9mgurVChIF8_kyZcHu2sflGHVBu2HvH-iDbVV3tkfzEUjNhLIJmA&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ8tMDegQIIhAI",
+        "5": "https://www.google.com/search?q=tor+browser+test&num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&ei=EbumaPTqPM7awPAPqeKigQs&start=12&sa=N&sstk=Ac65TH5Kdks2jLm6O4yJs_Gd4IB5H3H4XaqVpBIXKxupfc2QWi9mgurVChIF8_kyZcHu2sflGHVBu2HvH-iDbVV3tkfzEUjNhLIJmA&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ8tMDegQIIhAK",
+        "6": "https://www.google.com/search?q=tor+browser+test&num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&ei=EbumaPTqPM7awPAPqeKigQs&start=15&sa=N&sstk=Ac65TH5Kdks2jLm6O4yJs_Gd4IB5H3H4XaqVpBIXKxupfc2QWi9mgurVChIF8_kyZcHu2sflGHVBu2HvH-iDbVV3tkfzEUjNhLIJmA&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ8tMDegQIIhAM",
+        "7": "https://www.google.com/search?q=tor+browser+test&num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&ei=EbumaPTqPM7awPAPqeKigQs&start=18&sa=N&sstk=Ac65TH5Kdks2jLm6O4yJs_Gd4IB5H3H4XaqVpBIXKxupfc2QWi9mgurVChIF8_kyZcHu2sflGHVBu2HvH-iDbVV3tkfzEUjNhLIJmA&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ8tMDegQIIhAO",
+        "8": "https://www.google.com/search?q=tor+browser+test&num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&ei=EbumaPTqPM7awPAPqeKigQs&start=21&sa=N&sstk=Ac65TH5Kdks2jLm6O4yJs_Gd4IB5H3H4XaqVpBIXKxupfc2QWi9mgurVChIF8_kyZcHu2sflGHVBu2HvH-iDbVV3tkfzEUjNhLIJmA&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ8tMDegQIIhAQ",
+        "9": "https://www.google.com/search?q=tor+browser+test&num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&ei=EbumaPTqPM7awPAPqeKigQs&start=24&sa=N&sstk=Ac65TH5Kdks2jLm6O4yJs_Gd4IB5H3H4XaqVpBIXKxupfc2QWi9mgurVChIF8_kyZcHu2sflGHVBu2HvH-iDbVV3tkfzEUjNhLIJmA&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ8tMDegQIIhAS",
+        "10": "https://www.google.com/search?q=tor+browser+test&num=3&sca_esv=5e55e5ee976bdccc&hl=zh-cn&gl=cn&ei=EbumaPTqPM7awPAPqeKigQs&start=27&sa=N&sstk=Ac65TH5Kdks2jLm6O4yJs_Gd4IB5H3H4XaqVpBIXKxupfc2QWi9mgurVChIF8_kyZcHu2sflGHVBu2HvH-iDbVV3tkfzEUjNhLIJmA&ved=2ahUKEwi0t93foZuPAxVOLRAIHSmxKLAQ8tMDegQIIhAU"
+      }
+    },
+    "serpapi_pagination": {
+      "current": 1,
+      "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=tor+browser+test&start=3",
+      "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=tor+browser+test&start=3",
+      "other_pages": {
+        "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=tor+browser+test&start=3",
+        "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=tor+browser+test&start=6",
+        "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=tor+browser+test&start=9",
+        "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=tor+browser+test&start=12",
+        "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=tor+browser+test&start=15",
+        "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=tor+browser+test&start=18",
+        "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=tor+browser+test&start=21",
+        "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=tor+browser+test&start=24",
+        "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=3&q=tor+browser+test&start=27"
+      }
+    }
+  },
+  "debug_info": {
+    "config_used": "google",
+    "api_name": "SerpAPI",
+    "data_keys": [
+      "search_metadata",
+      "search_parameters",
+      "search_information",
+      "inline_images",
+      "organic_results",
+      "related_searches",
+      "pagination",
+      "serpapi_pagination"
+    ],
+    "data_size": 14957
+  }
+}

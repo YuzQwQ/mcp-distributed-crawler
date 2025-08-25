@@ -1,0 +1,223 @@
+{
+  "success": true,
+  "engine": "google",
+  "keyword": "dfd基础概念",
+  "max_results": 10,
+  "timestamp": "20250813_212203",
+  "request_time": 3.547,
+  "raw_data": {
+    "search_metadata": {
+      "id": "689c917ccc56d37065e59175",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/23b958d6b6541e7f/689c917ccc56d37065e59175.json",
+      "pixel_position_endpoint": "https://serpapi.com/searches/23b958d6b6541e7f/689c917ccc56d37065e59175.json_with_pixel_position",
+      "created_at": "2025-08-13 13:22:04 UTC",
+      "processed_at": "2025-08-13 13:22:04 UTC",
+      "google_url": "https://www.google.com/search?q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&oq=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&hl=zh-cn&gl=cn&num=10&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/23b958d6b6541e7f/689c917ccc56d37065e59175.html",
+      "total_time_taken": 2.76
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "dfd基础概念",
+      "google_domain": "google.com",
+      "hl": "zh-cn",
+      "gl": "cn",
+      "num": "10",
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "dfd基础概念",
+      "total_results": 42800,
+      "time_taken_displayed": 0.32,
+      "organic_results_state": "Showing results for exact spelling despite spelling suggestion",
+      "spelling_fix": "ddd基础概念"
+    },
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "数据流图（DFD）概念及画法转载",
+        "link": "https://blog.csdn.net/lishanleilixin/article/details/89330427",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://blog.csdn.net/lishanleilixin/article/details/89330427&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQFnoECCEQAQ",
+        "displayed_link": "https://blog.csdn.net › lishanleilixin › article › details",
+        "favicon": "https://serpapi.com/searches/689c917ccc56d37065e59175/images/d8315edbdbdc4caef245d5fd41336986d3cf9489cba96457e6862e8bcba1c5f2.png",
+        "date": "2019年4月16日",
+        "snippet": "数据流图（Data Flow Diagram）：简称DFD，它从数据传递和加工角度，以图形方式来表达系统的逻辑功能、以图形的方式描绘数据在系统中流动和处理的过程，由于它只 ...",
+        "snippet_highlighted_words": [
+          "DFD"
+        ],
+        "source": "CSDN博客"
+      },
+      {
+        "position": 2,
+        "title": "数据流图（DFD）",
+        "link": "https://zhuanlan.zhihu.com/p/589061234",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://zhuanlan.zhihu.com/p/589061234&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQFnoECBsQAQ",
+        "displayed_link": "https://zhuanlan.zhihu.com › ...",
+        "favicon": "https://serpapi.com/searches/689c917ccc56d37065e59175/images/d8315edbdbdc4caef245d5fd41336986536700a371baebd3308ea99367d4933d.png",
+        "date": "2022年12月4日",
+        "snippet": "数据流图（DFD，Data Flow Diagram）也称分层数据流图，是在需求分析阶段用到的一种工具，在结构化的需求分析中，DFD的使用频度极高。 数据流图基本概念. 在数据 ...",
+        "snippet_highlighted_words": [
+          "DFD",
+          "DFD",
+          "基本概念"
+        ],
+        "source": "知乎专栏"
+      },
+      {
+        "position": 3,
+        "title": "数据流图（DFD）这么理解吗？ 原创",
+        "link": "https://blog.csdn.net/qq_63786973/article/details/130622249",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://blog.csdn.net/qq_63786973/article/details/130622249&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQFnoECBgQAQ",
+        "displayed_link": "https://blog.csdn.net › article › details",
+        "favicon": "https://serpapi.com/searches/689c917ccc56d37065e59175/images/d8315edbdbdc4caef245d5fd41336986ab41507089221dc5a17613568e82a162.png",
+        "date": "2023年5月11日",
+        "snippet": "数据流图（Data Flow Diagram，简称DFD）作为一种强大且直观的工具，能够以图形化的方式描述系统中数据的来源、处理、存储和去向，帮助人们准确把握系统的工作 ...",
+        "source": "CSDN博客"
+      },
+      {
+        "position": 4,
+        "title": "【软件设计师-从小白到大牛】下午题基础篇：第一章数据流图 ...",
+        "link": "https://developer.aliyun.com/article/1372330",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.aliyun.com/article/1372330&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQFnoECBkQAQ",
+        "displayed_link": "https://developer.aliyun.com › article",
+        "favicon": "https://serpapi.com/searches/689c917ccc56d37065e59175/images/d8315edbdbdc4caef245d5fd413369866c10917aea763e6ac88e00294cfb0d8b.png",
+        "date": "2023年11月10日",
+        "snippet": "本文探讨了在微服务架构中进行数据库设计时，如何平衡数据的一致性、独立性与系统整体性能之间的关系。文章首先介绍了微服务架构的基本概念及其对数据库 ...",
+        "snippet_highlighted_words": [
+          "基本概念"
+        ],
+        "source": "阿里云开发者社区"
+      },
+      {
+        "position": 5,
+        "title": "数据流图技术相关基础知识",
+        "link": "https://www.cnblogs.com/fengkungui/p/6789581.html",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cnblogs.com/fengkungui/p/6789581.html&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQFnoECBwQAQ",
+        "displayed_link": "https://www.cnblogs.com › fengkungui",
+        "favicon": "https://serpapi.com/searches/689c917ccc56d37065e59175/images/d8315edbdbdc4caef245d5fd413369860afa5cfd8452ded60dd55a8416acb9cf.png",
+        "date": "2016年10月21日",
+        "snippet": "1.数据流图的基本概念简称DFD，它从数据传递和加工角度，以图形方式来表达系统的逻辑功能、数据在系统内部的逻辑流向和逻辑变换过程，是结构化系统分析 ...",
+        "snippet_highlighted_words": [
+          "基本概念",
+          "DFD"
+        ],
+        "source": "博客园"
+      },
+      {
+        "position": 6,
+        "title": "資料流程圖(DFD)",
+        "link": "http://www.ais.nptu.edu.tw/ais/961%20materials/DFD_961.pdf",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=http://www.ais.nptu.edu.tw/ais/961%2520materials/DFD_961.pdf&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQFnoECBYQAQ",
+        "displayed_link": "http://www.ais.nptu.edu.tw › ais › DFD_961",
+        "snippet": "實體DFD描述系統的基礎架構，可回答如何做(how)、在哪做. (where)、誰來做(by whom)等問題。 – 邏輯資料流程圖(logical DFD)：此圖中，資料是泛稱； bubble代表處理資料的程序 ...",
+        "snippet_highlighted_words": [
+          "DFD",
+          "基礎",
+          "DFD"
+        ],
+        "source": "周國華老師會計教學網站"
+      },
+      {
+        "position": 7,
+        "title": "DBA 我想上一层楼，DFD 了解一下",
+        "link": "https://www.modb.pro/db/21986",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.modb.pro/db/21986&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQFnoECBcQAQ",
+        "displayed_link": "https://www.modb.pro › ...",
+        "favicon": "https://serpapi.com/searches/689c917ccc56d37065e59175/images/d8315edbdbdc4caef245d5fd41336986e60d45f127dffec1529aee57d4d7a855.png",
+        "date": "2020年2月28日",
+        "snippet": "在绘制DFD的时候会以四种图形来描述DFD的四个基本概念， 1 外部实体2 过程 3 数据存储4 数据流来组成DFD，其中是可以用不同的图形来表达这四种实体的不同。",
+        "snippet_highlighted_words": [
+          "在绘制DFD的时候会以四种图形来描述DFD的四个基本概念"
+        ],
+        "source": "墨天轮"
+      },
+      {
+        "position": 8,
+        "title": "软件工程师——(十三)数据流图(DFD)(重点)",
+        "link": "https://juejin.cn/post/7158772350555521060",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://juejin.cn/post/7158772350555521060&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQFnoECDEQAQ",
+        "displayed_link": "https://juejin.cn › 代码人生",
+        "favicon": "https://serpapi.com/searches/689c917ccc56d37065e59175/images/d8315edbdbdc4caef245d5fd4133698678e9eb3765e975a09595090ea272d720.png",
+        "date": "2022年10月26日",
+        "snippet": "2. 基本概念(数据流图又称之为 分层数据流图 ) · 1、顶层图. 中间 椭圆 代表 要开发的系统 , 方框 代表 外部实体; 外部实体和本系统 存在 数据流转的关系 ...",
+        "snippet_highlighted_words": [
+          "基本概念"
+        ],
+        "source": "掘金"
+      },
+      {
+        "position": 9,
+        "title": "数据流图(DFD) - 代码酷",
+        "link": "https://www.echo.cool/docs/fundamental/database/database-design-and-modeling/data-flow-graph-dfd/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.echo.cool/docs/fundamental/database/database-design-and-modeling/data-flow-graph-dfd/&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQFnoECC0QAQ",
+        "displayed_link": "https://www.echo.cool › ... › 数据流图(DFD)",
+        "favicon": "https://serpapi.com/searches/689c917ccc56d37065e59175/images/d8315edbdbdc4caef245d5fd41336986ceb7ca54046e24c03a529567582bb024.png",
+        "snippet": "数据流图（Data Flow Diagram，简称DFD）是一种用于描述系统中数据流动和处理过程的图形化工具。它通过简单的符号和箭头，展示数据如何在系统中流动、存储和处理。DFD广泛应用 ...",
+        "snippet_highlighted_words": [
+          "DFD",
+          "DFD"
+        ],
+        "source": "echo.cool"
+      },
+      {
+        "position": 10,
+        "title": "软考下午科目——第一章——数据流图设计",
+        "link": "https://www.cnblogs.com/atwood-pan/p/17205839.html",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cnblogs.com/atwood-pan/p/17205839.html&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQFnoECC8QAQ",
+        "displayed_link": "https://www.cnblogs.com › atwood-pan",
+        "favicon": "https://serpapi.com/searches/689c917ccc56d37065e59175/images/d8315edbdbdc4caef245d5fd413369863e589bed5eea14905745eb7ae978cf0d.png",
+        "date": "2022年5月2日",
+        "snippet": "数据流图又称数据流程图（Data Flow Diagram，DFD），是一种便于用户理解、分析系统数据流程的图形工具。它摆脱了系统的物理内容，精确地在逻辑上描述系统的 ...",
+        "snippet_highlighted_words": [
+          "DFD"
+        ],
+        "source": "博客园"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "next": "https://www.google.com/search?q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&sca_esv=11f80424eb098ea8&gl=cn&hl=zh-cn&ei=fpGcaLiCIde9vr0P0MLP2Q8&start=10&sa=N&sstk=Ac65TH7ovKWMNaEbur0xUt2p5KE41Clit3TtgHR7YVhSXa4VGBFdI_lvZr79JVkVNpIg8mnN4FZ_XDEsgN3ShfdHblM5tir3q44eCg&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQ8NMDegQICBAW",
+      "other_pages": {
+        "2": "https://www.google.com/search?q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&sca_esv=11f80424eb098ea8&gl=cn&hl=zh-cn&ei=fpGcaLiCIde9vr0P0MLP2Q8&start=10&sa=N&sstk=Ac65TH7ovKWMNaEbur0xUt2p5KE41Clit3TtgHR7YVhSXa4VGBFdI_lvZr79JVkVNpIg8mnN4FZ_XDEsgN3ShfdHblM5tir3q44eCg&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQ8tMDegQICBAE",
+        "3": "https://www.google.com/search?q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&sca_esv=11f80424eb098ea8&gl=cn&hl=zh-cn&ei=fpGcaLiCIde9vr0P0MLP2Q8&start=20&sa=N&sstk=Ac65TH7ovKWMNaEbur0xUt2p5KE41Clit3TtgHR7YVhSXa4VGBFdI_lvZr79JVkVNpIg8mnN4FZ_XDEsgN3ShfdHblM5tir3q44eCg&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQ8tMDegQICBAG",
+        "4": "https://www.google.com/search?q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&sca_esv=11f80424eb098ea8&gl=cn&hl=zh-cn&ei=fpGcaLiCIde9vr0P0MLP2Q8&start=30&sa=N&sstk=Ac65TH7ovKWMNaEbur0xUt2p5KE41Clit3TtgHR7YVhSXa4VGBFdI_lvZr79JVkVNpIg8mnN4FZ_XDEsgN3ShfdHblM5tir3q44eCg&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQ8tMDegQICBAI",
+        "5": "https://www.google.com/search?q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&sca_esv=11f80424eb098ea8&gl=cn&hl=zh-cn&ei=fpGcaLiCIde9vr0P0MLP2Q8&start=40&sa=N&sstk=Ac65TH7ovKWMNaEbur0xUt2p5KE41Clit3TtgHR7YVhSXa4VGBFdI_lvZr79JVkVNpIg8mnN4FZ_XDEsgN3ShfdHblM5tir3q44eCg&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQ8tMDegQICBAK",
+        "6": "https://www.google.com/search?q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&sca_esv=11f80424eb098ea8&gl=cn&hl=zh-cn&ei=fpGcaLiCIde9vr0P0MLP2Q8&start=50&sa=N&sstk=Ac65TH7ovKWMNaEbur0xUt2p5KE41Clit3TtgHR7YVhSXa4VGBFdI_lvZr79JVkVNpIg8mnN4FZ_XDEsgN3ShfdHblM5tir3q44eCg&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQ8tMDegQICBAM",
+        "7": "https://www.google.com/search?q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&sca_esv=11f80424eb098ea8&gl=cn&hl=zh-cn&ei=fpGcaLiCIde9vr0P0MLP2Q8&start=60&sa=N&sstk=Ac65TH7ovKWMNaEbur0xUt2p5KE41Clit3TtgHR7YVhSXa4VGBFdI_lvZr79JVkVNpIg8mnN4FZ_XDEsgN3ShfdHblM5tir3q44eCg&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQ8tMDegQICBAO",
+        "8": "https://www.google.com/search?q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&sca_esv=11f80424eb098ea8&gl=cn&hl=zh-cn&ei=fpGcaLiCIde9vr0P0MLP2Q8&start=70&sa=N&sstk=Ac65TH7ovKWMNaEbur0xUt2p5KE41Clit3TtgHR7YVhSXa4VGBFdI_lvZr79JVkVNpIg8mnN4FZ_XDEsgN3ShfdHblM5tir3q44eCg&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQ8tMDegQICBAQ",
+        "9": "https://www.google.com/search?q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&sca_esv=11f80424eb098ea8&gl=cn&hl=zh-cn&ei=fpGcaLiCIde9vr0P0MLP2Q8&start=80&sa=N&sstk=Ac65TH7ovKWMNaEbur0xUt2p5KE41Clit3TtgHR7YVhSXa4VGBFdI_lvZr79JVkVNpIg8mnN4FZ_XDEsgN3ShfdHblM5tir3q44eCg&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQ8tMDegQICBAS",
+        "10": "https://www.google.com/search?q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&sca_esv=11f80424eb098ea8&gl=cn&hl=zh-cn&ei=fpGcaLiCIde9vr0P0MLP2Q8&start=90&sa=N&sstk=Ac65TH7ovKWMNaEbur0xUt2p5KE41Clit3TtgHR7YVhSXa4VGBFdI_lvZr79JVkVNpIg8mnN4FZ_XDEsgN3ShfdHblM5tir3q44eCg&ved=2ahUKEwi4ucTY8IePAxXXnq8BHVDhM_sQ8tMDegQICBAU"
+      }
+    },
+    "serpapi_pagination": {
+      "current": 1,
+      "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&start=10",
+      "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&start=10",
+      "other_pages": {
+        "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&start=10",
+        "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&start=20",
+        "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&start=30",
+        "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&start=40",
+        "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&start=50",
+        "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&start=60",
+        "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&start=70",
+        "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&start=80",
+        "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=dfd%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5&start=90"
+      }
+    }
+  },
+  "debug_info": {
+    "config_used": "google",
+    "api_name": "SerpAPI",
+    "data_keys": [
+      "search_metadata",
+      "search_parameters",
+      "search_information",
+      "organic_results",
+      "pagination",
+      "serpapi_pagination"
+    ],
+    "data_size": 12935
+  }
+}

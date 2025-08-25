@@ -1,0 +1,55 @@
+# Tor配置文件
+# 基本网络配置
+SocksPort 9050
+ControlPort 9051
+
+# 数据目录
+DataDirectory ./tor_data
+
+# 日志配置
+Log notice file ./tor_data/tor.log
+
+# GeoIP文件配置（使用Tor Browser的文件）
+GeoIPFile "D:/develop/Tor Browser/Browser/TorBrowser/Data/Tor/geoip"
+GeoIPv6File "D:/develop/Tor Browser/Browser/TorBrowser/Data/Tor/geoip6"
+
+# 网络配置
+# 使用更多的入口节点以加快连接
+NumEntryGuards 8
+
+# 电路配置
+# 减少电路建立时间
+CircuitBuildTimeout 60
+LearnCircuitBuildTimeout 0
+
+# 连接配置
+# 增加并发连接数
+MaxClientCircuitsPending 32
+MaxCircuitDirtiness 600
+
+# 安全配置
+# 禁用不安全的协议
+ClientRejectInternalAddresses 1
+SafeLogging 1
+
+# 出口策略（客户端不需要）
+ExitPolicy reject *:*
+
+# 实验性功能
+# 启用更快的握手
+ClientUseIPv6 1
+ClientPreferIPv6ORPort 1
+
+# 目录服务器配置
+FetchDirInfoEarly 1
+FetchDirInfoExtraEarly 1
+
+# 连接重试配置
+CircuitStreamTimeout 60
+
+# 带宽配置（如果需要限制）
+# BandwidthRate 1 MB
+# BandwidthBurst 2 MB
+
+# 调试配置（生产环境中应该关闭）
+# Log debug file ./tor_data/tor_debug.log

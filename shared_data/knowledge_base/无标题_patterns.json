@@ -1,14 +1,13 @@
 {
   "table_name": "dfd_patterns",
-  "description": "DFD模板库（模式库）",
+  "description": "DFD系统模式和模板",
   "schema": {
-    "id": "serial (自增ID)",
-    "system": "text (系统名称)",
-    "level": "int (DFD层级)",
-    "processes": "jsonb (加工列表)",
-    "entities": "jsonb (外部实体列表)",
-    "data_stores": "jsonb (数据存储列表)",
-    "flows": "jsonb (数据流数组)"
+    "system": "text",
+    "level": "int",
+    "processes": "jsonb (数组)",
+    "entities": "jsonb (数组)",
+    "data_stores": "jsonb (数组)",
+    "flows": "jsonb (数组)"
   },
   "data": [
     {
@@ -42,9 +41,9 @@
     }
   ],
   "metadata": {
-    "source_url": "https://www.feishu.cn/template/general-data-flow-diagram",
+    "source_url": "https://httpbin.org/headers",
     "source_title": "无标题",
-    "crawl_time": "2025-08-09T11:06:15.756958",
+    "crawl_time": "2025-08-21T14:21:47.449892",
     "extraction_method": "基于配置文件的自动提取",
     "topic": "DFD"
   }

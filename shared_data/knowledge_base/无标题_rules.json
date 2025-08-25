@@ -1,26 +1,26 @@
 {
   "table_name": "dfd_rules",
-  "description": "DFD规则库（分为层次规则、连接规则、命名规则）",
+  "description": "DFD绘制和验证规则",
   "schema": {
-    "id": "text (主键)",
-    "category": "text (规则分类)",
-    "description": "text (规则说明)",
-    "condition": "text (条件语法)",
-    "validation": "text (验证表达式)"
+    "id": "text",
+    "category": "text",
+    "description": "text",
+    "condition": "text",
+    "validation": "text"
   },
   "data": [
     {
-      "id": "hi-01",
-      "category": "hierarchy",
-      "description": "分层结构规则",
-      "condition": "hierarchy_condition",
-      "validation": "check_hierarchy_rules()"
+      "id": "co-01",
+      "category": "connection",
+      "description": "数据流必须连接不同类型的元素，不能直接连接相同类型",
+      "condition": "connection_condition",
+      "validation": "check_connection_rules()"
     }
   ],
   "metadata": {
-    "source_url": "https://www.feishu.cn/template/general-data-flow-diagram",
+    "source_url": "https://forum.torproject.org/t/how-to-test-tor-and-relay-explanation/10016",
     "source_title": "无标题",
-    "crawl_time": "2025-08-09T11:06:15.756958",
+    "crawl_time": "2025-08-21T14:23:07.338627",
     "extraction_method": "基于配置文件的自动提取",
     "topic": "DFD"
   }

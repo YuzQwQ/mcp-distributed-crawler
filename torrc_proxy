@@ -1,0 +1,21 @@
+
+# Tor配置文件 - 使用上游代理
+DataDirectory ./tor_data_proxy
+SocksPort 9052
+ControlPort 9053
+Log notice file ./tor_data_proxy/tor.log
+
+# 配置上游代理
+HTTPSProxy 127.0.0.1:7890
+HTTPSProxyAuthenticator username:password
+
+# 或者使用SOCKS代理
+# Socks5Proxy 127.0.0.1:7890
+
+# 网桥配置（如果需要）
+# UseBridges 1
+# Bridge obfs4 [bridge_address]:[port] [fingerprint]
+
+# 其他设置
+ClientOnly 1
+ExitPolicy reject *:*

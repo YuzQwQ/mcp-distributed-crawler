@@ -1,0 +1,41 @@
+{
+  "table_name": "dfd_rules",
+  "description": "DFD绘制和验证规则",
+  "schema": {
+    "id": "text",
+    "category": "text",
+    "description": "text",
+    "condition": "text",
+    "validation": "text"
+  },
+  "data": [
+    {
+      "id": "hi-01",
+      "category": "hierarchy",
+      "description": "数据流图应采用分层结构，从Level 0开始逐层细化",
+      "condition": "hierarchy_condition",
+      "validation": "check_hierarchy_rules()"
+    },
+    {
+      "id": "co-02",
+      "category": "connection",
+      "description": "数据流必须连接不同类型的元素，不能直接连接相同类型",
+      "condition": "connection_condition",
+      "validation": "check_connection_rules()"
+    },
+    {
+      "id": "na-03",
+      "category": "naming",
+      "description": "元素名称应简洁明确，使用动宾结构描述处理过程",
+      "condition": "naming_condition",
+      "validation": "check_naming_rules()"
+    }
+  ],
+  "metadata": {
+    "source_url": "https://google.com/search?q=DFD+处理过程命名规范+动词+名词",
+    "source_title": "DFD处理过程命名规范",
+    "crawl_time": "2025-08-14T09:33:41.479061",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  }
+}

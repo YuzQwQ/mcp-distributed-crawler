@@ -1,0 +1,147 @@
+{
+  "success": true,
+  "engine": "google",
+  "keyword": "DFD Process Depth Analysis",
+  "timestamp": "20250814_094822",
+  "total_found": 10,
+  "results": [
+    {
+      "url": "https://www.atlassian.com/work-management/project-management/data-flow-diagram",
+      "title": "Data Flow Diagrams (DFD): Definition & Key Components",
+      "snippet": "A data flow diagram (DFD) is a blueprint for any system or process, providing a clear visual representation of how data moves.",
+      "position": 1,
+      "metadata": {
+        "source": "Atlassian"
+      }
+    },
+    {
+      "url": "https://www.lucidchart.com/pages/data-flow-diagram",
+      "title": "What is a Data Flow Diagram",
+      "snippet": "A data flow diagram (DFD) maps out the flow of information for any process or system. It uses defined symbols like rectangles, circles and arrows, plus short ...",
+      "position": 2,
+      "metadata": {
+        "source": "Lucidchart"
+      }
+    },
+    {
+      "url": "https://www.geeksforgeeks.org/software-engineering/levels-in-data-flow-diagrams-dfd/",
+      "title": "Levels in Data Flow Diagrams (DFD)",
+      "snippet": "Level 3 DFD helps in the detailed analysis of a specific process and is often used for system-level development and technical documentation.",
+      "position": 3,
+      "metadata": {
+        "date": "2025年5月19日",
+        "source": "GeeksforGeeks"
+      }
+    },
+    {
+      "url": "https://www.paloaltonetworks.com/cyberpedia/data-flow-diagram",
+      "title": "What Is a Data Flow Diagram?",
+      "snippet": "Data flow diagrams (DFD) visually map information flow, processes, and interactions for better understanding & optimization of data security across clouds.",
+      "position": 4,
+      "metadata": {
+        "source": "Palo Alto Networks"
+      }
+    },
+    {
+      "url": "https://www.cs.uct.ac.za/mit_notes/software/pdfs/Chp06.pdf",
+      "title": "Chapter 6. Data-Flow Diagrams",
+      "snippet": "A level 1 DFD notates each of the main sub-processes that together form the complete system. We can think of a level 1 DFD as an “exploded view” of the context.",
+      "position": 5,
+      "metadata": {
+        "source": "University of Cape Town"
+      }
+    },
+    {
+      "url": "https://www.processon.io/blog/dfd-meaning",
+      "title": "What is DFD (Data Flow Diagram)? Symbols, Structure ...",
+      "snippet": "Data flow diagram (DFD) is a graphical representation method used to depict the flow, storage, processing and interaction between external entities of data in ...",
+      "position": 6,
+      "metadata": {
+        "date": "2024年11月28日",
+        "source": "processon.io"
+      }
+    },
+    {
+      "url": "https://www.gudusoft.com/data-flow-diagram-concepts-symbols-types-and-tips/",
+      "title": "Data Flow Diagram: Concepts, Symbols, Types, and Tips",
+      "snippet": "A data flow diagram visualizes the functions or processes used to find, edit, store, and distribute data to facilitate communication between users and system ...",
+      "position": 7,
+      "metadata": {
+        "date": "2022年9月12日",
+        "source": "Gudu Software"
+      }
+    },
+    {
+      "url": "https://miro.com/diagramming/data-flow-diagram-examples/",
+      "title": "3 Data Flow Diagram Examples + DFD Template",
+      "snippet": "3 examples of data flow diagrams to understand data movement. Data flow diagrams (DFDs) serve as a vital tool to understand how data behaves in complex ...",
+      "position": 8,
+      "metadata": {
+        "source": "Miro"
+      }
+    },
+    {
+      "url": "https://www.canva.com/online-whiteboard/data-flow-diagrams/",
+      "title": "What is a Data Flow Diagram (DFD)? Examples & Tips",
+      "snippet": "A data flow diagram (DFD) is a visual map that shows how data moves through a system or a process. It uses symbols like arrows, rectangles, circles, and text ...",
+      "position": 9,
+      "metadata": {
+        "source": "Canva"
+      }
+    },
+    {
+      "url": "https://www.lucidchart.com/pages/data-flow-diagram/data-flow-diagram-symbols",
+      "title": "Data Flow Diagram Symbols",
+      "snippet": "Whether you're creating a basic DFD or an in-depth analysis with multiple levels, all data flow diagrams use standard symbols, with some variation.",
+      "position": 10,
+      "metadata": {
+        "source": "Lucidchart"
+      }
+    }
+  ],
+  "parsing_info": {
+    "rules_used": {
+      "primary_keys": [
+        "organic_results",
+        "web_results",
+        "news_results",
+        "related_questions"
+      ],
+      "link_fields": [
+        "link",
+        "url",
+        "displayed_link"
+      ],
+      "title_fields": [
+        "title",
+        "name"
+      ],
+      "snippet_fields": [
+        "snippet",
+        "description",
+        "content"
+      ],
+      "position_fields": [
+        "position",
+        "rank"
+      ],
+      "metadata_fields": [
+        "date",
+        "source",
+        "domain"
+      ]
+    },
+    "raw_data_keys": [
+      "search_metadata",
+      "search_parameters",
+      "search_information",
+      "related_questions",
+      "organic_results",
+      "related_searches",
+      "scholarly_articles",
+      "pagination",
+      "serpapi_pagination"
+    ],
+    "extraction_method": "config_based"
+  }
+}

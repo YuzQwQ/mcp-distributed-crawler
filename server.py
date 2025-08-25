@@ -64,6 +64,62 @@ mcp = FastMCP("WebScrapingServer")
 # 初始化格式处理器
 format_processor = FormatProcessor()
 
+# 加载系统提示词配置
+def load_system_prompts():
+    """加载系统提示词配置文件"""
+    try:
+        config_path = Path("config/system_prompts.json")
+        if config_path.exists():
+            with open(config_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        else:
+            logger.warning(f"系统提示词配置文件不存在: {config_path}")
+            return None
+    except Exception as e:
+        logger.error(f"加载系统提示词配置失败: {str(e)}")
+        return None
+
+def get_system_prompt(prompt_type=None):
+    """获取指定类型的系统提示词"""
+    prompts_config = load_system_prompts()
+    if not prompts_config:
+        # 如果配置文件加载失败，返回默认的通用提示词
+        return (
+            "你是一位专业的网页内容分析专家。你的主要职责是从网页内容中提取和分析有价值的信息。\n\n"
+            "请重点关注以下内容：\n"
+            "1. 核心概念、定义和关键术语\n"
+            "2. 重要的方法、步骤和技巧\n"
+            "3. 实际案例和应用场景\n"
+            "4. 最佳实践和注意事项\n"
+            "5. 相关工具和资源推荐\n"
+            "6. 技术规范和标准\n"
+            "7. 常见问题和解决方案\n"
+            "8. 行业趋势和发展方向\n\n"
+            "请用专业但易懂的语言总结内容，突出核心知识点和实用价值。"
+        )
+    
+    # 从环境变量或参数获取提示词类型
+    if not prompt_type:
+        prompt_type = os.getenv("SYSTEM_PROMPT_TYPE", prompts_config.get("default_prompt_type", "general"))
+    
+    # 获取指定类型的提示词
+    prompts = prompts_config.get("prompts", {})
+    if prompt_type in prompts:
+        return prompts[prompt_type]["system_prompt"]
+    else:
+        logger.warning(f"未找到提示词类型 '{prompt_type}'，使用默认类型")
+        default_type = prompts_config.get("default_prompt_type", "general")
+        if default_type in prompts:
+            return prompts[default_type]["system_prompt"]
+        else:
+            # 如果默认类型也不存在，返回第一个可用的提示词
+            if prompts:
+                first_key = list(prompts.keys())[0]
+                return prompts[first_key]["system_prompt"]
+            else:
+                # 如果配置文件中没有任何提示词，返回硬编码的默认提示词
+                return get_system_prompt()
+
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 BASE_URL = os.getenv("BASE_URL")
 MODEL = os.getenv("MODEL")
@@ -113,6 +169,12 @@ class TorManager:
         try:
             with self.lock:
                 if self.is_running:
+                    return True
+                
+                # 检查是否已有外部Tor进程在运行
+                if self._check_existing_tor():
+                    logger.info("Detected existing Tor process, using it")
+                    self.is_running = True
                     return True
                     
                 # Starting Tor process...
@@ -217,6 +279,34 @@ class TorManager:
             return result.returncode == 0
         except:
             return False
+    
+    def _check_existing_tor(self):
+        """检查是否已有Tor进程在运行"""
+        import socket
+        try:
+            # 检查SOCKS端口是否可用
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sock.settimeout(2)
+            result = sock.connect_ex(('127.0.0.1', TOR_SOCKS_PORT))
+            sock.close()
+            
+            if result == 0:
+                # SOCKS端口可用，再检查控制端口
+                try:
+                    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                    sock.settimeout(2)
+                    result = sock.connect_ex(('127.0.0.1', TOR_CONTROL_PORT))
+                    sock.close()
+                    
+                    if result == 0:
+                        # 两个端口都可用，说明有Tor在运行
+                        return True
+                except:
+                    pass
+        except:
+            pass
+        
+        return False
     
     def _hash_password(self, password):
         """生成Tor密码哈希（简化版）"""
@@ -1099,24 +1189,13 @@ async def scrape_webpage(url: str, headers=None, cookies=None) -> str:
                 )
 
             # Step 5: 主模型生成总结
-            dfd_system_prompt = (
-                "你是一位专业的数据流图(DFD)分析专家。你的主要职责是从网页内容中提取和分析与数据流图绘制相关的知识。\n\n"
-                "请重点关注以下内容：\n"
-                "1. 数据流图的基本概念、定义和作用\n"
-                "2. DFD的四个核心元素：外部实体、处理过程、数据存储、数据流\n"
-                "3. DFD的绘制步骤、方法和技巧\n"
-                "4. DFD的层次结构（Level 0、Level 1等）\n"
-                "5. DFD的符号规范和命名约定\n"
-                "6. DFD绘制工具和软件推荐\n"
-                "7. 实际案例和应用场景\n"
-                "8. 常见错误和注意事项\n\n"
-                "请用专业但易懂的语言总结内容，突出DFD相关的核心知识点。"
-            )
+            # 从配置文件获取系统提示词
+            system_prompt = get_system_prompt()
             
             final_response = openai_client.chat.completions.create(
                 model=model,
                 messages=[
-                    {"role": "system", "content": dfd_system_prompt},
+                    {"role": "system", "content": system_prompt},
                     {"role": "user", "content": final_prompt}
                 ]
             )

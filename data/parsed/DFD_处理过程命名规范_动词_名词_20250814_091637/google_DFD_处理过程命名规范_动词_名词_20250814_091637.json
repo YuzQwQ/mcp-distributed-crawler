@@ -1,0 +1,198 @@
+{
+  "success": true,
+  "engine": "google",
+  "keyword": "DFD 处理过程命名规范 动词 名词",
+  "timestamp": "20250814_091637",
+  "total_found": 15,
+  "results": [
+    {
+      "url": "https://blog.csdn.net/zmx729618/article/details/70159757",
+      "title": "数据流图DFD画法转载",
+      "snippet": "2）为处理命名 A．通常先为数据流命名，然后再为与之相关联的处理命名； B．名字应该反映整个处理的功能； C．应该尽量避免空洞笼统的动词做名字，如“处理”、“加工 ...",
+      "position": 1,
+      "metadata": {
+        "date": "2017年4月13日",
+        "source": "CSDN博客"
+      }
+    },
+    {
+      "url": "https://www.ibm.com/cn-zh/think/topics/data-flow-diagram",
+      "title": "什么是数据流图(DFD)？",
+      "snippet": "数据流图(DFD) 规则 · 每个数据流都标有简短的描述性文本标记，用于标识正在移动的数据的类型。 · 每个流程都标有一个简短的动词短语，描述正在执行的数据转换。 · 每个数据存储 ...",
+      "position": 2,
+      "metadata": {
+        "source": "IBM"
+      }
+    },
+    {
+      "url": "https://blog.csdn.net/wendao76/article/details/142799667",
+      "title": "【软件工程】数据流图DFD 原创",
+      "snippet": "除了与数据存储之间的数据流不用命名外，数据流应该用名词或名词短语命名。 处理（加工）：用圆或 椭圆 （有时也用矩形）表示，代表对数据进行加工或处理的环节。",
+      "position": 3,
+      "metadata": {
+        "date": "2024年10月10日",
+        "source": "CSDN博客"
+      }
+    },
+    {
+      "url": "https://cloud.tencent.com/developer/article/2030083?policyId=1003",
+      "title": "数据流图DFD画法「建议收藏」",
+      "snippet": "通常先为数据流命名，然后再为与之相关联的处理命名； B．名字应该反映整个处理的功能； C．应该尽量避免空洞笼统的动词做名字，如“处理”、“加工”; D．通常用一个 ...",
+      "position": 4,
+      "metadata": {
+        "date": "2022年6月25日",
+        "source": "腾讯云"
+      }
+    },
+    {
+      "url": "https://cloud.tencent.com.cn/developer/article/2030083",
+      "title": "数据流图DFD画法「建议收藏」",
+      "snippet": "应该尽量避免空洞笼统的动词做名字，如“处理”、“加工”; D．通常用一个动词命名，如果必须用两个动词才能描述整个处理的功能，则可能要把这个处理分解成两个 ...",
+      "position": 5,
+      "metadata": {
+        "date": "2022年6月25日",
+        "source": "腾讯云"
+      }
+    },
+    {
+      "url": "https://www.cnblogs.com/netflu/archive/2010/01/22/1654005.html",
+      "title": "逻辑模型的工具－数据流图DFD - 蛤蟆",
+      "snippet": "信息处理过程：处理内容；处理周期；处理方法；处理时间；处理场所；其它 ... 理想的加工名由一个具体的动词和一个具体的宾语(名词)组成。数据流 ...",
+      "position": 6,
+      "metadata": {
+        "date": "2010年1月22日",
+        "source": "博客园"
+      }
+    },
+    {
+      "url": "https://tech.sina.cn/2008-12-05/detail-iaaaaaaa4439252.d.html",
+      "title": "逻辑模型的工具－数据流图DFD - 科技- 新浪",
+      "snippet": "加工和数据流的名字必须体现被命名对象的全部内容而不是一部分。对于加工的名字，应检查它的含义与被加工的输入/输出数据流是否匹配。 一个加工的输出数据 ...",
+      "position": 7,
+      "metadata": {
+        "date": "2008年12月5日",
+        "source": "新浪网"
+      }
+    },
+    {
+      "url": "http://www.cppblog.com/woaidongmao/archive/2008/08/21/59545.html",
+      "title": "概念----数据流图(DFD), - woaidongmao - C++博客",
+      "snippet": "对数据流进行某些操作或变换。每个加工也要有名字，通常是动词短语，简明地描述完成什么加工。在分层的数据流图中，加工还应编号。 (3)数据存储(又称为文件)， ...",
+      "position": 8,
+      "metadata": {
+        "date": "2008年8月21日",
+        "source": "cppblog.com"
+      }
+    },
+    {
+      "url": "https://developer.aliyun.com/article/1430028",
+      "title": "离线数据仓库规范 - 阿里云开发者社区",
+      "snippet": "指标命名规范要遵循两个基本的原则：易懂，就是看到指标的名称，就可以基本判断这个指标归属于哪个业务过程；统一，就是要确保派生指标和它继承的原子指标命名 ...",
+      "position": 9,
+      "metadata": {
+        "date": "2024年1月29日",
+        "source": "阿里云开发者社区"
+      }
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/674696132",
+      "title": "企业如何做好数据仓库命名规范",
+      "snippet": "（3）DWD层表命名规范 ... 使用简洁的名称：索引名称应该简单、易于理解、与索引所涉及的列相关，并且具有描述性，可以从名称中快速获得该索引执行的目的和过程。",
+      "position": 10,
+      "metadata": {
+        "date": "2023年12月26日",
+        "source": "知乎专栏"
+      }
+    },
+    {
+      "url": "https://blog.51cto.com/u_16099276/8832655",
+      "title": "数据流向架构图怎么画数据流图的绘制步骤 - 51CTO博客",
+      "snippet": "A．通常先为数据流命名，然后再为与之相关联的处理命名； B．名字应该反映整个处理的功能； C．应该尽量避免空洞笼统的动词做名字，如“处理”、“加工”; D．通常用 ...",
+      "position": 11,
+      "metadata": {
+        "date": "2023年12月15日",
+        "source": "51CTO博客"
+      }
+    },
+    {
+      "url": "https://support.huawei.com/enterprise/it/doc/EDOC1100374361?currentPartNo=k004&togo=content",
+      "title": "数据仓库服务(DWS) 8.1.1.500 使用指南(for 华为云Stack ...",
+      "snippet": "○ “文件名”：指定导出文件的名称。表名默认显示在此字段中。 说明 文件名遵循Windows文件命名规范。 ○ “导出路径”：选择保存导出文件的位置。所选 ...",
+      "position": 12,
+      "metadata": {
+        "date": "2024年5月13日",
+        "source": "Huawei"
+      }
+    },
+    {
+      "url": "https://patents.google.com/patent/CN1266645C/zh",
+      "title": "知识的自动生成系统、自动设计方法及其自动设计系统",
+      "snippet": "本发明是将母概念和子概念(群)作为一对单位形态的知识加以运用，作为意图达成或设计的知识进行自动生成的方法和其程序及其系统，其特征是：具有在母概念的动词部分索引子 ...",
+      "position": 13,
+      "metadata": {
+        "source": "Google Patents"
+      }
+    },
+    {
+      "url": "https://docs.opengauss.org/zh/docs/7.0.0-RC1/docs/ToolandCommandReference/gsql.html",
+      "title": "Gsql | openGauss文档",
+      "snippet": "说明：. 变量只是简单的名称/值对，这里的值可以是任意长度。 变量名称必须由字母（包括非拉丁字母）、数字和下划线组成，且对大小写敏感。 如果使用\\set varname的格式（不带第 ...",
+      "position": 14,
+      "metadata": {
+        "source": "openGauss文档"
+      }
+    },
+    {
+      "url": "https://www.wsbookshow.com/uploads/bookfile/201105/9787508459325_2.pdf",
+      "title": "第5 章面向数据流的分析方法",
+      "snippet": "... 动词，加上一个具体的宾语组成。应尽量避免使用“加. 工”、“处理”等空洞笼统的动词作名字。 4）通常名字中仅包括一个动词。如果必须用两个动词才能描述整个加工的功能，则把这.",
+      "position": 15,
+      "metadata": {
+        "source": "万水书苑"
+      }
+    }
+  ],
+  "parsing_info": {
+    "rules_used": {
+      "primary_keys": [
+        "organic_results",
+        "web_results",
+        "news_results",
+        "related_questions"
+      ],
+      "link_fields": [
+        "link",
+        "url",
+        "displayed_link"
+      ],
+      "title_fields": [
+        "title",
+        "name"
+      ],
+      "snippet_fields": [
+        "snippet",
+        "description",
+        "content"
+      ],
+      "position_fields": [
+        "position",
+        "rank"
+      ],
+      "metadata_fields": [
+        "date",
+        "source",
+        "domain"
+      ]
+    },
+    "raw_data_keys": [
+      "search_metadata",
+      "search_parameters",
+      "search_information",
+      "organic_results",
+      "related_searches",
+      "pagination",
+      "serpapi_pagination"
+    ],
+    "extraction_method": "config_based"
+  }
+}

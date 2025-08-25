@@ -1,0 +1,26 @@
+{
+  "engine": "baidu",
+  "api_name": "SerpAPI",
+  "base_url": "https://serpapi.com/search",
+  "parsing_rules": {
+    "primary_keys": ["organic_results", "results", "baidu_results"],
+    "link_fields": ["url", "link"],
+    "title_fields": ["title", "name"],
+    "snippet_fields": ["snippet", "description"],
+    "position_fields": ["position", "rank"],
+    "metadata_fields": ["site", "host", "baidu_seid"]
+  },
+  "parameters": {
+    "default": {
+      "engine": "baidu",
+      "num": 10
+    },
+    "required": ["q", "api_key"],
+    "optional": ["num", "pn", "rsv_spt", "rsv_iqid"]
+  },
+  "response_mapping": {
+    "results_path": "organic_results",
+    "total_results_path": "search_information.total_results",
+    "search_time_path": "search_metadata.created_at"
+  }
+}

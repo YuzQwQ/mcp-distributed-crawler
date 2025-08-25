@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "source_url": "https://forum.torproject.org/t/how-to-test-tor-and-relay-explanation/10016",
+    "source_title": "无标题",
+    "crawl_time": "2025-08-21T14:23:07.338627",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  },
+  "statistics": {
+    "concepts_count": 1,
+    "rules_count": 1,
+    "patterns_count": 0,
+    "cases_count": 0,
+    "mappings_count": 0
+  },
+  "dfd_concepts": [
+    {
+      "id": "data-001",
+      "type": "data_flow",
+      "description": "数据流相关的DFD元素定义",
+      "symbol": "箭头线",
+      "rules": [
+        "数据流的使用规则和约定"
+      ]
+    }
+  ],
+  "dfd_rules": [
+    {
+      "id": "co-01",
+      "category": "connection",
+      "description": "数据流必须连接不同类型的元素，不能直接连接相同类型",
+      "condition": "connection_condition",
+      "validation": "check_connection_rules()"
+    }
+  ],
+  "dfd_patterns": [],
+  "dfd_cases": [],
+  "dfd_nlp_mappings": []
+}

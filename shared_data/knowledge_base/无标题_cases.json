@@ -1,13 +1,13 @@
 {
   "table_name": "dfd_cases",
-  "description": "DFD错误/示例案例库",
+  "description": "错误案例和最佳实践",
   "schema": {
-    "id": "text (案例ID)",
-    "type": "text (error_case 或 best_practice)",
-    "description": "text (描述)",
-    "incorrect": "jsonb (错误结构)",
-    "correct": "jsonb (正确结构)",
-    "explanation": "text (说明解释)"
+    "id": "text",
+    "type": "text",
+    "description": "text",
+    "incorrect": "jsonb (对象)",
+    "correct": "jsonb (对象)",
+    "explanation": "text"
   },
   "data": [
     {
@@ -49,9 +49,9 @@
     }
   ],
   "metadata": {
-    "source_url": "https://www.feishu.cn/template/general-data-flow-diagram",
+    "source_url": "https://httpbin.org/headers",
     "source_title": "无标题",
-    "crawl_time": "2025-08-09T11:06:15.756958",
+    "crawl_time": "2025-08-21T14:21:47.449892",
     "extraction_method": "基于配置文件的自动提取",
     "topic": "DFD"
   }

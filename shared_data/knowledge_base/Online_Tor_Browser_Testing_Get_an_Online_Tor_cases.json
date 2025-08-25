@@ -1,0 +1,58 @@
+{
+  "table_name": "dfd_cases",
+  "description": "错误案例和最佳实践",
+  "schema": {
+    "id": "text",
+    "type": "text",
+    "description": "text",
+    "incorrect": "jsonb (对象)",
+    "correct": "jsonb (对象)",
+    "explanation": "text"
+  },
+  "data": [
+    {
+      "id": "case-err-001",
+      "type": "error_case",
+      "description": "从网页内容中识别的DFD绘制错误案例",
+      "incorrect": {
+        "elements": [
+          "错误的元素连接"
+        ],
+        "flows": [
+          "不规范的数据流"
+        ]
+      },
+      "correct": {
+        "elements": [
+          "正确的元素连接"
+        ],
+        "flows": [
+          "规范的数据流"
+        ]
+      },
+      "explanation": "基于网页内容总结的错误原因和改正方法"
+    },
+    {
+      "id": "case-best-002",
+      "type": "best_practice",
+      "description": "从网页内容中提取的DFD最佳实践",
+      "incorrect": {},
+      "correct": {
+        "elements": [
+          "推荐的元素设计"
+        ],
+        "flows": [
+          "标准的数据流设计"
+        ]
+      },
+      "explanation": "基于网页内容总结的最佳实践要点"
+    }
+  ],
+  "metadata": {
+    "source_url": "https://www.browserling.com/tor-testing",
+    "source_title": "Online Tor Browser Testing – Get an Online Tor",
+    "crawl_time": "2025-08-21T14:22:57.461649",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  }
+}

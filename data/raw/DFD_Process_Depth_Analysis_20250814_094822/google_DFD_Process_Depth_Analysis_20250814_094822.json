@@ -1,0 +1,360 @@
+{
+  "success": true,
+  "engine": "google",
+  "keyword": "DFD Process Depth Analysis",
+  "max_results": 10,
+  "timestamp": "20250814_094822",
+  "request_time": 2.062,
+  "raw_data": {
+    "search_metadata": {
+      "id": "689d4066aa0a8894b9fa24a9",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/c653212ca7056e10/689d4066aa0a8894b9fa24a9.json",
+      "pixel_position_endpoint": "https://serpapi.com/searches/c653212ca7056e10/689d4066aa0a8894b9fa24a9.json_with_pixel_position",
+      "created_at": "2025-08-14 01:48:22 UTC",
+      "processed_at": "2025-08-14 01:48:22 UTC",
+      "google_url": "https://www.google.com/search?q=DFD+Process+Depth+Analysis&oq=DFD+Process+Depth+Analysis&hl=zh-cn&gl=cn&num=10&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/c653212ca7056e10/689d4066aa0a8894b9fa24a9.html",
+      "total_time_taken": 1.28
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "DFD Process Depth Analysis",
+      "google_domain": "google.com",
+      "hl": "zh-cn",
+      "gl": "cn",
+      "num": "10",
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "DFD Process Depth Analysis",
+      "total_results": 123000,
+      "time_taken_displayed": 0.34,
+      "organic_results_state": "Results for exact spelling"
+    },
+    "related_questions": [
+      {
+        "question": "What are the 4 components of DFD?",
+        "type": "featured_snippet",
+        "snippet": "The core components of a DFD—processes, data stores, external entities, and data flows—work together to provide a complete picture of system behavior. DFDs are organized by levels, starting with high-level Context Diagrams (Level 0) and progressing to more detailed views in Level 1 and Level 2+",
+        "title": "Data flow diagram: Components, purpose, and how to create",
+        "date": "2025年5月5日",
+        "link": "https://www.rudderstack.com/blog/data-flow-diagram/",
+        "displayed_link": "https://www.rudderstack.com › blog › data-flow-diagram",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3xyPCzLSN3GFRIaSa_Y_jFI4RG5LwnJN1C5N7lNsp&s",
+        "source_logo": "https://serpapi.com/searches/689d4066aa0a8894b9fa24a9/images/03fd64c5eed8ca808937cab88d4c5a19748d8ae77b44ec1a6c1734b350a51067.png",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWQycHNPV1pWV1haNFZsYzBiMWRtTkRoRlpXSlphbUppTW5GcmJFMTRPSFV3ZEdsbVYxQklhelJ4UzI1eWRETlhXa2hKZG5CMU1IcHlMVzFWVkU4NVQycERhMWxQVUVoRFZFODRUa0ZLU2pKZlEyUXpRMFJyWld4bmR4SVhXakJEWkdGT00wUkhZVmMxY1hSelVEVjFhbW95VVVVYUlrRkdUVUZIUjI4M1oxTjRkMk5sVVd3dFN5MWZVekZvYTBwNFNFcHdhRlU0TTFFIiwiZmN2IjoiMyIsImVpIjoiWjBDZGFOM0RHYVc1cXRzUDV1amoyUUUiLCJxYyI6IkNocGtabVFnY0hKdlkyVnpjeUJrWlhCMGFDQmhibUZzZVhOcGN4QUFmV2luRUQ4IiwicXVlc3Rpb24iOiJXaGF0IGFyZSB0aGUgNCBjb21wb25lbnRzIG9mIERGRD8iLCJsayI6IkdoTTBJR052YlhCdmJtVnVkSE1nYjJZZ1pHWmsiLCJicyI6ImM2MlFzVTdEUUJCRTVmWXFKQVN5M0dRby1BRkRRVUhpSmtJSTZLazN2alUteGI1RmR4c1pRMGZQRDFEd0Nmd0N2OGJaSFlndU5Gdk1qSjUyeGl6TnlYMUxDZ29NYlJubnFLVl9GTTllSTZUQi1tcGQ1WjluNVZGeC1OdXlqVFd2bVZsZXl3QXJHR1VIeTE2VVFSNzhwQnc4ZFVocHB5TWtnR3BOMTNrUW1rNkd1cVdnVmY1MlVhNkt5M1lQaHZuSXpPMlBFbzNzQWl3cHdTbjNNV25KckJOeHc0aGp2NUhPUGJPRlRKZzVOckZnSFQwRTZxdjg2N1M4SzI2R2Z5T2FsVm5NXzdtSW1FRDExTTRpT3ItZHFzd1R2Ny1VZVhIOGg1dFdQc2ktQVEiLCJpZCI6ImZjX1owQ2RhTjNER2FXNXF0c1A1dWpqMlFFXzMifQ==",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWQycHNPV1pWV1haNFZsYzBiMWRtTkRoRlpXSlphbUppTW5GcmJFMTRPSFV3ZEdsbVYxQklhelJ4UzI1eWRETlhXa2hKZG5CMU1IcHlMVzFWVkU4NVQycERhMWxQVUVoRFZFODRUa0ZLU2pKZlEyUXpRMFJyWld4bmR4SVhXakJEWkdGT00wUkhZVmMxY1hSelVEVjFhbW95VVVVYUlrRkdUVUZIUjI4M1oxTjRkMk5sVVd3dFN5MWZVekZvYTBwNFNFcHdhRlU0TTFFIiwiZmN2IjoiMyIsImVpIjoiWjBDZGFOM0RHYVc1cXRzUDV1amoyUUUiLCJxYyI6IkNocGtabVFnY0hKdlkyVnpjeUJrWlhCMGFDQmhibUZzZVhOcGN4QUFmV2luRUQ4IiwicXVlc3Rpb24iOiJXaGF0IGFyZSB0aGUgNCBjb21wb25lbnRzIG9mIERGRD8iLCJsayI6IkdoTTBJR052YlhCdmJtVnVkSE1nYjJZZ1pHWmsiLCJicyI6ImM2MlFzVTdEUUJCRTVmWXFKQVN5M0dRby1BRkRRVUhpSmtJSTZLazN2alUteGI1RmR4c1pRMGZQRDFEd0Nmd0N2OGJaSFlndU5Gdk1qSjUyeGl6TnlYMUxDZ29NYlJubnFLVl9GTTllSTZUQi1tcGQ1WjluNVZGeC1OdXlqVFd2bVZsZXl3QXJHR1VIeTE2VVFSNzhwQnc4ZFVocHB5TWtnR3BOMTNrUW1rNkd1cVdnVmY1MlVhNkt5M1lQaHZuSXpPMlBFbzNzQWl3cHdTbjNNV25KckJOeHc0aGp2NUhPUGJPRlRKZzVOckZnSFQwRTZxdjg2N1M4SzI2R2Z5T2FsVm5NXzdtSW1FRDExTTRpT3ItZHFzd1R2Ny1VZVhIOGg1dFdQc2ktQVEiLCJpZCI6ImZjX1owQ2RhTjNER2FXNXF0c1A1dWpqMlFFXzMifQ%3D%3D"
+      },
+      {
+        "question": "How do you denote an external entity or actor in a flowchart?",
+        "type": "featured_snippet",
+        "snippet": "External entity: They are the sources and destinations of information entering or leaving the system. They might be an outside organization or person, a computer system or a business system. They are also known as terminators, sources and sinks or actors. They are typically drawn on the edges of the diagram.",
+        "title": "What is a Data Flow Diagram - Lucidchart",
+        "link": "https://www.lucidchart.com/pages/data-flow-diagram",
+        "displayed_link": "https://www.lucidchart.com › pages › data-flow-diagram",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWQycHNPV1pWV1haNFZsYzBiMWRtTkRoRlpXSlphbUppTW5GcmJFMTRPSFV3ZEdsbVYxQklhelJ4UzI1eWRETlhXa2hKZG5CMU1IcHlMVzFWVkU4NVQycERhMWxQVUVoRFZFODRUa0ZLU2pKZlEyUXpRMFJyWld4bmR4SVhXakJEWkdGT00wUkhZVmMxY1hSelVEVjFhbW95VVVVYUlrRkdUVUZIUjI4M1oxTjRkMk5sVVd3dFN5MWZVekZvYTBwNFNFcHdhRlU0TTFFIiwiZmN2IjoiMyIsImVpIjoiWjBDZGFOM0RHYVc1cXRzUDV1amoyUUUiLCJxYyI6IkNocGtabVFnY0hKdlkyVnpjeUJrWlhCMGFDQmhibUZzZVhOcGN4QUFmV2luRUQ4IiwicXVlc3Rpb24iOiJIb3cgZG8geW91IGRlbm90ZSBhbiBleHRlcm5hbCBlbnRpdHkgb3IgYWN0b3IgaW4gYSBmbG93Y2hhcnQ/IiwibGsiOiJjdzNFd1FrQUlRd0V3RDd1dFlWY00wRnpLRWdXd29wbjl6cVBlZDdHaFVwc1RsUVB5bUVCXy1VWk51Q2hyZzBtck9qZUE0WnZjSlZtcVFNIiwiYnMiOiJjNjJRc1U3RFFCQkU1ZllxSkFTeTNHUW8tQUZEUVVIaUprSUk2S2szdmpVLXhiNUZkeHNaUTBmUEQxRHdDZndDdjhiWkhZZ3VORnZNako1Mnhpek55WDFMQ2dvTWJSbm5xS1ZfRk05ZUk2VEItbXBkNVo5bjVWRngtTnV5alRXdm1WbGV5d0FyR0dVSHkxNlVRUjc4cEJ3OGRVaHBweU1rZ0dwTjEza1FtazZHdXFXZ1ZmNTJVYTZLeTNZUGh2bkl6TzJQRW8zc0Fpd3B3U24zTVduSnJCTnh3NGhqdjVIT1BiT0ZUSmc1TnJGZ0hUMEU2cXY4NjdTOEsyNkdmeU9hbFZuTV83bUltRUQxMU00aU9yLWRxc3dUdjctVWVYSDhoNXRXUHNpLUFRIiwiaWQiOiJmY19aMENkYU4zREdhVzVxdHNQNXVqajJRRV8zIn0=",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWQycHNPV1pWV1haNFZsYzBiMWRtTkRoRlpXSlphbUppTW5GcmJFMTRPSFV3ZEdsbVYxQklhelJ4UzI1eWRETlhXa2hKZG5CMU1IcHlMVzFWVkU4NVQycERhMWxQVUVoRFZFODRUa0ZLU2pKZlEyUXpRMFJyWld4bmR4SVhXakJEWkdGT00wUkhZVmMxY1hSelVEVjFhbW95VVVVYUlrRkdUVUZIUjI4M1oxTjRkMk5sVVd3dFN5MWZVekZvYTBwNFNFcHdhRlU0TTFFIiwiZmN2IjoiMyIsImVpIjoiWjBDZGFOM0RHYVc1cXRzUDV1amoyUUUiLCJxYyI6IkNocGtabVFnY0hKdlkyVnpjeUJrWlhCMGFDQmhibUZzZVhOcGN4QUFmV2luRUQ4IiwicXVlc3Rpb24iOiJIb3cgZG8geW91IGRlbm90ZSBhbiBleHRlcm5hbCBlbnRpdHkgb3IgYWN0b3IgaW4gYSBmbG93Y2hhcnQ%2FIiwibGsiOiJjdzNFd1FrQUlRd0V3RDd1dFlWY00wRnpLRWdXd29wbjl6cVBlZDdHaFVwc1RsUVB5bUVCXy1VWk51Q2hyZzBtck9qZUE0WnZjSlZtcVFNIiwiYnMiOiJjNjJRc1U3RFFCQkU1ZllxSkFTeTNHUW8tQUZEUVVIaUprSUk2S2szdmpVLXhiNUZkeHNaUTBmUEQxRHdDZndDdjhiWkhZZ3VORnZNako1Mnhpek55WDFMQ2dvTWJSbm5xS1ZfRk05ZUk2VEItbXBkNVo5bjVWRngtTnV5alRXdm1WbGV5d0FyR0dVSHkxNlVRUjc4cEJ3OGRVaHBweU1rZ0dwTjEza1FtazZHdXFXZ1ZmNTJVYTZLeTNZUGh2bkl6TzJQRW8zc0Fpd3B3U24zTVduSnJCTnh3NGhqdjVIT1BiT0ZUSmc1TnJGZ0hUMEU2cXY4NjdTOEsyNkdmeU9hbFZuTV83bUltRUQxMU00aU9yLWRxc3dUdjctVWVYSDhoNXRXUHNpLUFRIiwiaWQiOiJmY19aMENkYU4zREdhVzVxdHNQNXVqajJRRV8zIn0%3D"
+      },
+      {
+        "question": "What are the four data items that can be symbolized on a data flow diagram?",
+        "type": "featured_snippet",
+        "title": "Symbols used in data flow diagrams",
+        "link": "https://www.ibm.com/think/topics/data-flow-diagram",
+        "list": [
+          "External entities: rectangles.",
+          "Processes: circles (Yourdon and Coad) or rectangles with rounded corners (Gane and Sarson)",
+          "Data stores: parallel lines (Yourdon and Coad) or open-ended rectangles (Gane and Sarson)",
+          "Data flows: horizontal lines."
+        ],
+        "displayed_link": "https://www.ibm.com › think › topics › data-flow-diagram",
+        "source_logo": "https://serpapi.com/searches/689d4066aa0a8894b9fa24a9/images/03fd64c5eed8ca808937cab88d4c5a196de6ea26ea6e6cbb136ffcb107e9479b.png",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWQycHNPV1pWV1haNFZsYzBiMWRtTkRoRlpXSlphbUppTW5GcmJFMTRPSFV3ZEdsbVYxQklhelJ4UzI1eWRETlhXa2hKZG5CMU1IcHlMVzFWVkU4NVQycERhMWxQVUVoRFZFODRUa0ZLU2pKZlEyUXpRMFJyWld4bmR4SVhXakJEWkdGT00wUkhZVmMxY1hSelVEVjFhbW95VVVVYUlrRkdUVUZIUjI4M1oxTjRkMk5sVVd3dFN5MWZVekZvYTBwNFNFcHdhRlU0TTFFIiwiZmN2IjoiMyIsImVpIjoiWjBDZGFOM0RHYVc1cXRzUDV1amoyUUUiLCJxYyI6IkNocGtabVFnY0hKdlkyVnpjeUJrWlhCMGFDQmhibUZzZVhOcGN4QUFmV2luRUQ4IiwicXVlc3Rpb24iOiJXaGF0IGFyZSB0aGUgZm91ciBkYXRhIGl0ZW1zIHRoYXQgY2FuIGJlIHN5bWJvbGl6ZWQgb24gYSBkYXRhIGZsb3cgZGlhZ3JhbT8iLCJsayI6ImN5WEtRUXJBSUF4RTBYdDBOZWZwTGNZYXE2QUdZa1RhMDFmbzlyOV9uQ3ZUUVJONEZpU2Roa2duaWtzYnUyMjgyQkVFNDJsQmEza2xRanY0YjZucVFpeThqZTBEIiwiYnMiOiJjNjJRc1U3RFFCQkU1ZllxSkFTeTNHUW8tQUZEUVVIaUprSUk2S2szdmpVLXhiNUZkeHNaUTBmUEQxRHdDZndDdjhiWkhZZ3VORnZNako1Mnhpek55WDFMQ2dvTWJSbm5xS1ZfRk05ZUk2VEItbXBkNVo5bjVWRngtTnV5alRXdm1WbGV5d0FyR0dVSHkxNlVRUjc4cEJ3OGRVaHBweU1rZ0dwTjEza1FtazZHdXFXZ1ZmNTJVYTZLeTNZUGh2bkl6TzJQRW8zc0Fpd3B3U24zTVduSnJCTnh3NGhqdjVIT1BiT0ZUSmc1TnJGZ0hUMEU2cXY4NjdTOEsyNkdmeU9hbFZuTV83bUltRUQxMU00aU9yLWRxc3dUdjctVWVYSDhoNXRXUHNpLUFRIiwiaWQiOiJmY19aMENkYU4zREdhVzVxdHNQNXVqajJRRV8zIn0=",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWQycHNPV1pWV1haNFZsYzBiMWRtTkRoRlpXSlphbUppTW5GcmJFMTRPSFV3ZEdsbVYxQklhelJ4UzI1eWRETlhXa2hKZG5CMU1IcHlMVzFWVkU4NVQycERhMWxQVUVoRFZFODRUa0ZLU2pKZlEyUXpRMFJyWld4bmR4SVhXakJEWkdGT00wUkhZVmMxY1hSelVEVjFhbW95VVVVYUlrRkdUVUZIUjI4M1oxTjRkMk5sVVd3dFN5MWZVekZvYTBwNFNFcHdhRlU0TTFFIiwiZmN2IjoiMyIsImVpIjoiWjBDZGFOM0RHYVc1cXRzUDV1amoyUUUiLCJxYyI6IkNocGtabVFnY0hKdlkyVnpjeUJrWlhCMGFDQmhibUZzZVhOcGN4QUFmV2luRUQ4IiwicXVlc3Rpb24iOiJXaGF0IGFyZSB0aGUgZm91ciBkYXRhIGl0ZW1zIHRoYXQgY2FuIGJlIHN5bWJvbGl6ZWQgb24gYSBkYXRhIGZsb3cgZGlhZ3JhbT8iLCJsayI6ImN5WEtRUXJBSUF4RTBYdDBOZWZwTGNZYXE2QUdZa1RhMDFmbzlyOV9uQ3ZUUVJONEZpU2Roa2duaWtzYnUyMjgyQkVFNDJsQmEza2xRanY0YjZucVFpeThqZTBEIiwiYnMiOiJjNjJRc1U3RFFCQkU1ZllxSkFTeTNHUW8tQUZEUVVIaUprSUk2S2szdmpVLXhiNUZkeHNaUTBmUEQxRHdDZndDdjhiWkhZZ3VORnZNako1Mnhpek55WDFMQ2dvTWJSbm5xS1ZfRk05ZUk2VEItbXBkNVo5bjVWRngtTnV5alRXdm1WbGV5d0FyR0dVSHkxNlVRUjc4cEJ3OGRVaHBweU1rZ0dwTjEza1FtazZHdXFXZ1ZmNTJVYTZLeTNZUGh2bkl6TzJQRW8zc0Fpd3B3U24zTVduSnJCTnh3NGhqdjVIT1BiT0ZUSmc1TnJGZ0hUMEU2cXY4NjdTOEsyNkdmeU9hbFZuTV83bUltRUQxMU00aU9yLWRxc3dUdjctVWVYSDhoNXRXUHNpLUFRIiwiaWQiOiJmY19aMENkYU4zREdhVzVxdHNQNXVqajJRRV8zIn0%3D"
+      },
+      {
+        "question": "What is source and sink in DFD?",
+        "type": "featured_snippet",
+        "snippet": "External entities They either provide data to the system (sources) or receive data from the system (sinks) – sometimes both. By identifying these external interactors, the DFD clearly defines the scope of the system and its interfaces with the outside world.",
+        "title": "Data Flow Diagrams (DFD): Definition & Key Components",
+        "link": "https://www.atlassian.com/work-management/project-management/data-flow-diagram",
+        "displayed_link": "https://www.atlassian.com › data-flow-diagram",
+        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWQycHNPV1pWV1haNFZsYzBiMWRtTkRoRlpXSlphbUppTW5GcmJFMTRPSFV3ZEdsbVYxQklhelJ4UzI1eWRETlhXa2hKZG5CMU1IcHlMVzFWVkU4NVQycERhMWxQVUVoRFZFODRUa0ZLU2pKZlEyUXpRMFJyWld4bmR4SVhXakJEWkdGT00wUkhZVmMxY1hSelVEVjFhbW95VVVVYUlrRkdUVUZIUjI4M1oxTjRkMk5sVVd3dFN5MWZVekZvYTBwNFNFcHdhRlU0TTFFIiwiZmN2IjoiMyIsImVpIjoiWjBDZGFOM0RHYVc1cXRzUDV1amoyUUUiLCJxYyI6IkNocGtabVFnY0hKdlkyVnpjeUJrWlhCMGFDQmhibUZzZVhOcGN4QUFmV2luRUQ4IiwicXVlc3Rpb24iOiJXaGF0IGlzIHNvdXJjZSBhbmQgc2luayBpbiBERkQ/IiwibGsiOiJHaFp6YjNWeVkyVWdZVzVrSUhOcGJtc2dhVzRnWkdaayIsImJzIjoiYzYyUXNVN0RRQkJFNWZZcUpBU3kzR1FvLUFGRFFVSGlKa0lJNktrM3ZqVS14YjVGZHhzWlEwZlBEMUR3Q2Z3Q3Y4YlpIWWd1TkZ2TWpKNTJ4aXpOeVgxTENnb01iUm5ucUtWX0ZNOWVJNlRCLW1wZDVaOW41VkZ4LU51eWpUV3ZtVmxleXdBckdHVUh5MTZVUVI3OHBCdzhkVWhwcHlNa2dHcE4xM2tRbWs2R3VxV2dWZjUyVWE2S3kzWVBodm5Jek8yUEVvM3NBaXdwd1NuM01XbkpyQk54dzRoanY1SE9QYk9GVEpnNU5yRmdIVDBFNnF2ODY3UzhLMjZHZnlPYWxWbk1fN21JbUVEMTFNNGlPci1kcXN3VHY3LVVlWEg4aDV0V1BzaS1BUSIsImlkIjoiZmNfWjBDZGFOM0RHYVc1cXRzUDV1amoyUUVfMyJ9",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJUR3QwWDNaSWQycHNPV1pWV1haNFZsYzBiMWRtTkRoRlpXSlphbUppTW5GcmJFMTRPSFV3ZEdsbVYxQklhelJ4UzI1eWRETlhXa2hKZG5CMU1IcHlMVzFWVkU4NVQycERhMWxQVUVoRFZFODRUa0ZLU2pKZlEyUXpRMFJyWld4bmR4SVhXakJEWkdGT00wUkhZVmMxY1hSelVEVjFhbW95VVVVYUlrRkdUVUZIUjI4M1oxTjRkMk5sVVd3dFN5MWZVekZvYTBwNFNFcHdhRlU0TTFFIiwiZmN2IjoiMyIsImVpIjoiWjBDZGFOM0RHYVc1cXRzUDV1amoyUUUiLCJxYyI6IkNocGtabVFnY0hKdlkyVnpjeUJrWlhCMGFDQmhibUZzZVhOcGN4QUFmV2luRUQ4IiwicXVlc3Rpb24iOiJXaGF0IGlzIHNvdXJjZSBhbmQgc2luayBpbiBERkQ%2FIiwibGsiOiJHaFp6YjNWeVkyVWdZVzVrSUhOcGJtc2dhVzRnWkdaayIsImJzIjoiYzYyUXNVN0RRQkJFNWZZcUpBU3kzR1FvLUFGRFFVSGlKa0lJNktrM3ZqVS14YjVGZHhzWlEwZlBEMUR3Q2Z3Q3Y4YlpIWWd1TkZ2TWpKNTJ4aXpOeVgxTENnb01iUm5ucUtWX0ZNOWVJNlRCLW1wZDVaOW41VkZ4LU51eWpUV3ZtVmxleXdBckdHVUh5MTZVUVI3OHBCdzhkVWhwcHlNa2dHcE4xM2tRbWs2R3VxV2dWZjUyVWE2S3kzWVBodm5Jek8yUEVvM3NBaXdwd1NuM01XbkpyQk54dzRoanY1SE9QYk9GVEpnNU5yRmdIVDBFNnF2ODY3UzhLMjZHZnlPYWxWbk1fN21JbUVEMTFNNGlPci1kcXN3VHY3LVVlWEg4aDV0V1BzaS1BUSIsImlkIjoiZmNfWjBDZGFOM0RHYVc1cXRzUDV1amoyUUVfMyJ9"
+      }
+    ],
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "Data Flow Diagrams (DFD): Definition & Key Components",
+        "link": "https://www.atlassian.com/work-management/project-management/data-flow-diagram",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.atlassian.com/work-management/project-management/data-flow-diagram&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQFnoECBUQAQ",
+        "displayed_link": "https://www.atlassian.com › data-flow-diagr...",
+        "favicon": "https://serpapi.com/searches/689d4066aa0a8894b9fa24a9/images/6ed7006ee4b33e764f68bba870214be3207b0e52368402054b02ddd3dfb6ee7c.png",
+        "snippet": "A data flow diagram (DFD) is a blueprint for any system or process, providing a clear visual representation of how data moves.",
+        "snippet_highlighted_words": [
+          "DFD",
+          "process"
+        ],
+        "source": "Atlassian"
+      },
+      {
+        "position": 2,
+        "title": "What is a Data Flow Diagram",
+        "link": "https://www.lucidchart.com/pages/data-flow-diagram",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lucidchart.com/pages/data-flow-diagram&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQFnoECBcQAQ",
+        "displayed_link": "https://www.lucidchart.com › pages › data-...",
+        "favicon": "https://serpapi.com/searches/689d4066aa0a8894b9fa24a9/images/6ed7006ee4b33e764f68bba870214be310423750b1c1c71e17ef4ec43d099a3c.png",
+        "snippet": "A data flow diagram (DFD) maps out the flow of information for any process or system. It uses defined symbols like rectangles, circles and arrows, plus short ...",
+        "snippet_highlighted_words": [
+          "maps out the flow of information for any process or system"
+        ],
+        "source": "Lucidchart"
+      },
+      {
+        "position": 3,
+        "title": "Levels in Data Flow Diagrams (DFD)",
+        "link": "https://www.geeksforgeeks.org/software-engineering/levels-in-data-flow-diagrams-dfd/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.geeksforgeeks.org/software-engineering/levels-in-data-flow-diagrams-dfd/&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQFnoECBoQAQ",
+        "displayed_link": "https://www.geeksforgeeks.org › levels-in-...",
+        "favicon": "https://serpapi.com/searches/689d4066aa0a8894b9fa24a9/images/6ed7006ee4b33e764f68bba870214be3a21a1ee639df06bc01cc92783b85cea1.png",
+        "date": "2025年5月19日",
+        "snippet": "Level 3 DFD helps in the detailed analysis of a specific process and is often used for system-level development and technical documentation.",
+        "snippet_highlighted_words": [
+          "Level 3 DFD helps in the detailed analysis of a specific process"
+        ],
+        "sitelinks": {
+          "inline": [
+            {
+              "title": "What is DFD(Data Flow...",
+              "link": "https://www.geeksforgeeks.org/software-engineering/what-is-dfddata-flow-diagram/"
+            },
+            {
+              "title": "Next Article",
+              "link": "https://www.geeksforgeeks.org/software-engineering/data-flow-diagram-for-online-banking-system/"
+            },
+            {
+              "title": "Rules for Data Flow Diagram",
+              "link": "https://www.geeksforgeeks.org/software-engineering/rules-for-data-flow-diagram/"
+            }
+          ]
+        },
+        "source": "GeeksforGeeks"
+      },
+      {
+        "position": 4,
+        "title": "What Is a Data Flow Diagram?",
+        "link": "https://www.paloaltonetworks.com/cyberpedia/data-flow-diagram",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.paloaltonetworks.com/cyberpedia/data-flow-diagram&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQFnoECBYQAQ",
+        "displayed_link": "https://www.paloaltonetworks.com › data-fl...",
+        "favicon": "https://serpapi.com/searches/689d4066aa0a8894b9fa24a9/images/6ed7006ee4b33e764f68bba870214be34a4bf0098a05ff1ddaef73593507313b.png",
+        "snippet": "Data flow diagrams (DFD) visually map information flow, processes, and interactions for better understanding & optimization of data security across clouds.",
+        "snippet_highlighted_words": [
+          "visually map information flow, processes, and interactions"
+        ],
+        "source": "Palo Alto Networks"
+      },
+      {
+        "position": 5,
+        "title": "Chapter 6. Data-Flow Diagrams",
+        "link": "https://www.cs.uct.ac.za/mit_notes/software/pdfs/Chp06.pdf",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cs.uct.ac.za/mit_notes/software/pdfs/Chp06.pdf&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQFnoECBgQAQ",
+        "displayed_link": "https://www.cs.uct.ac.za › software › pdfs › Chp06",
+        "snippet": "A level 1 DFD notates each of the main sub-processes that together form the complete system. We can think of a level 1 DFD as an “exploded view” of the context.",
+        "snippet_highlighted_words": [
+          "DFD",
+          "processes",
+          "DFD"
+        ],
+        "source": "University of Cape Town"
+      },
+      {
+        "position": 6,
+        "title": "What is DFD (Data Flow Diagram)? Symbols, Structure ...",
+        "link": "https://www.processon.io/blog/dfd-meaning",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.processon.io/blog/dfd-meaning&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQFnoECBkQAQ",
+        "displayed_link": "https://www.processon.io › dfd-meaning",
+        "favicon": "https://serpapi.com/searches/689d4066aa0a8894b9fa24a9/images/6ed7006ee4b33e764f68bba870214be3c4524c682dd728a59b374d77f3aeeae3.png",
+        "date": "2024年11月28日",
+        "snippet": "Data flow diagram (DFD) is a graphical representation method used to depict the flow, storage, processing and interaction between external entities of data in ...",
+        "snippet_highlighted_words": [
+          "Data flow diagram (DFD"
+        ],
+        "source": "processon.io"
+      },
+      {
+        "position": 7,
+        "title": "Data Flow Diagram: Concepts, Symbols, Types, and Tips",
+        "link": "https://www.gudusoft.com/data-flow-diagram-concepts-symbols-types-and-tips/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.gudusoft.com/data-flow-diagram-concepts-symbols-types-and-tips/&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQFnoECDsQAQ",
+        "displayed_link": "https://www.gudusoft.com › data-flow-diag...",
+        "favicon": "https://serpapi.com/searches/689d4066aa0a8894b9fa24a9/images/6ed7006ee4b33e764f68bba870214be3d4adf6737d32a06c14b243cdfc1c5759.png",
+        "date": "2022年9月12日",
+        "snippet": "A data flow diagram visualizes the functions or processes used to find, edit, store, and distribute data to facilitate communication between users and system ...",
+        "snippet_highlighted_words": [
+          "visualizes the functions or processes used to find, edit, store, and distribute data"
+        ],
+        "source": "Gudu Software"
+      },
+      {
+        "position": 8,
+        "title": "3 Data Flow Diagram Examples + DFD Template",
+        "link": "https://miro.com/diagramming/data-flow-diagram-examples/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://miro.com/diagramming/data-flow-diagram-examples/&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQFnoECDoQAQ",
+        "displayed_link": "https://miro.com › Diagramming",
+        "favicon": "https://serpapi.com/searches/689d4066aa0a8894b9fa24a9/images/6ed7006ee4b33e764f68bba870214be3838d897b7e193357a22597da6934dadb.png",
+        "snippet": "3 examples of data flow diagrams to understand data movement. Data flow diagrams (DFDs) serve as a vital tool to understand how data behaves in complex ...",
+        "snippet_highlighted_words": [
+          "Data flow diagrams (DFDs"
+        ],
+        "source": "Miro"
+      },
+      {
+        "position": 9,
+        "title": "What is a Data Flow Diagram (DFD)? Examples & Tips",
+        "link": "https://www.canva.com/online-whiteboard/data-flow-diagrams/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.canva.com/online-whiteboard/data-flow-diagrams/&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQFnoECDcQAQ",
+        "displayed_link": "https://www.canva.com › online-whiteboard",
+        "favicon": "https://serpapi.com/searches/689d4066aa0a8894b9fa24a9/images/6ed7006ee4b33e764f68bba870214be30589f4458f8c7a4a8fa784bdc46f71fd.png",
+        "snippet": "A data flow diagram (DFD) is a visual map that shows how data moves through a system or a process. It uses symbols like arrows, rectangles, circles, and text ...",
+        "snippet_highlighted_words": [
+          "visual map that shows how data moves through a system or a process"
+        ],
+        "source": "Canva"
+      },
+      {
+        "position": 10,
+        "title": "Data Flow Diagram Symbols",
+        "link": "https://www.lucidchart.com/pages/data-flow-diagram/data-flow-diagram-symbols",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.lucidchart.com/pages/data-flow-diagram/data-flow-diagram-symbols&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQFnoECDQQAQ",
+        "displayed_link": "https://www.lucidchart.com › pages › data-...",
+        "favicon": "https://serpapi.com/searches/689d4066aa0a8894b9fa24a9/images/6ed7006ee4b33e764f68bba870214be3298ea052dafe47dac102aed2559155ed.png",
+        "snippet": "Whether you're creating a basic DFD or an in-depth analysis with multiple levels, all data flow diagrams use standard symbols, with some variation.",
+        "snippet_highlighted_words": [
+          "all data flow diagrams use standard symbols"
+        ],
+        "source": "Lucidchart"
+      }
+    ],
+    "related_searches": [
+      {
+        "block_position": 1,
+        "query": "Data flow diagram",
+        "link": "https://www.google.com/search?sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=Data+flow+diagram&sa=X&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ1QJ6BAgwEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=Data+flow+diagram"
+      },
+      {
+        "block_position": 1,
+        "query": "Data flow diagram example",
+        "link": "https://www.google.com/search?sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=Data+flow+diagram+example&sa=X&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ1QJ6BAgzEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=Data+flow+diagram+example"
+      },
+      {
+        "block_position": 1,
+        "query": "Data flow diagram maker",
+        "link": "https://www.google.com/search?sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=Data+flow+diagram+maker&sa=X&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ1QJ6BAgsEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=Data+flow+diagram+maker"
+      },
+      {
+        "block_position": 1,
+        "query": "DFD level 0",
+        "link": "https://www.google.com/search?sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=DFD+level+0&sa=X&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ1QJ6BAgyEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=DFD+level+0"
+      },
+      {
+        "block_position": 1,
+        "query": "Data flow diagram online",
+        "link": "https://www.google.com/search?sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=Data+flow+diagram+online&sa=X&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ1QJ6BAgxEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=Data+flow+diagram+online"
+      },
+      {
+        "block_position": 1,
+        "query": "DFD level 1",
+        "link": "https://www.google.com/search?sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=DFD+level+1&sa=X&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ1QJ6BAgtEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=DFD+level+1"
+      },
+      {
+        "block_position": 1,
+        "query": "data flow diagram中文",
+        "link": "https://www.google.com/search?sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=data+flow+diagram%E4%B8%AD%E6%96%87&sa=X&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ1QJ6BAgvEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=data+flow+diagram%E4%B8%AD%E6%96%87"
+      },
+      {
+        "block_position": 1,
+        "query": "Context diagram",
+        "link": "https://www.google.com/search?sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=Context+diagram&sa=X&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ1QJ6BAguEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=Context+diagram"
+      }
+    ],
+    "scholarly_articles": {
+      "title": "Google 学术：DFD Process Depth Analysis",
+      "link": "https://scholar.google.com.hk/scholar?q=DFD+Process+Depth+Analysis&hl=zh-CN&as_sdt=0&as_vis=1&oi=scholart",
+      "serpapi_link": "https://serpapi.com/search.json?as_sdt=0&as_vis=1&engine=google_scholar&hl=zh-CN&num=10&q=DFD+Process+Depth+Analysis",
+      "articles": [
+        {
+          "title": "Comparative study on dfd to uml diagrams …",
+          "link": "https://arxiv.org/pdf/1102.4162",
+          "highlighted_words": [
+            "dfd"
+          ],
+          "author": "‎Jilani"
+        },
+        {
+          "title": "DFD: Efficient functional dependency discovery",
+          "link": "https://hpi.de/oldsite/fileadmin/user_upload/fachgebiete/naumann/publications/PDFs/2014_abedjan_dfd.pdf",
+          "highlighted_words": [
+            "DFD"
+          ],
+          "author": "‎Abedjan"
+        }
+      ]
+    },
+    "pagination": {
+      "current": 1,
+      "next": "https://www.google.com/search?q=DFD+Process+Depth+Analysis&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=Z0CdaN3DGaW5qtsP5ujj2QE&start=10&sa=N&sstk=Ac65TH7-MHG_3YtOvNxkhc_4Fa1tgGyyPhZ9XVcc5W52GNT5RIWjHfDlpuVtdIe9kX6-wJE6k0snMxy1NwWeBFkROgrxeAidIecvjg&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ8NMDegQICRAW",
+      "other_pages": {
+        "2": "https://www.google.com/search?q=DFD+Process+Depth+Analysis&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=Z0CdaN3DGaW5qtsP5ujj2QE&start=10&sa=N&sstk=Ac65TH7-MHG_3YtOvNxkhc_4Fa1tgGyyPhZ9XVcc5W52GNT5RIWjHfDlpuVtdIe9kX6-wJE6k0snMxy1NwWeBFkROgrxeAidIecvjg&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ8tMDegQICRAE",
+        "3": "https://www.google.com/search?q=DFD+Process+Depth+Analysis&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=Z0CdaN3DGaW5qtsP5ujj2QE&start=20&sa=N&sstk=Ac65TH7-MHG_3YtOvNxkhc_4Fa1tgGyyPhZ9XVcc5W52GNT5RIWjHfDlpuVtdIe9kX6-wJE6k0snMxy1NwWeBFkROgrxeAidIecvjg&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ8tMDegQICRAG",
+        "4": "https://www.google.com/search?q=DFD+Process+Depth+Analysis&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=Z0CdaN3DGaW5qtsP5ujj2QE&start=30&sa=N&sstk=Ac65TH7-MHG_3YtOvNxkhc_4Fa1tgGyyPhZ9XVcc5W52GNT5RIWjHfDlpuVtdIe9kX6-wJE6k0snMxy1NwWeBFkROgrxeAidIecvjg&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ8tMDegQICRAI",
+        "5": "https://www.google.com/search?q=DFD+Process+Depth+Analysis&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=Z0CdaN3DGaW5qtsP5ujj2QE&start=40&sa=N&sstk=Ac65TH7-MHG_3YtOvNxkhc_4Fa1tgGyyPhZ9XVcc5W52GNT5RIWjHfDlpuVtdIe9kX6-wJE6k0snMxy1NwWeBFkROgrxeAidIecvjg&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ8tMDegQICRAK",
+        "6": "https://www.google.com/search?q=DFD+Process+Depth+Analysis&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=Z0CdaN3DGaW5qtsP5ujj2QE&start=50&sa=N&sstk=Ac65TH7-MHG_3YtOvNxkhc_4Fa1tgGyyPhZ9XVcc5W52GNT5RIWjHfDlpuVtdIe9kX6-wJE6k0snMxy1NwWeBFkROgrxeAidIecvjg&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ8tMDegQICRAM",
+        "7": "https://www.google.com/search?q=DFD+Process+Depth+Analysis&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=Z0CdaN3DGaW5qtsP5ujj2QE&start=60&sa=N&sstk=Ac65TH7-MHG_3YtOvNxkhc_4Fa1tgGyyPhZ9XVcc5W52GNT5RIWjHfDlpuVtdIe9kX6-wJE6k0snMxy1NwWeBFkROgrxeAidIecvjg&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ8tMDegQICRAO",
+        "8": "https://www.google.com/search?q=DFD+Process+Depth+Analysis&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=Z0CdaN3DGaW5qtsP5ujj2QE&start=70&sa=N&sstk=Ac65TH7-MHG_3YtOvNxkhc_4Fa1tgGyyPhZ9XVcc5W52GNT5RIWjHfDlpuVtdIe9kX6-wJE6k0snMxy1NwWeBFkROgrxeAidIecvjg&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ8tMDegQICRAQ",
+        "9": "https://www.google.com/search?q=DFD+Process+Depth+Analysis&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=Z0CdaN3DGaW5qtsP5ujj2QE&start=80&sa=N&sstk=Ac65TH7-MHG_3YtOvNxkhc_4Fa1tgGyyPhZ9XVcc5W52GNT5RIWjHfDlpuVtdIe9kX6-wJE6k0snMxy1NwWeBFkROgrxeAidIecvjg&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ8tMDegQICRAS",
+        "10": "https://www.google.com/search?q=DFD+Process+Depth+Analysis&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=Z0CdaN3DGaW5qtsP5ujj2QE&start=90&sa=N&sstk=Ac65TH7-MHG_3YtOvNxkhc_4Fa1tgGyyPhZ9XVcc5W52GNT5RIWjHfDlpuVtdIe9kX6-wJE6k0snMxy1NwWeBFkROgrxeAidIecvjg&ved=2ahUKEwidk-i_l4mPAxWlnGoFHWb0OBsQ8tMDegQICRAU"
+      }
+    },
+    "serpapi_pagination": {
+      "current": 1,
+      "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=DFD+Process+Depth+Analysis&start=10",
+      "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=DFD+Process+Depth+Analysis&start=10",
+      "other_pages": {
+        "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=DFD+Process+Depth+Analysis&start=10",
+        "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=DFD+Process+Depth+Analysis&start=20",
+        "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=DFD+Process+Depth+Analysis&start=30",
+        "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=DFD+Process+Depth+Analysis&start=40",
+        "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=DFD+Process+Depth+Analysis&start=50",
+        "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=DFD+Process+Depth+Analysis&start=60",
+        "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=DFD+Process+Depth+Analysis&start=70",
+        "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=DFD+Process+Depth+Analysis&start=80",
+        "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=10&q=DFD+Process+Depth+Analysis&start=90"
+      }
+    }
+  },
+  "debug_info": {
+    "config_used": "google",
+    "api_name": "SerpAPI",
+    "data_keys": [
+      "search_metadata",
+      "search_parameters",
+      "search_information",
+      "related_questions",
+      "organic_results",
+      "related_searches",
+      "scholarly_articles",
+      "pagination",
+      "serpapi_pagination"
+    ],
+    "data_size": 30307
+  }
+}

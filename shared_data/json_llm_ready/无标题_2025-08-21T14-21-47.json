@@ -1,0 +1,171 @@
+{
+  "metadata": {
+    "source_url": "https://httpbin.org/headers",
+    "source_title": "无标题",
+    "crawl_time": "2025-08-21T14:21:47.449892",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  },
+  "statistics": {
+    "concepts_count": 4,
+    "rules_count": 3,
+    "patterns_count": 1,
+    "cases_count": 2,
+    "mappings_count": 2
+  },
+  "dfd_concepts": [
+    {
+      "id": "proc-001",
+      "type": "process",
+      "description": "处理相关的DFD元素定义",
+      "symbol": "圆形/椭圆形",
+      "rules": [
+        "处理的使用规则和约定"
+      ]
+    },
+    {
+      "id": "enti-002",
+      "type": "entity",
+      "description": "外部实体相关的DFD元素定义",
+      "symbol": "矩形",
+      "rules": [
+        "外部实体的使用规则和约定"
+      ]
+    },
+    {
+      "id": "data-003",
+      "type": "data_store",
+      "description": "数据存储相关的DFD元素定义",
+      "symbol": "两条平行线",
+      "rules": [
+        "数据存储的使用规则和约定"
+      ]
+    },
+    {
+      "id": "data-004",
+      "type": "data_flow",
+      "description": "数据流相关的DFD元素定义",
+      "symbol": "箭头线",
+      "rules": [
+        "数据流的使用规则和约定"
+      ]
+    }
+  ],
+  "dfd_rules": [
+    {
+      "id": "hi-01",
+      "category": "hierarchy",
+      "description": "数据流图应采用分层结构，从Level 0开始逐层细化",
+      "condition": "hierarchy_condition",
+      "validation": "check_hierarchy_rules()"
+    },
+    {
+      "id": "co-02",
+      "category": "connection",
+      "description": "数据流必须连接不同类型的元素，不能直接连接相同类型",
+      "condition": "connection_condition",
+      "validation": "check_connection_rules()"
+    },
+    {
+      "id": "na-03",
+      "category": "naming",
+      "description": "元素名称应简洁明确，使用动宾结构描述处理过程",
+      "condition": "naming_condition",
+      "validation": "check_naming_rules()"
+    }
+  ],
+  "dfd_patterns": [
+    {
+      "system": "电商系统",
+      "level": 0,
+      "processes": [
+        {
+          "id": "P1",
+          "name": "电商系统核心处理"
+        }
+      ],
+      "entities": [
+        {
+          "id": "E1",
+          "name": "用户"
+        }
+      ],
+      "data_stores": [
+        {
+          "id": "D1",
+          "name": "数据库"
+        }
+      ],
+      "flows": [
+        {
+          "from": "E1",
+          "to": "P1",
+          "data": "输入数据"
+        }
+      ]
+    }
+  ],
+  "dfd_cases": [
+    {
+      "id": "case-err-001",
+      "type": "error_case",
+      "description": "从网页内容中识别的DFD绘制错误案例",
+      "incorrect": {
+        "elements": [
+          "错误的元素连接"
+        ],
+        "flows": [
+          "不规范的数据流"
+        ]
+      },
+      "correct": {
+        "elements": [
+          "正确的元素连接"
+        ],
+        "flows": [
+          "规范的数据流"
+        ]
+      },
+      "explanation": "基于网页内容总结的错误原因和改正方法"
+    },
+    {
+      "id": "case-best-002",
+      "type": "best_practice",
+      "description": "从网页内容中提取的DFD最佳实践",
+      "incorrect": {},
+      "correct": {
+        "elements": [
+          "推荐的元素设计"
+        ],
+        "flows": [
+          "标准的数据流设计"
+        ]
+      },
+      "explanation": "基于网页内容总结的最佳实践要点"
+    }
+  ],
+  "dfd_nlp_mappings": [
+    {
+      "pattern": "用户 [action] 系统",
+      "element_type": "data_flow",
+      "name_template": "{用户}到{系统}的{action}",
+      "flow_template": "{action}请求",
+      "action_mappings": {
+        "提交": "输入",
+        "查询": "请求",
+        "修改": "更新"
+      }
+    },
+    {
+      "pattern": "系统 [action] 数据库",
+      "element_type": "data_flow",
+      "name_template": "{系统}对{数据库}的{action}",
+      "flow_template": "{action}操作",
+      "action_mappings": {
+        "存储": "写入",
+        "读取": "查询",
+        "删除": "移除"
+      }
+    }
+  ]
+}

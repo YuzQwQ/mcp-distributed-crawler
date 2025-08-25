@@ -1,0 +1,437 @@
+{
+  "success": true,
+  "engine": "google",
+  "keyword": "数据流图 DFD 核心概念 外部实体 处理过程 数据存储 数据流 层次结构 分解方法 绘制规范 符号标准 命名约定 系统分析 软件工程应用",
+  "max_results": 15,
+  "timestamp": "20250814_094737",
+  "request_time": 4.745,
+  "raw_data": {
+    "search_metadata": {
+      "id": "689d403a80a07871ea3448ed",
+      "status": "Success",
+      "json_endpoint": "https://serpapi.com/searches/57ced3c53b331d14/689d403a80a07871ea3448ed.json",
+      "pixel_position_endpoint": "https://serpapi.com/searches/57ced3c53b331d14/689d403a80a07871ea3448ed.json_with_pixel_position",
+      "created_at": "2025-08-14 01:47:38 UTC",
+      "processed_at": "2025-08-14 01:47:38 UTC",
+      "google_url": "https://www.google.com/search?q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+DFD+%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5+%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B+%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8+%E6%95%B0%E6%8D%AE%E6%B5%81+%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84+%E5%88%86%E8%A7%A3%E6%96%B9%E6%B3%95+%E7%BB%98%E5%88%B6%E8%A7%84%E8%8C%83+%E7%AC%A6%E5%8F%B7%E6%A0%87%E5%87%86+%E5%91%BD%E5%90%8D%E7%BA%A6%E5%AE%9A+%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90+%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8&oq=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+DFD+%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5+%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B+%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8+%E6%95%B0%E6%8D%AE%E6%B5%81+%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84+%E5%88%86%E8%A7%A3%E6%96%B9%E6%B3%95+%E7%BB%98%E5%88%B6%E8%A7%84%E8%8C%83+%E7%AC%A6%E5%8F%B7%E6%A0%87%E5%87%86+%E5%91%BD%E5%90%8D%E7%BA%A6%E5%AE%9A+%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90+%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8&hl=zh-cn&gl=cn&num=15&sourceid=chrome&ie=UTF-8",
+      "raw_html_file": "https://serpapi.com/searches/57ced3c53b331d14/689d403a80a07871ea3448ed.html",
+      "total_time_taken": 3.52
+    },
+    "search_parameters": {
+      "engine": "google",
+      "q": "数据流图 DFD 核心概念 外部实体 处理过程 数据存储 数据流 层次结构 分解方法 绘制规范 符号标准 命名约定 系统分析 软件工程应用",
+      "google_domain": "google.com",
+      "hl": "zh-cn",
+      "gl": "cn",
+      "num": "15",
+      "device": "desktop"
+    },
+    "search_information": {
+      "query_displayed": "数据流图 DFD 核心概念 外部实体 处理过程 数据存储 数据流 层次结构 分解方法 绘制规范 符号标准 命名约定 系统分析 软件工程应用",
+      "total_results": 619,
+      "time_taken_displayed": 0.42,
+      "organic_results_state": "Results for exact spelling"
+    },
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "数据流图理解原创",
+        "link": "https://blog.csdn.net/m0_74894488/article/details/139815618",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://blog.csdn.net/m0_74894488/article/details/139815618&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECCEQAQ",
+        "displayed_link": "https://blog.csdn.net › article › details",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f76e16c3a7be6c404882e3ba70717897bb.png",
+        "date": "2024年6月19日",
+        "snippet": "数据流图（Data Flow Diagram，简称DFD）是一种图形化表示系统信息处理流程的方法，它在软件工程领域中被广泛用于分析和设计阶段，帮助理解系统功能和数据的 ...",
+        "snippet_highlighted_words": [
+          "数据流图",
+          "DFD",
+          "系统",
+          "处理",
+          "方法",
+          "软件工程",
+          "分析",
+          "系统",
+          "数据"
+        ],
+        "source": "CSDN博客"
+      },
+      {
+        "position": 2,
+        "title": "软件工程-- 数据流图的画法原创",
+        "link": "https://blog.csdn.net/I_r_o_n_M_a_n/article/details/121309525",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://blog.csdn.net/I_r_o_n_M_a_n/article/details/121309525&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECBgQAQ",
+        "displayed_link": "https://blog.csdn.net › I_r_o_n_M_a_n › article › details",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f74546c7ae730470de2e943f53746811b6.png",
+        "date": "2021年11月13日",
+        "snippet": "数据流图(Data Flow Diagram，简称DFD)是一种用于软件工程领域的图形化表示工具，主要用于描述系统的信息流程，特别是在结构化分析和设计方法中扮演着关键 ...",
+        "snippet_highlighted_words": [
+          "数据流图",
+          "DFD",
+          "软件工程",
+          "系统",
+          "结构",
+          "分析",
+          "方法"
+        ],
+        "source": "CSDN博客"
+      },
+      {
+        "position": 3,
+        "title": "什么是数据流图(DFD)？",
+        "link": "https://www.ibm.com/cn-zh/think/topics/data-flow-diagram",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ibm.com/cn-zh/think/topics/data-flow-diagram&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECBcQAQ",
+        "displayed_link": "https://www.ibm.com › topics › data-flow-diagram",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f7ed3ce2900b829617d583324616f32ad6.png",
+        "snippet": "数据流图(DFD) 是可视化表示的通过信息系统或业务流程的数据流。DFD 使复杂的系统更易于理解，是软件工程、系统分析、流程改进、业务管理和敏捷软件开发的常用资源。",
+        "snippet_highlighted_words": [
+          "数据流图",
+          "DFD",
+          "数据流",
+          "DFD",
+          "软件工程",
+          "系统分析"
+        ],
+        "missing": [
+          "核心",
+          "绘制",
+          "规范"
+        ],
+        "source": "IBM"
+      },
+      {
+        "position": 4,
+        "title": "解锁神器！7款好用的数据流图软件安利！",
+        "link": "https://boardmix.cn/article/data-flow-diagram-softwares/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://boardmix.cn/article/data-flow-diagram-softwares/&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECBYQAQ",
+        "displayed_link": "https://boardmix.cn › article › data-flow-diagram-softwares",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f7e6b6782a0ced87c3b137c5778aba5af2.png",
+        "snippet": "数据流图（data flow diagram，缩写为dfd）是一种图形化的建模工具，用于描述系统或过程中数据的流动和处理。数据流图主要由四种基本元素组成：处理、数据流、数据存储和 ...",
+        "snippet_highlighted_words": [
+          "数据流图",
+          "dfd",
+          "系统",
+          "过程",
+          "处理",
+          "数据流图",
+          "处理",
+          "数据流",
+          "数据存储"
+        ],
+        "source": "BoardMix博思白板"
+      },
+      {
+        "position": 5,
+        "title": "第3 章需求分析",
+        "link": "https://www.wsbookshow.com/uploads/bookfile/201012/9787508480695_1.pdf",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.wsbookshow.com/uploads/bookfile/201012/9787508480695_1.pdf&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECB4QAQ",
+        "displayed_link": "https://www.wsbookshow.com › bookfile",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f71260f23d3182d472784bf5d5993f561a.png",
+        "snippet": "3 数据流图. SA 方法使用数据流图从数据传递和加工的角度，以图形的方式刻画数据流从输入到输出的传. 输变换过程。数据流图是结构化系统分析的主要工具，它表示了系统 ...",
+        "snippet_highlighted_words": [
+          "数据流图",
+          "方法",
+          "数据流图",
+          "数据",
+          "数据流",
+          "过程",
+          "数据流图",
+          "结构",
+          "系统分析"
+        ],
+        "source": "万水书苑"
+      },
+      {
+        "position": 6,
+        "title": "什么是数据流图？",
+        "link": "https://www.visual-paradigm.com/cn/guide/data-flow-diagram/what-is-data-flow-diagram/",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.visual-paradigm.com/cn/guide/data-flow-diagram/what-is-data-flow-diagram/&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECBkQAQ",
+        "displayed_link": "https://www.visual-paradigm.com › data-flow-diagram",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f7d0da92862ae32a154bedf4da1521adab.png",
+        "snippet": "数据流图(DFD) 用于表示业务信息系统中的数据流，它表达了系统中的据传从输入到存储间所涉及的程序。 数据流图可以分为逻辑形和物理形。 逻辑数据流图描述了用以完成某业务 ...",
+        "missing": [
+          "核心",
+          "规范",
+          "命名",
+          "工程"
+        ],
+        "source": "Visual Paradigm"
+      },
+      {
+        "position": 7,
+        "title": "软考高级系统架构师1-13",
+        "link": "https://www.processon.com/view/66cfdc6cda7eb649efc26556",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.processon.com/view/66cfdc6cda7eb649efc26556&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECBoQAQ",
+        "displayed_link": "https://www.processon.com › view",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f7bd7d4fa0685ea8189c06fcd3b8754016.png",
+        "date": "2024年10月12日",
+        "snippet": "... 数据流图进行变换分析和事务分析可以导出程序结构图。 ... - **DFD图**：用于表示系统的功能性需求，描述数据流动、处理和存储过程，主要用于系统分析。",
+        "snippet_highlighted_words": [
+          "数据流图",
+          "结构",
+          "DFD",
+          "数据",
+          "处理",
+          "存储过程",
+          "系统分析"
+        ],
+        "source": "ProcessOn"
+      },
+      {
+        "position": 8,
+        "title": "软考高级：数据流图概念和例题",
+        "link": "https://cloud.tencent.com/developer/article/2420695",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://cloud.tencent.com/developer/article/2420695&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECDMQAQ",
+        "displayed_link": "https://cloud.tencent.com › developer › article",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f7501ac6c94965d0d2b5a0ae2b472332cc.png",
+        "snippet": "数据流图（DFD）是一种图形化的系统分析和设计工具，它用以描述系统中数据的流动、数据的输入和输出以及数据的存储。它通过图形符号来表示系统中的数据流、处理过程、数据存储 ...",
+        "snippet_highlighted_words": [
+          "数据流图",
+          "DFD",
+          "系统分析",
+          "符号",
+          "数据流",
+          "处理过程",
+          "数据存储"
+        ],
+        "source": "腾讯云"
+      },
+      {
+        "position": 9,
+        "title": "结构化分析工具之数据流图- 活着的虫子",
+        "link": "https://www.cnblogs.com/yilang/p/12256876.html",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cnblogs.com/yilang/p/12256876.html&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECDUQAQ",
+        "displayed_link": "https://www.cnblogs.com › yilang",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f7fdcf00be5968e95ca78117360892ee44.png",
+        "date": "2020年2月3日",
+        "snippet": "数据流图（Data Flow Diagram）简称：DFD，通过系统对数据“流”的图形表示，是从数据传递和加工角度，显示了系统输入和输出的信息，数据的流向以及最终存储在哪里， ...",
+        "snippet_highlighted_words": [
+          "数据流图",
+          "DFD",
+          "系统",
+          "数据",
+          "流",
+          "数据",
+          "系统",
+          "数据",
+          "存储"
+        ],
+        "source": "博客园"
+      },
+      {
+        "position": 10,
+        "title": "系统架构师学习笔记第八章系统分析与设计方法",
+        "link": "https://www.zybuluo.com/chendushuai/note/1256564",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.zybuluo.com/chendushuai/note/1256564&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECDEQAQ",
+        "displayed_link": "https://www.zybuluo.com › chendushuai › note",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f7627f0e6c3546a9949c64fa94eb52db64.png",
+        "date": "2018年8月20日",
+        "snippet": "数据流图的层次。数据流图提供一种表现系统高层和低层概念的机制，也就是先绘制一张较高层次的数据流图，然后再次基础上，对其中过程（处理）进行分解，分解成为 ...",
+        "snippet_highlighted_words": [
+          "数据流图",
+          "层次",
+          "数据流图",
+          "系统",
+          "概念",
+          "绘制",
+          "层次",
+          "数据流图",
+          "过程",
+          "处理",
+          "分解",
+          "分解"
+        ],
+        "source": "Cmd Markdown"
+      },
+      {
+        "position": 11,
+        "title": "加工| 数据存储| 外部实体| 数据流图分层 - 阿里云开发者社区",
+        "link": "https://developer.aliyun.com/article/862065",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.aliyun.com/article/862065&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECDAQAQ",
+        "displayed_link": "https://developer.aliyun.com › article",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f7659203e6d5e17545fdc6120edfb96380.png",
+        "snippet": "该文章通过具体案例分析了在软件工程中如何运用数据流图和数据字典来进行结构化系统分析，帮助明确系统的信息流程和数据定义。",
+        "snippet_highlighted_words": [
+          "软件工程",
+          "数据流图",
+          "数据",
+          "结构",
+          "系统分析",
+          "数据"
+        ],
+        "source": "阿里云开发者社区"
+      },
+      {
+        "position": 12,
+        "title": "数据流图模板- 飞书官网",
+        "link": "https://www.feishu.cn/template/general-data-flow-diagram",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.feishu.cn/template/general-data-flow-diagram&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECDYQAQ",
+        "displayed_link": "https://www.feishu.cn › general-data-flow-diagram",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f76ac28b4fb1fce52d3d80c3d5fda2b320.png",
+        "snippet": "数据流图由四个主要组件构成：数据流、处理过程、数据存储和外部实体。这些组件共同描绘了数据在系统中的流动和变化，提供了一个清晰的数据处理视图。了解这些组件的功能和 ...",
+        "snippet_highlighted_words": [
+          "数据流图",
+          "数据流",
+          "处理过程",
+          "数据存储",
+          "外部实体",
+          "系统"
+        ],
+        "missing": [
+          "核心",
+          "分解",
+          "方法",
+          "规范",
+          "符号",
+          "命名"
+        ],
+        "source": "Feishu"
+      },
+      {
+        "position": 13,
+        "title": "【细说软件工程】《软件工程》Software Engineering",
+        "link": "https://juejin.cn/post/6992065673044656159",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://juejin.cn/post/6992065673044656159&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECC8QAQ",
+        "displayed_link": "https://juejin.cn › 后端",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f73f045fec07dc8b2059e1959cdfbf35db.png",
+        "date": "2021年8月2日",
+        "snippet": "把整个系统视为一个大的加工，然后根据数据系统从哪些外部实体接受数据流，以及系统发送数据流到哪些外部实体，就可以画出输入输出图。这张图称为顶层图。",
+        "snippet_highlighted_words": [
+          "系统",
+          "数据系统",
+          "外部实体",
+          "数据流",
+          "系统",
+          "数据流",
+          "外部实体"
+        ],
+        "source": "掘金"
+      },
+      {
+        "position": 14,
+        "title": "2022考研计算机-软件工程教程",
+        "link": "https://blog.51cto.com/u_16106623/6262891",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://blog.51cto.com/u_16106623/6262891&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECDIQAQ",
+        "displayed_link": "https://blog.51cto.com › ...",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f7e3a341475809928e1fcc853746df4a03.png",
+        "date": "2023年5月10日",
+        "snippet": "在面向对象方法学中，数据流图远不如在结构分析、设计方法中那样重要。 同 ... 数据流图有4中基本符号元素：数据流、数据处理、数据存储、外部实体。",
+        "snippet_highlighted_words": [
+          "方法",
+          "数据流图",
+          "结构分析",
+          "方法",
+          "数据流图",
+          "符号",
+          "数据流",
+          "处理",
+          "数据存储",
+          "外部实体"
+        ],
+        "source": "51CTO博客"
+      },
+      {
+        "position": 15,
+        "title": "软件工程期末试题及答案（史上最全）",
+        "link": "https://cloud.tencent.com/developer/article/2126948",
+        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://cloud.tencent.com/developer/article/2126948&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQFnoECDQQAQ",
+        "displayed_link": "https://cloud.tencent.com › developer › article",
+        "favicon": "https://serpapi.com/searches/689d403a80a07871ea3448ed/images/6b59f25ef16be5153817914b833d74f7670f9220c889589aa876db7b39fa0c81.png",
+        "date": "2022年9月27日",
+        "snippet": "数据流图画法总结1.先找出数据源点和汇点。它们是外部实体，由它们确定系统与外界的接口。 2.找出外部实体的输出数据流与输入数据流。画 ...",
+        "snippet_highlighted_words": [
+          "数据流图",
+          "数据",
+          "外部实体",
+          "系统",
+          "外部实体",
+          "数据流",
+          "数据流"
+        ],
+        "source": "腾讯云"
+      }
+    ],
+    "related_searches": [
+      {
+        "block_position": 1,
+        "query": "标准的数据流图",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=%E6%A0%87%E5%87%86%E7%9A%84%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE&sa=X&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQ1QJ6BAguEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E6%A0%87%E5%87%86%E7%9A%84%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE"
+      },
+      {
+        "block_position": 1,
+        "query": "Draw io 数据流图",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=Draw+io+%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE&sa=X&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQ1QJ6BAhMEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=Draw+io+%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE"
+      },
+      {
+        "block_position": 1,
+        "query": "代码数据流图",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=%E4%BB%A3%E7%A0%81%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE&sa=X&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQ1QJ6BAhOEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E4%BB%A3%E7%A0%81%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE"
+      },
+      {
+        "block_position": 1,
+        "query": "数据流图 符号",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+%E7%AC%A6%E5%8F%B7&sa=X&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQ1QJ6BAhNEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+%E7%AC%A6%E5%8F%B7"
+      },
+      {
+        "block_position": 1,
+        "query": "数据库数据流图",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=%E6%95%B0%E6%8D%AE%E5%BA%93%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE&sa=X&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQ1QJ6BAhLEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E6%95%B0%E6%8D%AE%E5%BA%93%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE"
+      },
+      {
+        "block_position": 1,
+        "query": "数据处理流程图",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B%E5%9B%BE&sa=X&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQ1QJ6BAhEEAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B%E5%9B%BE"
+      },
+      {
+        "block_position": 1,
+        "query": "系统架构图绘制",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%9B%BE%E7%BB%98%E5%88%B6&sa=X&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQ1QJ6BAg4EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%9B%BE%E7%BB%98%E5%88%B6"
+      },
+      {
+        "block_position": 1,
+        "query": "软件结构图",
+        "link": "https://www.google.com/search?num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&q=%E8%BD%AF%E4%BB%B6%E7%BB%93%E6%9E%84%E5%9B%BE&sa=X&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQ1QJ6BAg3EAE",
+        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E8%BD%AF%E4%BB%B6%E7%BB%93%E6%9E%84%E5%9B%BE"
+      }
+    ],
+    "pagination": {
+      "current": 1,
+      "next": "https://www.google.com/search?q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+DFD+%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5+%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B+%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8+%E6%95%B0%E6%8D%AE%E6%B5%81+%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84+%E5%88%86%E8%A7%A3%E6%96%B9%E6%B3%95+%E7%BB%98%E5%88%B6%E8%A7%84%E8%8C%83+%E7%AC%A6%E5%8F%B7%E6%A0%87%E5%87%86+%E5%91%BD%E5%90%8D%E7%BA%A6%E5%AE%9A+%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90+%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8&num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=PUCdaKDjKa6PwbkP2_GWiQ4&start=15&sa=N&sstk=Ac65TH7qcn0gGTKGJ8iA3nzrSKOXrKDYRdaPjSaQ7piKvnV0kk1VCBrbtL9yc2u88DFBuqzrjrgb0ZxaXfr7r-5ZspbECefCFiyL9g&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQ8NMDegQICBAK",
+      "other_pages": {
+        "2": "https://www.google.com/search?q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+DFD+%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5+%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B+%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8+%E6%95%B0%E6%8D%AE%E6%B5%81+%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84+%E5%88%86%E8%A7%A3%E6%96%B9%E6%B3%95+%E7%BB%98%E5%88%B6%E8%A7%84%E8%8C%83+%E7%AC%A6%E5%8F%B7%E6%A0%87%E5%87%86+%E5%91%BD%E5%90%8D%E7%BA%A6%E5%AE%9A+%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90+%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8&num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=PUCdaKDjKa6PwbkP2_GWiQ4&start=15&sa=N&sstk=Ac65TH7qcn0gGTKGJ8iA3nzrSKOXrKDYRdaPjSaQ7piKvnV0kk1VCBrbtL9yc2u88DFBuqzrjrgb0ZxaXfr7r-5ZspbECefCFiyL9g&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQ8tMDegQICBAE",
+        "3": "https://www.google.com/search?q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+DFD+%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5+%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B+%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8+%E6%95%B0%E6%8D%AE%E6%B5%81+%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84+%E5%88%86%E8%A7%A3%E6%96%B9%E6%B3%95+%E7%BB%98%E5%88%B6%E8%A7%84%E8%8C%83+%E7%AC%A6%E5%8F%B7%E6%A0%87%E5%87%86+%E5%91%BD%E5%90%8D%E7%BA%A6%E5%AE%9A+%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90+%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8&num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=PUCdaKDjKa6PwbkP2_GWiQ4&start=30&sa=N&sstk=Ac65TH7qcn0gGTKGJ8iA3nzrSKOXrKDYRdaPjSaQ7piKvnV0kk1VCBrbtL9yc2u88DFBuqzrjrgb0ZxaXfr7r-5ZspbECefCFiyL9g&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQ8tMDegQICBAG",
+        "4": "https://www.google.com/search?q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+DFD+%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5+%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B+%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8+%E6%95%B0%E6%8D%AE%E6%B5%81+%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84+%E5%88%86%E8%A7%A3%E6%96%B9%E6%B3%95+%E7%BB%98%E5%88%B6%E8%A7%84%E8%8C%83+%E7%AC%A6%E5%8F%B7%E6%A0%87%E5%87%86+%E5%91%BD%E5%90%8D%E7%BA%A6%E5%AE%9A+%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90+%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8&num=15&sca_esv=656b10c93ec889a4&hl=zh-cn&gl=cn&ei=PUCdaKDjKa6PwbkP2_GWiQ4&start=45&sa=N&sstk=Ac65TH7qcn0gGTKGJ8iA3nzrSKOXrKDYRdaPjSaQ7piKvnV0kk1VCBrbtL9yc2u88DFBuqzrjrgb0ZxaXfr7r-5ZspbECefCFiyL9g&ved=2ahUKEwjg9fSrl4mPAxWuRzABHdu4JeEQ8tMDegQICBAI"
+      }
+    },
+    "serpapi_pagination": {
+      "current": 1,
+      "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+DFD+%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5+%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B+%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8+%E6%95%B0%E6%8D%AE%E6%B5%81+%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84+%E5%88%86%E8%A7%A3%E6%96%B9%E6%B3%95+%E7%BB%98%E5%88%B6%E8%A7%84%E8%8C%83+%E7%AC%A6%E5%8F%B7%E6%A0%87%E5%87%86+%E5%91%BD%E5%90%8D%E7%BA%A6%E5%AE%9A+%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90+%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8&start=15",
+      "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+DFD+%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5+%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B+%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8+%E6%95%B0%E6%8D%AE%E6%B5%81+%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84+%E5%88%86%E8%A7%A3%E6%96%B9%E6%B3%95+%E7%BB%98%E5%88%B6%E8%A7%84%E8%8C%83+%E7%AC%A6%E5%8F%B7%E6%A0%87%E5%87%86+%E5%91%BD%E5%90%8D%E7%BA%A6%E5%AE%9A+%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90+%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8&start=15",
+      "other_pages": {
+        "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+DFD+%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5+%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B+%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8+%E6%95%B0%E6%8D%AE%E6%B5%81+%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84+%E5%88%86%E8%A7%A3%E6%96%B9%E6%B3%95+%E7%BB%98%E5%88%B6%E8%A7%84%E8%8C%83+%E7%AC%A6%E5%8F%B7%E6%A0%87%E5%87%86+%E5%91%BD%E5%90%8D%E7%BA%A6%E5%AE%9A+%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90+%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8&start=15",
+        "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+DFD+%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5+%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B+%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8+%E6%95%B0%E6%8D%AE%E6%B5%81+%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84+%E5%88%86%E8%A7%A3%E6%96%B9%E6%B3%95+%E7%BB%98%E5%88%B6%E8%A7%84%E8%8C%83+%E7%AC%A6%E5%8F%B7%E6%A0%87%E5%87%86+%E5%91%BD%E5%90%8D%E7%BA%A6%E5%AE%9A+%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90+%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8&start=30",
+        "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=cn&google_domain=google.com&hl=zh-cn&num=15&q=%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE+DFD+%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5+%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93+%E5%A4%84%E7%90%86%E8%BF%87%E7%A8%8B+%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8+%E6%95%B0%E6%8D%AE%E6%B5%81+%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84+%E5%88%86%E8%A7%A3%E6%96%B9%E6%B3%95+%E7%BB%98%E5%88%B6%E8%A7%84%E8%8C%83+%E7%AC%A6%E5%8F%B7%E6%A0%87%E5%87%86+%E5%91%BD%E5%90%8D%E7%BA%A6%E5%AE%9A+%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90+%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%BA%94%E7%94%A8&start=45"
+      }
+    }
+  },
+  "debug_info": {
+    "config_used": "google",
+    "api_name": "SerpAPI",
+    "data_keys": [
+      "search_metadata",
+      "search_parameters",
+      "search_information",
+      "organic_results",
+      "related_searches",
+      "pagination",
+      "serpapi_pagination"
+    ],
+    "data_size": 22781
+  }
+}

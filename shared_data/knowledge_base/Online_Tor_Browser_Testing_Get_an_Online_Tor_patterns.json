@@ -1,0 +1,50 @@
+{
+  "table_name": "dfd_patterns",
+  "description": "DFD系统模式和模板",
+  "schema": {
+    "system": "text",
+    "level": "int",
+    "processes": "jsonb (数组)",
+    "entities": "jsonb (数组)",
+    "data_stores": "jsonb (数组)",
+    "flows": "jsonb (数组)"
+  },
+  "data": [
+    {
+      "system": "管理信息系统",
+      "level": 0,
+      "processes": [
+        {
+          "id": "P1",
+          "name": "管理信息系统核心处理"
+        }
+      ],
+      "entities": [
+        {
+          "id": "E1",
+          "name": "用户"
+        }
+      ],
+      "data_stores": [
+        {
+          "id": "D1",
+          "name": "数据库"
+        }
+      ],
+      "flows": [
+        {
+          "from": "E1",
+          "to": "P1",
+          "data": "输入数据"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "source_url": "https://www.browserling.com/tor-testing",
+    "source_title": "Online Tor Browser Testing – Get an Online Tor",
+    "crawl_time": "2025-08-21T14:22:57.461649",
+    "extraction_method": "基于配置文件的自动提取",
+    "topic": "DFD"
+  }
+}
