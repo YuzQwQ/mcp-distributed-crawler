@@ -28,7 +28,9 @@ for name in logging.Logger.manager.loggerDict:
     logger_obj.propagate = True
 
 # 现在可以安全地导入自定义模块
-from format_processor import FormatProcessor
+from scripts.format_processor import FormatProcessor
+from utils.web_deduplication import get_deduplication_instance, check_and_cache, clean_cache, get_stats
+from utils.webpage_storage import get_storage_instance
 try:
     from httpx_socks import AsyncProxyTransport
     SOCKS_AVAILABLE = True
@@ -435,7 +437,7 @@ def get_http_client_config():
 
 # 导入crawler_framework
 # 导入爬虫框架（在日志配置之后）
-from crawler_framework import CrawlerFramework
+from utils.crawler_framework import CrawlerFramework
 
 # 初始化爬虫框架
 crawler = CrawlerFramework()
@@ -994,6 +996,17 @@ async def scrape_webpage(url: str, headers=None, cookies=None) -> str:
     """
     抓取网页文本 + 图片分析（通过视觉模型）+ 使用主模型总结。
     """
+    # 检查URL去重
+    dedup_instance = get_deduplication_instance()
+    is_duplicate, cache_info = dedup_instance.is_url_duplicate(url)
+    if is_duplicate:
+        return json.dumps({
+            "status": "skipped",
+            "message": "URL已存在于缓存中，跳过重复抓取",
+            "url": url,
+            "cached_info": cache_info
+        }, ensure_ascii=False, indent=2)
+    
     headers = headers or DEFAULT_HEADERS
     # 知乎反爬虫功能已禁用 - 自动判断知乎等站点，自动获取Cookie
     # cookies = cookies or get_cookies_for_url(url) or (parse_cookies(DEFAULT_COOKIES) if DEFAULT_COOKIES else None)
@@ -1139,25 +1152,39 @@ async def scrape_webpage(url: str, headers=None, cookies=None) -> str:
                 logger.error(f"网页解析失败 {url}: {e}")
                 return f"{{\"error\": \"网页解析失败: {str(e)}\", \"url\": \"{url}\"}}"
 
-            # Step 3: 尝试处理图片
+            # Step 3: 提取图片URL并处理图片
             img_descriptions = []
+            image_urls = []
             try:
                 img_tags = soup.find_all("img", src=True) if 'soup' in locals() else []
                 seen_urls = set()
                 valid_imgs = []
+                
+                # 提取所有有效的图片URL
+                logger.info(f"找到 {len(img_tags)} 个img标签")
                 for img_tag in img_tags:
+                    img_src = img_tag.get("src", "")
+                    logger.debug(f"检查图片: {img_src}")
                     if not await is_valid_image_tag(img_tag):
+                        logger.debug(f"图片未通过验证: {img_src}")
                         continue
                     img_url = img_tag["src"]
                     img_url = normalize_image_url(url, img_url)
                     if not any(img_url.lower().endswith(ext) for ext in SUPPORTED_IMAGE_FORMATS):
+                        logger.debug(f"图片格式不支持: {img_url}")
                         continue
                     if img_url in seen_urls:
                         continue
                     seen_urls.add(img_url)
+                    image_urls.append(img_url)  # 保存所有图片URL用于下载
                     valid_imgs.append(img_url)
-                    if len(valid_imgs) >= 5:
+                    logger.info(f"添加有效图片: {img_url}")
+                    if len(valid_imgs) >= 5:  # 只处理前5张用于视觉分析
                         break
+                
+                logger.info(f"最终提取到 {len(image_urls)} 个图片URL用于下载")
+                
+                # 对前几张图片进行视觉分析（用于内容理解）
                 for i, img_url in enumerate(valid_imgs):
                     try:
                         img_data = await download_image_with_retry(client, img_url)
@@ -1200,7 +1227,7 @@ async def scrape_webpage(url: str, headers=None, cookies=None) -> str:
                 ]
             )
 
-            # 新增：本地 JSON/Markdown 文件存储
+            # 新增：使用新的存储模块保存网页内容和图片
             # ============= 新增本地存储 =============
             import json as _json
             from datetime import datetime as _dt
@@ -1213,14 +1240,20 @@ async def scrape_webpage(url: str, headers=None, cookies=None) -> str:
             # 2. 时间戳
             crawl_time = _dt.now().strftime('%Y-%m-%dT%H-%M-%S')
             crawl_time_human = _dt.now().strftime('%Y-%m-%d %H:%M:%S')
-            # 3. 目录
-            json_dir = Path("shared_data/json_llm_ready")
-            md_dir = Path("shared_data/markdown_llm_ready")
-            json_dir.mkdir(parents=True, exist_ok=True)
-            md_dir.mkdir(parents=True, exist_ok=True)
-            # 4. 文件名
-            json_path = json_dir / f"{tech_topic_clean}_{crawl_time}.json"
-            md_path = md_dir / f"{tech_topic_clean}_{crawl_time}.md"
+            
+            # 获取存储实例并保存网页内容（包括图片下载）
+            from utils.webpage_storage import get_storage_instance
+            storage = get_storage_instance()
+            
+            # 先准备基本内容用于存储
+            basic_content = {
+                "title": title,
+                "url": url,
+                "main_text": main_text,
+                "headings": headings,
+                "img_descriptions": img_descriptions,
+                "crawl_time": crawl_time_human
+            }
             # 5. 组装内容（知识库对接格式）
             # 根据网页内容分析DFD相关元素
             try:
@@ -1287,10 +1320,41 @@ async def scrape_webpage(url: str, headers=None, cookies=None) -> str:
                 }
             )
             md_lines = markdown_content.split('\n')
-            # 写入文件
-            with open(json_path, 'w', encoding='utf-8') as f:
+            # 使用新存储模块保存网页内容和图片
+            saved_info = None
+            try:
+                saved_info = await storage.save_webpage(
+                    url=url,
+                    html_content=response.text,  # 使用原始HTML内容
+                    title=title,
+                    metadata=json_obj,  # 将JSON对象作为元数据
+                    image_urls=image_urls,
+                    client=client  # 传递HTTP客户端用于下载图片
+                )
+                
+                # 记录保存信息
+                if saved_info and saved_info.get('success'):
+                    logger.info(f"网页内容已保存到: {saved_info['folder_path']}")
+                    logger.info(f"下载的图片: {saved_info['images_downloaded']}/{saved_info['total_images']}张")
+                else:
+                    logger.error(f"保存失败: {saved_info.get('error', '未知错误') if saved_info else '保存信息为空'}")
+                
+            except Exception as e:
+                logger.error(f"使用新存储模块保存失败: {str(e)}，回退到原有方式")
+                saved_info = None
+            
+            # 同时保存到原有的目录结构（为了兼容性）
+            json_dir = Path("shared_data/json_llm_ready")
+            md_dir = Path("shared_data/markdown_llm_ready")
+            json_dir.mkdir(parents=True, exist_ok=True)
+            md_dir.mkdir(parents=True, exist_ok=True)
+            
+            legacy_json_path = json_dir / f"{tech_topic_clean}_{crawl_time}.json"
+            legacy_md_path = md_dir / f"{tech_topic_clean}_{crawl_time}.md"
+            
+            with open(legacy_json_path, 'w', encoding='utf-8') as f:
                 _json.dump(json_obj, f, ensure_ascii=False, indent=2)
-            with open(md_path, 'w', encoding='utf-8') as f:
+            with open(legacy_md_path, 'w', encoding='utf-8') as f:
                 f.write('\n'.join(md_lines))
             
             # 自动保存到知识库结构化文件
@@ -1315,17 +1379,43 @@ async def scrape_webpage(url: str, headers=None, cookies=None) -> str:
             except Exception as e:
                 result_summary = f"[ERROR] 响应解析失败: {str(e)}"
             
-            # 添加知识库提取统计
+            # 添加知识库提取统计和存储信息
+            try:
+                # 尝试获取存储信息
+                if saved_info is not None and saved_info.get('success'):
+                    storage_stats = f"\n\n🗂️ **新存储结构**:\n" \
+                                  f"- 网页文件夹: {saved_info['folder_path']}\n" \
+                                  f"- HTML文件: {saved_info['html_file']}\n" \
+                                  f"- 元数据文件: {saved_info['metadata_file']}\n"
+                    if saved_info['images_downloaded'] > 0:
+                        storage_stats += f"- 下载的图片: {saved_info['images_downloaded']}/{saved_info['total_images']}张\n"
+                else:
+                    storage_stats = "\n\n🗂️ **存储信息**: 使用传统存储方式\n"
+            except Exception as e:
+                storage_stats = f"\n\n🗂️ **存储信息**: 存储信息获取失败 - {str(e)}\n"
+                
             kb_stats = f"\n\n📊 **知识库提取统计**:\n" \
                       f"- 概念定义: {len(dfd_concepts)} 个\n" \
                       f"- 规则条目: {len(dfd_rules)} 个\n" \
                       f"- 模式模板: {len(dfd_patterns)} 个\n" \
                       f"- 案例示例: {len(dfd_cases)} 个\n" \
-                      f"- NLP映射: {len(dfd_nlp_mappings)} 个\n\n" \
-                      f"📁 **文件保存位置**:\n" \
-                      f"- JSON数据: {json_path}\n" \
-                      f"- Markdown报告: {md_path}\n" \
+                      f"- NLP映射: {len(dfd_nlp_mappings)} 个\n" + \
+                      storage_stats + \
+                      f"\n📁 **兼容性文件位置**:\n" \
+                      f"- JSON数据: {legacy_json_path}\n" \
+                      f"- Markdown报告: {legacy_md_path}\n" \
                       f"- 知识库文件: shared_data/knowledge_base/{tech_topic_clean}_*.json"
+            
+            # 缓存URL和内容
+            try:
+                dedup_instance.add_url_cache(url, title)
+                if dedup_instance.is_content_duplicate(result_summary):
+                    # 内容重复但URL不同，记录日志
+                    logger.info(f"检测到内容重复但URL不同: {url}")
+                else:
+                    dedup_instance.add_content_cache(result_summary, title, url)
+            except Exception as cache_error:
+                logger.warning(f"缓存失败: {str(cache_error)}")
             
             return result_summary + kb_stats
 
@@ -1405,11 +1495,78 @@ async def search_and_scrape(keyword: str, top_k: int = 12) -> str:
         if not summaries:
             return "⚠️ 所有网页处理都失败了喵~"
 
-        return "\n\n".join(summaries)
+        # 添加去重统计信息
+        try:
+            dedup_instance = get_deduplication_instance()
+            stats = dedup_instance.get_stats()
+            dedup_stats = f"\n\n📊 **去重统计信息**:\n" \
+                         f"- URL缓存数量: {stats.get('url_count', 0)} 个\n" \
+                         f"- 内容缓存数量: {stats.get('content_count', 0)} 个\n" \
+                         f"- 跳过重复URL: {stats.get('url_duplicates', 0)} 次\n" \
+                         f"- 检测重复内容: {stats.get('content_duplicates', 0)} 次"
+            return "\n\n".join(summaries) + dedup_stats
+        except Exception as e:
+            logger.warning(f"获取去重统计失败: {str(e)}")
+            return "\n\n".join(summaries)
         
     except Exception as e:
         logger.error(f"搜索或抓取过程中出错: {str(e)}")
         return f"[ERROR] 搜索或抓取失败 {str(e)}"
+
+@mcp.tool()
+def manage_web_deduplication(action: str = "stats", days: int = 7) -> str:
+    """
+    管理网页去重系统
+    
+    Args:
+        action: 操作类型 ("stats" - 查看统计, "clean" - 清理缓存, "reset" - 重置所有)
+        days: 清理多少天前的缓存 (仅在action="clean"时有效)
+    """
+    try:
+        dedup_instance = get_deduplication_instance()
+        
+        if action == "stats":
+            stats = dedup_instance.get_stats()
+            return json.dumps({
+                "status": "success",
+                "action": "统计信息",
+                "data": {
+                    "URL缓存数量": f"{stats.get('url_count', 0)} 个",
+                    "内容缓存数量": f"{stats.get('content_count', 0)} 个",
+                    "跳过重复URL次数": f"{stats.get('url_duplicates', 0)} 次",
+                    "检测重复内容次数": f"{stats.get('content_duplicates', 0)} 次",
+                    "数据库文件": "web_cache.db"
+                }
+            }, ensure_ascii=False, indent=2)
+            
+        elif action == "clean":
+            cleaned_count = dedup_instance.clean_old_cache(days)
+            return json.dumps({
+                "status": "success",
+                "action": "清理缓存",
+                "message": f"已清理 {days} 天前的缓存",
+                "cleaned_count": cleaned_count
+            }, ensure_ascii=False, indent=2)
+            
+        elif action == "reset":
+            dedup_instance.reset_cache()
+            return json.dumps({
+                "status": "success",
+                "action": "重置缓存",
+                "message": "所有缓存已清空"
+            }, ensure_ascii=False, indent=2)
+            
+        else:
+            return json.dumps({
+                "status": "error",
+                "message": "无效的操作类型，支持: stats, clean, reset"
+            }, ensure_ascii=False, indent=2)
+            
+    except Exception as e:
+        return json.dumps({
+            "status": "error",
+            "message": f"去重系统管理失败: {str(e)}"
+        }, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
     # 初始化数据库

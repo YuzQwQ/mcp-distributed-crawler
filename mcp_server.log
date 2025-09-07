@@ -582,3 +582,181 @@ Aug 21 14:51:38.267 [warn] Path for DataDirectory (./
 2025-08-21 14:54:52,942 - INFO - Processing request of type ListToolsRequest
 2025-08-21 14:54:52,946 - INFO - Processing request of type CallToolRequest
 2025-08-21 14:54:53,095 - INFO - 使用Tor代理 (transport): socks5://127.0.0.1:9050
+2025-08-25 09:59:00,421 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 09:59:00,427 - INFO - 已加载配置: baidu
+2025-08-25 09:59:00,427 - INFO - 已加载配置: bing
+2025-08-25 09:59:00,427 - INFO - 已加载配置: duckduckgo
+2025-08-25 09:59:00,427 - INFO - 已加载配置: google
+2025-08-25 09:59:00,458 - INFO - 数据库初始化完成
+2025-08-25 10:05:28,767 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:05:28,768 - INFO - 已加载配置: baidu
+2025-08-25 10:05:28,768 - INFO - 已加载配置: bing
+2025-08-25 10:05:28,769 - INFO - 已加载配置: duckduckgo
+2025-08-25 10:05:28,769 - INFO - 已加载配置: google
+2025-08-25 10:05:28,784 - INFO - 数据库初始化完成
+2025-08-25 10:05:29,999 - INFO - HTTP Request: GET https://www.python.org "HTTP/1.1 200 OK"
+2025-08-25 10:05:51,069 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-25 10:05:51,072 - ERROR - 使用新存储模块保存失败: WebpageStorage.save_webpage() got an unexpected keyword argument 'content'，回退到原有方式
+2025-08-25 10:05:51,073 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:05:51,074 - ERROR - 保存知识库数据失败: 'name'
+2025-08-25 10:05:51,082 - INFO - 检测到内容重复但URL不同: https://www.python.org
+2025-08-25 10:07:52,796 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:07:52,798 - INFO - 已加载配置: baidu
+2025-08-25 10:07:52,798 - INFO - 已加载配置: bing
+2025-08-25 10:07:52,798 - INFO - 已加载配置: duckduckgo
+2025-08-25 10:07:52,799 - INFO - 已加载配置: google
+2025-08-25 10:07:52,815 - INFO - 数据库初始化完成
+2025-08-25 10:07:54,409 - INFO - HTTP Request: GET https://httpbin.org/html "HTTP/1.1 200 OK"
+2025-08-25 10:08:14,326 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-25 10:08:14,333 - INFO - 网页已保存到: data\webpages\无标题_28f3848e_20250825_100814
+2025-08-25 10:08:14,333 - INFO - 成功下载图片: 0/0
+2025-08-25 10:08:14,333 - INFO - 网页内容已保存到: data\webpages\无标题_28f3848e_20250825_100814
+2025-08-25 10:08:14,333 - ERROR - 使用新存储模块保存失败: 'saved_files'，回退到原有方式
+2025-08-25 10:08:14,334 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:08:14,334 - ERROR - 保存知识库数据失败: 'name'
+2025-08-25 10:08:14,341 - INFO - 检测到内容重复但URL不同: https://httpbin.org/html
+2025-08-25 10:10:19,537 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:10:19,538 - INFO - 已加载配置: baidu
+2025-08-25 10:10:19,538 - INFO - 已加载配置: bing
+2025-08-25 10:10:19,538 - INFO - 已加载配置: duckduckgo
+2025-08-25 10:10:19,539 - INFO - 已加载配置: google
+2025-08-25 10:10:19,553 - INFO - 数据库初始化完成
+2025-08-25 10:10:19,556 - INFO - 发现重复URL: https://httpbin.org/html (标准化: https://httpbin.org/html)
+2025-08-25 10:14:49,433 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:14:49,434 - INFO - 已加载配置: baidu
+2025-08-25 10:14:49,434 - INFO - 已加载配置: bing
+2025-08-25 10:14:49,434 - INFO - 已加载配置: duckduckgo
+2025-08-25 10:14:49,435 - INFO - 已加载配置: google
+2025-08-25 10:14:49,450 - INFO - 数据库初始化完成
+2025-08-25 10:14:51,639 - INFO - HTTP Request: GET https://example.com "HTTP/1.1 200 OK"
+2025-08-25 10:15:05,569 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-25 10:15:05,577 - INFO - 网页已保存到: data\webpages\Example_Domain_c984d06a_20250825_101505
+2025-08-25 10:15:05,578 - INFO - 成功下载图片: 0/0
+2025-08-25 10:15:05,578 - INFO - 网页内容已保存到: data\webpages\Example_Domain_c984d06a_20250825_101505
+2025-08-25 10:15:05,578 - ERROR - 使用新存储模块保存失败: 'saved_files'，回退到原有方式
+2025-08-25 10:15:05,579 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:15:05,579 - ERROR - 保存知识库数据失败: 'name'
+2025-08-25 10:16:10,595 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:16:10,597 - INFO - 已加载配置: baidu
+2025-08-25 10:16:10,598 - INFO - 已加载配置: bing
+2025-08-25 10:16:10,598 - INFO - 已加载配置: duckduckgo
+2025-08-25 10:16:10,598 - INFO - 已加载配置: google
+2025-08-25 10:16:10,613 - INFO - 数据库初始化完成
+2025-08-25 10:16:11,739 - INFO - HTTP Request: GET https://example.com "HTTP/1.1 200 OK"
+2025-08-25 10:16:20,000 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-25 10:16:20,015 - INFO - 网页已保存到: data\webpages\Example_Domain_c984d06a_20250825_101620
+2025-08-25 10:16:20,015 - INFO - 成功下载图片: 0/0
+2025-08-25 10:16:20,015 - INFO - 网页内容已保存到: data\webpages\Example_Domain_c984d06a_20250825_101620
+2025-08-25 10:16:20,015 - ERROR - 使用新存储模块保存失败: 'saved_files'，回退到原有方式
+2025-08-25 10:16:20,016 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:16:20,017 - ERROR - 保存知识库数据失败: 'name'
+2025-08-25 10:16:20,021 - INFO - 检测到内容重复但URL不同: https://example.com
+2025-08-25 10:19:16,524 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:19:16,525 - INFO - 已加载配置: baidu
+2025-08-25 10:19:16,526 - INFO - 已加载配置: bing
+2025-08-25 10:19:16,526 - INFO - 已加载配置: duckduckgo
+2025-08-25 10:19:16,526 - INFO - 已加载配置: google
+2025-08-25 10:19:16,541 - INFO - 数据库初始化完成
+2025-08-25 10:19:16,546 - INFO - 发现重复URL: https://httpbin.org/html (标准化: https://httpbin.org/html)
+2025-08-25 10:25:04,050 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:25:04,051 - INFO - 已加载配置: baidu
+2025-08-25 10:25:04,051 - INFO - 已加载配置: bing
+2025-08-25 10:25:04,052 - INFO - 已加载配置: duckduckgo
+2025-08-25 10:25:04,052 - INFO - 已加载配置: google
+2025-08-25 10:25:04,071 - INFO - 数据库初始化完成
+2025-08-25 10:25:05,485 - INFO - HTTP Request: GET https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf "HTTP/1.1 200 OK"
+2025-08-25 10:25:12,948 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-25 10:25:12,958 - INFO - 网页已保存到: data\webpages\无标题_c42db50c_20250825_102512
+2025-08-25 10:25:12,958 - INFO - 成功下载图片: 0/0
+2025-08-25 10:25:12,958 - INFO - 网页内容已保存到: data\webpages\无标题_c42db50c_20250825_102512
+2025-08-25 10:25:12,958 - ERROR - 使用新存储模块保存失败: 'saved_files'，回退到原有方式
+2025-08-25 10:25:12,960 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:25:12,960 - ERROR - 保存知识库数据失败: 'name'
+2025-08-25 10:25:12,965 - INFO - 检测到内容重复但URL不同: https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf
+2025-08-25 10:47:39,334 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:47:39,337 - INFO - 已加载配置: baidu
+2025-08-25 10:47:39,337 - INFO - 已加载配置: bing
+2025-08-25 10:47:39,348 - INFO - 已加载配置: duckduckgo
+2025-08-25 10:47:39,349 - INFO - 已加载配置: google
+2025-08-25 10:47:39,365 - INFO - 数据库初始化完成
+2025-08-25 10:47:40,521 - INFO - HTTP Request: GET https://github.com "HTTP/1.1 200 OK"
+2025-08-25 10:47:41,685 - INFO - HTTP Request: GET https://github.githubassets.com/assets/particles-de1dd20f3008.png "HTTP/1.1 200 OK"
+2025-08-25 10:47:45,214 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-25 10:47:46,074 - INFO - HTTP Request: GET https://images.ctfassets.net/8aevphvgewt8/1Dt1ncaR6ZM4dQvknFzfBI/e5c2092be5bd53881622eced4fd37564/accordion-1-ce487d44c0bf.webp "HTTP/1.1 200 OK"
+2025-08-25 10:47:48,082 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-25 10:47:48,292 - INFO - HTTP Request: GET https://images.ctfassets.net/8aevphvgewt8/1uXZYDy7dMcH9QwxuAU06F/1cb167cc60d725b8cf7089faf9a4ed06/accordion-2-730955545f07.webp "HTTP/1.1 200 OK"
+2025-08-25 10:47:50,373 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-25 10:47:50,580 - INFO - HTTP Request: GET https://images.ctfassets.net/8aevphvgewt8/3xzVZaJhqo3B62R8NeHjX2/e37c81e4f26e9dac2aff1f23a0243087/accordion-3-52ca331d22ea.webp "HTTP/1.1 200 OK"
+2025-08-25 10:47:52,592 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-25 10:47:52,801 - INFO - HTTP Request: GET https://images.ctfassets.net/8aevphvgewt8/3cgNgdKFqflI27vyDh4Gpa/c459dc8690133e7663b8db2626cf2045/accordion-4-a26744b70ff7.webp "HTTP/1.1 200 OK"
+2025-08-25 10:47:54,333 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-25 10:48:35,293 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-25 10:48:35,303 - INFO - 网页已保存到: data\webpages\GitHub_Build_and_ship_software_on_a_single_collabo_3097fca9_20250825_104835
+2025-08-25 10:48:35,303 - INFO - 成功下载图片: 0/0
+2025-08-25 10:48:35,303 - INFO - 网页内容已保存到: data\webpages\GitHub_Build_and_ship_software_on_a_single_collabo_3097fca9_20250825_104835
+2025-08-25 10:48:35,303 - ERROR - 使用新存储模块保存失败: 'saved_files'，回退到原有方式
+2025-08-25 10:48:35,304 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:48:35,305 - ERROR - 保存知识库数据失败: 'name'
+2025-08-25 10:48:35,310 - INFO - 检测到内容重复但URL不同: https://github.com
+2025-08-25 10:52:56,088 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:52:56,090 - INFO - 已加载配置: baidu
+2025-08-25 10:52:56,090 - INFO - 已加载配置: bing
+2025-08-25 10:52:56,090 - INFO - 已加载配置: duckduckgo
+2025-08-25 10:52:56,091 - INFO - 已加载配置: google
+2025-08-25 10:52:56,107 - INFO - 数据库初始化完成
+2025-08-25 10:52:57,333 - INFO - HTTP Request: GET https://www.w3.org "HTTP/1.1 200 OK"
+2025-08-25 10:53:10,546 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-25 10:53:10,551 - INFO - 网页已保存到: data\webpages\无标题_08bbfdb3_20250825_105310
+2025-08-25 10:53:10,552 - INFO - 成功下载图片: 0/0
+2025-08-25 10:53:10,552 - INFO - 网页内容已保存到: data\webpages\无标题_08bbfdb3_20250825_105310
+2025-08-25 10:53:10,552 - INFO - 下载的图片: 0/0张
+2025-08-25 10:53:10,553 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:53:10,553 - ERROR - 保存知识库数据失败: 'name'
+2025-08-25 10:53:10,558 - INFO - 检测到内容重复但URL不同: https://www.w3.org
+2025-08-25 10:55:02,833 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:55:02,834 - INFO - 已加载配置: baidu
+2025-08-25 10:55:02,834 - INFO - 已加载配置: bing
+2025-08-25 10:55:02,835 - INFO - 已加载配置: duckduckgo
+2025-08-25 10:55:02,835 - INFO - 已加载配置: google
+2025-08-25 10:55:02,850 - INFO - 数据库初始化完成
+2025-08-25 10:55:04,104 - INFO - HTTP Request: GET https://www.wikipedia.org "HTTP/1.1 200 OK"
+2025-08-25 10:55:21,809 - INFO - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-25 10:55:21,816 - INFO - 网页已保存到: data\webpages\Wikipedia_8d1d8a39_20250825_105521
+2025-08-25 10:55:21,816 - INFO - 成功下载图片: 0/0
+2025-08-25 10:55:21,816 - INFO - 网页内容已保存到: data\webpages\Wikipedia_8d1d8a39_20250825_105521
+2025-08-25 10:55:21,816 - INFO - 下载的图片: 0/0张
+2025-08-25 10:55:21,817 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:55:21,817 - ERROR - 保存知识库数据失败: 'name'
+2025-08-25 10:55:21,823 - INFO - 检测到内容重复但URL不同: https://www.wikipedia.org
+2025-08-25 10:59:16,759 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 10:59:16,760 - INFO - 已加载配置: baidu
+2025-08-25 10:59:16,760 - INFO - 已加载配置: bing
+2025-08-25 10:59:16,761 - INFO - 已加载配置: duckduckgo
+2025-08-25 10:59:16,761 - INFO - 已加载配置: google
+2025-08-25 10:59:19,516 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe --SocksPort 9050 --ControlPort 9051 --DataDirectory ./tor_data --Log notice file ./tor_data/tor.log --NumEntryGuards 8 --CircuitBuildTimeout 30 --MaxClientCircuitsPending 32
+2025-08-25 10:59:22,178 - INFO - Tor ports are ready
+2025-08-25 11:35:44,983 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 11:35:44,984 - INFO - 已加载配置: baidu
+2025-08-25 11:35:44,984 - INFO - 已加载配置: bing
+2025-08-25 11:35:44,985 - INFO - 已加载配置: duckduckgo
+2025-08-25 11:35:44,985 - INFO - 已加载配置: google
+2025-08-25 11:35:47,670 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe --SocksPort 9050 --ControlPort 9051 --DataDirectory ./tor_data --Log notice file ./tor_data/tor.log --NumEntryGuards 8 --CircuitBuildTimeout 30 --MaxClientCircuitsPending 32
+2025-08-25 11:35:50,261 - INFO - Tor ports are ready
+2025-08-25 12:11:43,557 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-08-25 12:11:43,559 - INFO - 已加载配置: baidu
+2025-08-25 12:11:43,560 - INFO - 已加载配置: bing
+2025-08-25 12:11:43,572 - INFO - 已加载配置: duckduckgo
+2025-08-25 12:11:43,573 - INFO - 已加载配置: google
+2025-09-07 07:35:47,934 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-09-07 07:35:47,937 - INFO - 已加载配置: baidu
+2025-09-07 07:35:47,937 - INFO - 已加载配置: bing
+2025-09-07 07:35:47,937 - INFO - 已加载配置: duckduckgo
+2025-09-07 07:35:47,937 - INFO - 已加载配置: google
+2025-09-07 07:35:50,288 - INFO - Starting Tor with command: D:\develop\Tor Browser\Browser\TorBrowser\Tor\tor.exe --SocksPort 9050 --ControlPort 9051 --DataDirectory ./tor_data --Log notice file ./tor_data/tor.log --NumEntryGuards 8 --CircuitBuildTimeout 30 --MaxClientCircuitsPending 32
+2025-09-07 07:35:52,559 - INFO - Tor ports are ready
+2025-09-07 07:43:10,482 - WARNING - 配置文件未找到: D:\develop\MCP-develop\mcp-client\scripts\config\format_templates.json，将使用默认配置
+2025-09-07 07:43:10,484 - INFO - 已加载配置: baidu
+2025-09-07 07:43:10,484 - INFO - 已加载配置: bing
+2025-09-07 07:43:10,484 - INFO - 已加载配置: duckduckgo
+2025-09-07 07:43:10,484 - INFO - 已加载配置: google
+2025-09-07 07:43:10,515 - INFO - Detected existing Tor process, using it
