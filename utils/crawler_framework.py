@@ -14,6 +14,11 @@ from urllib.parse import urljoin
 from duckduckgo_search import DDGS
 import re
 import logging
+import asyncio
+from bs4 import BeautifulSoup
+
+# 导入增强的HTTP客户端
+from .enhanced_http_client import EnhancedHttpClient, HttpClientFactory, get_global_client
 
 # Initialize logger
 logger = logging.getLogger(__name__)
@@ -21,7 +26,7 @@ logger = logging.getLogger(__name__)
 class CrawlerFramework:
     """通用爬虫框架核心类"""
     
-    def __init__(self, config_dir: str = "configs/parsers", data_dir: str = "data"):
+    def __init__(self, config_dir: str = "configs/parsers", data_dir: str = "data", http_config: Dict = None):
         self.config_dir = Path(config_dir)
         self.data_dir = Path(data_dir)
         self.raw_data_dir = self.data_dir / "raw"
@@ -36,6 +41,17 @@ class CrawlerFramework:
         
         # API密钥
         self.serpapi_key = os.getenv("SERPAPI_API_KEY")
+        
+        # 初始化HTTP客户端
+        self.http_config = http_config or {
+            "use_proxy_pool": True,
+            "use_tor": True,
+            "max_retries": 3,
+            "timeout": 30,
+            "use_free_proxies": True,
+            "rotation_strategy": "adaptive"
+        }
+        self.http_client = HttpClientFactory.create_proxy_client(self.http_config)
         
     def _load_engine_configs(self) -> Dict[str, Dict]:
         """加载所有搜索引擎配置"""
@@ -143,8 +159,8 @@ class CrawlerFramework:
         # 添加额外参数
         params.update(kwargs)
         
-        # 发送请求
-        response = requests.get(config["base_url"], params=params, timeout=30)
+        # 使用增强的HTTP客户端发送请求
+        response = self.http_client.get_sync(config["base_url"], params=params)
         response.raise_for_status()
         
         logger = logging.getLogger(__name__)
@@ -474,3 +490,195 @@ class CrawlerFramework:
     def get_engine_info(self, engine: str) -> Dict:
         """获取特定搜索引擎的配置信息"""
         return self.engine_configs.get(engine, {})
+    
+    async def fetch_page_content_async(self, url: str, **kwargs) -> Dict:
+        """
+        异步获取网页内容（支持代理池和Tor）
+        
+        Args:
+            url: 目标URL
+            **kwargs: 其他参数
+            
+        Returns:
+            网页内容和元数据
+        """
+        try:
+            logger.info(f"正在异步获取网页内容: {url}")
+            
+            # 使用异步HTTP客户端
+            response = await self.http_client.get(url, **kwargs)
+            content = response.text
+            
+            # 解析网页内容
+            from bs4 import BeautifulSoup
+            soup = BeautifulSoup(content, 'html.parser')
+            
+            # 提取基本信息
+            title = soup.find('title')
+            title_text = title.get_text().strip() if title else ""
+            
+            # 提取描述
+            description = soup.find('meta', attrs={'name': 'description'})
+            description_text = description.get('content', '') if description else ""
+            
+            # 提取关键词
+            keywords = soup.find('meta', attrs={'name': 'keywords'})
+            keywords_text = keywords.get('content', '') if keywords else ""
+            
+            # 提取主要文本内容
+            # 移除脚本和样式标签
+            for script in soup(["script", "style"]):
+                script.decompose()
+            
+            # 获取文本内容
+            text_content = soup.get_text()
+            # 清理文本
+            lines = (line.strip() for line in text_content.splitlines())
+            chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+            text_content = ' '.join(chunk for chunk in chunks if chunk)
+            
+            result = {
+                "url": url,
+                "title": title_text,
+                "description": description_text,
+                "keywords": keywords_text,
+                "content": text_content[:5000],  # 限制内容长度
+                "content_length": len(text_content),
+                "status_code": response.status_code,
+                "timestamp": datetime.now().isoformat(),
+                "headers": dict(response.headers)
+            }
+            
+            logger.info(f"网页内容获取成功: {url} (长度: {len(text_content)}字符)")
+            return result
+            
+        except Exception as e:
+            logger.error(f"获取网页内容失败: {url} - {e}")
+            return {
+                "url": url,
+                "error": str(e),
+                "timestamp": datetime.now().isoformat()
+            }
+    
+    def fetch_page_content(self, url: str, **kwargs) -> Dict:
+        """
+        同步获取网页内容（兼容性接口）
+        
+        Args:
+            url: 目标URL
+            **kwargs: 其他参数
+            
+        Returns:
+            网页内容和元数据
+        """
+        try:
+            logger.info(f"正在获取网页内容: {url}")
+            
+            response = self.http_client.get_sync(url, **kwargs)
+            content = response.text
+            
+            # 解析网页内容
+            from bs4 import BeautifulSoup
+            soup = BeautifulSoup(content, 'html.parser')
+            
+            # 提取基本信息
+            title = soup.find('title')
+            title_text = title.get_text().strip() if title else ""
+            
+            # 提取描述
+            description = soup.find('meta', attrs={'name': 'description'})
+            description_text = description.get('content', '') if description else ""
+            
+            # 提取关键词
+            keywords = soup.find('meta', attrs={'name': 'keywords'})
+            keywords_text = keywords.get('content', '') if keywords else ""
+            
+            # 提取主要文本内容
+            for script in soup(["script", "style"]):
+                script.decompose()
+            
+            text_content = soup.get_text()
+            lines = (line.strip() for line in text_content.splitlines())
+            chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
+            text_content = ' '.join(chunk for chunk in chunks if chunk)
+            
+            result = {
+                "url": url,
+                "title": title_text,
+                "description": description_text,
+                "keywords": keywords_text,
+                "content": text_content[:5000],
+                "content_length": len(text_content),
+                "status_code": response.status_code,
+                "timestamp": datetime.now().isoformat(),
+                "headers": dict(response.headers)
+            }
+            
+            logger.info(f"网页内容获取成功: {url} (长度: {len(text_content)}字符)")
+            return result
+            
+        except Exception as e:
+            logger.error(f"获取网页内容失败: {url} - {e}")
+            return {
+                "url": url,
+                "error": str(e),
+                "timestamp": datetime.now().isoformat()
+            }
+    
+    async def batch_fetch_pages_async(self, urls: List[str], max_concurrent: int = 5, **kwargs) -> List[Dict]:
+        """
+        批量异步获取网页内容
+        
+        Args:
+            urls: URL列表
+            max_concurrent: 最大并发数
+            **kwargs: 其他参数
+            
+        Returns:
+            网页内容列表
+        """
+        logger.info(f"开始批量获取 {len(urls)} 个网页内容，最大并发数: {max_concurrent}")
+        
+        semaphore = asyncio.Semaphore(max_concurrent)
+        
+        async def fetch_with_semaphore(url):
+            async with semaphore:
+                return await self.fetch_page_content_async(url, **kwargs)
+        
+        tasks = [fetch_with_semaphore(url) for url in urls]
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+        
+        # 处理异常结果
+        processed_results = []
+        for i, result in enumerate(results):
+            if isinstance(result, Exception):
+                processed_results.append({
+                    "url": urls[i],
+                    "error": str(result),
+                    "timestamp": datetime.now().isoformat()
+                })
+            else:
+                processed_results.append(result)
+        
+        logger.info(f"批量获取完成，成功: {sum(1 for r in processed_results if 'error' not in r)} 个")
+        return processed_results
+    
+    def get_http_client_stats(self) -> Dict:
+        """
+        获取HTTP客户端统计信息
+        
+        Returns:
+            统计信息字典
+        """
+        return self.http_client.get_stats()
+    
+    def configure_http_client(self, config: Dict):
+        """
+        重新配置HTTP客户端
+        
+        Args:
+            config: 新的配置
+        """
+        self.http_config.update(config)
+        self.http_client = HttpClientFactory.create_proxy_client(self.http_config)
+        logger.info("HTTP客户端配置已更新")

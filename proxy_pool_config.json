@@ -1,0 +1,65 @@
+{
+  "refresh_interval": 3600,
+  "validation_timeout": 10.0,
+  "rotation_strategy": "round_robin",
+  "max_proxies": 1000,
+  "min_success_rate": 0.7,
+  "enable_free_providers": true,
+  "enable_paid_providers": false,
+  "paid_proxy_api_key": "",
+  "paid_proxy_api_url": "",
+  "validation_urls": [
+    "http://httpbin.org/ip",
+    "https://httpbin.org/ip",
+    "http://icanhazip.com",
+    "https://api.ipify.org?format=json"
+  ],
+  "max_concurrent_validations": 50,
+  "proxy_timeout": 10.0,
+  "retry_failed_proxies": true,
+  "cleanup_interval": 1800,
+  "health_check_interval": 600,
+  "rotation_strategies": {
+    "round_robin": {
+      "description": "轮询选择代理",
+      "suitable_for": "均匀分布请求负载"
+    },
+    "random": {
+      "description": "随机选择代理",
+      "suitable_for": "避免可预测的请求模式"
+    },
+    "best_performance": {
+      "description": "选择性能最佳的代理",
+      "suitable_for": "优先考虑速度和成功率"
+    }
+  },
+  "proxy_sources": {
+    "free_apis": [
+      "https://www.proxy-list.download/api/v1/get?type=http",
+      "https://api.proxyscrape.com/v2/?request=get&protocol=http&timeout=10000&country=all",
+      "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt",
+      "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt"
+    ],
+    "paid_services": {
+      "example_service": {
+        "api_url": "https://api.example-proxy.com/v1/proxies",
+        "auth_header": "Authorization",
+        "auth_format": "Bearer {api_key}",
+        "response_format": "json"
+      }
+    }
+  },
+  "filtering": {
+    "min_anonymity_level": "anonymous",
+    "allowed_countries": [],
+    "blocked_countries": ["CN", "RU"],
+    "max_response_time": 5.0,
+    "min_uptime": 0.8
+  },
+  "logging": {
+    "level": "INFO",
+    "log_file": "proxy_pool.log",
+    "max_log_size": "10MB",
+    "backup_count": 5
+  }
+}
