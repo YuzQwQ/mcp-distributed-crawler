@@ -412,6 +412,15 @@ class EnhancedHttpClient:
         
         return stats
     
+    async def close(self):
+        """关闭HTTP客户端"""
+        try:
+            if self.proxy_pool_manager:
+                await self.stop_proxy_pool()
+            logger.info("HTTP客户端已关闭")
+        except Exception as e:
+            logger.error(f"关闭HTTP客户端失败: {e}")
+    
     @asynccontextmanager
     async def session(self):
         """异步上下文管理器"""

@@ -495,7 +495,7 @@ async def main():
         # 保存测试报告
         output_file = f"stealth_crawler_test_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(report, f, ensure_ascii=False, indent=2)
+            json.dump(report, f, ensure_ascii=False, indent=2, default=str)
             
         # 打印摘要
         print("\n" + "=" * 60)
