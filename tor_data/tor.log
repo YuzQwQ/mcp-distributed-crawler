@@ -85,3 +85,648 @@ Sep 07 07:56:10.000 [warn]  26 connections died in state connect()ing with SSL s
 Sep 07 07:57:53.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 28; recommendation warn; host EE32E33AEE105E08F9A97D324514814D4DA1A2D5 at 134.209.240.249:25678)
 Sep 07 07:57:53.000 [warn] 27 connections have failed:
 Sep 07 07:57:53.000 [warn]  27 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 08:01:19.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 29; recommendation warn; host 2C4B49130DD5994447A6ABBCC5BC3259E2B75AB9 at 198.251.84.163:22)
+Sep 07 08:01:19.000 [warn] 28 connections have failed:
+Sep 07 08:01:19.000 [warn]  28 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 08:04:29.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 30; recommendation warn; host 96C7F178B1531825E82122DEFBFEF16E233A9328 at 62.141.35.212:9201)
+Sep 07 08:04:29.000 [warn] 29 connections have failed:
+Sep 07 08:04:29.000 [warn]  29 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 08:13:16.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 31; recommendation warn; host F33ECAB340E6117597A3FF5B5F2B6D7475B56187 at 89.58.41.156:143)
+Sep 07 08:13:16.000 [warn] 30 connections have failed:
+Sep 07 08:13:16.000 [warn]  30 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 08:17:06.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 32; recommendation warn; host 7EA6EAD6FD83083C538F44038BBFA077587DD755 at 45.66.35.11:443)
+Sep 07 08:17:06.000 [warn] 31 connections have failed:
+Sep 07 08:17:06.000 [warn]  31 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 08:18:12.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 33; recommendation warn; host 56D878C942CD38F5287079974950668B18ECC4CD at 89.58.26.216:9000)
+Sep 07 08:18:12.000 [warn] 32 connections have failed:
+Sep 07 08:18:12.000 [warn]  32 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 08:26:53.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 34; recommendation warn; host 670842B2A3CDCE50A9598325EA42ABF86CA3B9A4 at 64.65.62.100:443)
+Sep 07 08:26:53.000 [warn] 33 connections have failed:
+Sep 07 08:26:53.000 [warn]  33 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 08:33:30.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 35; recommendation warn; host 086765190E937746208F92F1882B402C87A9FE4A at 85.235.66.227:9091)
+Sep 07 08:33:30.000 [warn] 34 connections have failed:
+Sep 07 08:33:30.000 [warn]  34 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 08:39:23.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 36; recommendation warn; host EF060C2E81575C212AA1FC823A8370A59C907DAC at 5.230.119.192:9001)
+Sep 07 08:39:23.000 [warn] 35 connections have failed:
+Sep 07 08:39:23.000 [warn]  35 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 08:45:35.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 37; recommendation warn; host 2955D8C86F5848FD3469E3F38A027D3E169359D8 at 138.201.225.177:9100)
+Sep 07 08:45:35.000 [warn] 36 connections have failed:
+Sep 07 08:45:35.000 [warn]  36 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 08:49:25.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 38; recommendation warn; host 24494F0C553D13D1F46BE783DDE1572D7F0850BA at 141.145.201.126:9001)
+Sep 07 08:49:25.000 [warn] 37 connections have failed:
+Sep 07 08:49:25.000 [warn]  37 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 08:51:41.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 39; recommendation warn; host 01181B31BE5860C7D66DA88F88AD522C06470FD9 at 95.143.193.125:443)
+Sep 07 08:51:41.000 [warn] 38 connections have failed:
+Sep 07 08:51:41.000 [warn]  38 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 08:55:32.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 40; recommendation warn; host F69F1CB011A7837AB826FA72FC9C49D292CDD6D0 at 80.85.141.186:9002)
+Sep 07 08:55:32.000 [warn] 39 connections have failed:
+Sep 07 08:55:32.000 [warn]  39 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 08:58:58.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 41; recommendation warn; host 24E2F139121D4394C54B5BCC368B3B411857C413 at 204.13.164.118:443)
+Sep 07 08:58:58.000 [warn] 40 connections have failed:
+Sep 07 08:58:58.000 [warn]  40 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 09:06:36.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 42; recommendation warn; host 45B06605BD7AB37BFE0452767706B98559517526 at 192.42.116.188:8080)
+Sep 07 09:06:36.000 [warn] 41 connections have failed:
+Sep 07 09:06:36.000 [warn]  41 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 16:05:48.000 [notice] Tor has been idle for 22394 seconds; assuming established circuits no longer work.
+Sep 07 16:05:48.000 [notice] Heartbeat: Tor's uptime is 1:41 hours, with 0 circuits open. I've sent 0 kB and received 0 kB. I've received 4 connections on IPv4 and 0 on IPv6. I've made 43 connections with IPv4 and 0 with IPv6.
+Sep 07 16:06:10.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 43; recommendation warn; host 2B01430798B2F1F068D4A0DF16819AD164DAE55E at 192.42.116.219:9001)
+Sep 07 16:06:10.000 [warn] 43 connections have failed:
+Sep 07 16:06:10.000 [warn]  43 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 16:06:10.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 44; recommendation warn; host E3E42D35F801C9D5AB23584E0025D56FE2B33396 at 216.218.219.41:443)
+Sep 07 16:06:10.000 [warn] 44 connections have failed:
+Sep 07 16:06:10.000 [warn]  44 connections died in state connect()ing with SSL state (No SSL object)
+Sep 07 18:02:07.000 [notice] Tor has been idle for 6674 seconds; assuming established circuits no longer work.
+Sep 07 22:18:01.000 [notice] Tor has been idle for 12507 seconds; assuming established circuits no longer work.
+Sep 07 22:18:01.000 [notice] Heartbeat: Tor's uptime is 1:46 hours, with 0 circuits open. I've sent 0 kB and received 0 kB. I've received 4 connections on IPv4 and 0 on IPv6. I've made 45 connections with IPv4 and 0 with IPv6.
+Sep 08 10:03:07.000 [notice] Tor has been idle for 39757 seconds; assuming established circuits no longer work.
+Sep 08 10:03:07.000 [notice] Heartbeat: Tor's uptime is 2:13 hours, with 0 circuits open. I've sent 0 kB and received 0 kB. I've received 4 connections on IPv4 and 0 on IPv6. I've made 45 connections with IPv4 and 0 with IPv6.
+Sep 08 11:15:27.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 45; recommendation warn; host 2ACE395FA36D4EF3709BC6C3D5965AFCBC069C4A at 45.143.200.240:9000)
+Sep 08 11:15:27.000 [warn] 45 connections have failed:
+Sep 08 11:15:27.000 [warn]  45 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:16:03.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 46; recommendation warn; host 84F062F1BBF663D4BA71861AB6AEC74933FE1C2B at 154.41.95.1:19005)
+Sep 08 11:16:03.000 [warn] 46 connections have failed:
+Sep 08 11:16:03.000 [warn]  46 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:16:07.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 47; recommendation warn; host B2FC8F2D98DB351599166C4D0E20862730C3426A at 185.228.138.86:8080)
+Sep 08 11:16:07.000 [warn] 47 connections have failed:
+Sep 08 11:16:07.000 [warn]  47 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:16:11.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 48; recommendation warn; host 205312D3230B8F48D5E971315A9682319E5622EB at 148.113.183.0:9001)
+Sep 08 11:16:11.000 [warn] 48 connections have failed:
+Sep 08 11:16:11.000 [warn]  48 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:16:24.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 49; recommendation warn; host 431529B27FBED5817C69A204BB3CA95A307E2244 at 185.124.240.98:9001)
+Sep 08 11:16:24.000 [warn] 49 connections have failed:
+Sep 08 11:16:24.000 [warn]  49 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:16:28.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 50; recommendation warn; host 67A54EDB7DADDBBC1E8A07F1EF82364BDAA896B7 at 148.251.51.34:9993)
+Sep 08 11:16:28.000 [warn] 50 connections have failed:
+Sep 08 11:16:28.000 [warn]  50 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:16:33.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 51; recommendation warn; host 7C80E6E91AF12DA27C15F6EA099E73499D613C18 at 45.136.29.221:31337)
+Sep 08 11:16:33.000 [warn] 51 connections have failed:
+Sep 08 11:16:33.000 [warn]  51 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:16:46.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 52; recommendation warn; host 5A3B3C34DB082F8AD66AF45AA268FE354662A4F0 at 23.190.168.243:9001)
+Sep 08 11:16:46.000 [warn] 52 connections have failed:
+Sep 08 11:16:46.000 [warn]  52 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:16:50.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 53; recommendation warn; host FE2F5ECE1E77E0C5136D6E3A9E733EC603BB704B at 77.48.28.237:443)
+Sep 08 11:16:50.000 [warn] 53 connections have failed:
+Sep 08 11:16:50.000 [warn]  53 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:16:54.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 54; recommendation warn; host 498CDD3BF9DE59A5678E8488FEA450E1876242A5 at 51.159.186.85:9001)
+Sep 08 11:16:54.000 [warn] 54 connections have failed:
+Sep 08 11:16:54.000 [warn]  54 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:17:07.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 55; recommendation warn; host 51D5A72A2C78D1372BE1CB1F3EE382C37763B1FF at 2.58.56.43:7100)
+Sep 08 11:17:07.000 [warn] 55 connections have failed:
+Sep 08 11:17:07.000 [warn]  55 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:17:11.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 56; recommendation warn; host 4DB57C6E34E73E45FDC03223E69F38379D3F9995 at 178.254.25.106:9001)
+Sep 08 11:17:11.000 [warn] 56 connections have failed:
+Sep 08 11:17:11.000 [warn]  56 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:17:16.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 57; recommendation warn; host 5D98A8A2F60F26C65E34F4205BE77219E10EFB09 at 45.141.215.19:9000)
+Sep 08 11:17:16.000 [warn] 57 connections have failed:
+Sep 08 11:17:16.000 [warn]  57 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:17:28.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 58; recommendation warn; host 2392ECD14824B46C0F2EAAC4862BA40EC9B930AE at 45.141.215.167:7430)
+Sep 08 11:17:28.000 [warn] 58 connections have failed:
+Sep 08 11:17:28.000 [warn]  58 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:17:34.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 59; recommendation warn; host A8B887B3DC8B864E2F0B58F92B0C10D493B5AFFE at 204.8.96.172:443)
+Sep 08 11:17:34.000 [warn] 59 connections have failed:
+Sep 08 11:17:34.000 [warn]  59 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:17:42.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 60; recommendation warn; host E733657848B511BA14CD8AEC9C5EA89CF50574D1 at 185.40.4.101:9443)
+Sep 08 11:17:42.000 [warn] 60 connections have failed:
+Sep 08 11:17:42.000 [warn]  60 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:17:57.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 61; recommendation warn; host 1734430C503EE26EC1A3B9EB7C29BF4AC64B922B at 162.19.252.175:443)
+Sep 08 11:17:57.000 [warn] 61 connections have failed:
+Sep 08 11:17:57.000 [warn]  61 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:18:02.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 62; recommendation warn; host 60A211F20E74C7D2D884BA49202964F5C94FA015 at 62.210.205.228:80)
+Sep 08 11:18:02.000 [warn] 62 connections have failed:
+Sep 08 11:18:02.000 [warn]  62 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:18:10.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 63; recommendation warn; host 37C984BB069C29573FB8F9F6C610DC14763B5305 at 80.67.172.162:19001)
+Sep 08 11:18:10.000 [warn] 63 connections have failed:
+Sep 08 11:18:10.000 [warn]  63 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:18:29.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 64; recommendation warn; host 96070698714DC07AE2B377864625B7EF64E33BF5 at 212.24.100.138:9001)
+Sep 08 11:18:29.000 [warn] 64 connections have failed:
+Sep 08 11:18:29.000 [warn]  64 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:18:33.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 65; recommendation warn; host 5861F729B6D973B1F9FCED2E6E9B27859CBA2823 at 45.141.215.61:7430)
+Sep 08 11:18:33.000 [warn] 65 connections have failed:
+Sep 08 11:18:33.000 [warn]  65 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:18:44.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 66; recommendation warn; host 4BC4F3CFFBCB96B31EE525633ABCC827BC8BFA94 at 38.102.84.204:443)
+Sep 08 11:18:44.000 [warn] 66 connections have failed:
+Sep 08 11:18:44.000 [warn]  66 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:18:50.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 67; recommendation warn; host 24D6B6B9591A07CCF43B35D559468B19F44DED6A at 185.220.101.163:11163)
+Sep 08 11:18:50.000 [warn] 67 connections have failed:
+Sep 08 11:18:50.000 [warn]  67 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:18:54.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 68; recommendation warn; host 20209021CE8B8732F8EE57D313A36FF8DC823E5E at 185.220.101.41:10041)
+Sep 08 11:18:54.000 [warn] 68 connections have failed:
+Sep 08 11:18:54.000 [warn]  68 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:19:05.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 69; recommendation warn; host B1F1CDE96E9DC0AB68F833C0370F7F0F43E29F70 at 185.220.101.135:11135)
+Sep 08 11:19:05.000 [warn] 69 connections have failed:
+Sep 08 11:19:05.000 [warn]  69 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:19:11.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 70; recommendation warn; host E7467371A0C061A64A9AF943F530F253D54333EB at 185.220.101.198:443)
+Sep 08 11:19:11.000 [warn] 70 connections have failed:
+Sep 08 11:19:11.000 [warn]  70 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:19:15.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 71; recommendation warn; host 213038B323FF8737A55C9DA15FEA1C9BBC4785D3 at 45.95.169.43:9001)
+Sep 08 11:19:15.000 [warn] 71 connections have failed:
+Sep 08 11:19:15.000 [warn]  71 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:19:26.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 72; recommendation warn; host A0BD104E35D36F5630B01EB5370597EB09204C99 at 98.128.175.45:443)
+Sep 08 11:19:26.000 [warn] 72 connections have failed:
+Sep 08 11:19:26.000 [warn]  72 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:19:32.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 73; recommendation warn; host B45A9DDE16C7B8234C68AE02F4BFDB18CAB9C029 at 149.50.13.221:9001)
+Sep 08 11:19:32.000 [warn] 73 connections have failed:
+Sep 08 11:19:32.000 [warn]  73 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:19:36.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 74; recommendation warn; host DB5DE88B4914F60CDEEF581ECCA8DEA59EF26A90 at 185.162.249.126:9001)
+Sep 08 11:19:36.000 [warn] 74 connections have failed:
+Sep 08 11:19:36.000 [warn]  74 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:19:47.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 75; recommendation warn; host 22E975935BA77EA59A28EA1AA8387F906034FCBE at 172.104.208.190:443)
+Sep 08 11:19:47.000 [warn] 75 connections have failed:
+Sep 08 11:19:47.000 [warn]  75 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:20:09.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 76; recommendation warn; host 189C44DD06312D6DF8FB57A944E6819FF245740C at 107.189.10.175:9100)
+Sep 08 11:20:09.000 [warn] 76 connections have failed:
+Sep 08 11:20:09.000 [warn]  76 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:20:44.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 77; recommendation warn; host 720ABE4554C55EE6F6099491CA55D1F5550512C5 at 135.125.202.252:9001)
+Sep 08 11:20:44.000 [warn] 77 connections have failed:
+Sep 08 11:20:44.000 [warn]  77 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:21:29.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 78; recommendation warn; host 4CE422446D43B0A21F0F9CA146D9075583402102 at 45.95.169.109:9100)
+Sep 08 11:21:29.000 [warn] 78 connections have failed:
+Sep 08 11:21:29.000 [warn]  78 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:23:17.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 79; recommendation warn; host 235396838BB8FC7AFA529042B19615DF9E2AF218 at 68.67.32.34:9001)
+Sep 08 11:23:17.000 [warn] 79 connections have failed:
+Sep 08 11:23:17.000 [warn]  79 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:25:57.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 80; recommendation warn; host BB9C5D15BC3B77C8AF5CBC733F7E54553A1B7BD5 at 162.251.166.210:443)
+Sep 08 11:25:57.000 [warn] 80 connections have failed:
+Sep 08 11:25:57.000 [warn]  80 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 11:30:42.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 81; recommendation warn; host 8D89ECA4C93928711A0BD6DB80F547A09AEF2D67 at 95.214.53.96:5443)
+Sep 08 11:30:42.000 [warn] 81 connections have failed:
+Sep 08 11:30:42.000 [warn]  81 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:06:55.000 [notice] Tor has been idle for 9021 seconds; assuming established circuits no longer work.
+Sep 08 14:16:13.000 [notice] Application request when we haven't used client functionality lately. Optimistically trying directory fetches again.
+Sep 08 14:16:35.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 82; recommendation warn; host 706F781512268CCABC7104E19185E7093C6A357B at 193.189.100.195:445)
+Sep 08 14:16:35.000 [warn] 82 connections have failed:
+Sep 08 14:16:35.000 [warn]  82 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:16:36.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 83; recommendation warn; host 7B9608D3B65C10061C8546839DD878ADAD91A83D at 45.141.215.167:8100)
+Sep 08 14:16:36.000 [warn] 83 connections have failed:
+Sep 08 14:16:36.000 [warn]  83 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:16:38.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 84; recommendation warn; host 431529B27FBED5817C69A204BB3CA95A307E2244 at 185.124.240.98:9001)
+Sep 08 14:16:38.000 [warn] 84 connections have failed:
+Sep 08 14:16:38.000 [warn]  84 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:16:56.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 85; recommendation warn; host FAA4BCA4A6AC0FB4CA2F8AD5A11D9E122BA894F6 at 217.196.147.77:443)
+Sep 08 14:16:56.000 [warn] 85 connections have failed:
+Sep 08 14:16:56.000 [warn]  85 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:16:56.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 86; recommendation warn; host 3AE9F228E1540D6F73B6DC9ED816AC84CF755598 at 37.120.178.238:9001)
+Sep 08 14:16:56.000 [warn] 86 connections have failed:
+Sep 08 14:16:56.000 [warn]  86 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:16:59.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 87; recommendation warn; host 09F64E00F34C88F604163F24D37BEAF9245702EA at 98.115.87.163:443)
+Sep 08 14:16:59.000 [warn] 87 connections have failed:
+Sep 08 14:16:59.000 [warn]  87 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:17:17.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 88; recommendation warn; host 1A25C6358DB91342AA51720A5038B72742732498 at 128.31.0.39:9201)
+Sep 08 14:17:17.000 [warn] 88 connections have failed:
+Sep 08 14:17:17.000 [warn]  88 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:17:17.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 89; recommendation warn; host 2955D8C86F5848FD3469E3F38A027D3E169359D8 at 138.201.225.177:9100)
+Sep 08 14:17:17.000 [warn] 89 connections have failed:
+Sep 08 14:17:17.000 [warn]  89 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:17:20.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 90; recommendation warn; host 3169B8F2D802A5B65F67A3057B626640EC668F97 at 64.65.62.205:443)
+Sep 08 14:17:20.000 [warn] 90 connections have failed:
+Sep 08 14:17:20.000 [warn]  90 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:17:38.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 91; recommendation warn; host 7EA6EAD6FD83083C538F44038BBFA077587DD755 at 45.66.35.11:443)
+Sep 08 14:17:38.000 [warn] 91 connections have failed:
+Sep 08 14:17:38.000 [warn]  91 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:17:38.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 92; recommendation warn; host B4A45FDA5263BECFDB783DF503F88A7A1AA31A31 at 79.116.3.255:9001)
+Sep 08 14:17:38.000 [warn] 92 connections have failed:
+Sep 08 14:17:38.000 [warn]  92 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:17:50.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 93; recommendation warn; host B1F1CDE96E9DC0AB68F833C0370F7F0F43E29F70 at 185.220.101.135:11135)
+Sep 08 14:17:50.000 [warn] 93 connections have failed:
+Sep 08 14:17:50.000 [warn]  93 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:18:09.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 94; recommendation warn; host F2044413DAC2E02E3D6BCF4735A19BCA1DE97281 at 131.188.40.189:443)
+Sep 08 14:18:09.000 [warn] 94 connections have failed:
+Sep 08 14:18:09.000 [warn]  94 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:18:20.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 95; recommendation warn; host 24523E7B004983EC4CA5033EBC9B7293F12F237C at 51.81.93.108:443)
+Sep 08 14:18:20.000 [warn] 95 connections have failed:
+Sep 08 14:18:20.000 [warn]  95 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:18:48.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 96; recommendation warn; host BD6A829255CB08E66FBE7D3748363586E46B3810 at 171.25.193.9:80)
+Sep 08 14:18:48.000 [warn] 96 connections have failed:
+Sep 08 14:18:48.000 [warn]  96 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:19:18.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 97; recommendation warn; host 6B28A86E325A86D0B4045766AA577C0EEB720550 at 64.65.62.9:443)
+Sep 08 14:19:18.000 [warn] 97 connections have failed:
+Sep 08 14:19:18.000 [warn]  97 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:20:51.000 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) opening log file.
+Sep 08 14:20:51.544 [notice] We compiled with OpenSSL 30000110: OpenSSL 3.0.17 1 Jul 2025 and we are running with OpenSSL 30000110: 3.0.17. These two versions should be binary compatible.
+Sep 08 14:20:51.550 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Sep 08 14:20:51.550 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Sep 08 14:20:51.570 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc_bridge".
+Sep 08 14:20:51.571 [warn] Path for DataDirectory (./tor_data) is relative and will resolve to D:\develop\MCP-develop\mcp-client\tor_data. Is this what you wanted?
+Sep 08 14:20:51.571 [warn] Path for GeoIPFile (<default>) is relative and will resolve to D:\develop\MCP-develop\mcp-client\<default>. Is this what you wanted?
+Sep 08 14:20:51.571 [warn] Path for GeoIPv6File (<default>) is relative and will resolve to D:\develop\MCP-develop\mcp-client\<default>. Is this what you wanted?
+Sep 08 14:20:51.571 [warn] ControlPort is open, but no authentication method has been configured.  This means that any program on your computer can reconfigure your Tor.  That's bad!  You should upgrade your Tor controller as soon as possible.
+Sep 08 14:20:51.574 [notice] Opening Socks listener on 127.0.0.1:9050
+Sep 08 14:20:51.574 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Sep 08 14:20:51.574 [notice] Opening Control listener on 127.0.0.1:9051
+Sep 08 14:20:51.574 [notice] Opened Control listener connection (ready) on 127.0.0.1:9051
+Sep 08 14:20:51.000 [warn] CreateProcessA() failed: The system cannot find the file specified.
+
+Sep 08 14:20:51.000 [warn] Managed proxy ".\tor\pluggable_transports\obfs4proxy.exe" process terminated with status code 0
+Sep 08 14:20:51.000 [err] tor_assertion_failed_: Bug: transports.c:520: proxy_prepare_for_restart: Assertion mp->conf_state == PT_PROTO_COMPLETED failed; aborting. (on Tor 0.4.8.17 e41649c9a34f39f1)
+Sep 08 14:20:51.000 [err] Bug: Tor 0.4.8.17 (git-e41649c9a34f39f1): Assertion mp->conf_state == PT_PROTO_COMPLETED failed in proxy_prepare_for_restart at transports.c:520: . (Stack trace not available) (on Tor 0.4.8.17 e41649c9a34f39f1)
+Sep 08 14:21:44.000 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) opening log file.
+Sep 08 14:21:44.810 [notice] We compiled with OpenSSL 30000110: OpenSSL 3.0.17 1 Jul 2025 and we are running with OpenSSL 30000110: 3.0.17. These two versions should be binary compatible.
+Sep 08 14:21:44.815 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Sep 08 14:21:44.815 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Sep 08 14:21:44.833 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc_bridge".
+Sep 08 14:21:44.834 [warn] Path for DataDirectory (./tor_data) is relative and will resolve to D:\develop\MCP-develop\mcp-client\tor_data. Is this what you wanted?
+Sep 08 14:21:44.834 [warn] Path for GeoIPFile (<default>) is relative and will resolve to D:\develop\MCP-develop\mcp-client\<default>. Is this what you wanted?
+Sep 08 14:21:44.834 [warn] Path for GeoIPv6File (<default>) is relative and will resolve to D:\develop\MCP-develop\mcp-client\<default>. Is this what you wanted?
+Sep 08 14:21:44.834 [warn] ControlPort is open, but no authentication method has been configured.  This means that any program on your computer can reconfigure your Tor.  That's bad!  You should upgrade your Tor controller as soon as possible.
+Sep 08 14:21:44.836 [notice] Opening Socks listener on 127.0.0.1:9050
+Sep 08 14:21:44.836 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Sep 08 14:21:44.836 [notice] Opening Control listener on 127.0.0.1:9051
+Sep 08 14:21:44.836 [notice] Opened Control listener connection (ready) on 127.0.0.1:9051
+Sep 08 14:21:44.000 [warn] CreateProcessA() failed: The system cannot find the file specified.
+
+Sep 08 14:21:44.000 [warn] Managed proxy ""D:\develop\Tor" process terminated with status code 0
+Sep 08 14:21:44.000 [err] tor_assertion_failed_: Bug: transports.c:520: proxy_prepare_for_restart: Assertion mp->conf_state == PT_PROTO_COMPLETED failed; aborting. (on Tor 0.4.8.17 e41649c9a34f39f1)
+Sep 08 14:21:44.000 [err] Bug: Tor 0.4.8.17 (git-e41649c9a34f39f1): Assertion mp->conf_state == PT_PROTO_COMPLETED failed in proxy_prepare_for_restart at transports.c:520: . (Stack trace not available) (on Tor 0.4.8.17 e41649c9a34f39f1)
+Sep 08 14:22:19.000 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) opening log file.
+Sep 08 14:22:19.552 [notice] We compiled with OpenSSL 30000110: OpenSSL 3.0.17 1 Jul 2025 and we are running with OpenSSL 30000110: 3.0.17. These two versions should be binary compatible.
+Sep 08 14:22:19.557 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Sep 08 14:22:19.558 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Sep 08 14:22:19.573 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc_simple".
+Sep 08 14:22:19.575 [warn] Path for DataDirectory (./tor_data) is relative and will resolve to D:\develop\MCP-develop\mcp-client\tor_data. Is this what you wanted?
+Sep 08 14:22:19.575 [warn] Path for GeoIPFile (<default>) is relative and will resolve to D:\develop\MCP-develop\mcp-client\<default>. Is this what you wanted?
+Sep 08 14:22:19.575 [warn] Path for GeoIPv6File (<default>) is relative and will resolve to D:\develop\MCP-develop\mcp-client\<default>. Is this what you wanted?
+Sep 08 14:22:19.575 [warn] ControlPort is open, but no authentication method has been configured.  This means that any program on your computer can reconfigure your Tor.  That's bad!  You should upgrade your Tor controller as soon as possible.
+Sep 08 14:22:19.577 [notice] Opening Socks listener on 127.0.0.1:9050
+Sep 08 14:22:19.577 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Sep 08 14:22:19.577 [notice] Opening Control listener on 127.0.0.1:9051
+Sep 08 14:22:19.578 [notice] Opened Control listener connection (ready) on 127.0.0.1:9051
+Sep 08 14:22:19.000 [notice] Set list of supported TLS groups to: P-256:X25519:P-224
+Sep 08 14:22:19.000 [notice] Bootstrapped 0% (starting): Starting
+Sep 08 14:22:20.000 [notice] Starting with guard context "default"
+Sep 08 14:22:21.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Sep 08 14:22:59.000 [notice] New control connection opened from 127.0.0.1.
+Sep 08 14:22:59.000 [notice] New control connection opened from 127.0.0.1.
+Sep 08 14:23:45.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 10; recommendation warn; host 7EA6EAD6FD83083C538F44038BBFA077587DD755 at 45.66.35.11:443)
+Sep 08 14:23:45.000 [warn] 9 connections have failed:
+Sep 08 14:23:45.000 [warn]  9 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:23:45.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 11; recommendation warn; host 5A3B3C34DB082F8AD66AF45AA268FE354662A4F0 at 23.190.168.243:9001)
+Sep 08 14:23:45.000 [warn] 10 connections have failed:
+Sep 08 14:23:45.000 [warn]  10 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:23:52.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 12; recommendation warn; host FAA4BCA4A6AC0FB4CA2F8AD5A11D9E122BA894F6 at 217.196.147.77:443)
+Sep 08 14:23:52.000 [warn] 11 connections have failed:
+Sep 08 14:23:52.000 [warn]  11 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:24:09.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 13; recommendation warn; host 324C9D0C9245411945484BC5367051065D7D1A20 at 38.102.84.24:443)
+Sep 08 14:24:09.000 [warn] 12 connections have failed:
+Sep 08 14:24:09.000 [warn]  12 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:24:38.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 14; recommendation warn; host 7BE683E65D48141321C5ED92F075C55364AC7123 at 193.23.244.244:443)
+Sep 08 14:24:38.000 [warn] 13 connections have failed:
+Sep 08 14:24:38.000 [warn]  13 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:24:57.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 15; recommendation warn; host 88EF3F81A4936A3D5C619F852C70A2A673FA754A at 193.218.118.89:443)
+Sep 08 14:24:57.000 [warn] 14 connections have failed:
+Sep 08 14:24:57.000 [warn]  14 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:25:53.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 16; recommendation warn; host F2044413DAC2E02E3D6BCF4735A19BCA1DE97281 at 131.188.40.189:443)
+Sep 08 14:25:53.000 [warn] 15 connections have failed:
+Sep 08 14:25:53.000 [warn]  15 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:25:53.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 17; recommendation warn; host 2C4B49130DD5994447A6ABBCC5BC3259E2B75AB9 at 198.251.84.163:22)
+Sep 08 14:25:53.000 [warn] 16 connections have failed:
+Sep 08 14:25:53.000 [warn]  16 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:26:14.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 18; recommendation warn; host DB5DE88B4914F60CDEEF581ECCA8DEA59EF26A90 at 185.162.249.126:9001)
+Sep 08 14:26:14.000 [warn] 17 connections have failed:
+Sep 08 14:26:14.000 [warn]  17 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:26:24.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 19; recommendation warn; host D53B7EFD1D481EB2550D03CF822B7E17D058261F at 92.223.105.117:443)
+Sep 08 14:26:24.000 [warn] 18 connections have failed:
+Sep 08 14:26:24.000 [warn]  18 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:26:37.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 20; recommendation warn; host 6ABACD04E3124FB7FE6C28E2D739AAC08BB8A531 at 180.150.27.133:9002)
+Sep 08 14:26:37.000 [warn] 19 connections have failed:
+Sep 08 14:26:37.000 [warn]  19 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:26:52.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 21; recommendation warn; host 5DB9AE27A44EB7B476CC04A66C67A71C97A001E6 at 54.36.205.38:9001)
+Sep 08 14:26:52.000 [warn] 20 connections have failed:
+Sep 08 14:26:52.000 [warn]  20 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:27:27.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 22; recommendation warn; host D9C55AC5549BF4940BE0ABBBE0E34CCC8D6D06E5 at 54.36.101.21:9001)
+Sep 08 14:27:27.000 [warn] 21 connections have failed:
+Sep 08 14:27:27.000 [warn]  21 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:27:33.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 23; recommendation warn; host E3E42D35F801C9D5AB23584E0025D56FE2B33396 at 216.218.219.41:443)
+Sep 08 14:27:33.000 [warn] 22 connections have failed:
+Sep 08 14:27:33.000 [warn]  22 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:28:40.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 24; recommendation warn; host 0DB5DF7A029A6F56D06D4046388B0619B85D42E3 at 209.59.168.216:9001)
+Sep 08 14:28:40.000 [warn] 23 connections have failed:
+Sep 08 14:28:40.000 [warn]  23 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:29:01.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 25; recommendation warn; host 11C9529C9D0671545EAEF80DFE209AD977BCE908 at 178.26.105.120:9999)
+Sep 08 14:29:01.000 [warn] 24 connections have failed:
+Sep 08 14:29:01.000 [warn]  24 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:29:58.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 26; recommendation warn; host 5861F729B6D973B1F9FCED2E6E9B27859CBA2823 at 45.141.215.61:7430)
+Sep 08 14:29:58.000 [warn] 25 connections have failed:
+Sep 08 14:29:58.000 [warn]  25 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:30:25.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 27; recommendation warn; host 74A910646BCEEFBCD2E874FC1DC997430F968145 at 199.58.81.140:443)
+Sep 08 14:30:25.000 [warn] 26 connections have failed:
+Sep 08 14:30:25.000 [warn]  26 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:30:45.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 28; recommendation warn; host EEDD95DEBF72F944265423B7E017A68CA4691AFF at 188.214.88.31:9001)
+Sep 08 14:30:45.000 [warn] 27 connections have failed:
+Sep 08 14:30:45.000 [warn]  27 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:31:51.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 29; recommendation warn; host 24E2F139121D4394C54B5BCC368B3B411857C413 at 204.13.164.118:443)
+Sep 08 14:31:51.000 [warn] 28 connections have failed:
+Sep 08 14:31:51.000 [warn]  28 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:32:47.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 30; recommendation warn; host F761197DDCFE2369CEB79F45DC7083B0BFBEF7AA at 103.209.24.218:9001)
+Sep 08 14:32:47.000 [warn] 29 connections have failed:
+Sep 08 14:32:47.000 [warn]  29 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:33:50.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 31; recommendation warn; host 1734430C503EE26EC1A3B9EB7C29BF4AC64B922B at 162.19.252.175:443)
+Sep 08 14:33:50.000 [warn] 30 connections have failed:
+Sep 08 14:33:50.000 [warn]  30 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:34:00.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 32; recommendation warn; host 4CE422446D43B0A21F0F9CA146D9075583402102 at 45.95.169.109:9100)
+Sep 08 14:34:00.000 [warn] 31 connections have failed:
+Sep 08 14:34:00.000 [warn]  31 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:34:14.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 33; recommendation warn; host 87558F54FCCEE5BD8EF6978438287EEA6915411A at 46.29.235.79:9001)
+Sep 08 14:34:14.000 [warn] 32 connections have failed:
+Sep 08 14:34:14.000 [warn]  32 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:34:45.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 34; recommendation warn; host 7EA6EAD6FD83083C538F44038BBFA077587DD755 at 45.66.35.11:443)
+Sep 08 14:34:45.000 [warn] 33 connections have failed:
+Sep 08 14:34:45.000 [warn]  33 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:34:54.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 35; recommendation warn; host 51D5A72A2C78D1372BE1CB1F3EE382C37763B1FF at 2.58.56.43:7100)
+Sep 08 14:34:54.000 [warn] 34 connections have failed:
+Sep 08 14:34:54.000 [warn]  34 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:35:49.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 36; recommendation warn; host D510FE86C46E01F24CF4B07C36B55E2619F245BF at 185.241.208.202:9300)
+Sep 08 14:35:49.000 [warn] 35 connections have failed:
+Sep 08 14:35:49.000 [warn]  35 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:35:56.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 37; recommendation warn; host E3E42D35F801C9D5AB23584E0025D56FE2B33396 at 216.218.219.41:443)
+Sep 08 14:35:56.000 [warn] 36 connections have failed:
+Sep 08 14:35:56.000 [warn]  36 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:37:55.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 38; recommendation warn; host 4B6A58C6E678F2B0F422D229F20284AB35194223 at 92.205.161.164:443)
+Sep 08 14:37:55.000 [warn] 37 connections have failed:
+Sep 08 14:37:55.000 [warn]  37 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:38:10.000 [notice] Application request when we haven't used client functionality lately. Optimistically trying directory fetches again.
+Sep 08 14:38:32.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 39; recommendation warn; host 2892073608985977DED33F98A9FA27A9C47C8B61 at 198.58.107.53:9001)
+Sep 08 14:38:32.000 [warn] 38 connections have failed:
+Sep 08 14:38:32.000 [warn]  38 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:38:33.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 40; recommendation warn; host 2EB3EC47737C98ABC24D274AFD5C9AD39DB75D7E at 185.220.101.158:11158)
+Sep 08 14:38:33.000 [warn] 39 connections have failed:
+Sep 08 14:38:33.000 [warn]  39 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:38:34.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 41; recommendation warn; host F761197DDCFE2369CEB79F45DC7083B0BFBEF7AA at 103.209.24.218:9001)
+Sep 08 14:38:34.000 [warn] 40 connections have failed:
+Sep 08 14:38:34.000 [warn]  40 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:38:53.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 42; recommendation warn; host 1A25C6358DB91342AA51720A5038B72742732498 at 128.31.0.39:9201)
+Sep 08 14:38:53.000 [warn] 41 connections have failed:
+Sep 08 14:38:53.000 [warn]  41 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:38:53.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 43; recommendation warn; host 470CA25DBABD7184461D8E3E451BF1B0AC46302A at 45.95.169.104:7430)
+Sep 08 14:38:53.000 [warn] 42 connections have failed:
+Sep 08 14:38:53.000 [warn]  42 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:38:55.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 44; recommendation warn; host 213038B323FF8737A55C9DA15FEA1C9BBC4785D3 at 45.95.169.43:9001)
+Sep 08 14:38:55.000 [warn] 43 connections have failed:
+Sep 08 14:38:55.000 [warn]  43 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:39:14.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 45; recommendation warn; host F2044413DAC2E02E3D6BCF4735A19BCA1DE97281 at 131.188.40.189:443)
+Sep 08 14:39:14.000 [warn] 44 connections have failed:
+Sep 08 14:39:14.000 [warn]  44 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:39:14.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 46; recommendation warn; host AA0D90C85200A0A64CBC58AB4D6AA0058530BCE4 at 94.23.70.32:9001)
+Sep 08 14:39:14.000 [warn] 45 connections have failed:
+Sep 08 14:39:14.000 [warn]  45 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:39:19.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 47; recommendation warn; host AE4FAE2EB5DC5D078458F0FCBF2B37F5D73F0868 at 95.216.198.252:9001)
+Sep 08 14:39:19.000 [warn] 46 connections have failed:
+Sep 08 14:39:19.000 [warn]  46 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:39:35.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 48; recommendation warn; host 7EA6EAD6FD83083C538F44038BBFA077587DD755 at 45.66.35.11:443)
+Sep 08 14:39:35.000 [warn] 47 connections have failed:
+Sep 08 14:39:35.000 [warn]  47 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:39:35.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 49; recommendation warn; host FCFFB365207E97905DEB0B9656E68E45607E6FB6 at 45.141.215.17:8430)
+Sep 08 14:39:35.000 [warn] 48 connections have failed:
+Sep 08 14:39:35.000 [warn]  48 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:39:49.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 50; recommendation warn; host C4C462506D54EDC8EFC8E88E32F4AE014755035A at 87.171.79.33:10222)
+Sep 08 14:39:49.000 [warn] 49 connections have failed:
+Sep 08 14:39:49.000 [warn]  49 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:39:56.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 51; recommendation warn; host BD6A829255CB08E66FBE7D3748363586E46B3810 at 171.25.193.9:80)
+Sep 08 14:39:56.000 [warn] 50 connections have failed:
+Sep 08 14:39:56.000 [warn]  50 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:40:09.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 52; recommendation warn; host 0E31308D10C42F8EA75CBC2A84F9D2FB416A8984 at 194.34.134.13:9007)
+Sep 08 14:40:09.000 [warn] 51 connections have failed:
+Sep 08 14:40:09.000 [warn]  51 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:40:11.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 53; recommendation warn; host 4F9EFCF7689084E4C8EE993E123E32B75368804C at 45.61.185.172:9100)
+Sep 08 14:40:11.000 [warn] 52 connections have failed:
+Sep 08 14:40:11.000 [warn]  52 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:40:17.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 54; recommendation warn; host B45032A4C0EB0D404057E7405C433C7A71E36B43 at 66.78.40.183:9200)
+Sep 08 14:40:17.000 [warn] 53 connections have failed:
+Sep 08 14:40:17.000 [warn]  53 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:40:30.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 55; recommendation warn; host 5E0D5B2B4C1AACE479607E84EC1BCE988910AB46 at 89.190.6.9:9030)
+Sep 08 14:40:30.000 [warn] 54 connections have failed:
+Sep 08 14:40:30.000 [warn]  54 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:40:30.000 [warn] Problem bootstrapping. Stuck at 5% (conn): Connecting to a relay. (Connection timed out [WSAETIMEDOUT ]; TIMEOUT; count 56; recommendation warn; host 24E2F139121D4394C54B5BCC368B3B411857C413 at 204.13.164.118:443)
+Sep 08 14:40:30.000 [warn] 55 connections have failed:
+Sep 08 14:40:30.000 [warn]  55 connections died in state connect()ing with SSL state (No SSL object)
+Sep 08 14:40:54.000 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) opening log file.
+Sep 08 14:40:54.292 [notice] We compiled with OpenSSL 30000110: OpenSSL 3.0.17 1 Jul 2025 and we are running with OpenSSL 30000110: 3.0.17. These two versions should be binary compatible.
+Sep 08 14:40:54.297 [notice] Tor 0.4.8.17 (git-e41649c9a34f39f1) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 3.0.17, Zlib 1.3.1, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Sep 08 14:40:54.297 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://support.torproject.org/faq/staying-anonymous/
+Sep 08 14:40:54.316 [notice] Read configuration file "D:\develop\MCP-develop\mcp-client\torrc_with_proxy".
+Sep 08 14:40:54.317 [warn] Path for DataDirectory (./tor_data) is relative and will resolve to D:\develop\MCP-develop\mcp-client\tor_data. Is this what you wanted?
+Sep 08 14:40:54.317 [warn] Path for GeoIPFile (<default>) is relative and will resolve to D:\develop\MCP-develop\mcp-client\<default>. Is this what you wanted?
+Sep 08 14:40:54.317 [warn] Path for GeoIPv6File (<default>) is relative and will resolve to D:\develop\MCP-develop\mcp-client\<default>. Is this what you wanted?
+Sep 08 14:40:54.318 [warn] ControlPort is open, but no authentication method has been configured.  This means that any program on your computer can reconfigure your Tor.  That's bad!  You should upgrade your Tor controller as soon as possible.
+Sep 08 14:40:54.320 [notice] Opening Socks listener on 127.0.0.1:9050
+Sep 08 14:40:54.320 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Sep 08 14:40:54.320 [notice] Opening Control listener on 127.0.0.1:9051
+Sep 08 14:40:54.320 [notice] Opened Control listener connection (ready) on 127.0.0.1:9051
+Sep 08 14:40:54.000 [notice] Set list of supported TLS groups to: P-256:X25519:P-224
+Sep 08 14:40:54.000 [notice] Bootstrapped 0% (starting): Starting
+Sep 08 14:40:55.000 [notice] Starting with guard context "default"
+Sep 08 14:40:56.000 [notice] Bootstrapped 3% (conn_proxy): Connecting to proxy
+Sep 08 14:40:56.000 [notice] Bootstrapped 4% (conn_done_proxy): Connected to proxy
+Sep 08 14:40:56.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Sep 08 14:40:58.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Sep 08 14:40:58.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Sep 08 14:40:58.000 [notice] Bootstrapped 20% (onehop_create): Establishing an encrypted directory connection
+Sep 08 14:40:58.000 [notice] Bootstrapped 25% (requesting_status): Asking for networkstatus consensus
+Sep 08 14:40:59.000 [notice] Bootstrapped 30% (loading_status): Loading networkstatus consensus
+Sep 08 14:41:03.000 [notice] Bootstrapped 45% (requesting_descriptors): Asking for relay descriptors
+Sep 08 14:41:03.000 [notice] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 2651/9117, and can only build 2% of likely paths. (We have 32% of guards bw, 30% of midpoint bw, and 27% of exit bw = 2% of path bw.)
+Sep 08 14:41:03.000 [notice] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 2651/9117, and can only build 2% of likely paths. (We have 32% of guards bw, 30% of midpoint bw, and 27% of exit bw = 2% of path bw.)
+Sep 08 14:41:05.000 [notice] Bootstrapped 51% (loading_descriptors): Loading relay descriptors
+Sep 08 14:41:16.000 [notice] Bootstrapped 57% (loading_descriptors): Loading relay descriptors
+Sep 08 14:41:17.000 [notice] Bootstrapped 65% (loading_descriptors): Loading relay descriptors
+Sep 08 14:41:18.000 [notice] Bootstrapped 73% (loading_descriptors): Loading relay descriptors
+Sep 08 14:41:18.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Sep 08 14:41:18.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Sep 08 14:41:18.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Sep 08 14:41:19.000 [notice] Bootstrapped 100% (done): Done
+Sep 08 14:41:31.000 [notice] New control connection opened from 127.0.0.1.
+Sep 08 14:41:31.000 [notice] New control connection opened from 127.0.0.1.
+Sep 08 14:44:13.000 [notice] New control connection opened from 127.0.0.1.
+Sep 08 14:44:31.000 [notice] New control connection opened from 127.0.0.1.
+Sep 08 14:45:15.000 [notice] New control connection opened from 127.0.0.1.
+Sep 08 15:25:34.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:25:34.000 [notice] Our circuit 0 (id: 84) died due to an invalid selected path, purpose Unlinked conflux circuit. This may be a torrc configuration issue, or a bug.
+Sep 08 15:25:38.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:25:42.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:25:46.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:25:50.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:25:54.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:25:58.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:02.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:06.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:10.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:14.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:18.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:22.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:26.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:30.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:34.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:38.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:43.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:46.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:51.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:55.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:26:59.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:27:03.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:27:07.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:27:11.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:27:15.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:27:19.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:27:23.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:27:27.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:27:32.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:27:36.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:27:40.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:27:44.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:27:48.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:27:52.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:27:56.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:00.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:04.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:08.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:12.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:16.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:20.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:24.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:28.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:32.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:36.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:40.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:45.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:49.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:55.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:28:59.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:29:03.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:29:07.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:29:11.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:29:15.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:29:19.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:29:23.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:29:28.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:29:32.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:29:36.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:29:42.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:29:48.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:29:53.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:29:58.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:30:03.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:30:07.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:30:11.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:30:17.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:30:22.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:30:26.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:30:31.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:30:36.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:30:41.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:30:46.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:30:51.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:30:57.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:31:01.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:31:06.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:31:11.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:31:16.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:31:20.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:31:26.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:31:31.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:31:36.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:31:41.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:31:47.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:31:51.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:31:56.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:32:01.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:32:06.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:32:11.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:32:17.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:32:24.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:32:29.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:32:33.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:32:38.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:32:43.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:32:48.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:32:52.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:32:57.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:33:02.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:33:07.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:33:12.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:33:17.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:33:22.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:33:27.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:33:32.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:33:37.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:33:42.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:33:48.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:33:53.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:33:58.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:34:03.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:34:07.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:34:12.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:34:17.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:34:22.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:34:27.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:34:31.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:34:37.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:34:42.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:34:47.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:34:52.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:34:58.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:35:01.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:35:06.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:35:12.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:35:17.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:35:22.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:35:28.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:35:34.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:35:40.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:35:44.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:35:50.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:35:55.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:36:01.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:36:06.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:36:11.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:36:15.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:36:20.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:36:26.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:36:30.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:36:34.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:36:40.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:36:45.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:36:50.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:36:54.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:36:59.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:37:04.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:37:09.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:37:14.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:37:18.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:37:23.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:37:29.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:37:32.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:37:37.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:37:42.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:37:47.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:37:52.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:37:58.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:38:03.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:38:08.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:38:13.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:38:18.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:38:22.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:38:27.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:38:32.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:38:37.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:38:43.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:38:48.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:38:53.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:38:58.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:39:01.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:39:06.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:39:11.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:39:16.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:39:20.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:39:26.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:39:31.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:39:36.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 08 15:39:41.000 [notice] Failed to find node for hop #1 of our path. Discarding this circuit.
+Sep 09 08:05:30.000 [notice] Tor has been idle for 42272 seconds; assuming established circuits no longer work.
+Sep 09 08:05:30.000 [notice] Heartbeat: Tor's uptime is 5:40 hours, with 0 circuits open. I've sent 1.64 MB and received 18.01 MB. I've received 21 connections on IPv4 and 0 on IPv6. I've made 9925 connections with IPv4 and 0 with IPv6.
+Sep 09 08:05:30.000 [notice] While bootstrapping, fetched this many bytes: 794747 (consensus network-status fetch); 1779 (authority cert fetch); 16268355 (microdescriptor fetch)
+Sep 09 08:05:30.000 [notice] While not bootstrapping, fetched this many bytes: 28802 (consensus network-status fetch)
+Sep 09 08:05:30.000 [notice] Average packaged cell fullness: 94.318%. TLS write overhead: 397%
+Sep 10 19:22:38.000 [notice] Tor has been idle for 118886 seconds; assuming established circuits no longer work.
+Sep 10 19:22:39.000 [notice] Heartbeat: Tor's uptime is 7:55 hours, with 0 circuits open. I've sent 1.65 MB and received 18.07 MB. I've received 21 connections on IPv4 and 0 on IPv6. I've made 9928 connections with IPv4 and 0 with IPv6.
+Sep 10 19:22:39.000 [notice] While bootstrapping, fetched this many bytes: 794747 (consensus network-status fetch); 1779 (authority cert fetch); 16268355 (microdescriptor fetch)
+Sep 10 19:22:39.000 [notice] While not bootstrapping, fetched this many bytes: 83413 (consensus network-status fetch)
+Sep 10 19:22:39.000 [notice] Average packaged cell fullness: 94.232%. TLS write overhead: 396%
