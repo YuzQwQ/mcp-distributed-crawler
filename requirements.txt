@@ -14,3 +14,14 @@ mcp
 aiohttp
 serpapi
 fastmcp
+
+# 代理池系统依赖
+aiofiles>=23.0.0  # 异步文件操作
+psutil>=5.9.0  # 系统进程监控
+tenacity>=8.0.0  # 重试机制
+pydantic>=2.0.0  # 数据验证
+fake-useragent>=1.4.0  # 随机User-Agent
+chardet>=5.0.0  # 字符编码检测
+lxml>=4.9.0  # XML/HTML解析
+pytest>=7.0.0  # 测试框架
+pytest-asyncio>=0.21.0  # 异步测试支持

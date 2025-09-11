@@ -1,0 +1,24 @@
+
+# Tor配置文件 - 已验证的HTTP代理配置
+SocksPort 9050
+ControlPort 9051
+DataDirectory ./tor_data
+Log notice file ./tor_data/tor.log
+
+# HTTP代理配置（已验证可工作）
+HTTPSProxy 127.0.0.1:7890
+
+# 优化的连接设置
+CircuitBuildTimeout 60
+LearnCircuitBuildTimeout 0
+MaxCircuitDirtiness 600
+NewCircuitPeriod 30
+NumEntryGuards 8
+
+# 客户端配置
+DisableNetwork 0
+ClientOnly 1
+
+# GeoIP文件路径
+GeoIPFile D:/develop/Tor Browser/Browser/TorBrowser/Data/Tor/geoip
+GeoIPv6File D:/develop/Tor Browser/Browser/TorBrowser/Data/Tor/geoip6
