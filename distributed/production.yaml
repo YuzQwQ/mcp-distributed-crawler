@@ -1,0 +1,77 @@
+crawler:
+  delay_between_requests: 0.1
+  follow_redirects: true
+  max_concurrent_requests: 100
+  max_depth: 3
+  max_redirects: 5
+  request_timeout: 30
+  respect_robots_txt: true
+  retry_attempts: 5
+  retry_delay: 1
+  user_agent: DistributedCrawler/1.0
+database:
+  connection_timeout: 60
+  database: crawler_prod
+  host: postgres-cluster
+  max_connections: 50
+  min_connections: 5
+  password: prod_password
+  pool_recycle: 3600
+  port: 5432
+  username: crawler
+environment: production
+logging:
+  backup_count: 10
+  console_output: false
+  file_path: logs/crawler.log
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  json_format: true
+  level: INFO
+  max_file_size: 209715200
+monitoring:
+  alert_email: null
+  alert_webhook_url: null
+  enabled: true
+  health_check_path: /health
+  log_slow_queries: true
+  metrics_path: /metrics
+  metrics_port: 9090
+  retention_days: 30
+  slow_query_threshold: 1000
+redis:
+  db: 0
+  health_check_interval: 30
+  host: redis-cluster
+  max_connections: 200
+  password: null
+  port: 6379
+  retry_on_timeout: true
+  socket_connect_timeout: 5
+  socket_timeout: 5
+scheduler:
+  enable_priority_queue: true
+  health_check_interval: 30
+  load_balancing_enabled: true
+  max_task_per_worker: 100
+  priority_levels: 5
+  scheduling_algorithm: round_robin
+  task_timeout: 3600
+security:
+  api_key: null
+  api_key_required: true
+  cors_origins: null
+  enable_cors: false
+  enable_rate_limiting: true
+  rate_limit_per_minute: 100
+  ssl_cert_path: null
+  ssl_enabled: true
+  ssl_key_path: null
+worker:
+  auto_restart: true
+  graceful_shutdown_timeout: 30
+  heartbeat_interval: 30
+  max_cpu_usage: 80
+  max_memory_usage: 80
+  max_workers: 20
+  restart_on_memory_leak: true
+  worker_timeout: 300

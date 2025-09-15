@@ -1,0 +1,14 @@
+redis>=4.5.4
+pymongo>=4.4.1
+psutil>=5.9.5
+flask>=2.3.2
+requests>=2.31.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+asyncio-mqtt>=0.16.1
+aiofiles>=23.2.1
+orjson>=3.9.2
+structlog>=23.1.0
+prometheus-client>=0.17.1
+pyyaml>=6.0.0
+toml>=0.10.2
