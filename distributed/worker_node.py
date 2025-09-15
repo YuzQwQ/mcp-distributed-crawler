@@ -23,6 +23,7 @@ from pydantic import BaseModel, Field
 
 from .task_queue import TaskQueue, TaskStatus
 from .config import get_config
+from .access_controller import AccessController, GentleCrawlerMixin
 
 
 @dataclass
@@ -64,14 +65,17 @@ class BaseCrawler:
         raise NotImplementedError("子类必须实现crawl方法")
 
 
-class StealthCrawler(BaseCrawler):
-    """Stealth爬虫实现"""
+class StealthCrawler(BaseCrawler, GentleCrawlerMixin):
+    """Stealth爬虫实现 - 带人性化访问控制"""
     
     async def crawl(self, task: Dict[str, Any]) -> Dict[str, Any]:
         """执行Stealth爬虫任务"""
         url = task.get("url")
         if not url:
             raise ValueError("URL不能为空")
+        
+        # 使用人性化访问控制
+        await self.gentle_request(url)
         
         # 模拟爬虫逻辑
         self.logger.info(f"开始爬取: {url}")
@@ -85,9 +89,6 @@ class StealthCrawler(BaseCrawler):
             "timestamp": datetime.now().isoformat(),
             "task_id": self.task_id
         }
-        
-        # 模拟爬取延迟
-        await asyncio.sleep(1)
         
         self.logger.info(f"完成爬取: {url}")
         return result
@@ -105,6 +106,7 @@ class WorkerNode:
         self.tasks: Dict[str, asyncio.Task] = {}
         self.status = WorkerStatus(node_id=config.node_id)
         self._shutdown_event = asyncio.Event()
+        self.access_controller = AccessController()
         
         # 注册爬虫类型
         self.crawlers = {

@@ -39,6 +39,14 @@ class AccessController:
         except:
             return "unknown"
     
+    def _extract_domain(self, url: str) -> str:
+        """从URL中提取域名"""
+        try:
+            parsed = urlparse(url)
+            return parsed.netloc or url
+        except Exception:
+            return url
+
     def _calculate_delay(self, domain: str, url: str) -> float:
         """计算合适的延迟时间"""
         
@@ -157,6 +165,20 @@ class GentleCrawlerMixin:
         super().__init__(*args, **kwargs)
         access_config = kwargs.pop('access_config', None)
         self.access_controller = AccessController(access_config)
+    
+    async def gentle_request(self, url: str) -> None:
+        """执行带延迟的请求"""
+        await self.access_controller.wait_before_request(url)
+    
+    async def gentle_get(self, url: str, **kwargs) -> Dict[str, Any]:
+        """执行带延迟的GET请求"""
+        await self.gentle_request(url)
+        # 这里可以集成实际的HTTP请求
+        return {"url": url, "status": "success"}
+    
+    async def wait_for_access(self, url: str) -> None:
+        """等待访问许可（兼容方法）"""
+        await self.access_controller.wait_before_request(url)
     
     async def make_request(self, url: str, **kwargs):
         """发送带人性化延迟的请求"""

@@ -100,6 +100,10 @@ class DistributedSystemStarter:
             print(f"   👷 工作节点: {workers}个运行中")
             print("\n🔗 监控面板: http://localhost:8080")
             print("\n💡 按 Ctrl+C 停止所有组件")
+            print("\n📊 使用说明:")
+            print("   • 查看监控: http://localhost:8080")
+            print("   • 提交任务: 使用 test_distributed_system.py")
+            print("   • 人性化访问: 已启用智能延迟控制")
             
             # 等待进程
             for process in self.processes:
